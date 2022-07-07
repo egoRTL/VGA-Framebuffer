@@ -1,122 +1,273 @@
-# Compile of ROM_top.v was successful.
-# Compile of ROM_topTestBench.v was successful.
-# 2 compiles, 0 failed with no errors.
-vsim work.ROM_top work.ROM_topTestBench
-# vsim work.ROM_top work.ROM_topTestBench 
-# Start time: 10:48:38 on Jul 07,2022
+vsim work.FIFO_top work.flip_flop_fifo work.memsyncreset work.RGBmemcoderdecoderv2 work.RGBMemory_top work.ROM_top work.single_port_ram work.top work.Top_FB_TestBench work.vga
+# vsim work.FIFO_top work.flip_flop_fifo work.memsyncreset work.RGBmemcoderdecoderv2 work.RGBMemory_top work.ROM_top work.single_port_ram work.top work.Top_FB_TestBench work.vga 
+# Start time: 17:22:31 on Jul 07,2022
+# Loading work.FIFO_top
+# Loading sv_std.std
+# Loading work.flip_flop_fifo
+# Loading work.memsyncreset
+# Loading work.RGBmemcoderdecoderv2
+# Loading work.RGBMemory_top
+# Loading work.single_port_ram
 # Loading work.ROM_top
-# Loading work.ROM_topTestBench
-# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'DUT'.  Expected 7, found 4.
-#    Time: 0 ns  Iteration: 0  Instance: /ROM_topTestBench/DUT File: D:/Users/callo/Documents/GitHub/VGA-Framebuffer/FBTest2Git/sources/ROM_topTestBench.v Line: 7
-# ** Warning: (vsim-3722) D:/Users/callo/Documents/GitHub/VGA-Framebuffer/FBTest2Git/sources/ROM_topTestBench.v(7): [TFMPC] - Missing connection for port 'hpos'.
-# ** Warning: (vsim-3722) D:/Users/callo/Documents/GitHub/VGA-Framebuffer/FBTest2Git/sources/ROM_topTestBench.v(7): [TFMPC] - Missing connection for port 'vpos'.
-# ** Warning: (vsim-3722) D:/Users/callo/Documents/GitHub/VGA-Framebuffer/FBTest2Git/sources/ROM_topTestBench.v(7): [TFMPC] - Missing connection for port 'RGB'.
+# Loading work.top
+# Loading work.vga
+# Loading work.Top_FB_TestBench
+# ** Warning: (vsim-3015) [PCDPC] - Port size (10) does not match connection size (11) for port 'resetcnt'. The port definition is at: D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/MEM/RGBMemory_top.v(20).
+#    Time: 0 ps  Iteration: 0  Instance: /top/FrameBuffer File: C:/Users/callo/Desktop/Science/Quartus Projects/lab_11_vga_squares/top.v Line: 189
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'DUT'.  Expected 10, found 2.
+#    Time: 0 ps  Iteration: 0  Instance: /Top_FB_TestBench/DUT File: D:/Users/callo/Documents/GitHub/VGA-Framebuffer/FBTest2Git/sources/Top_TestBench.sv Line: 7
+# ** Warning: (vsim-3722) D:/Users/callo/Documents/GitHub/VGA-Framebuffer/FBTest2Git/sources/Top_TestBench.sv(7): [TFMPC] - Missing connection for port 'key_sw'.
+# ** Warning: (vsim-3722) D:/Users/callo/Documents/GitHub/VGA-Framebuffer/FBTest2Git/sources/Top_TestBench.sv(7): [TFMPC] - Missing connection for port 'led'.
+# ** Warning: (vsim-3722) D:/Users/callo/Documents/GitHub/VGA-Framebuffer/FBTest2Git/sources/Top_TestBench.sv(7): [TFMPC] - Missing connection for port 'abcdefgh'.
+# ** Warning: (vsim-3722) D:/Users/callo/Documents/GitHub/VGA-Framebuffer/FBTest2Git/sources/Top_TestBench.sv(7): [TFMPC] - Missing connection for port 'digit'.
+# ** Warning: (vsim-3722) D:/Users/callo/Documents/GitHub/VGA-Framebuffer/FBTest2Git/sources/Top_TestBench.sv(7): [TFMPC] - Missing connection for port 'buzzer'.
+# ** Warning: (vsim-3722) D:/Users/callo/Documents/GitHub/VGA-Framebuffer/FBTest2Git/sources/Top_TestBench.sv(7): [TFMPC] - Missing connection for port 'hsync'.
+# ** Warning: (vsim-3722) D:/Users/callo/Documents/GitHub/VGA-Framebuffer/FBTest2Git/sources/Top_TestBench.sv(7): [TFMPC] - Missing connection for port 'vsync'.
+# ** Warning: (vsim-3722) D:/Users/callo/Documents/GitHub/VGA-Framebuffer/FBTest2Git/sources/Top_TestBench.sv(7): [TFMPC] - Missing connection for port 'rgb'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (10) does not match connection size (11) for port 'resetcnt'. The port definition is at: D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/MEM/RGBMemory_top.v(20).
+#    Time: 0 ps  Iteration: 0  Instance: /Top_FB_TestBench/DUT/FrameBuffer File: C:/Users/callo/Desktop/Science/Quartus Projects/lab_11_vga_squares/top.v Line: 189
 run
 # ** Warning: (vsim-7) Failed to open readmem file "hex_hposes.txt" in read mode.
-# No such file or directory. (errno = ENOENT)    : D:/Users/callo/Documents/GitHub/VGA-Framebuffer/FBTest2Git/sources/ROM_top.v(35)
-#    Time: 0 ns  Iteration: 0  Instance: /ROM_top
+# No such file or directory. (errno = ENOENT)    : D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/ROM/ROM_top.v(35)
+#    Time: 0 ps  Iteration: 0  Instance: /ROM_top
 # ** Warning: (vsim-7) Failed to open readmem file "hex_vposes.txt" in read mode.
-# No such file or directory. (errno = ENOENT)    : D:/Users/callo/Documents/GitHub/VGA-Framebuffer/FBTest2Git/sources/ROM_top.v(37)
-#    Time: 0 ns  Iteration: 0  Instance: /ROM_top
+# No such file or directory. (errno = ENOENT)    : D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/ROM/ROM_top.v(37)
+#    Time: 0 ps  Iteration: 0  Instance: /ROM_top
 # ** Warning: (vsim-7) Failed to open readmem file "hex_RGB.txt" in read mode.
-# No such file or directory. (errno = ENOENT)    : D:/Users/callo/Documents/GitHub/VGA-Framebuffer/FBTest2Git/sources/ROM_top.v(38)
-#    Time: 0 ns  Iteration: 0  Instance: /ROM_top
+# No such file or directory. (errno = ENOENT)    : D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/ROM/ROM_top.v(38)
+#    Time: 0 ps  Iteration: 0  Instance: /ROM_top
 # ** Warning: (vsim-7) Failed to open readmem file "hex_hposes.txt" in read mode.
-# No such file or directory. (errno = ENOENT)    : D:/Users/callo/Documents/GitHub/VGA-Framebuffer/FBTest2Git/sources/ROM_top.v(35)
-#    Time: 0 ns  Iteration: 0  Instance: /ROM_topTestBench/DUT
+# No such file or directory. (errno = ENOENT)    : D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/ROM/ROM_top.v(35)
+#    Time: 0 ps  Iteration: 0  Instance: /top/ROM
 # ** Warning: (vsim-7) Failed to open readmem file "hex_vposes.txt" in read mode.
-# No such file or directory. (errno = ENOENT)    : D:/Users/callo/Documents/GitHub/VGA-Framebuffer/FBTest2Git/sources/ROM_top.v(37)
-#    Time: 0 ns  Iteration: 0  Instance: /ROM_topTestBench/DUT
+# No such file or directory. (errno = ENOENT)    : D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/ROM/ROM_top.v(37)
+#    Time: 0 ps  Iteration: 0  Instance: /top/ROM
 # ** Warning: (vsim-7) Failed to open readmem file "hex_RGB.txt" in read mode.
-# No such file or directory. (errno = ENOENT)    : D:/Users/callo/Documents/GitHub/VGA-Framebuffer/FBTest2Git/sources/ROM_top.v(38)
-#    Time: 0 ns  Iteration: 0  Instance: /ROM_topTestBench/DUT
-quit -sim
-# End time: 10:49:11 on Jul 07,2022, Elapsed time: 0:00:33
-# Errors: 0, Warnings: 17
-# Compile of ROM_top.v was successful.
-# Compile of ROM_topTestBench.v was successful.
-# 2 compiles, 0 failed with no errors.
-vsim work.ROM_top work.ROM_topTestBench
-# vsim work.ROM_top work.ROM_topTestBench 
-# Start time: 10:49:28 on Jul 07,2022
-# Loading work.ROM_top
-# Loading work.ROM_topTestBench
-# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'DUT'.  Expected 7, found 4.
-#    Time: 0 ns  Iteration: 0  Instance: /ROM_topTestBench/DUT File: D:/Users/callo/Documents/GitHub/VGA-Framebuffer/FBTest2Git/sources/ROM_topTestBench.v Line: 7
-# ** Warning: (vsim-3722) D:/Users/callo/Documents/GitHub/VGA-Framebuffer/FBTest2Git/sources/ROM_topTestBench.v(7): [TFMPC] - Missing connection for port 'hpos'.
-# ** Warning: (vsim-3722) D:/Users/callo/Documents/GitHub/VGA-Framebuffer/FBTest2Git/sources/ROM_topTestBench.v(7): [TFMPC] - Missing connection for port 'vpos'.
-# ** Warning: (vsim-3722) D:/Users/callo/Documents/GitHub/VGA-Framebuffer/FBTest2Git/sources/ROM_topTestBench.v(7): [TFMPC] - Missing connection for port 'RGB'.
+# No such file or directory. (errno = ENOENT)    : D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/ROM/ROM_top.v(38)
+#    Time: 0 ps  Iteration: 0  Instance: /top/ROM
+# ** Warning: (vsim-7) Failed to open readmem file "hex_hposes.txt" in read mode.
+# No such file or directory. (errno = ENOENT)    : D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/ROM/ROM_top.v(35)
+#    Time: 0 ps  Iteration: 0  Instance: /Top_FB_TestBench/DUT/ROM
+# ** Warning: (vsim-7) Failed to open readmem file "hex_vposes.txt" in read mode.
+# No such file or directory. (errno = ENOENT)    : D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/ROM/ROM_top.v(37)
+#    Time: 0 ps  Iteration: 0  Instance: /Top_FB_TestBench/DUT/ROM
+# ** Warning: (vsim-7) Failed to open readmem file "hex_RGB.txt" in read mode.
+# No such file or directory. (errno = ENOENT)    : D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/ROM/ROM_top.v(38)
+#    Time: 0 ps  Iteration: 0  Instance: /Top_FB_TestBench/DUT/ROM
+add wave -position 16  sim:/Top_FB_TestBench/DUT/FIFO/HPOS_FIFO/data
+add wave -position 17  sim:/Top_FB_TestBench/DUT/FIFO/RGB_FIFO/data
+add wave -position 18  sim:/Top_FB_TestBench/DUT/FIFO/VPOS_FIFO/data
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf D:/Users/callo/Documents/GitHub/VGA-Framebuffer/FBTest2Git/TOP_TB_wave.do
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (10) does not match connection size (11) for port 'resetcnt'. The port definition is at: D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/MEM/RGBMemory_top.v(20).
+#    Time: 0 ps  Iteration: 0  Instance: /top/FrameBuffer File: C:/Users/callo/Desktop/Science/Quartus Projects/lab_11_vga_squares/top.v Line: 189
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'DUT'.  Expected 10, found 2.
+#    Time: 0 ps  Iteration: 0  Instance: /Top_FB_TestBench/DUT File: D:/Users/callo/Documents/GitHub/VGA-Framebuffer/FBTest2Git/sources/Top_TestBench.sv Line: 7
+# ** Warning: (vsim-3722) D:/Users/callo/Documents/GitHub/VGA-Framebuffer/FBTest2Git/sources/Top_TestBench.sv(7): [TFMPC] - Missing connection for port 'key_sw'.
+# ** Warning: (vsim-3722) D:/Users/callo/Documents/GitHub/VGA-Framebuffer/FBTest2Git/sources/Top_TestBench.sv(7): [TFMPC] - Missing connection for port 'led'.
+# ** Warning: (vsim-3722) D:/Users/callo/Documents/GitHub/VGA-Framebuffer/FBTest2Git/sources/Top_TestBench.sv(7): [TFMPC] - Missing connection for port 'abcdefgh'.
+# ** Warning: (vsim-3722) D:/Users/callo/Documents/GitHub/VGA-Framebuffer/FBTest2Git/sources/Top_TestBench.sv(7): [TFMPC] - Missing connection for port 'digit'.
+# ** Warning: (vsim-3722) D:/Users/callo/Documents/GitHub/VGA-Framebuffer/FBTest2Git/sources/Top_TestBench.sv(7): [TFMPC] - Missing connection for port 'buzzer'.
+# ** Warning: (vsim-3722) D:/Users/callo/Documents/GitHub/VGA-Framebuffer/FBTest2Git/sources/Top_TestBench.sv(7): [TFMPC] - Missing connection for port 'hsync'.
+# ** Warning: (vsim-3722) D:/Users/callo/Documents/GitHub/VGA-Framebuffer/FBTest2Git/sources/Top_TestBench.sv(7): [TFMPC] - Missing connection for port 'vsync'.
+# ** Warning: (vsim-3722) D:/Users/callo/Documents/GitHub/VGA-Framebuffer/FBTest2Git/sources/Top_TestBench.sv(7): [TFMPC] - Missing connection for port 'rgb'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (10) does not match connection size (11) for port 'resetcnt'. The port definition is at: D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/MEM/RGBMemory_top.v(20).
+#    Time: 0 ps  Iteration: 0  Instance: /Top_FB_TestBench/DUT/FrameBuffer File: C:/Users/callo/Desktop/Science/Quartus Projects/lab_11_vga_squares/top.v Line: 189
 run
 # ** Warning: (vsim-7) Failed to open readmem file "hex_hposes.txt" in read mode.
-# No such file or directory. (errno = ENOENT)    : D:/Users/callo/Documents/GitHub/VGA-Framebuffer/FBTest2Git/sources/ROM_top.v(35)
-#    Time: 0 ns  Iteration: 0  Instance: /ROM_top
+# No such file or directory. (errno = ENOENT)    : D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/ROM/ROM_top.v(35)
+#    Time: 0 ps  Iteration: 0  Instance: /ROM_top
 # ** Warning: (vsim-7) Failed to open readmem file "hex_vposes.txt" in read mode.
-# No such file or directory. (errno = ENOENT)    : D:/Users/callo/Documents/GitHub/VGA-Framebuffer/FBTest2Git/sources/ROM_top.v(37)
-#    Time: 0 ns  Iteration: 0  Instance: /ROM_top
+# No such file or directory. (errno = ENOENT)    : D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/ROM/ROM_top.v(37)
+#    Time: 0 ps  Iteration: 0  Instance: /ROM_top
 # ** Warning: (vsim-7) Failed to open readmem file "hex_RGB.txt" in read mode.
-# No such file or directory. (errno = ENOENT)    : D:/Users/callo/Documents/GitHub/VGA-Framebuffer/FBTest2Git/sources/ROM_top.v(38)
-#    Time: 0 ns  Iteration: 0  Instance: /ROM_top
+# No such file or directory. (errno = ENOENT)    : D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/ROM/ROM_top.v(38)
+#    Time: 0 ps  Iteration: 0  Instance: /ROM_top
 # ** Warning: (vsim-7) Failed to open readmem file "hex_hposes.txt" in read mode.
-# No such file or directory. (errno = ENOENT)    : D:/Users/callo/Documents/GitHub/VGA-Framebuffer/FBTest2Git/sources/ROM_top.v(35)
-#    Time: 0 ns  Iteration: 0  Instance: /ROM_topTestBench/DUT
+# No such file or directory. (errno = ENOENT)    : D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/ROM/ROM_top.v(35)
+#    Time: 0 ps  Iteration: 0  Instance: /top/ROM
 # ** Warning: (vsim-7) Failed to open readmem file "hex_vposes.txt" in read mode.
-# No such file or directory. (errno = ENOENT)    : D:/Users/callo/Documents/GitHub/VGA-Framebuffer/FBTest2Git/sources/ROM_top.v(37)
-#    Time: 0 ns  Iteration: 0  Instance: /ROM_topTestBench/DUT
+# No such file or directory. (errno = ENOENT)    : D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/ROM/ROM_top.v(37)
+#    Time: 0 ps  Iteration: 0  Instance: /top/ROM
 # ** Warning: (vsim-7) Failed to open readmem file "hex_RGB.txt" in read mode.
-# No such file or directory. (errno = ENOENT)    : D:/Users/callo/Documents/GitHub/VGA-Framebuffer/FBTest2Git/sources/ROM_top.v(38)
-#    Time: 0 ns  Iteration: 0  Instance: /ROM_topTestBench/DUT
-quit -sim
-# End time: 10:49:54 on Jul 07,2022, Elapsed time: 0:00:26
-# Errors: 0, Warnings: 13
-# Compile of ROM_top.v was successful.
-# Compile of ROM_topTestBench.v was successful.
-# 2 compiles, 0 failed with no errors.
-vsim work.ROM_top work.ROM_topTestBench
-# vsim work.ROM_top work.ROM_topTestBench 
-# Start time: 10:50:40 on Jul 07,2022
-# Loading work.ROM_top
-# Loading work.ROM_topTestBench
-# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'DUT'.  Expected 7, found 4.
-#    Time: 0 ns  Iteration: 0  Instance: /ROM_topTestBench/DUT File: D:/Users/callo/Documents/GitHub/VGA-Framebuffer/FBTest2Git/sources/ROM_topTestBench.v Line: 7
-# ** Warning: (vsim-3722) D:/Users/callo/Documents/GitHub/VGA-Framebuffer/FBTest2Git/sources/ROM_topTestBench.v(7): [TFMPC] - Missing connection for port 'hpos'.
-# ** Warning: (vsim-3722) D:/Users/callo/Documents/GitHub/VGA-Framebuffer/FBTest2Git/sources/ROM_topTestBench.v(7): [TFMPC] - Missing connection for port 'vpos'.
-# ** Warning: (vsim-3722) D:/Users/callo/Documents/GitHub/VGA-Framebuffer/FBTest2Git/sources/ROM_topTestBench.v(7): [TFMPC] - Missing connection for port 'RGB'.
+# No such file or directory. (errno = ENOENT)    : D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/ROM/ROM_top.v(38)
+#    Time: 0 ps  Iteration: 0  Instance: /top/ROM
+# ** Warning: (vsim-7) Failed to open readmem file "hex_hposes.txt" in read mode.
+# No such file or directory. (errno = ENOENT)    : D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/ROM/ROM_top.v(35)
+#    Time: 0 ps  Iteration: 0  Instance: /Top_FB_TestBench/DUT/ROM
+# ** Warning: (vsim-7) Failed to open readmem file "hex_vposes.txt" in read mode.
+# No such file or directory. (errno = ENOENT)    : D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/ROM/ROM_top.v(37)
+#    Time: 0 ps  Iteration: 0  Instance: /Top_FB_TestBench/DUT/ROM
+# ** Warning: (vsim-7) Failed to open readmem file "hex_RGB.txt" in read mode.
+# No such file or directory. (errno = ENOENT)    : D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/ROM/ROM_top.v(38)
+#    Time: 0 ps  Iteration: 0  Instance: /Top_FB_TestBench/DUT/ROM
+run
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf D:/Users/callo/Documents/GitHub/VGA-Framebuffer/FBTest2Git/TOP_TB_wave.do
+add wave -position 32  sim:/Top_FB_TestBench/DUT/FrameBuffer/R_data
+add wave -position 33  sim:/Top_FB_TestBench/DUT/FrameBuffer/G_data
+add wave -position 34  sim:/Top_FB_TestBench/DUT/FrameBuffer/B_data
+add wave -position 35  sim:/Top_FB_TestBench/DUT/FrameBuffer/writeR_data
+add wave -position 36  sim:/Top_FB_TestBench/DUT/FrameBuffer/writeG_data
+add wave -position 37  sim:/Top_FB_TestBench/DUT/FrameBuffer/writeB_data
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (10) does not match connection size (11) for port 'resetcnt'. The port definition is at: D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/MEM/RGBMemory_top.v(20).
+#    Time: 0 ps  Iteration: 0  Instance: /top/FrameBuffer File: C:/Users/callo/Desktop/Science/Quartus Projects/lab_11_vga_squares/top.v Line: 189
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'DUT'.  Expected 10, found 2.
+#    Time: 0 ps  Iteration: 0  Instance: /Top_FB_TestBench/DUT File: D:/Users/callo/Documents/GitHub/VGA-Framebuffer/FBTest2Git/sources/Top_TestBench.sv Line: 7
+# ** Warning: (vsim-3722) D:/Users/callo/Documents/GitHub/VGA-Framebuffer/FBTest2Git/sources/Top_TestBench.sv(7): [TFMPC] - Missing connection for port 'key_sw'.
+# ** Warning: (vsim-3722) D:/Users/callo/Documents/GitHub/VGA-Framebuffer/FBTest2Git/sources/Top_TestBench.sv(7): [TFMPC] - Missing connection for port 'led'.
+# ** Warning: (vsim-3722) D:/Users/callo/Documents/GitHub/VGA-Framebuffer/FBTest2Git/sources/Top_TestBench.sv(7): [TFMPC] - Missing connection for port 'abcdefgh'.
+# ** Warning: (vsim-3722) D:/Users/callo/Documents/GitHub/VGA-Framebuffer/FBTest2Git/sources/Top_TestBench.sv(7): [TFMPC] - Missing connection for port 'digit'.
+# ** Warning: (vsim-3722) D:/Users/callo/Documents/GitHub/VGA-Framebuffer/FBTest2Git/sources/Top_TestBench.sv(7): [TFMPC] - Missing connection for port 'buzzer'.
+# ** Warning: (vsim-3722) D:/Users/callo/Documents/GitHub/VGA-Framebuffer/FBTest2Git/sources/Top_TestBench.sv(7): [TFMPC] - Missing connection for port 'hsync'.
+# ** Warning: (vsim-3722) D:/Users/callo/Documents/GitHub/VGA-Framebuffer/FBTest2Git/sources/Top_TestBench.sv(7): [TFMPC] - Missing connection for port 'vsync'.
+# ** Warning: (vsim-3722) D:/Users/callo/Documents/GitHub/VGA-Framebuffer/FBTest2Git/sources/Top_TestBench.sv(7): [TFMPC] - Missing connection for port 'rgb'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (10) does not match connection size (11) for port 'resetcnt'. The port definition is at: D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/MEM/RGBMemory_top.v(20).
+#    Time: 0 ps  Iteration: 0  Instance: /Top_FB_TestBench/DUT/FrameBuffer File: C:/Users/callo/Desktop/Science/Quartus Projects/lab_11_vga_squares/top.v Line: 189
 run
 # ** Warning: (vsim-7) Failed to open readmem file "hex_hposes.txt" in read mode.
-# No such file or directory. (errno = ENOENT)    : D:/Users/callo/Documents/GitHub/VGA-Framebuffer/FBTest2Git/sources/ROM_top.v(35)
-#    Time: 0 ns  Iteration: 0  Instance: /ROM_top
+# No such file or directory. (errno = ENOENT)    : D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/ROM/ROM_top.v(35)
+#    Time: 0 ps  Iteration: 0  Instance: /ROM_top
 # ** Warning: (vsim-7) Failed to open readmem file "hex_vposes.txt" in read mode.
-# No such file or directory. (errno = ENOENT)    : D:/Users/callo/Documents/GitHub/VGA-Framebuffer/FBTest2Git/sources/ROM_top.v(37)
-#    Time: 0 ns  Iteration: 0  Instance: /ROM_top
+# No such file or directory. (errno = ENOENT)    : D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/ROM/ROM_top.v(37)
+#    Time: 0 ps  Iteration: 0  Instance: /ROM_top
 # ** Warning: (vsim-7) Failed to open readmem file "hex_RGB.txt" in read mode.
-# No such file or directory. (errno = ENOENT)    : D:/Users/callo/Documents/GitHub/VGA-Framebuffer/FBTest2Git/sources/ROM_top.v(38)
-#    Time: 0 ns  Iteration: 0  Instance: /ROM_top
+# No such file or directory. (errno = ENOENT)    : D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/ROM/ROM_top.v(38)
+#    Time: 0 ps  Iteration: 0  Instance: /ROM_top
 # ** Warning: (vsim-7) Failed to open readmem file "hex_hposes.txt" in read mode.
-# No such file or directory. (errno = ENOENT)    : D:/Users/callo/Documents/GitHub/VGA-Framebuffer/FBTest2Git/sources/ROM_top.v(35)
-#    Time: 0 ns  Iteration: 0  Instance: /ROM_topTestBench/DUT
+# No such file or directory. (errno = ENOENT)    : D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/ROM/ROM_top.v(35)
+#    Time: 0 ps  Iteration: 0  Instance: /top/ROM
 # ** Warning: (vsim-7) Failed to open readmem file "hex_vposes.txt" in read mode.
-# No such file or directory. (errno = ENOENT)    : D:/Users/callo/Documents/GitHub/VGA-Framebuffer/FBTest2Git/sources/ROM_top.v(37)
-#    Time: 0 ns  Iteration: 0  Instance: /ROM_topTestBench/DUT
+# No such file or directory. (errno = ENOENT)    : D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/ROM/ROM_top.v(37)
+#    Time: 0 ps  Iteration: 0  Instance: /top/ROM
 # ** Warning: (vsim-7) Failed to open readmem file "hex_RGB.txt" in read mode.
-# No such file or directory. (errno = ENOENT)    : D:/Users/callo/Documents/GitHub/VGA-Framebuffer/FBTest2Git/sources/ROM_top.v(38)
-#    Time: 0 ns  Iteration: 0  Instance: /ROM_topTestBench/DUT
-quit -sim
-# End time: 10:51:17 on Jul 07,2022, Elapsed time: 0:00:37
-# Errors: 0, Warnings: 12
-# Compile of ROM_top.v was successful.
-# Compile of ROM_topTestBench.v was successful.
-# 2 compiles, 0 failed with no errors.
-vsim work.ROM_top work.ROM_topTestBench
-# vsim work.ROM_top work.ROM_topTestBench 
-# Start time: 10:54:16 on Jul 07,2022
-# Loading work.ROM_top
-# Loading work.ROM_topTestBench
-# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'DUT'.  Expected 7, found 4.
-#    Time: 0 ns  Iteration: 0  Instance: /ROM_topTestBench/DUT File: D:/Users/callo/Documents/GitHub/VGA-Framebuffer/FBTest2Git/sources/ROM_topTestBench.v Line: 7
-# ** Warning: (vsim-3722) D:/Users/callo/Documents/GitHub/VGA-Framebuffer/FBTest2Git/sources/ROM_topTestBench.v(7): [TFMPC] - Missing connection for port 'hpos'.
-# ** Warning: (vsim-3722) D:/Users/callo/Documents/GitHub/VGA-Framebuffer/FBTest2Git/sources/ROM_topTestBench.v(7): [TFMPC] - Missing connection for port 'vpos'.
-# ** Warning: (vsim-3722) D:/Users/callo/Documents/GitHub/VGA-Framebuffer/FBTest2Git/sources/ROM_topTestBench.v(7): [TFMPC] - Missing connection for port 'RGB'.
+# No such file or directory. (errno = ENOENT)    : D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/ROM/ROM_top.v(38)
+#    Time: 0 ps  Iteration: 0  Instance: /top/ROM
+# ** Warning: (vsim-7) Failed to open readmem file "hex_hposes.txt" in read mode.
+# No such file or directory. (errno = ENOENT)    : D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/ROM/ROM_top.v(35)
+#    Time: 0 ps  Iteration: 0  Instance: /Top_FB_TestBench/DUT/ROM
+# ** Warning: (vsim-7) Failed to open readmem file "hex_vposes.txt" in read mode.
+# No such file or directory. (errno = ENOENT)    : D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/ROM/ROM_top.v(37)
+#    Time: 0 ps  Iteration: 0  Instance: /Top_FB_TestBench/DUT/ROM
+# ** Warning: (vsim-7) Failed to open readmem file "hex_RGB.txt" in read mode.
+# No such file or directory. (errno = ENOENT)    : D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/ROM/ROM_top.v(38)
+#    Time: 0 ps  Iteration: 0  Instance: /Top_FB_TestBench/DUT/ROM
+add wave -position 38  sim:/Top_FB_TestBench/DUT/FrameBuffer/addrbuf_wire
+add wave -position 39  sim:/Top_FB_TestBench/DUT/FrameBuffer/we
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf D:/Users/callo/Documents/GitHub/VGA-Framebuffer/FBTest2Git/TOP_TB_wave.do
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (10) does not match connection size (11) for port 'resetcnt'. The port definition is at: D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/MEM/RGBMemory_top.v(20).
+#    Time: 0 ps  Iteration: 0  Instance: /top/FrameBuffer File: C:/Users/callo/Desktop/Science/Quartus Projects/lab_11_vga_squares/top.v Line: 189
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'DUT'.  Expected 10, found 2.
+#    Time: 0 ps  Iteration: 0  Instance: /Top_FB_TestBench/DUT File: D:/Users/callo/Documents/GitHub/VGA-Framebuffer/FBTest2Git/sources/Top_TestBench.sv Line: 7
+# ** Warning: (vsim-3722) D:/Users/callo/Documents/GitHub/VGA-Framebuffer/FBTest2Git/sources/Top_TestBench.sv(7): [TFMPC] - Missing connection for port 'key_sw'.
+# ** Warning: (vsim-3722) D:/Users/callo/Documents/GitHub/VGA-Framebuffer/FBTest2Git/sources/Top_TestBench.sv(7): [TFMPC] - Missing connection for port 'led'.
+# ** Warning: (vsim-3722) D:/Users/callo/Documents/GitHub/VGA-Framebuffer/FBTest2Git/sources/Top_TestBench.sv(7): [TFMPC] - Missing connection for port 'abcdefgh'.
+# ** Warning: (vsim-3722) D:/Users/callo/Documents/GitHub/VGA-Framebuffer/FBTest2Git/sources/Top_TestBench.sv(7): [TFMPC] - Missing connection for port 'digit'.
+# ** Warning: (vsim-3722) D:/Users/callo/Documents/GitHub/VGA-Framebuffer/FBTest2Git/sources/Top_TestBench.sv(7): [TFMPC] - Missing connection for port 'buzzer'.
+# ** Warning: (vsim-3722) D:/Users/callo/Documents/GitHub/VGA-Framebuffer/FBTest2Git/sources/Top_TestBench.sv(7): [TFMPC] - Missing connection for port 'hsync'.
+# ** Warning: (vsim-3722) D:/Users/callo/Documents/GitHub/VGA-Framebuffer/FBTest2Git/sources/Top_TestBench.sv(7): [TFMPC] - Missing connection for port 'vsync'.
+# ** Warning: (vsim-3722) D:/Users/callo/Documents/GitHub/VGA-Framebuffer/FBTest2Git/sources/Top_TestBench.sv(7): [TFMPC] - Missing connection for port 'rgb'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (10) does not match connection size (11) for port 'resetcnt'. The port definition is at: D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/MEM/RGBMemory_top.v(20).
+#    Time: 0 ps  Iteration: 0  Instance: /Top_FB_TestBench/DUT/FrameBuffer File: C:/Users/callo/Desktop/Science/Quartus Projects/lab_11_vga_squares/top.v Line: 189
 run
+# ** Warning: (vsim-7) Failed to open readmem file "hex_hposes.txt" in read mode.
+# No such file or directory. (errno = ENOENT)    : D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/ROM/ROM_top.v(35)
+#    Time: 0 ps  Iteration: 0  Instance: /ROM_top
+# ** Warning: (vsim-7) Failed to open readmem file "hex_vposes.txt" in read mode.
+# No such file or directory. (errno = ENOENT)    : D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/ROM/ROM_top.v(37)
+#    Time: 0 ps  Iteration: 0  Instance: /ROM_top
+# ** Warning: (vsim-7) Failed to open readmem file "hex_RGB.txt" in read mode.
+# No such file or directory. (errno = ENOENT)    : D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/ROM/ROM_top.v(38)
+#    Time: 0 ps  Iteration: 0  Instance: /ROM_top
+# ** Warning: (vsim-7) Failed to open readmem file "hex_hposes.txt" in read mode.
+# No such file or directory. (errno = ENOENT)    : D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/ROM/ROM_top.v(35)
+#    Time: 0 ps  Iteration: 0  Instance: /top/ROM
+# ** Warning: (vsim-7) Failed to open readmem file "hex_vposes.txt" in read mode.
+# No such file or directory. (errno = ENOENT)    : D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/ROM/ROM_top.v(37)
+#    Time: 0 ps  Iteration: 0  Instance: /top/ROM
+# ** Warning: (vsim-7) Failed to open readmem file "hex_RGB.txt" in read mode.
+# No such file or directory. (errno = ENOENT)    : D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/ROM/ROM_top.v(38)
+#    Time: 0 ps  Iteration: 0  Instance: /top/ROM
+# ** Warning: (vsim-7) Failed to open readmem file "hex_hposes.txt" in read mode.
+# No such file or directory. (errno = ENOENT)    : D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/ROM/ROM_top.v(35)
+#    Time: 0 ps  Iteration: 0  Instance: /Top_FB_TestBench/DUT/ROM
+# ** Warning: (vsim-7) Failed to open readmem file "hex_vposes.txt" in read mode.
+# No such file or directory. (errno = ENOENT)    : D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/ROM/ROM_top.v(37)
+#    Time: 0 ps  Iteration: 0  Instance: /Top_FB_TestBench/DUT/ROM
+# ** Warning: (vsim-7) Failed to open readmem file "hex_RGB.txt" in read mode.
+# No such file or directory. (errno = ENOENT)    : D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/ROM/ROM_top.v(38)
+#    Time: 0 ps  Iteration: 0  Instance: /Top_FB_TestBench/DUT/ROM
+add wave -position 40  sim:/Top_FB_TestBench/DUT/FrameBuffer/FBCODEC/Rdatabuf
+add wave -position 41  sim:/Top_FB_TestBench/DUT/FrameBuffer/FBCODEC/Gdatabuf
+add wave -position 42  sim:/Top_FB_TestBench/DUT/FrameBuffer/FBCODEC/Bdatabuf
+add wave -position 43  sim:/Top_FB_TestBench/DUT/FrameBuffer/FBCODEC/dataselect
+add wave -position 44  sim:/Top_FB_TestBench/DUT/FrameBuffer/FBCODEC/dataselect_r
+add wave -position 45  sim:/Top_FB_TestBench/DUT/FrameBuffer/FBCODEC/dataselect_w
+add wave -position 46  sim:/Top_FB_TestBench/DUT/FrameBuffer/FBCODEC/w_state
+add wave -position 41  sim:/Top_FB_TestBench/DUT/FrameBuffer/FBCODEC/hpos
+add wave -position 42  sim:/Top_FB_TestBench/DUT/FrameBuffer/FBCODEC/vpos
+add wave -position 43  sim:/Top_FB_TestBench/DUT/FrameBuffer/FBCODEC/datafromR
+add wave -position 44  sim:/Top_FB_TestBench/DUT/FrameBuffer/FBCODEC/datafromG
+add wave -position 45  sim:/Top_FB_TestBench/DUT/FrameBuffer/FBCODEC/datafromB
+add wave -position 46  sim:/Top_FB_TestBench/DUT/FrameBuffer/FBCODEC/RGBin
+add wave -position 47  sim:/Top_FB_TestBench/DUT/FrameBuffer/FBCODEC/display_on
+add wave -position 48  sim:/Top_FB_TestBench/DUT/FrameBuffer/FBCODEC/memenable
+add wave -position 49  sim:/Top_FB_TestBench/DUT/FrameBuffer/FBCODEC/we
+add wave -position 50  sim:/Top_FB_TestBench/DUT/FrameBuffer/FBCODEC/RGB
+add wave -position 51  sim:/Top_FB_TestBench/DUT/FrameBuffer/FBCODEC/Rdatatomem
+add wave -position 52  sim:/Top_FB_TestBench/DUT/FrameBuffer/FBCODEC/Gdatatomem
+add wave -position 53  sim:/Top_FB_TestBench/DUT/FrameBuffer/FBCODEC/Bdatatomem
+add wave -position 54  sim:/Top_FB_TestBench/DUT/FrameBuffer/FBCODEC/addr
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf D:/Users/callo/Documents/GitHub/VGA-Framebuffer/FBTest2Git/TOP_TB_wave.do
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (10) does not match connection size (11) for port 'resetcnt'. The port definition is at: D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/MEM/RGBMemory_top.v(20).
+#    Time: 0 ps  Iteration: 0  Instance: /top/FrameBuffer File: C:/Users/callo/Desktop/Science/Quartus Projects/lab_11_vga_squares/top.v Line: 189
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'DUT'.  Expected 10, found 2.
+#    Time: 0 ps  Iteration: 0  Instance: /Top_FB_TestBench/DUT File: D:/Users/callo/Documents/GitHub/VGA-Framebuffer/FBTest2Git/sources/Top_TestBench.sv Line: 7
+# ** Warning: (vsim-3722) D:/Users/callo/Documents/GitHub/VGA-Framebuffer/FBTest2Git/sources/Top_TestBench.sv(7): [TFMPC] - Missing connection for port 'key_sw'.
+# ** Warning: (vsim-3722) D:/Users/callo/Documents/GitHub/VGA-Framebuffer/FBTest2Git/sources/Top_TestBench.sv(7): [TFMPC] - Missing connection for port 'led'.
+# ** Warning: (vsim-3722) D:/Users/callo/Documents/GitHub/VGA-Framebuffer/FBTest2Git/sources/Top_TestBench.sv(7): [TFMPC] - Missing connection for port 'abcdefgh'.
+# ** Warning: (vsim-3722) D:/Users/callo/Documents/GitHub/VGA-Framebuffer/FBTest2Git/sources/Top_TestBench.sv(7): [TFMPC] - Missing connection for port 'digit'.
+# ** Warning: (vsim-3722) D:/Users/callo/Documents/GitHub/VGA-Framebuffer/FBTest2Git/sources/Top_TestBench.sv(7): [TFMPC] - Missing connection for port 'buzzer'.
+# ** Warning: (vsim-3722) D:/Users/callo/Documents/GitHub/VGA-Framebuffer/FBTest2Git/sources/Top_TestBench.sv(7): [TFMPC] - Missing connection for port 'hsync'.
+# ** Warning: (vsim-3722) D:/Users/callo/Documents/GitHub/VGA-Framebuffer/FBTest2Git/sources/Top_TestBench.sv(7): [TFMPC] - Missing connection for port 'vsync'.
+# ** Warning: (vsim-3722) D:/Users/callo/Documents/GitHub/VGA-Framebuffer/FBTest2Git/sources/Top_TestBench.sv(7): [TFMPC] - Missing connection for port 'rgb'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (10) does not match connection size (11) for port 'resetcnt'. The port definition is at: D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/MEM/RGBMemory_top.v(20).
+#    Time: 0 ps  Iteration: 0  Instance: /Top_FB_TestBench/DUT/FrameBuffer File: C:/Users/callo/Desktop/Science/Quartus Projects/lab_11_vga_squares/top.v Line: 189
+run
+# ** Warning: (vsim-7) Failed to open readmem file "hex_hposes.txt" in read mode.
+# No such file or directory. (errno = ENOENT)    : D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/ROM/ROM_top.v(35)
+#    Time: 0 ps  Iteration: 0  Instance: /ROM_top
+# ** Warning: (vsim-7) Failed to open readmem file "hex_vposes.txt" in read mode.
+# No such file or directory. (errno = ENOENT)    : D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/ROM/ROM_top.v(37)
+#    Time: 0 ps  Iteration: 0  Instance: /ROM_top
+# ** Warning: (vsim-7) Failed to open readmem file "hex_RGB.txt" in read mode.
+# No such file or directory. (errno = ENOENT)    : D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/ROM/ROM_top.v(38)
+#    Time: 0 ps  Iteration: 0  Instance: /ROM_top
+# ** Warning: (vsim-7) Failed to open readmem file "hex_hposes.txt" in read mode.
+# No such file or directory. (errno = ENOENT)    : D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/ROM/ROM_top.v(35)
+#    Time: 0 ps  Iteration: 0  Instance: /top/ROM
+# ** Warning: (vsim-7) Failed to open readmem file "hex_vposes.txt" in read mode.
+# No such file or directory. (errno = ENOENT)    : D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/ROM/ROM_top.v(37)
+#    Time: 0 ps  Iteration: 0  Instance: /top/ROM
+# ** Warning: (vsim-7) Failed to open readmem file "hex_RGB.txt" in read mode.
+# No such file or directory. (errno = ENOENT)    : D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/ROM/ROM_top.v(38)
+#    Time: 0 ps  Iteration: 0  Instance: /top/ROM
+# ** Warning: (vsim-7) Failed to open readmem file "hex_hposes.txt" in read mode.
+# No such file or directory. (errno = ENOENT)    : D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/ROM/ROM_top.v(35)
+#    Time: 0 ps  Iteration: 0  Instance: /Top_FB_TestBench/DUT/ROM
+# ** Warning: (vsim-7) Failed to open readmem file "hex_vposes.txt" in read mode.
+# No such file or directory. (errno = ENOENT)    : D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/ROM/ROM_top.v(37)
+#    Time: 0 ps  Iteration: 0  Instance: /Top_FB_TestBench/DUT/ROM
+# ** Warning: (vsim-7) Failed to open readmem file "hex_RGB.txt" in read mode.
+# No such file or directory. (errno = ENOENT)    : D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/ROM/ROM_top.v(38)
+#    Time: 0 ps  Iteration: 0  Instance: /Top_FB_TestBench/DUT/ROM
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf D:/Users/callo/Documents/GitHub/VGA-Framebuffer/FBTest2Git/TOP_TB_wave.do
 quit -sim
-# End time: 10:54:37 on Jul 07,2022, Elapsed time: 0:00:21
-# Errors: 0, Warnings: 9
+# End time: 18:17:36 on Jul 07,2022, Elapsed time: 0:55:05
+# Errors: 0, Warnings: 21
