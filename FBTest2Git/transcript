@@ -1,23 +1,122 @@
-# Compile of ROM_topTestBench.v was successful.
 # Compile of ROM_top.v was successful.
+# Compile of ROM_topTestBench.v was successful.
 # 2 compiles, 0 failed with no errors.
 vsim work.ROM_top work.ROM_topTestBench
 # vsim work.ROM_top work.ROM_topTestBench 
-# Start time: 07:57:32 on Jul 07,2022
+# Start time: 10:48:38 on Jul 07,2022
 # Loading work.ROM_top
 # Loading work.ROM_topTestBench
 # ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'DUT'.  Expected 7, found 4.
-#    Time: 0 ns  Iteration: 0  Instance: /ROM_topTestBench/DUT File: C:/Users/callo/Desktop/Science/ModelSim/NewMSTest/ROM_topTestBench.v Line: 7
-# ** Warning: (vsim-3722) C:/Users/callo/Desktop/Science/ModelSim/NewMSTest/ROM_topTestBench.v(7): [TFMPC] - Missing connection for port 'hpos'.
-# ** Warning: (vsim-3722) C:/Users/callo/Desktop/Science/ModelSim/NewMSTest/ROM_topTestBench.v(7): [TFMPC] - Missing connection for port 'vpos'.
-# ** Warning: (vsim-3722) C:/Users/callo/Desktop/Science/ModelSim/NewMSTest/ROM_topTestBench.v(7): [TFMPC] - Missing connection for port 'RGB'.
+#    Time: 0 ns  Iteration: 0  Instance: /ROM_topTestBench/DUT File: D:/Users/callo/Documents/GitHub/VGA-Framebuffer/FBTest2Git/sources/ROM_topTestBench.v Line: 7
+# ** Warning: (vsim-3722) D:/Users/callo/Documents/GitHub/VGA-Framebuffer/FBTest2Git/sources/ROM_topTestBench.v(7): [TFMPC] - Missing connection for port 'hpos'.
+# ** Warning: (vsim-3722) D:/Users/callo/Documents/GitHub/VGA-Framebuffer/FBTest2Git/sources/ROM_topTestBench.v(7): [TFMPC] - Missing connection for port 'vpos'.
+# ** Warning: (vsim-3722) D:/Users/callo/Documents/GitHub/VGA-Framebuffer/FBTest2Git/sources/ROM_topTestBench.v(7): [TFMPC] - Missing connection for port 'RGB'.
 run
+# ** Warning: (vsim-7) Failed to open readmem file "hex_hposes.txt" in read mode.
+# No such file or directory. (errno = ENOENT)    : D:/Users/callo/Documents/GitHub/VGA-Framebuffer/FBTest2Git/sources/ROM_top.v(35)
+#    Time: 0 ns  Iteration: 0  Instance: /ROM_top
+# ** Warning: (vsim-7) Failed to open readmem file "hex_vposes.txt" in read mode.
+# No such file or directory. (errno = ENOENT)    : D:/Users/callo/Documents/GitHub/VGA-Framebuffer/FBTest2Git/sources/ROM_top.v(37)
+#    Time: 0 ns  Iteration: 0  Instance: /ROM_top
+# ** Warning: (vsim-7) Failed to open readmem file "hex_RGB.txt" in read mode.
+# No such file or directory. (errno = ENOENT)    : D:/Users/callo/Documents/GitHub/VGA-Framebuffer/FBTest2Git/sources/ROM_top.v(38)
+#    Time: 0 ns  Iteration: 0  Instance: /ROM_top
+# ** Warning: (vsim-7) Failed to open readmem file "hex_hposes.txt" in read mode.
+# No such file or directory. (errno = ENOENT)    : D:/Users/callo/Documents/GitHub/VGA-Framebuffer/FBTest2Git/sources/ROM_top.v(35)
+#    Time: 0 ns  Iteration: 0  Instance: /ROM_topTestBench/DUT
+# ** Warning: (vsim-7) Failed to open readmem file "hex_vposes.txt" in read mode.
+# No such file or directory. (errno = ENOENT)    : D:/Users/callo/Documents/GitHub/VGA-Framebuffer/FBTest2Git/sources/ROM_top.v(37)
+#    Time: 0 ns  Iteration: 0  Instance: /ROM_topTestBench/DUT
+# ** Warning: (vsim-7) Failed to open readmem file "hex_RGB.txt" in read mode.
+# No such file or directory. (errno = ENOENT)    : D:/Users/callo/Documents/GitHub/VGA-Framebuffer/FBTest2Git/sources/ROM_top.v(38)
+#    Time: 0 ns  Iteration: 0  Instance: /ROM_topTestBench/DUT
+quit -sim
+# End time: 10:49:11 on Jul 07,2022, Elapsed time: 0:00:33
+# Errors: 0, Warnings: 17
+# Compile of ROM_top.v was successful.
+# Compile of ROM_topTestBench.v was successful.
+# 2 compiles, 0 failed with no errors.
+vsim work.ROM_top work.ROM_topTestBench
+# vsim work.ROM_top work.ROM_topTestBench 
+# Start time: 10:49:28 on Jul 07,2022
+# Loading work.ROM_top
+# Loading work.ROM_topTestBench
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'DUT'.  Expected 7, found 4.
+#    Time: 0 ns  Iteration: 0  Instance: /ROM_topTestBench/DUT File: D:/Users/callo/Documents/GitHub/VGA-Framebuffer/FBTest2Git/sources/ROM_topTestBench.v Line: 7
+# ** Warning: (vsim-3722) D:/Users/callo/Documents/GitHub/VGA-Framebuffer/FBTest2Git/sources/ROM_topTestBench.v(7): [TFMPC] - Missing connection for port 'hpos'.
+# ** Warning: (vsim-3722) D:/Users/callo/Documents/GitHub/VGA-Framebuffer/FBTest2Git/sources/ROM_topTestBench.v(7): [TFMPC] - Missing connection for port 'vpos'.
+# ** Warning: (vsim-3722) D:/Users/callo/Documents/GitHub/VGA-Framebuffer/FBTest2Git/sources/ROM_topTestBench.v(7): [TFMPC] - Missing connection for port 'RGB'.
 run
+# ** Warning: (vsim-7) Failed to open readmem file "hex_hposes.txt" in read mode.
+# No such file or directory. (errno = ENOENT)    : D:/Users/callo/Documents/GitHub/VGA-Framebuffer/FBTest2Git/sources/ROM_top.v(35)
+#    Time: 0 ns  Iteration: 0  Instance: /ROM_top
+# ** Warning: (vsim-7) Failed to open readmem file "hex_vposes.txt" in read mode.
+# No such file or directory. (errno = ENOENT)    : D:/Users/callo/Documents/GitHub/VGA-Framebuffer/FBTest2Git/sources/ROM_top.v(37)
+#    Time: 0 ns  Iteration: 0  Instance: /ROM_top
+# ** Warning: (vsim-7) Failed to open readmem file "hex_RGB.txt" in read mode.
+# No such file or directory. (errno = ENOENT)    : D:/Users/callo/Documents/GitHub/VGA-Framebuffer/FBTest2Git/sources/ROM_top.v(38)
+#    Time: 0 ns  Iteration: 0  Instance: /ROM_top
+# ** Warning: (vsim-7) Failed to open readmem file "hex_hposes.txt" in read mode.
+# No such file or directory. (errno = ENOENT)    : D:/Users/callo/Documents/GitHub/VGA-Framebuffer/FBTest2Git/sources/ROM_top.v(35)
+#    Time: 0 ns  Iteration: 0  Instance: /ROM_topTestBench/DUT
+# ** Warning: (vsim-7) Failed to open readmem file "hex_vposes.txt" in read mode.
+# No such file or directory. (errno = ENOENT)    : D:/Users/callo/Documents/GitHub/VGA-Framebuffer/FBTest2Git/sources/ROM_top.v(37)
+#    Time: 0 ns  Iteration: 0  Instance: /ROM_topTestBench/DUT
+# ** Warning: (vsim-7) Failed to open readmem file "hex_RGB.txt" in read mode.
+# No such file or directory. (errno = ENOENT)    : D:/Users/callo/Documents/GitHub/VGA-Framebuffer/FBTest2Git/sources/ROM_top.v(38)
+#    Time: 0 ns  Iteration: 0  Instance: /ROM_topTestBench/DUT
+quit -sim
+# End time: 10:49:54 on Jul 07,2022, Elapsed time: 0:00:26
+# Errors: 0, Warnings: 13
+# Compile of ROM_top.v was successful.
+# Compile of ROM_topTestBench.v was successful.
+# 2 compiles, 0 failed with no errors.
+vsim work.ROM_top work.ROM_topTestBench
+# vsim work.ROM_top work.ROM_topTestBench 
+# Start time: 10:50:40 on Jul 07,2022
+# Loading work.ROM_top
+# Loading work.ROM_topTestBench
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'DUT'.  Expected 7, found 4.
+#    Time: 0 ns  Iteration: 0  Instance: /ROM_topTestBench/DUT File: D:/Users/callo/Documents/GitHub/VGA-Framebuffer/FBTest2Git/sources/ROM_topTestBench.v Line: 7
+# ** Warning: (vsim-3722) D:/Users/callo/Documents/GitHub/VGA-Framebuffer/FBTest2Git/sources/ROM_topTestBench.v(7): [TFMPC] - Missing connection for port 'hpos'.
+# ** Warning: (vsim-3722) D:/Users/callo/Documents/GitHub/VGA-Framebuffer/FBTest2Git/sources/ROM_topTestBench.v(7): [TFMPC] - Missing connection for port 'vpos'.
+# ** Warning: (vsim-3722) D:/Users/callo/Documents/GitHub/VGA-Framebuffer/FBTest2Git/sources/ROM_topTestBench.v(7): [TFMPC] - Missing connection for port 'RGB'.
 run
-run
-run
-run
+# ** Warning: (vsim-7) Failed to open readmem file "hex_hposes.txt" in read mode.
+# No such file or directory. (errno = ENOENT)    : D:/Users/callo/Documents/GitHub/VGA-Framebuffer/FBTest2Git/sources/ROM_top.v(35)
+#    Time: 0 ns  Iteration: 0  Instance: /ROM_top
+# ** Warning: (vsim-7) Failed to open readmem file "hex_vposes.txt" in read mode.
+# No such file or directory. (errno = ENOENT)    : D:/Users/callo/Documents/GitHub/VGA-Framebuffer/FBTest2Git/sources/ROM_top.v(37)
+#    Time: 0 ns  Iteration: 0  Instance: /ROM_top
+# ** Warning: (vsim-7) Failed to open readmem file "hex_RGB.txt" in read mode.
+# No such file or directory. (errno = ENOENT)    : D:/Users/callo/Documents/GitHub/VGA-Framebuffer/FBTest2Git/sources/ROM_top.v(38)
+#    Time: 0 ns  Iteration: 0  Instance: /ROM_top
+# ** Warning: (vsim-7) Failed to open readmem file "hex_hposes.txt" in read mode.
+# No such file or directory. (errno = ENOENT)    : D:/Users/callo/Documents/GitHub/VGA-Framebuffer/FBTest2Git/sources/ROM_top.v(35)
+#    Time: 0 ns  Iteration: 0  Instance: /ROM_topTestBench/DUT
+# ** Warning: (vsim-7) Failed to open readmem file "hex_vposes.txt" in read mode.
+# No such file or directory. (errno = ENOENT)    : D:/Users/callo/Documents/GitHub/VGA-Framebuffer/FBTest2Git/sources/ROM_top.v(37)
+#    Time: 0 ns  Iteration: 0  Instance: /ROM_topTestBench/DUT
+# ** Warning: (vsim-7) Failed to open readmem file "hex_RGB.txt" in read mode.
+# No such file or directory. (errno = ENOENT)    : D:/Users/callo/Documents/GitHub/VGA-Framebuffer/FBTest2Git/sources/ROM_top.v(38)
+#    Time: 0 ns  Iteration: 0  Instance: /ROM_topTestBench/DUT
+quit -sim
+# End time: 10:51:17 on Jul 07,2022, Elapsed time: 0:00:37
+# Errors: 0, Warnings: 12
+# Compile of ROM_top.v was successful.
+# Compile of ROM_topTestBench.v was successful.
+# 2 compiles, 0 failed with no errors.
+vsim work.ROM_top work.ROM_topTestBench
+# vsim work.ROM_top work.ROM_topTestBench 
+# Start time: 10:54:16 on Jul 07,2022
+# Loading work.ROM_top
+# Loading work.ROM_topTestBench
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'DUT'.  Expected 7, found 4.
+#    Time: 0 ns  Iteration: 0  Instance: /ROM_topTestBench/DUT File: D:/Users/callo/Documents/GitHub/VGA-Framebuffer/FBTest2Git/sources/ROM_topTestBench.v Line: 7
+# ** Warning: (vsim-3722) D:/Users/callo/Documents/GitHub/VGA-Framebuffer/FBTest2Git/sources/ROM_topTestBench.v(7): [TFMPC] - Missing connection for port 'hpos'.
+# ** Warning: (vsim-3722) D:/Users/callo/Documents/GitHub/VGA-Framebuffer/FBTest2Git/sources/ROM_topTestBench.v(7): [TFMPC] - Missing connection for port 'vpos'.
+# ** Warning: (vsim-3722) D:/Users/callo/Documents/GitHub/VGA-Framebuffer/FBTest2Git/sources/ROM_topTestBench.v(7): [TFMPC] - Missing connection for port 'RGB'.
 run
 quit -sim
-# End time: 07:59:16 on Jul 07,2022, Elapsed time: 0:01:44
-# Errors: 0, Warnings: 6
+# End time: 10:54:37 on Jul 07,2022, Elapsed time: 0:00:21
+# Errors: 0, Warnings: 9

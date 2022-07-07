@@ -24,7 +24,7 @@ int hpos_check[10];
 int vpos_check[10];
 int RGB_check[10];
 
-top DUT (.display_on(display_on),.clk(clk),
+RGBMemory_top DUT (.display_on(display_on),.clk(clk),
 .memreset(memreset),
 .reset_n(reset_n),
 .resetcnt(resetcnt),
