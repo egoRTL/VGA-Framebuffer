@@ -1,0 +1,14 @@
+module top
+#(
+				RAMLENGTH=800, //RAMLENGTH*DATAWIDTH = 4800 = 80x60 RAM RESOLUTION
+				  DATA_WIDTH=6,
+				  ADDR_WIDTH=10
+)
+(
+input we, clk, memenable,
+input [ADDR_WIDTH:0] resetcnt,
+input [ADDR_WIDTH-1:0] addr,
+input [DATA_WIDTH-1:0] writedata,
+output [DATA_WIDTH-1:0] data
+
+);
