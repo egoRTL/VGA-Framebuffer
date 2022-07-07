@@ -1,0 +1,86 @@
+`timescale 1 ns / 1 ns
+
+module TestBench();
+parameter DATA_WIDTH=6,
+		  ADDR_WIDTH=10,
+		  V_BOTTOM = 1,
+          V_SYNC   = 3,
+          V_TOP    = 30,
+		  H_FRONT  =  80,
+          H_SYNC   =  136,
+          H_BACK   =  216,
+		  RESOLUTION_H = 1280,
+		  RESOLUTION_V = 960,
+		  X_WIRE_WIDTH = $clog2 (RESOLUTION_H+H_FRONT+H_SYNC+H_BACK),
+		  Y_WIRE_WIDTH = $clog2 (RESOLUTION_V+V_BOTTOM+V_SYNC+V_TOP);
+
+reg we, clk, memreset,reset_n;
+reg [ADDR_WIDTH-1:0] resetcnt;
+reg [X_WIRE_WIDTH-1:0] hpos;
+reg [Y_WIRE_WIDTH-1:0] vpos;
+reg [2:0] RGBin,RGB;
+
+top DUT (.we(we),.clk(clk),
+.memreset(memreset),
+.reset_n(reset_n),
+.resetcnt(resetcnt),
+.RGBin(RGBin),
+.hpos(hpos),
+.vpos(vpos),
+.RGB(RGB)
+);
+
+always #5 clk=~clk;
+
+initial begin
+clk=0;
+we=0;
+RGBin=0;
+resetcnt=0;
+memreset=0;
+hpos=0;
+vpos=0;
+RGB=0;
+reset_n=0;
+#20;
+reset_n=1;
+
+for(integer i=0; i<800; i++) begin
+resetcnt<=i;
+#10;
+end
+#10;
+memreset=1;
+#10
+we=1;
+hpos='d600;
+vpos='d500;
+RGBin=3'b011;
+#30
+hpos='d400;
+vpos='d200;
+RGBin=3'b101;
+#30
+hpos='d700;
+vpos='d800;
+RGBin=3'b110;
+#30
+hpos=0;
+vpos=0;
+RGBin=0;
+we=0;
+#30
+hpos='d600;
+vpos='d500;
+#30
+hpos='d400;
+vpos='d200;
+#30
+hpos='d700;
+vpos='d800;
+#30
+$stop;
+
+end
+
+endmodule

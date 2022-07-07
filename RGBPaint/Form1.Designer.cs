@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.trackBar1 = new System.Windows.Forms.TrackBar();
             this.button5 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
@@ -41,13 +42,14 @@
             this.saveRGBToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.trackBar1 = new System.Windows.Forms.TrackBar();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.saveTXTsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.saveTXTFileDialog2 = new System.Windows.Forms.SaveFileDialog();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -64,6 +66,15 @@
             this.panel1.Size = new System.Drawing.Size(800, 100);
             this.panel1.TabIndex = 0;
             this.panel1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // trackBar1
+            // 
+            this.trackBar1.Location = new System.Drawing.Point(613, 18);
+            this.trackBar1.Minimum = 1;
+            this.trackBar1.Name = "trackBar1";
+            this.trackBar1.Size = new System.Drawing.Size(104, 56);
+            this.trackBar1.TabIndex = 4;
+            this.trackBar1.Value = 1;
             // 
             // button5
             // 
@@ -131,6 +142,7 @@
             this.openToolStripMenuItem,
             this.saveToolStripMenuItem,
             this.saveRGBToolStripMenuItem,
+            this.saveTXTsToolStripMenuItem,
             this.exitToolStripMenuItem});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
             this.fileToolStripMenuItem.Size = new System.Drawing.Size(46, 24);
@@ -160,7 +172,7 @@
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(151, 26);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.exitToolStripMenuItem.Text = "Exit";
             // 
             // pictureBox1
@@ -175,15 +187,6 @@
             this.pictureBox1.TabStop = false;
             this.pictureBox1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pictureBox1_MouseMove);
             // 
-            // trackBar1
-            // 
-            this.trackBar1.Location = new System.Drawing.Point(613, 18);
-            this.trackBar1.Minimum = 1;
-            this.trackBar1.Name = "trackBar1";
-            this.trackBar1.Size = new System.Drawing.Size(104, 56);
-            this.trackBar1.TabIndex = 4;
-            this.trackBar1.Value = 1;
-            // 
             // saveFileDialog1
             // 
             this.saveFileDialog1.DefaultExt = "tiff";
@@ -191,6 +194,17 @@
             // openFileDialog1
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
+            // 
+            // saveTXTsToolStripMenuItem
+            // 
+            this.saveTXTsToolStripMenuItem.Name = "saveTXTsToolStripMenuItem";
+            this.saveTXTsToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.saveTXTsToolStripMenuItem.Text = "Save.TXT-s";
+            this.saveTXTsToolStripMenuItem.Click += new System.EventHandler(this.saveTXTsToolStripMenuItem_Click);
+            // 
+            // saveTXTFileDialog2
+            // 
+            this.saveTXTFileDialog2.DefaultExt = "txt";
             // 
             // Form1
             // 
@@ -204,10 +218,10 @@
             this.Text = "Form1";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -231,6 +245,8 @@
         private System.Windows.Forms.TrackBar trackBar1;
         private System.Windows.Forms.SaveFileDialog saveFileDialog1;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
+        private System.Windows.Forms.ToolStripMenuItem saveTXTsToolStripMenuItem;
+        private System.Windows.Forms.SaveFileDialog saveTXTFileDialog2;
     }
 }
 

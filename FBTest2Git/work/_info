@@ -1,0 +1,254 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/NewModelSim/20.1/modelsim_ase/win32aloem
+vFIFO_top
+!s110 1655310443
+!i10b 1
+!s100 084[Pjh7fL8fG]h=lOz0>0
+Z0 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I>JSHXM9bO64eZN`Ii[b^=0
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dC:/Users/callo/Desktop/Science/ModelSim/NewMSTest
+w1655310416
+8C:/Users/callo/Desktop/Science/Quartus Projects/testFramebuf/FIFO_top.v
+FC:/Users/callo/Desktop/Science/Quartus Projects/testFramebuf/FIFO_top.v
+!i122 99
+L0 1 87
+Z3 OV;L;2020.1;71
+r1
+!s85 0
+31
+!s108 1655310443.000000
+!s107 C:/Users/callo/Desktop/Science/Quartus Projects/testFramebuf/FIFO_top.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/callo/Desktop/Science/Quartus Projects/testFramebuf/FIFO_top.v|
+!i113 1
+Z4 o-work work
+Z5 tCvgOpt 0
+n@f@i@f@o_top
+vFIFOTestBench
+Z6 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
+!s110 1655315390
+!i10b 1
+!s100 ^b1`;OUKPl8BTa6;ICedo0
+R0
+Ia@QYjhW73ZEJ2i^<NTkUn2
+R1
+S1
+R2
+w1655315383
+8C:/Users/callo/Desktop/Science/ModelSim/NewMSTest/FIFOTestBench.sv
+FC:/Users/callo/Desktop/Science/ModelSim/NewMSTest/FIFOTestBench.sv
+!i122 112
+L0 3 92
+R3
+r1
+!s85 0
+31
+!s108 1655315390.000000
+!s107 C:/Users/callo/Desktop/Science/ModelSim/NewMSTest/FIFOTestBench.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/callo/Desktop/Science/ModelSim/NewMSTest/FIFOTestBench.sv|
+!i113 1
+Z7 o-work work -sv
+R5
+n@f@i@f@o@test@bench
+vflip_flop_fifo
+R6
+!s110 1655315542
+!i10b 1
+!s100 n6:F2[g^SW<JaMCdFmIe50
+R0
+IaLfdc;oZg:`HaY8@0:g4S2
+R1
+S1
+R2
+w1655315531
+8C:/Users/callo/Desktop/Science/Quartus Projects/testFramebuf/fifo.v
+FC:/Users/callo/Desktop/Science/Quartus Projects/testFramebuf/fifo.v
+!i122 113
+L0 1 67
+R3
+r1
+!s85 0
+31
+!s108 1655315542.000000
+!s107 C:/Users/callo/Desktop/Science/Quartus Projects/testFramebuf/fifo.v|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/callo/Desktop/Science/Quartus Projects/testFramebuf/fifo.v|
+!i113 1
+R7
+R5
+vRGBmemcoderdecoder
+Z8 !s110 1655165560
+!i10b 1
+!s100 ;8bZ:`EI=]J2m=:hFL0[<2
+R0
+IPL9kQHXNC=oSI6Fe5gn`e1
+R1
+R2
+w1655076151
+8C:/Users/callo/Desktop/Science/Quartus Projects/testFramebuf/RGMmemcodec.v
+FC:/Users/callo/Desktop/Science/Quartus Projects/testFramebuf/RGMmemcodec.v
+!i122 79
+L0 1 139
+R3
+r1
+!s85 0
+31
+Z9 !s108 1655165560.000000
+!s107 C:/Users/callo/Desktop/Science/Quartus Projects/testFramebuf/RGMmemcodec.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/callo/Desktop/Science/Quartus Projects/testFramebuf/RGMmemcodec.v|
+!i113 1
+R4
+R5
+n@r@g@bmemcoderdecoder
+vRGBmemcoderdecoderv2
+!s110 1655165561
+!i10b 1
+!s100 S1z7W8AKo0d6Rc6]?Yd=R1
+R0
+I;^g;Ib1Qa5L<7AEkd9L]V1
+R1
+R2
+w1655164873
+8C:/Users/callo/Desktop/Science/Quartus Projects/testFramebuf/RGBmemcodec2.v
+FC:/Users/callo/Desktop/Science/Quartus Projects/testFramebuf/RGBmemcodec2.v
+!i122 81
+L0 1 138
+R3
+r1
+!s85 0
+31
+!s108 1655165561.000000
+!s107 C:/Users/callo/Desktop/Science/Quartus Projects/testFramebuf/RGBmemcodec2.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/callo/Desktop/Science/Quartus Projects/testFramebuf/RGBmemcodec2.v|
+!i113 1
+R4
+R5
+n@r@g@bmemcoderdecoderv2
+vROM_top
+Z10 !s110 1657169849
+!i10b 1
+!s100 @K6n`n7YIMX;:M@>hIaaS3
+R0
+Ihf:zfYz=TJNd3AVRen@Rc2
+R1
+R2
+w1656263606
+8C:/Users/callo/Desktop/Science/Quartus Projects/testFramebuf/ROM_top.v
+FC:/Users/callo/Desktop/Science/Quartus Projects/testFramebuf/ROM_top.v
+!i122 134
+L0 1 60
+R3
+r1
+!s85 0
+31
+Z11 !s108 1657169849.000000
+!s107 C:/Users/callo/Desktop/Science/Quartus Projects/testFramebuf/ROM_top.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/callo/Desktop/Science/Quartus Projects/testFramebuf/ROM_top.v|
+!i113 1
+R4
+R5
+n@r@o@m_top
+vROM_topTestBench
+R10
+!i10b 1
+!s100 K?TY_1NbX7`[QU23W=NR60
+R0
+IgfZIi[<TMP?05TNz`dfj[3
+R1
+R2
+w1656263775
+8C:/Users/callo/Desktop/Science/ModelSim/NewMSTest/ROM_topTestBench.v
+FC:/Users/callo/Desktop/Science/ModelSim/NewMSTest/ROM_topTestBench.v
+!i122 133
+L0 3 20
+R3
+r1
+!s85 0
+31
+R11
+!s107 C:/Users/callo/Desktop/Science/ModelSim/NewMSTest/ROM_topTestBench.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/callo/Desktop/Science/ModelSim/NewMSTest/ROM_topTestBench.v|
+!i113 1
+R4
+R5
+n@r@o@m_top@test@bench
+vsingle_port_ram
+R8
+!i10b 1
+!s100 zB@cHm1hVB]9XT?_kHmXJ0
+R0
+I9B9E;G9X4YO;5d`ZTHPl50
+R1
+R2
+w1655044945
+8C:/Users/callo/Desktop/Science/Quartus Projects/testFramebuf/RAM.v
+FC:/Users/callo/Desktop/Science/Quartus Projects/testFramebuf/RAM.v
+!i122 78
+L0 1 44
+R3
+r1
+!s85 0
+31
+R9
+!s107 C:/Users/callo/Desktop/Science/Quartus Projects/testFramebuf/RAM.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/callo/Desktop/Science/Quartus Projects/testFramebuf/RAM.v|
+!i113 1
+R4
+R5
+vTestBench
+R6
+!s110 1655166200
+!i10b 1
+!s100 0b:L]S4OjVG?gPzW`@`4h0
+R0
+I:;ajgJE5e<a:2Q][6^GQS0
+R1
+S1
+R2
+w1655166196
+8C:/Users/callo/Desktop/Science/ModelSim/NewMSTest/TestBench.sv
+FC:/Users/callo/Desktop/Science/ModelSim/NewMSTest/TestBench.sv
+!i122 87
+L0 3 107
+R3
+r1
+!s85 0
+31
+!s108 1655166200.000000
+!s107 C:/Users/callo/Desktop/Science/ModelSim/NewMSTest/TestBench.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/callo/Desktop/Science/ModelSim/NewMSTest/TestBench.sv|
+!i113 1
+R7
+R5
+n@test@bench
+vtop
+R8
+!i10b 1
+!s100 cgEcZ[X@[LD:_VBPBY@SC2
+R0
+IPV`oCf0oW_eMG84oF7@0>2
+R1
+R2
+w1655165025
+8C:/Users/callo/Desktop/Science/Quartus Projects/testFramebuf/top.v
+FC:/Users/callo/Desktop/Science/Quartus Projects/testFramebuf/top.v
+!i122 80
+L0 1 116
+R3
+r1
+!s85 0
+31
+R9
+!s107 C:/Users/callo/Desktop/Science/Quartus Projects/testFramebuf/top.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/callo/Desktop/Science/Quartus Projects/testFramebuf/top.v|
+!i113 1
+R4
+R5
