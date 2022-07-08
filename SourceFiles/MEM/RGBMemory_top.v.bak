@@ -40,7 +40,7 @@ RGBmemcoderdecoderv2  // module for interpreting requests to memory
 FBCODEC
 (
 .clk (clk),
-.reset(reset_n),
+.reset(~reset_n),
 .hpos (hpos),
 .vpos (vpos),
 .datafromR(R_data),
