@@ -38,7 +38,7 @@ DUT (
   .clk(clk),
   .rst(~reset_n),
   .push(push),
-  .pop(pop),
+  .toppop(pop),
   .hpos_write(hpos),
   .vpos_write(vpos),
   .RGB_write(RGBin),
@@ -74,7 +74,7 @@ end
 push=0;
 #10;
 pop=1;
-#110;
+#550;
 pop=0;
 push=1;
 for(integer i=0; i<7; i++) begin

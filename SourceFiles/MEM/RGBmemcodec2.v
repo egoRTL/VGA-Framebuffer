@@ -19,19 +19,20 @@ module RGBmemcoderdecoderv2
  input [2:0]RGBin,
  input display_on,
  input memenable,
+ input fifoempty,
 
  output reg we,//depends on display on/off
  output [2:0]RGB,
  output reg [DATA_WIDTH-1:0] Rdatatomem,
  output reg [DATA_WIDTH-1:0] Gdatatomem,
  output reg [DATA_WIDTH-1:0] Bdatatomem,
- output reg [ADDR_WIDTH-1:0] addr // addr width is ln(RAMLENGTH)/ln(2)
+ output [ADDR_WIDTH-1:0] addr // addr width is ln(RAMLENGTH)/ln(2)
 );
 
 localparam RES_MULT=RESOLUTION_H/MEMORY_H,
 			  REGS_IN_ROW=RES_MULT*DATA_WIDTH,
 				  DATASELECT_WIDTH= $clog2 (DATA_WIDTH);
-
+reg [ADDR_WIDTH-1:0] addr_r, addr_w;
 reg [DATA_WIDTH-1:0] Rdatabuf;
 reg [DATA_WIDTH-1:0] Gdatabuf;
 reg [DATA_WIDTH-1:0] Bdatabuf;
@@ -50,18 +51,16 @@ dataselect_w<=0;
 Rdatatomem<=0;
 Gdatatomem<=0;
 Bdatatomem<=0;
-end else if (memenable) begin
-
-addr <= (hpos/RES_MULT)+MEMORY_H*(vpos/REGS_IN_ROW);
-dataselect <= (vpos/RES_MULT)%DATA_WIDTH;
-
-if(display_on) begin
+addr_r<=0;
+addr_w<=0;
+end else if (memenable&&display_on) begin
 we<=0;
-dataselect_r<=dataselect;
-
-end 
-else if (~display_on) begin
-
+w_state<=0;
+addr_r <= (hpos/RES_MULT)+MEMORY_H*(vpos/REGS_IN_ROW);
+dataselect <= (vpos/RES_MULT)%DATA_WIDTH;
+dataselect_r <= dataselect;
+end else if (memenable&&~display_on&&~fifoempty) begin
+addr_w <=hpos+MEMORY_H*(vpos/DATA_WIDTH);
 case (w_state)
 		0: begin
 		we<=0;
@@ -74,7 +73,7 @@ case (w_state)
 		Rdatabuf<=datafromR;
 		Gdatabuf<=datafromG;
 		Bdatabuf<=datafromB;
-		dataselect_w<=dataselect;
+		dataselect_w<=vpos%DATA_WIDTH;
 		w_state<=3'd2;
 		end
 		3'd2: case (dataselect_w) //...then write in the same databuf(if the databuf value is in range)...
@@ -129,7 +128,7 @@ case (w_state)
 endcase
 end
 end
-end
+assign addr = (display_on) ? addr_r : addr_w;
 assign RGB[2] = (~display_on) ? 0 : datafromR[dataselect_r];
 assign RGB[1] = (~display_on) ? 0 : datafromG[dataselect_r];
 assign RGB[0] = (~display_on) ? 0 : datafromB[dataselect_r];

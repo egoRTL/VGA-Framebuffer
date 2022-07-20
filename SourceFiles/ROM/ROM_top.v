@@ -18,7 +18,7 @@ module ROM_top
 	CNT_WIDTH = $clog2 (ROM_LENGTH)
 )
 (
-  input clk,rst, display_on, fifofull, enable,
+  input clk,rst, fifopush, enable,
   output reg [X_WIRE_WIDTH-1:0]hpos,
   output reg [Y_WIRE_WIDTH-1:0]vpos,
   output reg [2:0]RGB
@@ -35,13 +35,18 @@ module ROM_top
 	$readmemh("hex_hposes.txt",hposROM); //копирование данных из файла hex_hposes.txt в память в виде шестнадцатеричных чисел. 
 	//В процессе, компилятор сам переводит их в двоичные. Делается до синтеза.
 	$readmemh("hex_vposes.txt", vposROM);
-	$readmemh("hex_RGB.txt", RGBROM);
+	$readmemh("hex_RGB_ALLRed.txt", RGBROM);
+	//$readmemh("hex_RGB_ALLGreen.txt", RGBROM);
+	//$readmemh("hex_RGB_ALLBlue.txt", RGBROM);
+	//$readmemh("hex_RGB_ALLWhite.txt", RGBROM);
+	//$readmemh("hex_RGB_Checkmates.txt", RGBROM);
+	//$readmemh("hex_RGB_TestPicture.txt", RGBROM);
 	end
 	
 	
 	always@(posedge clk)
 	if(rst) counter<=0;
-	else if(~display_on&~fifofull&enable) begin
+	else if(fifopush&enable) begin
 	counter<=counter+1;
 	if(counter==ROM_LENGTH) counter<=0;
 	end
@@ -51,7 +56,7 @@ module ROM_top
 	hpos<=0;
 	vpos<=0;
 	RGB<=0;
-	end else if(~display_on&~fifofull&enable) begin
+	end else if(fifopush&enable) begin
 	hpos<=hposROM[counter];
 	vpos<=vposROM[counter];
 	RGB<=RGBROM[counter];

@@ -10,13 +10,13 @@ module FIFO_top
              H_BACK   =  216,
 				 HPOS_WIDTH = $clog2 (RESOLUTION_H+H_FRONT+H_SYNC+H_BACK),
 				 VPOS_WIDTH = $clog2 (RESOLUTION_V+V_BOTTOM+V_SYNC+V_TOP),
-				 FIFODEPTH=10
+				 FIFODEPTH=30
 )
 (
   input                clk,
   input                rst,
   input                push,
-  input                pop,
+  input                toppop,
   input  [HPOS_WIDTH-1:0] hpos_write,
   input  [VPOS_WIDTH-1:0] vpos_write,
   input  [2:0] RGB_write,
@@ -26,7 +26,8 @@ module FIFO_top
   output               empty,
   output               full
 );
-
+reg [2:0] counter = 0;
+reg pop=0;
 wire hposempty,vposempty,RGBempty,hposfull,vposfull,RGBfull;
 
 flip_flop_fifo
@@ -80,6 +81,14 @@ RGB_FIFO
 	.full			(RGBfull)
 );
 
+always@(posedge clk) begin
+if(toppop) begin 
+counter <= counter + 1;
+if(counter == 1) pop <= 1;
+else pop <= 0;
+if(counter == 'd4) counter <= 0;
+end
+end
 assign empty=hposempty&vposempty&RGBempty;
 assign full=hposfull&vposfull&RGBfull;
 

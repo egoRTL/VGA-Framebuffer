@@ -21,6 +21,7 @@ input [ADDR_WIDTH-1:0] resetcnt,
 input [2:0]RGBin,
 input [X_WIRE_WIDTH-1:0] hpos ,
 input [Y_WIRE_WIDTH-1:0] vpos ,
+input fifoempty,
 
 output [2:0] RGB
 );
@@ -54,7 +55,8 @@ FBCODEC
 .Gdatatomem(writeG_data),
 .Bdatatomem(writeB_data),
 .addr(addrbuf_wire),
-.memenable(memreset)
+.memenable(memreset),
+.fifoempty(fifoempty)
 );
 
 
