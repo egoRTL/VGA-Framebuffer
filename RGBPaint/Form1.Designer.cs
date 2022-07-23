@@ -40,11 +40,11 @@
             this.openToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.saveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.saveRGBToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.saveTXTsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
-            this.saveTXTsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.saveTXTFileDialog2 = new System.Windows.Forms.SaveFileDialog();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
@@ -70,6 +70,7 @@
             // trackBar1
             // 
             this.trackBar1.Location = new System.Drawing.Point(613, 18);
+            this.trackBar1.Maximum = 50;
             this.trackBar1.Minimum = 1;
             this.trackBar1.Name = "trackBar1";
             this.trackBar1.Size = new System.Drawing.Size(104, 56);
@@ -151,28 +152,35 @@
             // openToolStripMenuItem
             // 
             this.openToolStripMenuItem.Name = "openToolStripMenuItem";
-            this.openToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.openToolStripMenuItem.Size = new System.Drawing.Size(163, 26);
             this.openToolStripMenuItem.Text = "Open";
             this.openToolStripMenuItem.Click += new System.EventHandler(this.openToolStripMenuItem_Click);
             // 
             // saveToolStripMenuItem
             // 
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
-            this.saveToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.saveToolStripMenuItem.Size = new System.Drawing.Size(163, 26);
             this.saveToolStripMenuItem.Text = "Save";
             this.saveToolStripMenuItem.Click += new System.EventHandler(this.saveToolStripMenuItem_Click);
             // 
             // saveRGBToolStripMenuItem
             // 
             this.saveRGBToolStripMenuItem.Name = "saveRGBToolStripMenuItem";
-            this.saveRGBToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.saveRGBToolStripMenuItem.Size = new System.Drawing.Size(163, 26);
             this.saveRGBToolStripMenuItem.Text = "SaveRGB";
             this.saveRGBToolStripMenuItem.Click += new System.EventHandler(this.saveRGBToolStripMenuItem_Click);
+            // 
+            // saveTXTsToolStripMenuItem
+            // 
+            this.saveTXTsToolStripMenuItem.Name = "saveTXTsToolStripMenuItem";
+            this.saveTXTsToolStripMenuItem.Size = new System.Drawing.Size(163, 26);
+            this.saveTXTsToolStripMenuItem.Text = "Save.TXT-s";
+            this.saveTXTsToolStripMenuItem.Click += new System.EventHandler(this.saveTXTsToolStripMenuItem_Click);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(163, 26);
             this.exitToolStripMenuItem.Text = "Exit";
             // 
             // pictureBox1
@@ -194,13 +202,6 @@
             // openFileDialog1
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
-            // 
-            // saveTXTsToolStripMenuItem
-            // 
-            this.saveTXTsToolStripMenuItem.Name = "saveTXTsToolStripMenuItem";
-            this.saveTXTsToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.saveTXTsToolStripMenuItem.Text = "Save.TXT-s";
-            this.saveTXTsToolStripMenuItem.Click += new System.EventHandler(this.saveTXTsToolStripMenuItem_Click);
             // 
             // saveTXTFileDialog2
             // 

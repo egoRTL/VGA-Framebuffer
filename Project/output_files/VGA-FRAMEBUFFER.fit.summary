@@ -1,16 +1,16 @@
-Fitter Status : Successful - Wed Jul 20 14:56:16 2022
+Fitter Status : Successful - Sat Jul 23 18:30:29 2022
 Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 Revision Name : VGA-FRAMEBUFFER
 Top-level Entity Name : top
 Family : Cyclone IV E
 Device : EP4CE10E22C8
 Timing Models : Final
-Total logic elements : 778 / 10,320 ( 8 % )
-    Total combinational functions : 761 / 10,320 ( 7 % )
-    Dedicated logic registers : 219 / 10,320 ( 2 % )
-Total registers : 219
+Total logic elements : 1,515 / 10,320 ( 15 % )
+    Total combinational functions : 1,451 / 10,320 ( 14 % )
+    Dedicated logic registers : 282 / 10,320 ( 3 % )
+Total registers : 282
 Total pins : 28 / 92 ( 30 % )
 Total virtual pins : 0
 Total memory bits : 15,000 / 423,936 ( 4 % )
 Embedded Multiplier 9-bit elements : 0 / 46 ( 0 % )
-Total PLLs : 1 / 2 ( 50 % )
+Total PLLs : 0 / 2 ( 0 % )

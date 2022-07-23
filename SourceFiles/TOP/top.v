@@ -46,7 +46,7 @@ module top
 
     //------------------------------------------------------------------------
 	 
-	 wire enable,pllclk,fifoempty,fifofull,display_on,fifopush,fifopop;
+	 wire enable,pllclk,fifoempty,fifofull,display_on,fifopush,fifopop,ROMready;
 	 // webuf - write enable for framebuffer and decoder;
 	 //rinwire - r component of rgb pixel, which supposed to be written to memory
 	
@@ -61,7 +61,7 @@ module top
 	 wire [ADDR_WIDTH:0]resetcnt;
 	 
 	
-	pll pll(.areset(~reset_n),.inclk0(clk),.c0(pllclk));
+	//pll pll(.areset(~reset_n),.inclk0(clk),.c0(pllclk));
 	
 	//pll - to be able to work with high resolutions, the clock value must be set higher than reference clk;
 	
@@ -81,7 +81,7 @@ module top
     )
     i_vga
     (
-        .clk        ( pllclk     ), 
+        .clk        ( clk     ), 
         .reset      ( ~reset_n   ),
         .hsync      ( hsync      ),
         .vsync      ( vsync      ),
@@ -145,9 +145,11 @@ module top
 		)
 		ROM
 		(
-		.clk			(pllclk),
+		.clk			(clk),
 		.rst			(~reset_n),
-		.fifopush	(fifopush),
+		.ROMready	(ROMready),
+		.display_on (display_on),
+		.fifofull	(fifofull),
 		.enable		(enable),
 		.hpos			(ROM_hpos),
 		.vpos			(ROM_vpos),
@@ -161,7 +163,7 @@ module top
 		)
 	 FIFO
 	 (
-			.clk			(pllclk),
+			.clk			(clk),
 			.rst			(~reset_n),
 			.push			(fifopush),
 			.toppop		(fifopop),
@@ -189,7 +191,7 @@ module top
 	 FrameBuffer
 	 (
 		.display_on(display_on),
-		.clk(pllclk),
+		.clk(clk),
 		.memreset(enable),
 		.reset_n(~reset_n),
 		.resetcnt(resetcnt),
@@ -207,7 +209,7 @@ module top
 	 )
 	 memsyncreset
 	 (
-	 .clk(pllclk), 
+	 .clk(clk), 
 	 .memreset(~reset_n),
 	 .resetcnt(resetcnt),
 	 .memenable(enable)
@@ -216,6 +218,6 @@ module top
 	 assign hpos_to_fb = (display_on) ? hpos : hposfifo;
 	 assign vpos_to_fb = (display_on) ? vpos : vposfifo;
 	 assign fifopop = ~display_on&&~fifoempty;
-	 assign fifopush = display_on&&~fifofull;
+	 assign fifopush = display_on&&~fifofull&&ROMready;
 	
 endmodule

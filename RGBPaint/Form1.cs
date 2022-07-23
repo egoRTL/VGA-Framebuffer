@@ -30,6 +30,7 @@ namespace RGBPaint
             x1 = y1 = 0;
         }
 
+
         private void button1_Click(object sender, EventArgs e)
         {
             Button b = (Button)sender;
@@ -80,7 +81,8 @@ namespace RGBPaint
         private void saveTXTsToolStripMenuItem_Click(object sender, EventArgs e)
         {
             string xpath, ypath, rgbpath;
-            rgbpath = @"D:\Users\callo\Documents\GitHub\VGA-Framebuffer\FBTest2Git\hex_RGB.txt";
+            saveTXTFileDialog2.ShowDialog();
+            rgbpath = saveTXTFileDialog2.FileName;
             //xpath = @"D:\Users\callo\Documents\GitHub\VGA-Framebuffer\FBTest2Git\hex_hposes.txt";
             //ypath = @"D:\Users\callo\Documents\GitHub\VGA-Framebuffer\FBTest2Git\hex_vposes.txt";
             System.IO.StreamWriter rgbwriter, xwriter, ywriter ;
