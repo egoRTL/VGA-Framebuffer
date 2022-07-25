@@ -53,50 +53,53 @@ add wave -noupdate -expand -group Debug -expand -group FBCODEC /TestBench/FrameB
 add wave -noupdate -expand -group Debug -expand -group FBCODEC -radix unsigned /TestBench/FrameBuffer/FBCODEC/dataselect_r
 add wave -noupdate -expand -group Debug -expand -group FBCODEC /TestBench/FrameBuffer/FBCODEC/dataselect_w
 add wave -noupdate -expand -group Debug -expand -group FBCODEC /TestBench/FrameBuffer/FBCODEC/w_state
-add wave -noupdate -expand -group Debug -expand -group R_BLOCK /TestBench/FrameBuffer/R_MEMORY/RAMLENGTH
-add wave -noupdate -expand -group Debug -expand -group R_BLOCK /TestBench/FrameBuffer/R_MEMORY/DATA_WIDTH
-add wave -noupdate -expand -group Debug -expand -group R_BLOCK /TestBench/FrameBuffer/R_MEMORY/ADDR_WIDTH
-add wave -noupdate -expand -group Debug -expand -group R_BLOCK /TestBench/FrameBuffer/R_MEMORY/data
-add wave -noupdate -expand -group Debug -expand -group R_BLOCK -radix unsigned /TestBench/FrameBuffer/R_MEMORY/addr
-add wave -noupdate -expand -group Debug -expand -group R_BLOCK /TestBench/FrameBuffer/R_MEMORY/we
-add wave -noupdate -expand -group Debug -expand -group R_BLOCK /TestBench/FrameBuffer/R_MEMORY/clk
-add wave -noupdate -expand -group Debug -expand -group R_BLOCK /TestBench/FrameBuffer/R_MEMORY/memenable
-add wave -noupdate -expand -group Debug -expand -group R_BLOCK /TestBench/FrameBuffer/R_MEMORY/resetcnt
-add wave -noupdate -expand -group Debug -expand -group R_BLOCK /TestBench/FrameBuffer/R_MEMORY/q
-add wave -noupdate -expand -group Debug -expand -group R_BLOCK /TestBench/FrameBuffer/R_MEMORY/ramblock
-add wave -noupdate -expand -group Debug -expand -group R_BLOCK -radix unsigned /TestBench/FrameBuffer/R_MEMORY/addr_x
-add wave -noupdate -expand -group Debug -expand -group R_BLOCK /TestBench/FrameBuffer/R_MEMORY/data_x
-add wave -noupdate -expand -group Debug -expand -group R_BLOCK /TestBench/FrameBuffer/R_MEMORY/we_x
-add wave -noupdate -expand -group Debug -expand -group G_BLOCK /TestBench/FrameBuffer/G_MEMORY/RAMLENGTH
-add wave -noupdate -expand -group Debug -expand -group G_BLOCK /TestBench/FrameBuffer/G_MEMORY/DATA_WIDTH
-add wave -noupdate -expand -group Debug -expand -group G_BLOCK /TestBench/FrameBuffer/G_MEMORY/ADDR_WIDTH
-add wave -noupdate -expand -group Debug -expand -group G_BLOCK /TestBench/FrameBuffer/G_MEMORY/data
-add wave -noupdate -expand -group Debug -expand -group G_BLOCK -radix unsigned /TestBench/FrameBuffer/G_MEMORY/addr
-add wave -noupdate -expand -group Debug -expand -group G_BLOCK /TestBench/FrameBuffer/G_MEMORY/we
-add wave -noupdate -expand -group Debug -expand -group G_BLOCK /TestBench/FrameBuffer/G_MEMORY/clk
-add wave -noupdate -expand -group Debug -expand -group G_BLOCK /TestBench/FrameBuffer/G_MEMORY/memenable
-add wave -noupdate -expand -group Debug -expand -group G_BLOCK /TestBench/FrameBuffer/G_MEMORY/resetcnt
-add wave -noupdate -expand -group Debug -expand -group G_BLOCK /TestBench/FrameBuffer/G_MEMORY/q
-add wave -noupdate -expand -group Debug -expand -group G_BLOCK /TestBench/FrameBuffer/G_MEMORY/ramblock
-add wave -noupdate -expand -group Debug -expand -group G_BLOCK -radix unsigned /TestBench/FrameBuffer/G_MEMORY/addr_x
-add wave -noupdate -expand -group Debug -expand -group G_BLOCK /TestBench/FrameBuffer/G_MEMORY/data_x
-add wave -noupdate -expand -group Debug -expand -group G_BLOCK /TestBench/FrameBuffer/G_MEMORY/we_x
-add wave -noupdate -expand -group Debug -expand -group B_BLOCK /TestBench/FrameBuffer/B_MEMORY/RAMLENGTH
-add wave -noupdate -expand -group Debug -expand -group B_BLOCK /TestBench/FrameBuffer/B_MEMORY/DATA_WIDTH
-add wave -noupdate -expand -group Debug -expand -group B_BLOCK /TestBench/FrameBuffer/B_MEMORY/ADDR_WIDTH
-add wave -noupdate -expand -group Debug -expand -group B_BLOCK /TestBench/FrameBuffer/B_MEMORY/data
-add wave -noupdate -expand -group Debug -expand -group B_BLOCK -radix unsigned /TestBench/FrameBuffer/B_MEMORY/addr
-add wave -noupdate -expand -group Debug -expand -group B_BLOCK /TestBench/FrameBuffer/B_MEMORY/we
-add wave -noupdate -expand -group Debug -expand -group B_BLOCK /TestBench/FrameBuffer/B_MEMORY/clk
-add wave -noupdate -expand -group Debug -expand -group B_BLOCK /TestBench/FrameBuffer/B_MEMORY/memenable
-add wave -noupdate -expand -group Debug -expand -group B_BLOCK /TestBench/FrameBuffer/B_MEMORY/resetcnt
-add wave -noupdate -expand -group Debug -expand -group B_BLOCK /TestBench/FrameBuffer/B_MEMORY/q
-add wave -noupdate -expand -group Debug -expand -group B_BLOCK /TestBench/FrameBuffer/B_MEMORY/ramblock
-add wave -noupdate -expand -group Debug -expand -group B_BLOCK -radix unsigned /TestBench/FrameBuffer/B_MEMORY/addr_x
-add wave -noupdate -expand -group Debug -expand -group B_BLOCK /TestBench/FrameBuffer/B_MEMORY/data_x
-add wave -noupdate -expand -group Debug -expand -group B_BLOCK /TestBench/FrameBuffer/B_MEMORY/we_x
+add wave -noupdate -expand -group Debug /TestBench/FrameBuffer/R_MEMORY/ramblock
+add wave -noupdate -expand -group Debug /TestBench/FrameBuffer/G_MEMORY/ramblock
+add wave -noupdate -expand -group Debug /TestBench/FrameBuffer/B_MEMORY/ramblock
+add wave -noupdate -expand -group Debug -group R_BLOCK /TestBench/FrameBuffer/R_MEMORY/RAMLENGTH
+add wave -noupdate -expand -group Debug -group R_BLOCK /TestBench/FrameBuffer/R_MEMORY/DATA_WIDTH
+add wave -noupdate -expand -group Debug -group R_BLOCK /TestBench/FrameBuffer/R_MEMORY/ADDR_WIDTH
+add wave -noupdate -expand -group Debug -group R_BLOCK /TestBench/FrameBuffer/R_MEMORY/data
+add wave -noupdate -expand -group Debug -group R_BLOCK -radix unsigned /TestBench/FrameBuffer/R_MEMORY/addr
+add wave -noupdate -expand -group Debug -group R_BLOCK /TestBench/FrameBuffer/R_MEMORY/we
+add wave -noupdate -expand -group Debug -group R_BLOCK /TestBench/FrameBuffer/R_MEMORY/clk
+add wave -noupdate -expand -group Debug -group R_BLOCK /TestBench/FrameBuffer/R_MEMORY/memenable
+add wave -noupdate -expand -group Debug -group R_BLOCK /TestBench/FrameBuffer/R_MEMORY/resetcnt
+add wave -noupdate -expand -group Debug -group R_BLOCK /TestBench/FrameBuffer/R_MEMORY/q
+add wave -noupdate -expand -group Debug -group R_BLOCK /TestBench/FrameBuffer/R_MEMORY/ramblock
+add wave -noupdate -expand -group Debug -group R_BLOCK -radix unsigned /TestBench/FrameBuffer/R_MEMORY/addr_x
+add wave -noupdate -expand -group Debug -group R_BLOCK /TestBench/FrameBuffer/R_MEMORY/data_x
+add wave -noupdate -expand -group Debug -group R_BLOCK /TestBench/FrameBuffer/R_MEMORY/we_x
+add wave -noupdate -expand -group Debug -group G_BLOCK /TestBench/FrameBuffer/G_MEMORY/RAMLENGTH
+add wave -noupdate -expand -group Debug -group G_BLOCK /TestBench/FrameBuffer/G_MEMORY/DATA_WIDTH
+add wave -noupdate -expand -group Debug -group G_BLOCK /TestBench/FrameBuffer/G_MEMORY/ADDR_WIDTH
+add wave -noupdate -expand -group Debug -group G_BLOCK /TestBench/FrameBuffer/G_MEMORY/data
+add wave -noupdate -expand -group Debug -group G_BLOCK -radix unsigned /TestBench/FrameBuffer/G_MEMORY/addr
+add wave -noupdate -expand -group Debug -group G_BLOCK /TestBench/FrameBuffer/G_MEMORY/we
+add wave -noupdate -expand -group Debug -group G_BLOCK /TestBench/FrameBuffer/G_MEMORY/clk
+add wave -noupdate -expand -group Debug -group G_BLOCK /TestBench/FrameBuffer/G_MEMORY/memenable
+add wave -noupdate -expand -group Debug -group G_BLOCK /TestBench/FrameBuffer/G_MEMORY/resetcnt
+add wave -noupdate -expand -group Debug -group G_BLOCK /TestBench/FrameBuffer/G_MEMORY/q
+add wave -noupdate -expand -group Debug -group G_BLOCK /TestBench/FrameBuffer/G_MEMORY/ramblock
+add wave -noupdate -expand -group Debug -group G_BLOCK -radix unsigned /TestBench/FrameBuffer/G_MEMORY/addr_x
+add wave -noupdate -expand -group Debug -group G_BLOCK /TestBench/FrameBuffer/G_MEMORY/data_x
+add wave -noupdate -expand -group Debug -group G_BLOCK /TestBench/FrameBuffer/G_MEMORY/we_x
+add wave -noupdate -expand -group Debug -group B_BLOCK /TestBench/FrameBuffer/B_MEMORY/RAMLENGTH
+add wave -noupdate -expand -group Debug -group B_BLOCK /TestBench/FrameBuffer/B_MEMORY/DATA_WIDTH
+add wave -noupdate -expand -group Debug -group B_BLOCK /TestBench/FrameBuffer/B_MEMORY/ADDR_WIDTH
+add wave -noupdate -expand -group Debug -group B_BLOCK /TestBench/FrameBuffer/B_MEMORY/data
+add wave -noupdate -expand -group Debug -group B_BLOCK -radix unsigned /TestBench/FrameBuffer/B_MEMORY/addr
+add wave -noupdate -expand -group Debug -group B_BLOCK /TestBench/FrameBuffer/B_MEMORY/we
+add wave -noupdate -expand -group Debug -group B_BLOCK /TestBench/FrameBuffer/B_MEMORY/clk
+add wave -noupdate -expand -group Debug -group B_BLOCK /TestBench/FrameBuffer/B_MEMORY/memenable
+add wave -noupdate -expand -group Debug -group B_BLOCK /TestBench/FrameBuffer/B_MEMORY/resetcnt
+add wave -noupdate -expand -group Debug -group B_BLOCK /TestBench/FrameBuffer/B_MEMORY/q
+add wave -noupdate -expand -group Debug -group B_BLOCK /TestBench/FrameBuffer/B_MEMORY/ramblock
+add wave -noupdate -expand -group Debug -group B_BLOCK -radix unsigned /TestBench/FrameBuffer/B_MEMORY/addr_x
+add wave -noupdate -expand -group Debug -group B_BLOCK /TestBench/FrameBuffer/B_MEMORY/data_x
+add wave -noupdate -expand -group Debug -group B_BLOCK /TestBench/FrameBuffer/B_MEMORY/we_x
 TreeUpdate [SetDefaultTree]
-WaveRestoreCursors {{Cursor 1} {8204 ns} 0}
+WaveRestoreCursors {{Cursor 1} {9075 ns} 0}
 quietly wave cursor active 1
 configure wave -namecolwidth 335
 configure wave -valuecolwidth 100
@@ -112,4 +115,4 @@ configure wave -griddelta 40
 configure wave -timeline 0
 configure wave -timelineunits ns
 update
-WaveRestoreZoom {8001 ns} {8415 ns}
+WaveRestoreZoom {7795 ns} {10679 ns}

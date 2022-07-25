@@ -46,7 +46,7 @@ module top
 
     //------------------------------------------------------------------------
 	 
-	 wire enable,pllclk,fifoempty,fifofull,display_on,fifopush,fifopop;
+	 wire enable,pllclk,fifoempty,fifofull,display_on,fifopush,fifopop,ROMready;
 	 // webuf - write enable for framebuffer and decoder;
 	 //rinwire - r component of rgb pixel, which supposed to be written to memory
 	
@@ -147,7 +147,9 @@ module top
 		(
 		.clk			(pllclk),
 		.rst			(~reset_n),
-		.fifopush	(fifopush),
+		.ROMready	(ROMready),
+		.display_on (display_on),
+		.fifofull	(fifofull),
 		.enable		(enable),
 		.hpos			(ROM_hpos),
 		.vpos			(ROM_vpos),
@@ -216,6 +218,6 @@ module top
 	 assign hpos_to_fb = (display_on) ? hpos : hposfifo;
 	 assign vpos_to_fb = (display_on) ? vpos : vposfifo;
 	 assign fifopop = ~display_on&&~fifoempty;
-	 assign fifopush = display_on&&~fifofull;
+	 assign fifopush = display_on&&~fifofull&&ROMready;
 	
 endmodule

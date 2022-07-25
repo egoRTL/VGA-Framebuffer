@@ -15,6 +15,10 @@ add wave -noupdate -expand -group ROM /Top_FB_TestBench/DUT/fifofull
 add wave -noupdate -expand -group ROM /Top_FB_TestBench/DUT/ROM_RGB
 add wave -noupdate -expand -group ROM -radix unsigned /Top_FB_TestBench/DUT/ROM_hpos
 add wave -noupdate -expand -group ROM -radix unsigned /Top_FB_TestBench/DUT/ROM_vpos
+add wave -noupdate /Top_FB_TestBench/DUT/ROM/enable
+add wave -noupdate /Top_FB_TestBench/DUT/ROM/display_on
+add wave -noupdate /Top_FB_TestBench/DUT/ROM/ROMready
+add wave -noupdate -radix unsigned /Top_FB_TestBench/DUT/ROM/counter
 add wave -noupdate -expand -group FIFO -expand -group HPOS_data -radix unsigned /Top_FB_TestBench/DUT/FIFO/HPOS_FIFO/write_data
 add wave -noupdate -expand -group FIFO -expand -group HPOS_data -radix unsigned /Top_FB_TestBench/DUT/FIFO/HPOS_FIFO/read_data
 add wave -noupdate -expand -group FIFO -expand -group HPOS_data /Top_FB_TestBench/DUT/FIFO/HPOS_FIFO/push
@@ -96,7 +100,7 @@ add wave -noupdate -expand -group FRAMEBUFFER -expand -group R /Top_FB_TestBench
 add wave -noupdate -expand -group FRAMEBUFFER -expand -group G /Top_FB_TestBench/DUT/FrameBuffer/G_MEMORY/ramblock
 add wave -noupdate -expand -group FRAMEBUFFER -expand -group B /Top_FB_TestBench/DUT/FrameBuffer/B_MEMORY/ramblock
 TreeUpdate [SetDefaultTree]
-WaveRestoreCursors {{Cursor 1} {8078 ns} 0} {{Cursor 2} {22862 ns} 0}
+WaveRestoreCursors {{Cursor 1} {8320 ns} 0} {{Cursor 2} {22862 ns} 0}
 quietly wave cursor active 1
 configure wave -namecolwidth 422
 configure wave -valuecolwidth 78
@@ -112,4 +116,4 @@ configure wave -griddelta 40
 configure wave -timeline 0
 configure wave -timelineunits ps
 update
-WaveRestoreZoom {7479 ns} {10133 ns}
+WaveRestoreZoom {8191 ns} {8555 ns}

@@ -72,31 +72,59 @@ end
 memreset=1;
 #100
 display_on=0;
-hpos='d60; //700th reg
-vpos='d50; //2nd dataselect
-RGBin=3'b011;
-#50
-hpos='d40; //280th reg
-vpos='d20; //2nd dataselect
-RGBin=3'b101;
-#50
-hpos='d70; //150th reg
-vpos='d10; //4th dataselect
-RGBin=3'b110;
-#50
+vpos=0;
+for(integer i=0; i<5; i++) begin
+hpos=i;
+if((i%2)==0) RGBin=3'b111;
+else RGBin=3'b000;
+#50;
+end
+#120;
 display_on=1;
-hpos='d480;
-vpos='d400;
-#10
-hpos='d320;
-vpos='d160;
-#10
-hpos='d560;
-vpos='d80;
-#10
+RGBin=0;
+vpos=0;
+for(integer i=0;i<31;i++) begin
+hpos=i; #10;
+end
+#120
+display_on=0;
+vpos=1;
+for(integer i=0; i<5; i++) begin
+hpos=i;
+if((i%2)==0) RGBin=3'b111;
+else RGBin=3'b000;
+#50;
+end
+#120
+display_on=1;
+RGBin=0;
+vpos=0;
+for(integer i=0;i<31;i++) begin
+hpos=i; #10;
+end
+#120
+display_on=0;
+vpos=2;
+for(integer i=0; i<5; i++) begin
+hpos=i;
+if((i%2)==0) RGBin=3'b111;
+else RGBin=3'b000;
+#50;
+end
+#120
+display_on=1;
+RGBin=0;
+vpos=0;
+for(integer i=0;i<31;i++) begin
+hpos=i; #10;
+end
+#120
 hpos=0;
 vpos=0;
-#100
+
+
+
+/*#100
 display_on=0;
 for(integer i=0; i<10; i++)begin
 	hpos=$urandom_range(0,79);
@@ -115,7 +143,7 @@ vpos=vpos_check[i]*8;
 #10;
 if(RGB!=RGB_check[i]) $display("Wrong data on the coordinates hpos=%d, vpos=%d. Supposed to be %d ",hpos,vpos, RGB_check[i]);
 end
-#10
+#10*/
 $stop;
 
 end

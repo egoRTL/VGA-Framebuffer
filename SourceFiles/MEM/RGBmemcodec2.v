@@ -56,11 +56,11 @@ addr_w<=0;
 end else if (memenable&&display_on) begin
 we<=0;
 w_state<=0;
-addr_r <= (hpos/RES_MULT)+MEMORY_H*(vpos/REGS_IN_ROW);
+addr_r <= ((hpos/RES_MULT)+MEMORY_H*(vpos/REGS_IN_ROW));
 dataselect <= (vpos/RES_MULT)%DATA_WIDTH;
 dataselect_r <= dataselect;
 end else if (memenable&&~display_on&&~fifoempty) begin
-addr_w <=hpos+MEMORY_H*(vpos/DATA_WIDTH);
+addr_w <=(hpos+MEMORY_H*(vpos/DATA_WIDTH));
 case (w_state)
 		0: begin
 		we<=0;
@@ -69,62 +69,63 @@ case (w_state)
 		Gdatabuf<=0;
 		Bdatabuf<=0;
 		end
-		1:begin
+		1:w_state<=3'd2;
+		2:begin
 		Rdatabuf<=datafromR;
 		Gdatabuf<=datafromG;
 		Bdatabuf<=datafromB;
 		dataselect_w<=vpos%DATA_WIDTH;
-		w_state<=3'd2;
+		w_state<=3'd3;
 		end
-		3'd2: case (dataselect_w) //...then write in the same databuf(if the databuf value is in range)...
+		3'd3: case (dataselect_w) //...then write in the same databuf(if the databuf value is in range)...
 					0: begin
 						Rdatabuf[0]<= RGBin[2];
 						Gdatabuf[0]<= RGBin[1];
 						Bdatabuf[0]<= RGBin[0];
-						w_state<=3'd3;
+						w_state<=3'd4;
 						end
 					3'd1:begin
 						Rdatabuf[1]<= RGBin[2];
 						Gdatabuf[1]<= RGBin[1];
 						Bdatabuf[1]<= RGBin[0];
-						w_state<=3'd3;
+						w_state<=3'd4;
 						end
 					3'd2:begin
 						Rdatabuf[2]<= RGBin[2];
 						Gdatabuf[2]<= RGBin[1];
 						Bdatabuf[2]<= RGBin[0];
-						w_state<=3'd3;
+						w_state<=3'd4;
 						end
 					3'd3:begin
 						Rdatabuf[3]<= RGBin[2];
 						Gdatabuf[3]<= RGBin[1];
 						Bdatabuf[3]<= RGBin[0];
-						w_state<=3'd3;
+						w_state<=3'd4;
 						end
 					3'd4:begin
 						Rdatabuf[4]<= RGBin[2];
 						Gdatabuf[4]<= RGBin[1];
 						Bdatabuf[4]<= RGBin[0];
-						w_state<=3'd3;
+						w_state<=3'd4;
 						end
 					3'd5:begin
 						Rdatabuf[5]<= RGBin[2];
 						Gdatabuf[5]<= RGBin[1];
 						Bdatabuf[5]<= RGBin[0];
-						w_state<=3'd3;
+						w_state<=3'd4;
 						end
 					endcase
-		3'd3: begin
+		3'd4: begin
 		we<=1;
 		Rdatatomem<=Rdatabuf;
 		Gdatatomem<=Gdatabuf;
 		Bdatatomem<=Bdatabuf;
-		w_state<=3'd4;
-		end
-		3'd4: begin 
 		w_state<=0;
-		//we<=0;
 		end
+		//3'd5: begin 
+		//w_state<=0;
+		//we<=0;
+		//end
 endcase
 end
 end
