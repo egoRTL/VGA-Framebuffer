@@ -1,5 +1,6 @@
 |top
-clk => clk.IN5
+clk => clk.IN1
+reset_n => _.IN1
 reset_n => _.IN1
 reset_n => _.IN1
 reset_n => _.IN1
@@ -31,11 +32,6 @@ vsync << vga:i_vga.vsync
 rgb[0] << RGBMemory_top:FrameBuffer.RGB
 rgb[1] << RGBMemory_top:FrameBuffer.RGB
 rgb[2] << RGBMemory_top:FrameBuffer.RGB
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-=======
-=======
->>>>>>> Stashed changes
 
 
 |top|pll:pll
@@ -113,7 +109,6 @@ clk[3] <= pll1.CLK3
 clk[4] <= pll1.CLK4
 inclk[0] => pll1.CLK
 inclk[1] => pll1.CLK1
->>>>>>> Stashed changes
 
 
 |top|vga:i_vga

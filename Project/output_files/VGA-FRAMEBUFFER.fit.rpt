@@ -1,16 +1,6 @@
 Fitter report for VGA-FRAMEBUFFER
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-Sat Jul 23 18:30:29 2022
-Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-=======
 Mon Jul 25 16:57:16 2022
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 Patches 1.02i SJ Lite Edition
->>>>>>> Stashed changes
-=======
-Mon Jul 25 16:57:16 2022
-Quartus Prime Version 20.1.1 Build 720 11/11/2020 Patches 1.02i SJ Lite Edition
->>>>>>> Stashed changes
 
 
 ---------------------
@@ -31,26 +21,26 @@ Quartus Prime Version 20.1.1 Build 720 11/11/2020 Patches 1.02i SJ Lite Edition
  13. Dual Purpose and Dedicated Pins
  14. I/O Bank Usage
  15. All Package Pins
- 16. I/O Assignment Warnings
- 17. Fitter Resource Utilization by Entity
- 18. Delay Chain Summary
- 19. Pad To Core Delay Chain Fanout
- 20. Control Signals
- 21. Global & Other Fast Signals
- 22. Fitter RAM Summary
- 23. Routing Usage Summary
- 24. LAB Logic Elements
- 25. LAB-wide Signals
- 26. LAB Signals Sourced
- 27. LAB Signals Sourced Out
- 28. LAB Distinct Inputs
- 29. I/O Rules Summary
- 30. I/O Rules Details
- 31. I/O Rules Matrix
- 32. Fitter Device Options
- 33. Operating Settings and Conditions
- 34. Estimated Delay Added for Hold Timing Summary
- 35. Estimated Delay Added for Hold Timing Details
+ 16. PLL Summary
+ 17. PLL Usage
+ 18. I/O Assignment Warnings
+ 19. Fitter Resource Utilization by Entity
+ 20. Delay Chain Summary
+ 21. Pad To Core Delay Chain Fanout
+ 22. Control Signals
+ 23. Global & Other Fast Signals
+ 24. Fitter RAM Summary
+ 25. Routing Usage Summary
+ 26. LAB Logic Elements
+ 27. LAB-wide Signals
+ 28. LAB Signals Sourced
+ 29. LAB Signals Sourced Out
+ 30. LAB Distinct Inputs
+ 31. I/O Rules Summary
+ 32. I/O Rules Details
+ 33. I/O Rules Matrix
+ 34. Fitter Device Options
+ 35. Operating Settings and Conditions
  36. Fitter Messages
  37. Fitter Suppressed Messages
 
@@ -76,31 +66,6 @@ https://fpgasoftware.intel.com/eula.
 
 
 
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-+----------------------------------------------------------------------------------+
-; Fitter Summary                                                                   ;
-+------------------------------------+---------------------------------------------+
-; Fitter Status                      ; Successful - Sat Jul 23 18:30:29 2022       ;
-; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
-; Revision Name                      ; VGA-FRAMEBUFFER                             ;
-; Top-level Entity Name              ; top                                         ;
-; Family                             ; Cyclone IV E                                ;
-; Device                             ; EP4CE10E22C8                                ;
-; Timing Models                      ; Final                                       ;
-; Total logic elements               ; 1,515 / 10,320 ( 15 % )                     ;
-;     Total combinational functions  ; 1,451 / 10,320 ( 14 % )                     ;
-;     Dedicated logic registers      ; 282 / 10,320 ( 3 % )                        ;
-; Total registers                    ; 282                                         ;
-; Total pins                         ; 28 / 92 ( 30 % )                            ;
-; Total virtual pins                 ; 0                                           ;
-; Total memory bits                  ; 15,000 / 423,936 ( 4 % )                    ;
-; Embedded Multiplier 9-bit elements ; 0 / 46 ( 0 % )                              ;
-; Total PLLs                         ; 0 / 2 ( 0 % )                               ;
-+------------------------------------+---------------------------------------------+
-=======
-=======
->>>>>>> Stashed changes
 +------------------------------------------------------------------------------------------------+
 ; Fitter Summary                                                                                 ;
 +------------------------------------+-----------------------------------------------------------+
@@ -121,10 +86,6 @@ https://fpgasoftware.intel.com/eula.
 ; Embedded Multiplier 9-bit elements ; 0 / 46 ( 0 % )                                            ;
 ; Total PLLs                         ; 1 / 2 ( 50 % )                                            ;
 +------------------------------------+-----------------------------------------------------------+
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
 
 
 +----------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -196,35 +157,15 @@ https://fpgasoftware.intel.com/eula.
 ; Maximum allowed            ; 6           ;
 ;                            ;             ;
 ; Average used               ; 1.10        ;
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-; Maximum used               ; 4           ;
-;                            ;             ;
-; Usage by Processor         ; % Time Used ;
-;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   3.6%      ;
-;     Processor 3            ;   3.2%      ;
-;     Processor 4            ;   2.8%      ;
-=======
 ; Maximum used               ; 6           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-=======
-; Maximum used               ; 6           ;
-;                            ;             ;
-; Usage by Processor         ; % Time Used ;
-;     Processor 1            ; 100.0%      ;
->>>>>>> Stashed changes
 ;     Processor 2            ;   2.2%      ;
 ;     Processor 3            ;   2.0%      ;
 ;     Processor 4            ;   2.0%      ;
 ;     Processor 5            ;   2.0%      ;
 ;     Processor 6            ;   2.0%      ;
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
 +----------------------------+-------------+
 
 
@@ -234,18 +175,8 @@ https://fpgasoftware.intel.com/eula.
 ; Type                ; Total [A + B]       ; From Design Partitions [A] ; From Rapid Recompile [B] ;
 +---------------------+---------------------+----------------------------+--------------------------+
 ; Placement (by node) ;                     ;                            ;                          ;
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-;     -- Requested    ; 0.00 % ( 0 / 1837 ) ; 0.00 % ( 0 / 1837 )        ; 0.00 % ( 0 / 1837 )      ;
-;     -- Achieved     ; 0.00 % ( 0 / 1837 ) ; 0.00 % ( 0 / 1837 )        ; 0.00 % ( 0 / 1837 )      ;
-=======
 ;     -- Requested    ; 0.00 % ( 0 / 1437 ) ; 0.00 % ( 0 / 1437 )        ; 0.00 % ( 0 / 1437 )      ;
 ;     -- Achieved     ; 0.00 % ( 0 / 1437 ) ; 0.00 % ( 0 / 1437 )        ; 0.00 % ( 0 / 1437 )      ;
->>>>>>> Stashed changes
-=======
-;     -- Requested    ; 0.00 % ( 0 / 1437 ) ; 0.00 % ( 0 / 1437 )        ; 0.00 % ( 0 / 1437 )      ;
-;     -- Achieved     ; 0.00 % ( 0 / 1437 ) ; 0.00 % ( 0 / 1437 )        ; 0.00 % ( 0 / 1437 )      ;
->>>>>>> Stashed changes
 ;                     ;                     ;                            ;                          ;
 ; Routing (by net)    ;                     ;                            ;                          ;
 ;     -- Requested    ; 0.00 % ( 0 / 0 )    ; 0.00 % ( 0 / 0 )           ; 0.00 % ( 0 / 0 )         ;
@@ -268,18 +199,8 @@ https://fpgasoftware.intel.com/eula.
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
 ; Partition Name                 ; Preservation Achieved ; Preservation Level Used ; Netlist Type Used ; Preservation Method ; Notes ;
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-; Top                            ; 0.00 % ( 0 / 1829 )   ; N/A                     ; Source File       ; N/A                 ;       ;
-; hard_block:auto_generated_inst ; 0.00 % ( 0 / 8 )      ; N/A                     ; Source File       ; N/A                 ;       ;
-=======
 ; Top                            ; 0.00 % ( 0 / 1427 )   ; N/A                     ; Source File       ; N/A                 ;       ;
 ; hard_block:auto_generated_inst ; 0.00 % ( 0 / 10 )     ; N/A                     ; Source File       ; N/A                 ;       ;
->>>>>>> Stashed changes
-=======
-; Top                            ; 0.00 % ( 0 / 1427 )   ; N/A                     ; Source File       ; N/A                 ;       ;
-; hard_block:auto_generated_inst ; 0.00 % ( 0 / 10 )     ; N/A                     ; Source File       ; N/A                 ;       ;
->>>>>>> Stashed changes
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
 
 
@@ -294,31 +215,6 @@ The pin-out file can be found in C:/Users/User/Downloads/VGA-Framebuffer-main/Pr
 +---------------------------------------------+--------------------------+
 ; Resource                                    ; Usage                    ;
 +---------------------------------------------+--------------------------+
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-; Total logic elements                        ; 1,515 / 10,320 ( 15 % )  ;
-;     -- Combinational with no register       ; 1233                     ;
-;     -- Register only                        ; 64                       ;
-;     -- Combinational with a register        ; 218                      ;
-;                                             ;                          ;
-; Logic element usage by number of LUT inputs ;                          ;
-;     -- 4 input functions                    ; 980                      ;
-;     -- 3 input functions                    ; 219                      ;
-;     -- <=2 input functions                  ; 252                      ;
-;     -- Register only                        ; 64                       ;
-;                                             ;                          ;
-; Logic elements by mode                      ;                          ;
-;     -- normal mode                          ; 1309                     ;
-;     -- arithmetic mode                      ; 142                      ;
-;                                             ;                          ;
-; Total registers*                            ; 282 / 10,732 ( 3 % )     ;
-;     -- Dedicated logic registers            ; 282 / 10,320 ( 3 % )     ;
-;     -- I/O registers                        ; 0 / 412 ( 0 % )          ;
-;                                             ;                          ;
-; Total LABs:  partially or completely used   ; 108 / 645 ( 17 % )       ;
-=======
-=======
->>>>>>> Stashed changes
 ; Total logic elements                        ; 1,118 / 10,320 ( 11 % )  ;
 ;     -- Combinational with no register       ; 838                      ;
 ;     -- Register only                        ; 66                       ;
@@ -339,10 +235,6 @@ The pin-out file can be found in C:/Users/User/Downloads/VGA-Framebuffer-main/Pr
 ;     -- I/O registers                        ; 0 / 412 ( 0 % )          ;
 ;                                             ;                          ;
 ; Total LABs:  partially or completely used   ; 90 / 645 ( 14 % )        ;
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
 ; Virtual pins                                ; 0                        ;
 ; I/O pins                                    ; 28 / 92 ( 30 % )         ;
 ;     -- Clock pins                           ; 4 / 3 ( 133 % )          ;
@@ -352,7 +244,7 @@ The pin-out file can be found in C:/Users/User/Downloads/VGA-Framebuffer-main/Pr
 ; Total block memory bits                     ; 15,000 / 423,936 ( 4 % ) ;
 ; Total block memory implementation bits      ; 27,648 / 423,936 ( 7 % ) ;
 ; Embedded Multiplier 9-bit elements          ; 0 / 46 ( 0 % )           ;
-; PLLs                                        ; 0 / 2 ( 0 % )            ;
+; PLLs                                        ; 1 / 2 ( 50 % )           ;
 ; Global signals                              ; 2                        ;
 ;     -- Global clocks                        ; 2 / 10 ( 20 % )          ;
 ; JTAGs                                       ; 0 / 1 ( 0 % )            ;
@@ -360,27 +252,12 @@ The pin-out file can be found in C:/Users/User/Downloads/VGA-Framebuffer-main/Pr
 ; ASMI blocks                                 ; 0 / 1 ( 0 % )            ;
 ; Oscillator blocks                           ; 0 / 1 ( 0 % )            ;
 ; Impedance control blocks                    ; 0 / 4 ( 0 % )            ;
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-; Average interconnect usage (total/H/V)      ; 2.2% / 2.0% / 2.4%       ;
-; Peak interconnect usage (total/H/V)         ; 5.2% / 4.3% / 6.4%       ;
-; Maximum fan-out                             ; 287                      ;
-; Highest non-global fan-out                  ; 248                      ;
-; Total fan-out                               ; 6048                     ;
-; Average fan-out                             ; 3.29                     ;
-=======
-=======
->>>>>>> Stashed changes
 ; Average interconnect usage (total/H/V)      ; 2.0% / 1.9% / 2.2%       ;
 ; Peak interconnect usage (total/H/V)         ; 7.5% / 6.8% / 8.5%       ;
 ; Maximum fan-out                             ; 285                      ;
 ; Highest non-global fan-out                  ; 148                      ;
 ; Total fan-out                               ; 4506                     ;
 ; Average fan-out                             ; 3.15                     ;
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
 +---------------------------------------------+--------------------------+
 *  Register count does not include registers inside RAM blocks or DSP blocks.
 
@@ -393,31 +270,6 @@ The pin-out file can be found in C:/Users/User/Downloads/VGA-Framebuffer-main/Pr
 +---------------------------------------------+-----------------------+--------------------------------+
 ; Difficulty Clustering Region                ; Low                   ; Low                            ;
 ;                                             ;                       ;                                ;
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-; Total logic elements                        ; 1515 / 10320 ( 15 % ) ; 0 / 10320 ( 0 % )              ;
-;     -- Combinational with no register       ; 1233                  ; 0                              ;
-;     -- Register only                        ; 64                    ; 0                              ;
-;     -- Combinational with a register        ; 218                   ; 0                              ;
-;                                             ;                       ;                                ;
-; Logic element usage by number of LUT inputs ;                       ;                                ;
-;     -- 4 input functions                    ; 980                   ; 0                              ;
-;     -- 3 input functions                    ; 219                   ; 0                              ;
-;     -- <=2 input functions                  ; 252                   ; 0                              ;
-;     -- Register only                        ; 64                    ; 0                              ;
-;                                             ;                       ;                                ;
-; Logic elements by mode                      ;                       ;                                ;
-;     -- normal mode                          ; 1309                  ; 0                              ;
-;     -- arithmetic mode                      ; 142                   ; 0                              ;
-;                                             ;                       ;                                ;
-; Total registers                             ; 282                   ; 0                              ;
-;     -- Dedicated logic registers            ; 282 / 10320 ( 3 % )   ; 0 / 10320 ( 0 % )              ;
-;     -- I/O registers                        ; 0                     ; 0                              ;
-;                                             ;                       ;                                ;
-; Total LABs:  partially or completely used   ; 108 / 645 ( 17 % )    ; 0 / 645 ( 0 % )                ;
-=======
-=======
->>>>>>> Stashed changes
 ; Total logic elements                        ; 1118 / 10320 ( 11 % ) ; 0 / 10320 ( 0 % )              ;
 ;     -- Combinational with no register       ; 838                   ; 0                              ;
 ;     -- Register only                        ; 66                    ; 0                              ;
@@ -438,41 +290,12 @@ The pin-out file can be found in C:/Users/User/Downloads/VGA-Framebuffer-main/Pr
 ;     -- I/O registers                        ; 0                     ; 0                              ;
 ;                                             ;                       ;                                ;
 ; Total LABs:  partially or completely used   ; 90 / 645 ( 14 % )     ; 0 / 645 ( 0 % )                ;
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
 ;                                             ;                       ;                                ;
 ; Virtual pins                                ; 0                     ; 0                              ;
 ; I/O pins                                    ; 28                    ; 0                              ;
 ; Embedded Multiplier 9-bit elements          ; 0 / 46 ( 0 % )        ; 0 / 46 ( 0 % )                 ;
 ; Total memory bits                           ; 15000                 ; 0                              ;
 ; Total RAM block bits                        ; 27648                 ; 0                              ;
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-; M9K                                         ; 3 / 46 ( 6 % )        ; 0 / 46 ( 0 % )                 ;
-; Clock control block                         ; 2 / 12 ( 16 % )       ; 0 / 12 ( 0 % )                 ;
-;                                             ;                       ;                                ;
-; Connections                                 ;                       ;                                ;
-;     -- Input Connections                    ; 0                     ; 0                              ;
-;     -- Registered Input Connections         ; 0                     ; 0                              ;
-;     -- Output Connections                   ; 0                     ; 0                              ;
-;     -- Registered Output Connections        ; 0                     ; 0                              ;
-;                                             ;                       ;                                ;
-; Internal Connections                        ;                       ;                                ;
-;     -- Total Connections                    ; 6084                  ; 4                              ;
-;     -- Registered Connections               ; 3084                  ; 0                              ;
-;                                             ;                       ;                                ;
-; External Connections                        ;                       ;                                ;
-;     -- Top                                  ; 0                     ; 0                              ;
-;     -- hard_block:auto_generated_inst       ; 0                     ; 0                              ;
-;                                             ;                       ;                                ;
-; Partition Interface                         ;                       ;                                ;
-;     -- Input Ports                          ; 6                     ; 0                              ;
-;     -- Output Ports                         ; 22                    ; 0                              ;
-=======
-=======
->>>>>>> Stashed changes
 ; PLL                                         ; 0 / 2 ( 0 % )         ; 1 / 2 ( 50 % )                 ;
 ; M9K                                         ; 3 / 46 ( 6 % )        ; 0 / 46 ( 0 % )                 ;
 ; Clock control block                         ; 1 / 12 ( 8 % )        ; 1 / 12 ( 8 % )                 ;
@@ -494,10 +317,6 @@ The pin-out file can be found in C:/Users/User/Downloads/VGA-Framebuffer-main/Pr
 ; Partition Interface                         ;                       ;                                ;
 ;     -- Input Ports                          ; 6                     ; 2                              ;
 ;     -- Output Ports                         ; 22                    ; 1                              ;
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
 ;     -- Bidir Ports                          ; 0                     ; 0                              ;
 ;                                             ;                       ;                                ;
 ; Registered Ports                            ;                       ;                                ;
@@ -521,28 +340,12 @@ The pin-out file can be found in C:/Users/User/Downloads/VGA-Framebuffer-main/Pr
 +-----------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+---------------------------+----------------------+-----------+
 ; Name      ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Z coordinate ; Combinational Fan-Out ; Registered Fan-Out ; Global ; Input Register ; Power Up High ; PCI I/O Enabled ; Bus Hold ; Weak Pull Up ; I/O Standard ; Termination Control Block ; Location assigned by ; Slew Rate ;
 +-----------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+---------------------------+----------------------+-----------+
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-; clk       ; 23    ; 1        ; 0            ; 11           ; 7            ; 287                   ; 0                  ; yes    ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL  ; --                        ; User                 ; no        ;
-=======
 ; clk       ; 23    ; 1        ; 0            ; 11           ; 7            ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL  ; --                        ; User                 ; no        ;
->>>>>>> Stashed changes
-=======
-; clk       ; 23    ; 1        ; 0            ; 11           ; 7            ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL  ; --                        ; User                 ; no        ;
->>>>>>> Stashed changes
 ; key_sw[0] ; 91    ; 6        ; 34           ; 12           ; 0            ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL  ; --                        ; User                 ; no        ;
 ; key_sw[1] ; 90    ; 6        ; 34           ; 12           ; 7            ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL  ; --                        ; User                 ; no        ;
 ; key_sw[2] ; 89    ; 5        ; 34           ; 12           ; 14           ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL  ; --                        ; User                 ; no        ;
 ; key_sw[3] ; 88    ; 5        ; 34           ; 12           ; 21           ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL  ; --                        ; User                 ; no        ;
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-; reset_n   ; 25    ; 2        ; 0            ; 11           ; 21           ; 136                   ; 0                  ; yes    ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL  ; --                        ; User                 ; no        ;
-=======
 ; reset_n   ; 25    ; 2        ; 0            ; 11           ; 21           ; 135                   ; 0                  ; yes    ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL  ; --                        ; User                 ; no        ;
->>>>>>> Stashed changes
-=======
-; reset_n   ; 25    ; 2        ; 0            ; 11           ; 21           ; 135                   ; 0                  ; yes    ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL  ; --                        ; User                 ; no        ;
->>>>>>> Stashed changes
 +-----------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+---------------------------+----------------------+-----------+
 
 
@@ -774,8 +577,6 @@ The pin-out file can be found in C:/Users/User/Downloads/VGA-Framebuffer-main/Pr
 Note: Pin directions (input, output or bidir) are based on device operating in user mode.
 
 
-<<<<<<< Updated upstream
-=======
 +------------------------------------------------------------------------------------------------+
 ; PLL Summary                                                                                    ;
 +-------------------------------+----------------------------------------------------------------+
@@ -826,10 +627,6 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 +----------------------------------------------------------------------------+--------------+------+-----+------------------+-------------+------------------+------------+---------+---------------+------------+---------------+---------+---------+-------------------------------------------------+
 
 
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
 +--------------------------------------+
 ; I/O Assignment Warnings              ;
 +-------------+------------------------+
@@ -865,28 +662,6 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 +----------------------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------+--------------+
 ; Compilation Hierarchy Node                   ; Logic Cells ; Dedicated Logic Registers ; I/O Registers ; Memory Bits ; M9Ks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Full Hierarchy Name                                                                                                                                         ; Entity Name          ; Library Name ;
 +----------------------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------+--------------+
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-; |top                                         ; 1515 (16)   ; 282 (0)                   ; 0 (0)         ; 15000       ; 3    ; 0            ; 0       ; 0         ; 28   ; 0            ; 1233 (16)    ; 64 (0)            ; 218 (14)         ; |top                                                                                                                                                        ; top                  ; work         ;
-;    |FIFO_top:FIFO|                           ; 223 (4)     ; 144 (4)                   ; 0 (0)         ; 600         ; 1    ; 0            ; 0       ; 0         ; 0    ; 0            ; 79 (0)       ; 59 (0)            ; 85 (4)           ; |top|FIFO_top:FIFO                                                                                                                                          ; FIFO_top             ; work         ;
-;       |flip_flop_fifo:HPOS_FIFO|             ; 55 (55)     ; 33 (33)                   ; 0 (0)         ; 300         ; 1    ; 0            ; 0       ; 0         ; 0    ; 0            ; 22 (22)      ; 6 (6)             ; 27 (27)          ; |top|FIFO_top:FIFO|flip_flop_fifo:HPOS_FIFO                                                                                                                 ; flip_flop_fifo       ; work         ;
-;          |altsyncram:data_rtl_0|             ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 300         ; 1    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; |top|FIFO_top:FIFO|flip_flop_fifo:HPOS_FIFO|altsyncram:data_rtl_0                                                                                           ; altsyncram           ; work         ;
-;             |altsyncram_acc1:auto_generated| ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 300         ; 1    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; |top|FIFO_top:FIFO|flip_flop_fifo:HPOS_FIFO|altsyncram:data_rtl_0|altsyncram_acc1:auto_generated                                                            ; altsyncram_acc1      ; work         ;
-;       |flip_flop_fifo:RGB_FIFO|              ; 147 (147)   ; 90 (90)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 57 (57)      ; 45 (45)           ; 45 (45)          ; |top|FIFO_top:FIFO|flip_flop_fifo:RGB_FIFO                                                                                                                  ; flip_flop_fifo       ; work         ;
-;       |flip_flop_fifo:VPOS_FIFO|             ; 18 (18)     ; 17 (17)                   ; 0 (0)         ; 300         ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 8 (8)             ; 10 (10)          ; |top|FIFO_top:FIFO|flip_flop_fifo:VPOS_FIFO                                                                                                                 ; flip_flop_fifo       ; work         ;
-;          |altsyncram:data_rtl_0|             ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 300         ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; |top|FIFO_top:FIFO|flip_flop_fifo:VPOS_FIFO|altsyncram:data_rtl_0                                                                                           ; altsyncram           ; work         ;
-;             |altsyncram_acc1:auto_generated| ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 300         ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; |top|FIFO_top:FIFO|flip_flop_fifo:VPOS_FIFO|altsyncram:data_rtl_0|altsyncram_acc1:auto_generated                                                            ; altsyncram_acc1      ; work         ;
-;    |RGBMemory_top:FrameBuffer|               ; 396 (0)     ; 71 (0)                    ; 0 (0)         ; 14400       ; 2    ; 0            ; 0       ; 0         ; 0    ; 0            ; 320 (0)      ; 4 (0)             ; 72 (0)           ; |top|RGBMemory_top:FrameBuffer                                                                                                                              ; RGBMemory_top        ; work         ;
-;       |RGBmemcoderdecoderv2:FBCODEC|         ; 357 (119)   ; 71 (71)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 281 (44)     ; 4 (4)             ; 72 (67)          ; |top|RGBMemory_top:FrameBuffer|RGBmemcoderdecoderv2:FBCODEC                                                                                                 ; RGBmemcoderdecoderv2 ; work         ;
-;          |lpm_divide:Div0|                   ; 49 (0)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 49 (0)       ; 0 (0)             ; 0 (0)            ; |top|RGBMemory_top:FrameBuffer|RGBmemcoderdecoderv2:FBCODEC|lpm_divide:Div0                                                                                 ; lpm_divide           ; work         ;
-;             |lpm_divide_uim:auto_generated|  ; 49 (0)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 49 (0)       ; 0 (0)             ; 0 (0)            ; |top|RGBMemory_top:FrameBuffer|RGBmemcoderdecoderv2:FBCODEC|lpm_divide:Div0|lpm_divide_uim:auto_generated                                                   ; lpm_divide_uim       ; work         ;
-;                |sign_div_unsign_mlh:divider| ; 49 (0)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 49 (0)       ; 0 (0)             ; 0 (0)            ; |top|RGBMemory_top:FrameBuffer|RGBmemcoderdecoderv2:FBCODEC|lpm_divide:Div0|lpm_divide_uim:auto_generated|sign_div_unsign_mlh:divider                       ; sign_div_unsign_mlh  ; work         ;
-;                   |alt_u_div_07f:divider|    ; 49 (49)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 49 (49)      ; 0 (0)             ; 0 (0)            ; |top|RGBMemory_top:FrameBuffer|RGBmemcoderdecoderv2:FBCODEC|lpm_divide:Div0|lpm_divide_uim:auto_generated|sign_div_unsign_mlh:divider|alt_u_div_07f:divider ; alt_u_div_07f        ; work         ;
-;          |lpm_divide:Div1|                   ; 73 (0)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 73 (0)       ; 0 (0)             ; 0 (0)            ; |top|RGBMemory_top:FrameBuffer|RGBmemcoderdecoderv2:FBCODEC|lpm_divide:Div1                                                                                 ; lpm_divide           ; work         ;
-;             |lpm_divide_rim:auto_generated|  ; 73 (0)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 73 (0)       ; 0 (0)             ; 0 (0)            ; |top|RGBMemory_top:FrameBuffer|RGBmemcoderdecoderv2:FBCODEC|lpm_divide:Div1|lpm_divide_rim:auto_generated                                                   ; lpm_divide_rim       ; work         ;
-;                |sign_div_unsign_jlh:divider| ; 73 (0)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 73 (0)       ; 0 (0)             ; 0 (0)            ; |top|RGBMemory_top:FrameBuffer|RGBmemcoderdecoderv2:FBCODEC|lpm_divide:Div1|lpm_divide_rim:auto_generated|sign_div_unsign_jlh:divider                       ; sign_div_unsign_jlh  ; work         ;
-;                   |alt_u_div_q6f:divider|    ; 73 (73)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 73 (73)      ; 0 (0)             ; 0 (0)            ; |top|RGBMemory_top:FrameBuffer|RGBmemcoderdecoderv2:FBCODEC|lpm_divide:Div1|lpm_divide_rim:auto_generated|sign_div_unsign_jlh:divider|alt_u_div_q6f:divider ; alt_u_div_q6f        ; work         ;
-=======
 ; |top                                         ; 1118 (17)   ; 280 (0)                   ; 0 (0)         ; 15000       ; 3    ; 0            ; 0       ; 0         ; 28   ; 0            ; 838 (17)     ; 66 (0)            ; 214 (13)         ; |top                                                                                                                                                        ; top                  ; work         ;
 ;    |FIFO_top:FIFO|                           ; 226 (4)     ; 144 (4)                   ; 0 (0)         ; 600         ; 1    ; 0            ; 0       ; 0         ; 0    ; 0            ; 82 (0)       ; 62 (0)            ; 82 (4)           ; |top|FIFO_top:FIFO                                                                                                                                          ; FIFO_top             ; work         ;
 ;       |flip_flop_fifo:HPOS_FIFO|             ; 58 (58)     ; 33 (33)                   ; 0 (0)         ; 300         ; 1    ; 0            ; 0       ; 0         ; 0    ; 0            ; 25 (25)      ; 11 (11)           ; 22 (22)          ; |top|FIFO_top:FIFO|flip_flop_fifo:HPOS_FIFO                                                                                                                 ; flip_flop_fifo       ; work         ;
@@ -896,17 +671,6 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 ;       |flip_flop_fifo:VPOS_FIFO|             ; 17 (17)     ; 17 (17)                   ; 0 (0)         ; 300         ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 6 (6)             ; 11 (11)          ; |top|FIFO_top:FIFO|flip_flop_fifo:VPOS_FIFO                                                                                                                 ; flip_flop_fifo       ; work         ;
 ;          |altsyncram:data_rtl_0|             ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 300         ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; |top|FIFO_top:FIFO|flip_flop_fifo:VPOS_FIFO|altsyncram:data_rtl_0                                                                                           ; altsyncram           ; work         ;
 ;             |altsyncram_acc1:auto_generated| ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 300         ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; |top|FIFO_top:FIFO|flip_flop_fifo:VPOS_FIFO|altsyncram:data_rtl_0|altsyncram_acc1:auto_generated                                                            ; altsyncram_acc1      ; work         ;
-=======
-; |top                                         ; 1118 (17)   ; 280 (0)                   ; 0 (0)         ; 15000       ; 3    ; 0            ; 0       ; 0         ; 28   ; 0            ; 838 (17)     ; 66 (0)            ; 214 (13)         ; |top                                                                                                                                                        ; top                  ; work         ;
-;    |FIFO_top:FIFO|                           ; 226 (4)     ; 144 (4)                   ; 0 (0)         ; 600         ; 1    ; 0            ; 0       ; 0         ; 0    ; 0            ; 82 (0)       ; 62 (0)            ; 82 (4)           ; |top|FIFO_top:FIFO                                                                                                                                          ; FIFO_top             ; work         ;
-;       |flip_flop_fifo:HPOS_FIFO|             ; 58 (58)     ; 33 (33)                   ; 0 (0)         ; 300         ; 1    ; 0            ; 0       ; 0         ; 0    ; 0            ; 25 (25)      ; 11 (11)           ; 22 (22)          ; |top|FIFO_top:FIFO|flip_flop_fifo:HPOS_FIFO                                                                                                                 ; flip_flop_fifo       ; work         ;
-;          |altsyncram:data_rtl_0|             ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 300         ; 1    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; |top|FIFO_top:FIFO|flip_flop_fifo:HPOS_FIFO|altsyncram:data_rtl_0                                                                                           ; altsyncram           ; work         ;
-;             |altsyncram_acc1:auto_generated| ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 300         ; 1    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; |top|FIFO_top:FIFO|flip_flop_fifo:HPOS_FIFO|altsyncram:data_rtl_0|altsyncram_acc1:auto_generated                                                            ; altsyncram_acc1      ; work         ;
-;       |flip_flop_fifo:RGB_FIFO|              ; 147 (147)   ; 90 (90)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 57 (57)      ; 45 (45)           ; 45 (45)          ; |top|FIFO_top:FIFO|flip_flop_fifo:RGB_FIFO                                                                                                                  ; flip_flop_fifo       ; work         ;
-;       |flip_flop_fifo:VPOS_FIFO|             ; 17 (17)     ; 17 (17)                   ; 0 (0)         ; 300         ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 6 (6)             ; 11 (11)          ; |top|FIFO_top:FIFO|flip_flop_fifo:VPOS_FIFO                                                                                                                 ; flip_flop_fifo       ; work         ;
-;          |altsyncram:data_rtl_0|             ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 300         ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; |top|FIFO_top:FIFO|flip_flop_fifo:VPOS_FIFO|altsyncram:data_rtl_0                                                                                           ; altsyncram           ; work         ;
-;             |altsyncram_acc1:auto_generated| ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 300         ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; |top|FIFO_top:FIFO|flip_flop_fifo:VPOS_FIFO|altsyncram:data_rtl_0|altsyncram_acc1:auto_generated                                                            ; altsyncram_acc1      ; work         ;
->>>>>>> Stashed changes
 ;    |RGBMemory_top:FrameBuffer|               ; 400 (0)     ; 71 (0)                    ; 0 (0)         ; 14400       ; 2    ; 0            ; 0       ; 0         ; 0    ; 0            ; 324 (0)      ; 3 (0)             ; 73 (0)           ; |top|RGBMemory_top:FrameBuffer                                                                                                                              ; RGBMemory_top        ; work         ;
 ;       |RGBmemcoderdecoderv2:FBCODEC|         ; 361 (118)   ; 71 (71)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 285 (43)     ; 3 (3)             ; 73 (68)          ; |top|RGBMemory_top:FrameBuffer|RGBmemcoderdecoderv2:FBCODEC                                                                                                 ; RGBmemcoderdecoderv2 ; work         ;
 ;          |lpm_divide:Div0|                   ; 54 (0)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 54 (0)       ; 0 (0)             ; 0 (0)            ; |top|RGBMemory_top:FrameBuffer|RGBmemcoderdecoderv2:FBCODEC|lpm_divide:Div0                                                                                 ; lpm_divide           ; work         ;
@@ -917,10 +681,6 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 ;             |lpm_divide_rim:auto_generated|  ; 73 (0)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 72 (0)       ; 0 (0)             ; 1 (0)            ; |top|RGBMemory_top:FrameBuffer|RGBmemcoderdecoderv2:FBCODEC|lpm_divide:Div1|lpm_divide_rim:auto_generated                                                   ; lpm_divide_rim       ; work         ;
 ;                |sign_div_unsign_jlh:divider| ; 73 (0)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 72 (0)       ; 0 (0)             ; 1 (0)            ; |top|RGBMemory_top:FrameBuffer|RGBmemcoderdecoderv2:FBCODEC|lpm_divide:Div1|lpm_divide_rim:auto_generated|sign_div_unsign_jlh:divider                       ; sign_div_unsign_jlh  ; work         ;
 ;                   |alt_u_div_q6f:divider|    ; 73 (73)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 72 (72)      ; 0 (0)             ; 1 (1)            ; |top|RGBMemory_top:FrameBuffer|RGBmemcoderdecoderv2:FBCODEC|lpm_divide:Div1|lpm_divide_rim:auto_generated|sign_div_unsign_jlh:divider|alt_u_div_q6f:divider ; alt_u_div_q6f        ; work         ;
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
 ;          |lpm_divide:Mod0|                   ; 45 (0)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 43 (0)       ; 0 (0)             ; 2 (0)            ; |top|RGBMemory_top:FrameBuffer|RGBmemcoderdecoderv2:FBCODEC|lpm_divide:Mod0                                                                                 ; lpm_divide           ; work         ;
 ;             |lpm_divide_k9m:auto_generated|  ; 45 (0)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 43 (0)       ; 0 (0)             ; 2 (0)            ; |top|RGBMemory_top:FrameBuffer|RGBmemcoderdecoderv2:FBCODEC|lpm_divide:Mod0|lpm_divide_k9m:auto_generated                                                   ; lpm_divide_k9m       ; work         ;
 ;                |sign_div_unsign_9kh:divider| ; 45 (0)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 43 (0)       ; 0 (0)             ; 2 (0)            ; |top|RGBMemory_top:FrameBuffer|RGBmemcoderdecoderv2:FBCODEC|lpm_divide:Mod0|lpm_divide_k9m:auto_generated|sign_div_unsign_9kh:divider                       ; sign_div_unsign_9kh  ; work         ;
@@ -938,24 +698,12 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 ;       |single_port_ram:R_MEMORY|             ; 6 (6)       ; 0 (0)                     ; 0 (0)         ; 4800        ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 6 (6)        ; 0 (0)             ; 0 (0)            ; |top|RGBMemory_top:FrameBuffer|single_port_ram:R_MEMORY                                                                                                     ; single_port_ram      ; work         ;
 ;          |altsyncram:ramblock_rtl_0|         ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 4800        ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; |top|RGBMemory_top:FrameBuffer|single_port_ram:R_MEMORY|altsyncram:ramblock_rtl_0                                                                           ; altsyncram           ; work         ;
 ;             |altsyncram_1of1:auto_generated| ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 4800        ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; |top|RGBMemory_top:FrameBuffer|single_port_ram:R_MEMORY|altsyncram:ramblock_rtl_0|altsyncram_1of1:auto_generated                                            ; altsyncram_1of1      ; work         ;
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-;    |ROM_top:ROM|                             ; 803 (803)   ; 30 (30)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 773 (773)    ; 0 (0)             ; 30 (30)          ; |top|ROM_top:ROM                                                                                                                                            ; ROM_top              ; work         ;
-;    |memsyncreset:memsyncreset|               ; 29 (29)     ; 14 (14)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 15 (15)      ; 0 (0)             ; 14 (14)          ; |top|memsyncreset:memsyncreset                                                                                                                              ; memsyncreset         ; work         ;
-;    |vga:i_vga|                               ; 53 (53)     ; 23 (23)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 30 (30)      ; 1 (1)             ; 22 (22)          ; |top|vga:i_vga                                                                                                                                              ; vga                  ; work         ;
-=======
-=======
->>>>>>> Stashed changes
 ;    |ROM_top:ROM|                             ; 399 (399)   ; 28 (28)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 371 (371)    ; 0 (0)             ; 28 (28)          ; |top|ROM_top:ROM                                                                                                                                            ; ROM_top              ; work         ;
 ;    |memsyncreset:memsyncreset|               ; 29 (29)     ; 14 (14)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 15 (15)      ; 0 (0)             ; 14 (14)          ; |top|memsyncreset:memsyncreset                                                                                                                              ; memsyncreset         ; work         ;
 ;    |pll:pll|                                 ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; |top|pll:pll                                                                                                                                                ; pll                  ; work         ;
 ;       |altpll:altpll_component|              ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; |top|pll:pll|altpll:altpll_component                                                                                                                        ; altpll               ; work         ;
 ;          |pll_altpll:auto_generated|         ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; |top|pll:pll|altpll:altpll_component|pll_altpll:auto_generated                                                                                              ; pll_altpll           ; work         ;
 ;    |vga:i_vga|                               ; 52 (52)     ; 23 (23)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 29 (29)      ; 1 (1)             ; 22 (22)          ; |top|vga:i_vga                                                                                                                                              ; vga                  ; work         ;
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
 +----------------------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -991,14 +739,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; key_sw[1]   ; Input    ; (0) 0 ps      ; --            ; --                    ; --  ; --   ;
 ; key_sw[2]   ; Input    ; (0) 0 ps      ; --            ; --                    ; --  ; --   ;
 ; key_sw[3]   ; Input    ; (0) 0 ps      ; --            ; --                    ; --  ; --   ;
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-; clk         ; Input    ; (0) 0 ps      ; --            ; --                    ; --  ; --   ;
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
 ; reset_n     ; Input    ; (0) 0 ps      ; --            ; --                    ; --  ; --   ;
+; clk         ; Input    ; --            ; --            ; --                    ; --  ; --   ;
 +-------------+----------+---------------+---------------+-----------------------+-----+------+
 
 
@@ -1011,88 +753,6 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; key_sw[1]           ;                   ;         ;
 ; key_sw[2]           ;                   ;         ;
 ; key_sw[3]           ;                   ;         ;
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-; clk                 ;                   ;         ;
-; reset_n             ;                   ;         ;
-+---------------------+-------------------+---------+
-
-
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Control Signals                                                                                                                                                                                                     ;
-+--------------------------------------------------------------------------+--------------------+---------+----------------------------+--------+----------------------+------------------+---------------------------+
-; Name                                                                     ; Location           ; Fan-Out ; Usage                      ; Global ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
-+--------------------------------------------------------------------------+--------------------+---------+----------------------------+--------+----------------------+------------------+---------------------------+
-; FIFO_top:FIFO|flip_flop_fifo:HPOS_FIFO|always2~2                         ; LCCOMB_X28_Y12_N8  ; 3       ; Write enable               ; no     ; --                   ; --               ; --                        ;
-; FIFO_top:FIFO|flip_flop_fifo:HPOS_FIFO|cnt[3]~15                         ; LCCOMB_X28_Y12_N26 ; 5       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
-; FIFO_top:FIFO|flip_flop_fifo:HPOS_FIFO|wr_ptr[3]~8                       ; LCCOMB_X21_Y12_N28 ; 5       ; Sync. clear                ; no     ; --                   ; --               ; --                        ;
-; FIFO_top:FIFO|flip_flop_fifo:HPOS_FIFO|wr_ptr[3]~9                       ; LCCOMB_X21_Y12_N30 ; 5       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
-; FIFO_top:FIFO|flip_flop_fifo:RGB_FIFO|data~148                           ; LCCOMB_X22_Y8_N4   ; 3       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
-; FIFO_top:FIFO|flip_flop_fifo:RGB_FIFO|data~150                           ; LCCOMB_X22_Y9_N8   ; 3       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
-; FIFO_top:FIFO|flip_flop_fifo:RGB_FIFO|data~152                           ; LCCOMB_X22_Y9_N26  ; 3       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
-; FIFO_top:FIFO|flip_flop_fifo:RGB_FIFO|data~154                           ; LCCOMB_X22_Y9_N4   ; 3       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
-; FIFO_top:FIFO|flip_flop_fifo:RGB_FIFO|data~156                           ; LCCOMB_X22_Y8_N30  ; 3       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
-; FIFO_top:FIFO|flip_flop_fifo:RGB_FIFO|data~158                           ; LCCOMB_X21_Y8_N16  ; 3       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
-; FIFO_top:FIFO|flip_flop_fifo:RGB_FIFO|data~160                           ; LCCOMB_X21_Y8_N8   ; 3       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
-; FIFO_top:FIFO|flip_flop_fifo:RGB_FIFO|data~162                           ; LCCOMB_X22_Y8_N14  ; 3       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
-; FIFO_top:FIFO|flip_flop_fifo:RGB_FIFO|data~163                           ; LCCOMB_X22_Y8_N8   ; 3       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
-; FIFO_top:FIFO|flip_flop_fifo:RGB_FIFO|data~164                           ; LCCOMB_X22_Y8_N6   ; 3       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
-; FIFO_top:FIFO|flip_flop_fifo:RGB_FIFO|data~165                           ; LCCOMB_X23_Y9_N14  ; 3       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
-; FIFO_top:FIFO|flip_flop_fifo:RGB_FIFO|data~166                           ; LCCOMB_X23_Y9_N8   ; 3       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
-; FIFO_top:FIFO|flip_flop_fifo:RGB_FIFO|data~167                           ; LCCOMB_X21_Y8_N26  ; 3       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
-; FIFO_top:FIFO|flip_flop_fifo:RGB_FIFO|data~168                           ; LCCOMB_X21_Y8_N4   ; 3       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
-; FIFO_top:FIFO|flip_flop_fifo:RGB_FIFO|data~169                           ; LCCOMB_X21_Y8_N30  ; 3       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
-; FIFO_top:FIFO|flip_flop_fifo:RGB_FIFO|data~170                           ; LCCOMB_X22_Y9_N18  ; 3       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
-; FIFO_top:FIFO|flip_flop_fifo:RGB_FIFO|data~172                           ; LCCOMB_X22_Y8_N16  ; 3       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
-; FIFO_top:FIFO|flip_flop_fifo:RGB_FIFO|data~174                           ; LCCOMB_X24_Y8_N30  ; 3       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
-; FIFO_top:FIFO|flip_flop_fifo:RGB_FIFO|data~175                           ; LCCOMB_X24_Y8_N4   ; 3       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
-; FIFO_top:FIFO|flip_flop_fifo:RGB_FIFO|data~176                           ; LCCOMB_X22_Y8_N26  ; 3       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
-; FIFO_top:FIFO|flip_flop_fifo:RGB_FIFO|data~178                           ; LCCOMB_X23_Y7_N6   ; 3       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
-; FIFO_top:FIFO|flip_flop_fifo:RGB_FIFO|data~180                           ; LCCOMB_X24_Y10_N26 ; 3       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
-; FIFO_top:FIFO|flip_flop_fifo:RGB_FIFO|data~181                           ; LCCOMB_X23_Y7_N12  ; 3       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
-; FIFO_top:FIFO|flip_flop_fifo:RGB_FIFO|data~182                           ; LCCOMB_X24_Y10_N4  ; 3       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
-; FIFO_top:FIFO|flip_flop_fifo:RGB_FIFO|data~184                           ; LCCOMB_X23_Y7_N24  ; 3       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
-; FIFO_top:FIFO|flip_flop_fifo:RGB_FIFO|data~186                           ; LCCOMB_X23_Y7_N4   ; 3       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
-; FIFO_top:FIFO|flip_flop_fifo:RGB_FIFO|data~187                           ; LCCOMB_X23_Y7_N18  ; 3       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
-; FIFO_top:FIFO|flip_flop_fifo:RGB_FIFO|data~188                           ; LCCOMB_X23_Y7_N28  ; 3       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
-; FIFO_top:FIFO|flip_flop_fifo:RGB_FIFO|data~190                           ; LCCOMB_X24_Y10_N24 ; 3       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
-; FIFO_top:FIFO|flip_flop_fifo:RGB_FIFO|data~191                           ; LCCOMB_X24_Y10_N30 ; 3       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
-; RGBMemory_top:FrameBuffer|RGBmemcoderdecoderv2:FBCODEC|Bdatabuf[1]~7     ; LCCOMB_X17_Y13_N12 ; 3       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
-; RGBMemory_top:FrameBuffer|RGBmemcoderdecoderv2:FBCODEC|Bdatabuf~1        ; LCCOMB_X23_Y13_N18 ; 18      ; Sync. clear                ; no     ; --                   ; --               ; --                        ;
-; RGBMemory_top:FrameBuffer|RGBmemcoderdecoderv2:FBCODEC|Gdatabuf[2]~6     ; LCCOMB_X18_Y13_N18 ; 3       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
-; RGBMemory_top:FrameBuffer|RGBmemcoderdecoderv2:FBCODEC|Gdatabuf[4]~4     ; LCCOMB_X18_Y13_N22 ; 3       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
-; RGBMemory_top:FrameBuffer|RGBmemcoderdecoderv2:FBCODEC|Gdatatomem[2]~0   ; LCCOMB_X21_Y13_N2  ; 18      ; Clock enable               ; no     ; --                   ; --               ; --                        ;
-; RGBMemory_top:FrameBuffer|RGBmemcoderdecoderv2:FBCODEC|Rdatabuf[0]~4     ; LCCOMB_X18_Y13_N20 ; 3       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
-; RGBMemory_top:FrameBuffer|RGBmemcoderdecoderv2:FBCODEC|Rdatabuf[3]~6     ; LCCOMB_X17_Y13_N18 ; 3       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
-; RGBMemory_top:FrameBuffer|RGBmemcoderdecoderv2:FBCODEC|Rdatabuf[5]~2     ; LCCOMB_X18_Y13_N14 ; 3       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
-; RGBMemory_top:FrameBuffer|RGBmemcoderdecoderv2:FBCODEC|addr_w[0]~7       ; LCCOMB_X21_Y11_N4  ; 9       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
-; RGBMemory_top:FrameBuffer|RGBmemcoderdecoderv2:FBCODEC|dataselect_w[0]~0 ; LCCOMB_X23_Y13_N28 ; 3       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
-; RGBMemory_top:FrameBuffer|RGBmemcoderdecoderv2:FBCODEC|w_state.011       ; FF_X23_Y12_N25     ; 27      ; Sync. load                 ; no     ; --                   ; --               ; --                        ;
-; RGBMemory_top:FrameBuffer|RGBmemcoderdecoderv2:FBCODEC|w_state~16        ; LCCOMB_X23_Y13_N0  ; 18      ; Clock enable               ; no     ; --                   ; --               ; --                        ;
-; RGBMemory_top:FrameBuffer|RGBmemcoderdecoderv2:FBCODEC|w_state~23        ; LCCOMB_X23_Y12_N12 ; 4       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
-; RGBMemory_top:FrameBuffer|single_port_ram:B_MEMORY|we_x~0                ; LCCOMB_X18_Y14_N30 ; 2       ; Clock enable, Write enable ; no     ; --                   ; --               ; --                        ;
-; ROM_top:ROM|counter[12]~31                                               ; LCCOMB_X19_Y11_N24 ; 13      ; Clock enable               ; no     ; --                   ; --               ; --                        ;
-; ROM_top:ROM|hpos[2]~0                                                    ; LCCOMB_X19_Y11_N30 ; 17      ; Clock enable               ; no     ; --                   ; --               ; --                        ;
-; clk                                                                      ; PIN_23             ; 285     ; Clock                      ; yes    ; Global Clock         ; GCLK2            ; --                        ;
-; hpos_to_fb[9]~2                                                          ; LCCOMB_X28_Y12_N12 ; 24      ; Clock enable               ; no     ; --                   ; --               ; --                        ;
-; memsyncreset:memsyncreset|memenable                                      ; FF_X19_Y12_N15     ; 76      ; Clock enable               ; no     ; --                   ; --               ; --                        ;
-; reset_n                                                                  ; PIN_25             ; 114     ; Clock enable, Sync. clear  ; no     ; --                   ; --               ; --                        ;
-; reset_n                                                                  ; PIN_25             ; 23      ; Async. clear               ; yes    ; Global Clock         ; GCLK3            ; --                        ;
-; vga:i_vga|display_on                                                     ; FF_X25_Y12_N17     ; 80      ; Sync. load                 ; no     ; --                   ; --               ; --                        ;
-+--------------------------------------------------------------------------+--------------------+---------+----------------------------+--------+----------------------+------------------+---------------------------+
-
-
-+-------------------------------------------------------------------------------------------------------------------------------------------+
-; Global & Other Fast Signals                                                                                                               ;
-+---------+----------+---------+--------------------------------------+----------------------+------------------+---------------------------+
-; Name    ; Location ; Fan-Out ; Fan-Out Using Intentional Clock Skew ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
-+---------+----------+---------+--------------------------------------+----------------------+------------------+---------------------------+
-; clk     ; PIN_23   ; 285     ; 9                                    ; Global Clock         ; GCLK2            ; --                        ;
-; reset_n ; PIN_25   ; 23      ; 0                                    ; Global Clock         ; GCLK3            ; --                        ;
-+---------+----------+---------+--------------------------------------+----------------------+------------------+---------------------------+
-=======
-=======
->>>>>>> Stashed changes
 ; reset_n             ;                   ;         ;
 ; clk                 ;                   ;         ;
 +---------------------+-------------------+---------+
@@ -1171,7 +831,6 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; pll:pll|altpll:altpll_component|pll_altpll:auto_generated|wire_pll1_clk[0] ; PLL_1    ; 283     ; 0                                    ; Global Clock         ; GCLK3            ; --                        ;
 ; reset_n                                                                    ; PIN_25   ; 24      ; 0                                    ; Global Clock         ; GCLK0            ; --                        ;
 +----------------------------------------------------------------------------+----------+---------+--------------------------------------+----------------------+------------------+---------------------------+
->>>>>>> Stashed changes
 
 
 +--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -1179,22 +838,11 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +------------------------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+--------------+------------------------+-------------------------+------------------------+-------------------------+------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+---------------------+------+------+--------------------------------+----------------------+------------------------+------------------------+----------+------------------------+---------------+
 ; Name                                                                                                                   ; Type ; Mode             ; Clock Mode   ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Port A Input Registers ; Port A Output Registers ; Port B Input Registers ; Port B Output Registers ; Size ; Implementation Port A Depth ; Implementation Port A Width ; Implementation Port B Depth ; Implementation Port B Width ; Implementation Bits ; M9Ks ; MIF  ; Location                       ; Mixed Width RDW Mode ; Port A RDW Mode        ; Port B RDW Mode        ; ECC Mode ; ECC Pipeline Registers ; Fits in MLABs ;
 +------------------------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+--------------+------------------------+-------------------------+------------------------+-------------------------+------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+---------------------+------+------+--------------------------------+----------------------+------------------------+------------------------+----------+------------------------+---------------+
-<<<<<<< Updated upstream
-; FIFO_top:FIFO|flip_flop_fifo:HPOS_FIFO|altsyncram:data_rtl_0|altsyncram_acc1:auto_generated|ALTSYNCRAM                 ; AUTO ; Simple Dual Port ; Single Clock ; 30           ; 10           ; 30           ; 10           ; yes                    ; no                      ; yes                    ; no                      ; 300  ; 30                          ; 10                          ; 30                          ; 10                          ; 300                 ; 1    ; None ; M9K_X27_Y12_N0                 ; Don't care           ; New data with NBE Read ; New data with NBE Read ; Off      ; No                     ; No - Unknown  ;
-; FIFO_top:FIFO|flip_flop_fifo:VPOS_FIFO|altsyncram:data_rtl_0|altsyncram_acc1:auto_generated|ALTSYNCRAM                 ; AUTO ; Simple Dual Port ; Single Clock ; 30           ; 10           ; 30           ; 10           ; yes                    ; no                      ; yes                    ; no                      ; 300  ; 30                          ; 10                          ; 30                          ; 10                          ; 300                 ; 1    ; None ; M9K_X27_Y12_N0                 ; Don't care           ; New data with NBE Read ; New data with NBE Read ; Off      ; No                     ; No - Unknown  ;
-; RGBMemory_top:FrameBuffer|single_port_ram:B_MEMORY|altsyncram:ramblock_rtl_0|altsyncram_1of1:auto_generated|ALTSYNCRAM ; M9K  ; Simple Dual Port ; Single Clock ; 800          ; 6            ; 800          ; 6            ; yes                    ; no                      ; yes                    ; no                      ; 4800 ; 800                         ; 6                           ; 800                         ; 6                           ; 4800                ; 1    ; None ; M9K_X15_Y14_N0                 ; Don't care           ; New data with NBE Read ; New data with NBE Read ; Off      ; No                     ; No - Unknown  ;
-; RGBMemory_top:FrameBuffer|single_port_ram:G_MEMORY|altsyncram:ramblock_rtl_0|altsyncram_1of1:auto_generated|ALTSYNCRAM ; M9K  ; Simple Dual Port ; Single Clock ; 800          ; 6            ; 800          ; 6            ; yes                    ; no                      ; yes                    ; no                      ; 4800 ; 800                         ; 6                           ; 800                         ; 6                           ; 4800                ; 2    ; None ; M9K_X15_Y14_N0, M9K_X15_Y13_N0 ; Don't care           ; New data with NBE Read ; New data with NBE Read ; Off      ; No                     ; No - Unknown  ;
-; RGBMemory_top:FrameBuffer|single_port_ram:R_MEMORY|altsyncram:ramblock_rtl_0|altsyncram_1of1:auto_generated|ALTSYNCRAM ; M9K  ; Simple Dual Port ; Single Clock ; 800          ; 6            ; 800          ; 6            ; yes                    ; no                      ; yes                    ; no                      ; 4800 ; 800                         ; 6                           ; 800                         ; 6                           ; 4800                ; 1    ; None ; M9K_X15_Y13_N0                 ; Don't care           ; New data with NBE Read ; New data with NBE Read ; Off      ; No                     ; No - Unknown  ;
-=======
 ; FIFO_top:FIFO|flip_flop_fifo:HPOS_FIFO|altsyncram:data_rtl_0|altsyncram_acc1:auto_generated|ALTSYNCRAM                 ; AUTO ; Simple Dual Port ; Single Clock ; 30           ; 10           ; 30           ; 10           ; yes                    ; no                      ; yes                    ; no                      ; 300  ; 30                          ; 10                          ; 30                          ; 10                          ; 300                 ; 1    ; None ; M9K_X15_Y15_N0                 ; Don't care           ; New data with NBE Read ; New data with NBE Read ; Off      ; No                     ; No - Unknown  ;
 ; FIFO_top:FIFO|flip_flop_fifo:VPOS_FIFO|altsyncram:data_rtl_0|altsyncram_acc1:auto_generated|ALTSYNCRAM                 ; AUTO ; Simple Dual Port ; Single Clock ; 30           ; 10           ; 30           ; 10           ; yes                    ; no                      ; yes                    ; no                      ; 300  ; 30                          ; 10                          ; 30                          ; 10                          ; 300                 ; 1    ; None ; M9K_X15_Y15_N0                 ; Don't care           ; New data with NBE Read ; New data with NBE Read ; Off      ; No                     ; No - Unknown  ;
 ; RGBMemory_top:FrameBuffer|single_port_ram:B_MEMORY|altsyncram:ramblock_rtl_0|altsyncram_1of1:auto_generated|ALTSYNCRAM ; M9K  ; Simple Dual Port ; Single Clock ; 800          ; 6            ; 800          ; 6            ; yes                    ; no                      ; yes                    ; no                      ; 4800 ; 800                         ; 6                           ; 800                         ; 6                           ; 4800                ; 1    ; None ; M9K_X15_Y20_N0                 ; Don't care           ; New data with NBE Read ; New data with NBE Read ; Off      ; No                     ; No - Unknown  ;
 ; RGBMemory_top:FrameBuffer|single_port_ram:G_MEMORY|altsyncram:ramblock_rtl_0|altsyncram_1of1:auto_generated|ALTSYNCRAM ; M9K  ; Simple Dual Port ; Single Clock ; 800          ; 6            ; 800          ; 6            ; yes                    ; no                      ; yes                    ; no                      ; 4800 ; 800                         ; 6                           ; 800                         ; 6                           ; 4800                ; 2    ; None ; M9K_X15_Y20_N0, M9K_X15_Y19_N0 ; Don't care           ; New data with NBE Read ; New data with NBE Read ; Off      ; No                     ; No - Unknown  ;
 ; RGBMemory_top:FrameBuffer|single_port_ram:R_MEMORY|altsyncram:ramblock_rtl_0|altsyncram_1of1:auto_generated|ALTSYNCRAM ; M9K  ; Simple Dual Port ; Single Clock ; 800          ; 6            ; 800          ; 6            ; yes                    ; no                      ; yes                    ; no                      ; 4800 ; 800                         ; 6                           ; 800                         ; 6                           ; 4800                ; 1    ; None ; M9K_X15_Y19_N0                 ; Don't care           ; New data with NBE Read ; New data with NBE Read ; Off      ; No                     ; No - Unknown  ;
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
 +------------------------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+--------------+------------------------+-------------------------+------------------------+-------------------------+------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+---------------------+------+------+--------------------------------+----------------------+------------------------+------------------------+----------+------------------------+---------------+
 Note: Fitter may spread logical memories into multiple blocks to improve timing. The actual required RAM blocks can be found in the Fitter Resource Usage section.
 
@@ -1204,173 +852,11 @@ Note: Fitter may spread logical memories into multiple blocks to improve timing.
 +-----------------------+------------------------+
 ; Routing Resource Type ; Usage                  ;
 +-----------------------+------------------------+
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-; Block interconnects   ; 1,564 / 32,401 ( 5 % ) ;
-; C16 interconnects     ; 2 / 1,326 ( < 1 % )    ;
-; C4 interconnects      ; 537 / 21,816 ( 2 % )   ;
-; Direct links          ; 299 / 32,401 ( < 1 % ) ;
-; Global clocks         ; 2 / 10 ( 20 % )        ;
-; Local interconnects   ; 962 / 10,320 ( 9 % )   ;
-; R24 interconnects     ; 5 / 1,289 ( < 1 % )    ;
-; R4 interconnects      ; 601 / 28,186 ( 2 % )   ;
-+-----------------------+------------------------+
-
-
-+-----------------------------------------------------------------------------+
-; LAB Logic Elements                                                          ;
-+---------------------------------------------+-------------------------------+
-; Number of Logic Elements  (Average = 14.03) ; Number of LABs  (Total = 108) ;
-+---------------------------------------------+-------------------------------+
-; 1                                           ; 2                             ;
-; 2                                           ; 0                             ;
-; 3                                           ; 1                             ;
-; 4                                           ; 0                             ;
-; 5                                           ; 1                             ;
-; 6                                           ; 7                             ;
-; 7                                           ; 2                             ;
-; 8                                           ; 0                             ;
-; 9                                           ; 2                             ;
-; 10                                          ; 3                             ;
-; 11                                          ; 2                             ;
-; 12                                          ; 3                             ;
-; 13                                          ; 3                             ;
-; 14                                          ; 1                             ;
-; 15                                          ; 6                             ;
-; 16                                          ; 75                            ;
-+---------------------------------------------+-------------------------------+
-
-
-+--------------------------------------------------------------------+
-; LAB-wide Signals                                                   ;
-+------------------------------------+-------------------------------+
-; LAB-wide Signals  (Average = 0.88) ; Number of LABs  (Total = 108) ;
-+------------------------------------+-------------------------------+
-; 1 Async. clear                     ; 5                             ;
-; 1 Clock                            ; 48                            ;
-; 1 Clock enable                     ; 21                            ;
-; 1 Sync. clear                      ; 11                            ;
-; 1 Sync. load                       ; 1                             ;
-; 2 Clock enables                    ; 9                             ;
-+------------------------------------+-------------------------------+
-
-
-+------------------------------------------------------------------------------+
-; LAB Signals Sourced                                                          ;
-+----------------------------------------------+-------------------------------+
-; Number of Signals Sourced  (Average = 16.17) ; Number of LABs  (Total = 108) ;
-+----------------------------------------------+-------------------------------+
-; 0                                            ; 0                             ;
-; 1                                            ; 2                             ;
-; 2                                            ; 0                             ;
-; 3                                            ; 0                             ;
-; 4                                            ; 0                             ;
-; 5                                            ; 2                             ;
-; 6                                            ; 0                             ;
-; 7                                            ; 1                             ;
-; 8                                            ; 1                             ;
-; 9                                            ; 4                             ;
-; 10                                           ; 2                             ;
-; 11                                           ; 1                             ;
-; 12                                           ; 5                             ;
-; 13                                           ; 1                             ;
-; 14                                           ; 8                             ;
-; 15                                           ; 3                             ;
-; 16                                           ; 46                            ;
-; 17                                           ; 4                             ;
-; 18                                           ; 1                             ;
-; 19                                           ; 7                             ;
-; 20                                           ; 2                             ;
-; 21                                           ; 3                             ;
-; 22                                           ; 6                             ;
-; 23                                           ; 1                             ;
-; 24                                           ; 2                             ;
-; 25                                           ; 2                             ;
-; 26                                           ; 1                             ;
-; 27                                           ; 0                             ;
-; 28                                           ; 2                             ;
-; 29                                           ; 1                             ;
-+----------------------------------------------+-------------------------------+
-
-
-+---------------------------------------------------------------------------------+
-; LAB Signals Sourced Out                                                         ;
-+-------------------------------------------------+-------------------------------+
-; Number of Signals Sourced Out  (Average = 5.92) ; Number of LABs  (Total = 108) ;
-+-------------------------------------------------+-------------------------------+
-; 0                                               ; 0                             ;
-; 1                                               ; 4                             ;
-; 2                                               ; 11                            ;
-; 3                                               ; 11                            ;
-; 4                                               ; 17                            ;
-; 5                                               ; 17                            ;
-; 6                                               ; 11                            ;
-; 7                                               ; 10                            ;
-; 8                                               ; 8                             ;
-; 9                                               ; 2                             ;
-; 10                                              ; 3                             ;
-; 11                                              ; 4                             ;
-; 12                                              ; 4                             ;
-; 13                                              ; 1                             ;
-; 14                                              ; 3                             ;
-; 15                                              ; 1                             ;
-; 16                                              ; 0                             ;
-; 17                                              ; 1                             ;
-+-------------------------------------------------+-------------------------------+
-
-
-+------------------------------------------------------------------------------+
-; LAB Distinct Inputs                                                          ;
-+----------------------------------------------+-------------------------------+
-; Number of Distinct Inputs  (Average = 13.05) ; Number of LABs  (Total = 108) ;
-+----------------------------------------------+-------------------------------+
-; 0                                            ; 0                             ;
-; 1                                            ; 0                             ;
-; 2                                            ; 3                             ;
-; 3                                            ; 2                             ;
-; 4                                            ; 1                             ;
-; 5                                            ; 2                             ;
-; 6                                            ; 5                             ;
-; 7                                            ; 1                             ;
-; 8                                            ; 7                             ;
-; 9                                            ; 12                            ;
-; 10                                           ; 8                             ;
-; 11                                           ; 11                            ;
-; 12                                           ; 7                             ;
-; 13                                           ; 8                             ;
-; 14                                           ; 7                             ;
-; 15                                           ; 6                             ;
-; 16                                           ; 1                             ;
-; 17                                           ; 7                             ;
-; 18                                           ; 3                             ;
-; 19                                           ; 3                             ;
-; 20                                           ; 2                             ;
-; 21                                           ; 2                             ;
-; 22                                           ; 2                             ;
-; 23                                           ; 1                             ;
-; 24                                           ; 0                             ;
-; 25                                           ; 0                             ;
-; 26                                           ; 2                             ;
-; 27                                           ; 0                             ;
-; 28                                           ; 0                             ;
-; 29                                           ; 0                             ;
-; 30                                           ; 0                             ;
-; 31                                           ; 2                             ;
-; 32                                           ; 3                             ;
-+----------------------------------------------+-------------------------------+
-=======
 ; Block interconnects   ; 1,189 / 32,401 ( 4 % ) ;
 ; C16 interconnects     ; 3 / 1,326 ( < 1 % )    ;
 ; C4 interconnects      ; 491 / 21,816 ( 2 % )   ;
 ; Direct links          ; 208 / 32,401 ( < 1 % ) ;
 ; Global clocks         ; 2 / 10 ( 20 % )        ;
-=======
-; Block interconnects   ; 1,189 / 32,401 ( 4 % ) ;
-; C16 interconnects     ; 3 / 1,326 ( < 1 % )    ;
-; C4 interconnects      ; 491 / 21,816 ( 2 % )   ;
-; Direct links          ; 208 / 32,401 ( < 1 % ) ;
-; Global clocks         ; 2 / 10 ( 20 % )        ;
->>>>>>> Stashed changes
 ; Local interconnects   ; 649 / 10,320 ( 6 % )   ;
 ; R24 interconnects     ; 8 / 1,289 ( < 1 % )    ;
 ; R4 interconnects      ; 531 / 28,186 ( 2 % )   ;
@@ -1513,7 +999,6 @@ Note: Fitter may spread logical memories into multiple blocks to improve timing.
 ; 31                                           ; 0                            ;
 ; 32                                           ; 1                            ;
 +----------------------------------------------+------------------------------+
->>>>>>> Stashed changes
 
 
 +------------------------------------------+
@@ -1602,18 +1087,8 @@ Note: Fitter may spread logical memories into multiple blocks to improve timing.
 ; key_sw[1]          ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; key_sw[2]          ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; key_sw[3]          ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-; clk                ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; reset_n            ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-=======
 ; reset_n            ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; clk                ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
->>>>>>> Stashed changes
-=======
-; reset_n            ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; clk                ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
->>>>>>> Stashed changes
 +--------------------+-----------+--------------+-----------+--------------+--------------+-----------+-----------+--------------+-----------+-----------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+-----------+--------------+--------------+
 
 
@@ -1653,28 +1128,6 @@ Note: Fitter may spread logical memories into multiple blocks to improve timing.
 +---------------------------+--------+
 
 
-+------------------------------------------------------------+
-; Estimated Delay Added for Hold Timing Summary              ;
-+-----------------+----------------------+-------------------+
-; Source Clock(s) ; Destination Clock(s) ; Delay Added in ns ;
-+-----------------+----------------------+-------------------+
-Note: For more information on problematic transfers, consider running the Fitter again with the Optimize hold timing option (Settings Menu) turned off.
-This will disable optimization of problematic paths and expose them for further analysis using the Timing Analyzer.
-
-
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Estimated Delay Added for Hold Timing Details                                                                                                                                                                                         ;
-+----------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------+-------------------+
-; Source Register                                                      ; Destination Register                                                                                                                       ; Delay Added in ns ;
-+----------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------+-------------------+
-; RGBMemory_top:FrameBuffer|RGBmemcoderdecoderv2:FBCODEC|Rdatatomem[4] ; RGBMemory_top:FrameBuffer|single_port_ram:R_MEMORY|altsyncram:ramblock_rtl_0|altsyncram_1of1:auto_generated|ram_block1a4~porta_datain_reg0 ; 0.063             ;
-; RGBMemory_top:FrameBuffer|RGBmemcoderdecoderv2:FBCODEC|Rdatatomem[5] ; RGBMemory_top:FrameBuffer|single_port_ram:R_MEMORY|altsyncram:ramblock_rtl_0|altsyncram_1of1:auto_generated|ram_block1a5~porta_datain_reg0 ; 0.063             ;
-; RGBMemory_top:FrameBuffer|RGBmemcoderdecoderv2:FBCODEC|Gdatatomem[0] ; RGBMemory_top:FrameBuffer|single_port_ram:G_MEMORY|altsyncram:ramblock_rtl_0|altsyncram_1of1:auto_generated|ram_block1a0~porta_datain_reg0 ; 0.063             ;
-; memsyncreset:memsyncreset|memenable                                  ; RGBMemory_top:FrameBuffer|single_port_ram:R_MEMORY|altsyncram:ramblock_rtl_0|altsyncram_1of1:auto_generated|ram_block1a4~porta_datain_reg0 ; 0.063             ;
-+----------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------+-------------------+
-Note: This table only shows the top 4 path(s) that have the largest delay added for hold.
-
-
 +-----------------+
 ; Fitter Messages ;
 +-----------------+
@@ -1683,16 +1136,8 @@ Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors
 Info (119006): Selected device EP4CE10E22C8 for design "VGA-FRAMEBUFFER"
 Info (21077): Low junction temperature is 0 degrees C
 Info (21077): High junction temperature is 85 degrees C
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-=======
 Info (15535): Implemented PLL "pll:pll|altpll:altpll_component|pll_altpll:auto_generated|pll1" as Cyclone IV E PLL type File: C:/Users/User/Downloads/VGA-Framebuffer-main/Project/db/pll_altpll.v Line: 47
     Info (15099): Implementing clock multiplication of 1, clock division of 2, and phase shift of 0 degrees (0 ps) for pll:pll|altpll:altpll_component|pll_altpll:auto_generated|wire_pll1_clk[0] port File: C:/Users/User/Downloads/VGA-Framebuffer-main/Project/db/pll_altpll.v Line: 47
->>>>>>> Stashed changes
-=======
-Info (15535): Implemented PLL "pll:pll|altpll:altpll_component|pll_altpll:auto_generated|pll1" as Cyclone IV E PLL type File: C:/Users/User/Downloads/VGA-Framebuffer-main/Project/db/pll_altpll.v Line: 47
-    Info (15099): Implementing clock multiplication of 1, clock division of 2, and phase shift of 0 degrees (0 ps) for pll:pll|altpll:altpll_component|pll_altpll:auto_generated|wire_pll1_clk[0] port File: C:/Users/User/Downloads/VGA-Framebuffer-main/Project/db/pll_altpll.v Line: 47
->>>>>>> Stashed changes
 Info (171003): Fitter is performing an Auto Fit compilation, which may decrease Fitter effort to reduce compilation time
 Warning (292013): Feature LogicLock is only available with a valid subscription license. You can purchase a software subscription to gain full access to this feature.
 Info (176444): Device migration not selected. If you intend to use device migration later, you may need to change the pin assignments as they may be incompatible with other devices
@@ -1707,40 +1152,17 @@ Info (169124): Fitter converted 4 user pins into dedicated programming pins
 Warning (15714): Some pins have incomplete I/O assignments. Refer to the I/O Assignment Warnings report for details
 Info (176045): Design uses memory blocks. Violating setup or hold times of memory block address registers for either read or write operations could cause memory contents to be corrupted. Make sure that all memory block address registers meet the setup and hold time requirements.
 Critical Warning (332012): Synopsys Design Constraints File file not found: 'VGA-FRAMEBUFFER.sdc'. A Synopsys Design Constraints File is required by the Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
+Info (332144): No user constrained generated clocks found in the design
 Info (332144): No user constrained base clocks found in the design
+Info (332096): The command derive_clocks did not find any clocks to derive.  No clocks were created or changed.
 Info (332143): No user constrained clock uncertainty found in the design. Calling "derive_clock_uncertainty"
 Info (332154): The derive_clock_uncertainty command did not apply clock uncertainty to any clock-to-clock transfers.
 Info (332130): Timing requirements not specified -- quality metrics such as performance may be sacrificed to reduce compilation time.
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-Info (176353): Automatically promoted node clk~input (placed in PIN 23 (CLK1, DIFFCLK_0n)) File: D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/TOP/top.v Line: 22
-    Info (176355): Automatically promoted destinations to use location or clock signal Global Clock CLKCTRL_G2
-Info (176353): Automatically promoted node reset_n~input (placed in PIN 25 (CLK3, DIFFCLK_1n)) File: D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/TOP/top.v Line: 23
-    Info (176355): Automatically promoted destinations to use location or clock signal Global Clock CLKCTRL_G3
-    Info (176356): Following destination nodes may be non-global or may not use global or regional clocks
-        Info (176357): Destination node RGBMemory_top:FrameBuffer|RGBmemcoderdecoderv2:FBCODEC|dataselect_w[1] File: D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/MEM/RGBmemcodec2.v Line: 42
-        Info (176357): Destination node RGBMemory_top:FrameBuffer|RGBmemcoderdecoderv2:FBCODEC|dataselect_w[2] File: D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/MEM/RGBmemcodec2.v Line: 42
-        Info (176357): Destination node RGBMemory_top:FrameBuffer|RGBmemcoderdecoderv2:FBCODEC|addr_w[0] File: D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/MEM/RGBmemcodec2.v Line: 42
-        Info (176357): Destination node RGBMemory_top:FrameBuffer|RGBmemcoderdecoderv2:FBCODEC|addr_w[1] File: D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/MEM/RGBmemcodec2.v Line: 42
-        Info (176357): Destination node RGBMemory_top:FrameBuffer|RGBmemcoderdecoderv2:FBCODEC|addr_w[2] File: D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/MEM/RGBmemcodec2.v Line: 42
-        Info (176357): Destination node ROM_top:ROM|vpos[0] File: D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/ROM/ROM_top.v Line: 62
-        Info (176357): Destination node ROM_top:ROM|vpos[1] File: D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/ROM/ROM_top.v Line: 62
-        Info (176357): Destination node ROM_top:ROM|vpos[2] File: D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/ROM/ROM_top.v Line: 62
-        Info (176357): Destination node ROM_top:ROM|vpos[3] File: D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/ROM/ROM_top.v Line: 62
-        Info (176357): Destination node ROM_top:ROM|vpos[4] File: D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/ROM/ROM_top.v Line: 62
-=======
 Info (176353): Automatically promoted node pll:pll|altpll:altpll_component|pll_altpll:auto_generated|wire_pll1_clk[0] (placed in counter C0 of PLL_1) File: C:/Users/User/Downloads/VGA-Framebuffer-main/Project/db/pll_altpll.v Line: 81
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock CLKCTRL_G3
 Info (176353): Automatically promoted node reset_n~input (placed in PIN 25 (CLK3, DIFFCLK_1n)) File: C:/Users/User/Downloads/VGA-Framebuffer-main/SourceFiles/TOP/top.v Line: 23
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock CLKCTRL_G0
     Info (176356): Following destination nodes may be non-global or may not use global or regional clocks
-=======
-Info (176353): Automatically promoted node pll:pll|altpll:altpll_component|pll_altpll:auto_generated|wire_pll1_clk[0] (placed in counter C0 of PLL_1) File: C:/Users/User/Downloads/VGA-Framebuffer-main/Project/db/pll_altpll.v Line: 81
-    Info (176355): Automatically promoted destinations to use location or clock signal Global Clock CLKCTRL_G3
-Info (176353): Automatically promoted node reset_n~input (placed in PIN 25 (CLK3, DIFFCLK_1n)) File: C:/Users/User/Downloads/VGA-Framebuffer-main/SourceFiles/TOP/top.v Line: 23
-    Info (176355): Automatically promoted destinations to use location or clock signal Global Clock CLKCTRL_G0
-    Info (176356): Following destination nodes may be non-global or may not use global or regional clocks
->>>>>>> Stashed changes
         Info (176357): Destination node RGBMemory_top:FrameBuffer|RGBmemcoderdecoderv2:FBCODEC|dataselect_w[1] File: C:/Users/User/Downloads/VGA-Framebuffer-main/SourceFiles/MEM/RGBmemcodec2.v Line: 42
         Info (176357): Destination node RGBMemory_top:FrameBuffer|RGBmemcoderdecoderv2:FBCODEC|dataselect_w[2] File: C:/Users/User/Downloads/VGA-Framebuffer-main/SourceFiles/MEM/RGBmemcodec2.v Line: 42
         Info (176357): Destination node RGBMemory_top:FrameBuffer|RGBmemcoderdecoderv2:FBCODEC|addr_w[0] File: C:/Users/User/Downloads/VGA-Framebuffer-main/SourceFiles/MEM/RGBmemcodec2.v Line: 42
@@ -1751,10 +1173,6 @@ Info (176353): Automatically promoted node reset_n~input (placed in PIN 25 (CLK3
         Info (176357): Destination node ROM_top:ROM|vpos[2] File: C:/Users/User/Downloads/VGA-Framebuffer-main/SourceFiles/ROM/ROM_top.v Line: 62
         Info (176357): Destination node ROM_top:ROM|vpos[3] File: C:/Users/User/Downloads/VGA-Framebuffer-main/SourceFiles/ROM/ROM_top.v Line: 62
         Info (176357): Destination node ROM_top:ROM|vpos[4] File: C:/Users/User/Downloads/VGA-Framebuffer-main/SourceFiles/ROM/ROM_top.v Line: 62
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
         Info (176358): Non-global destination nodes limited to 10 nodes
 Info (176233): Starting register packing
 Info (176235): Finished register packing
@@ -1765,16 +1183,8 @@ Info (170189): Fitter placement preparation operations beginning
 Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:00
 Info (170191): Fitter placement operations beginning
 Info (170137): Fitter placement was successful
-Info (170192): Fitter placement operations ending: elapsed time is 00:00:02
+Info (170192): Fitter placement operations ending: elapsed time is 00:00:00
 Info (170193): Fitter routing operations beginning
-<<<<<<< Updated upstream
-Info (170195): Router estimated average interconnect usage is 2% of the available device resources
-    Info (170196): Router estimated peak interconnect usage is 5% of the available device resources in the region that extends from location X11_Y0 to location X22_Y11
-Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
-    Info (170201): Optimizations that may affect the design's routability were skipped
-Info (170194): Fitter routing operations ending: elapsed time is 00:00:01
-Info (11888): Total time spent on timing analysis during the Fitter is 0.88 seconds.
-=======
 Info (170195): Router estimated average interconnect usage is 1% of the available device resources
     Info (170196): Router estimated peak interconnect usage is 7% of the available device resources in the region that extends from location X11_Y12 to location X22_Y24
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
@@ -1782,31 +1192,12 @@ Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were
     Info (170200): Optimizations that may affect the design's timing were skipped
 Info (170194): Fitter routing operations ending: elapsed time is 00:00:00
 Info (11888): Total time spent on timing analysis during the Fitter is 0.32 seconds.
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:01
 Warning (169177): 6 pins must meet Intel FPGA requirements for 3.3-, 3.0-, and 2.5-V interfaces. For more information, refer to AN 447: Interfacing Cyclone IV E Devices with 3.3/3.0/2.5-V LVTTL/LVCMOS I/O Systems.
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-    Info (169178): Pin key_sw[0] uses I/O standard 3.3-V LVTTL at 91 File: D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/TOP/top.v Line: 25
-    Info (169178): Pin key_sw[1] uses I/O standard 3.3-V LVTTL at 90 File: D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/TOP/top.v Line: 25
-    Info (169178): Pin key_sw[2] uses I/O standard 3.3-V LVTTL at 89 File: D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/TOP/top.v Line: 25
-    Info (169178): Pin key_sw[3] uses I/O standard 3.3-V LVTTL at 88 File: D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/TOP/top.v Line: 25
-    Info (169178): Pin clk uses I/O standard 3.3-V LVTTL at 23 File: D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/TOP/top.v Line: 22
-    Info (169178): Pin reset_n uses I/O standard 3.3-V LVTTL at 25 File: D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/TOP/top.v Line: 23
-Info (144001): Generated suppressed messages file D:/Users/callo/Documents/GitHub/VGA-Framebuffer/Project/output_files/VGA-FRAMEBUFFER.fit.smsg
-Info: Quartus Prime Fitter was successful. 0 errors, 5 warnings
-    Info: Peak virtual memory: 5514 megabytes
-    Info: Processing ended: Sat Jul 23 18:30:30 2022
-    Info: Elapsed time: 00:00:09
-    Info: Total CPU time (on all processors): 00:00:12
-=======
     Info (169178): Pin key_sw[0] uses I/O standard 3.3-V LVTTL at 91 File: C:/Users/User/Downloads/VGA-Framebuffer-main/SourceFiles/TOP/top.v Line: 25
     Info (169178): Pin key_sw[1] uses I/O standard 3.3-V LVTTL at 90 File: C:/Users/User/Downloads/VGA-Framebuffer-main/SourceFiles/TOP/top.v Line: 25
     Info (169178): Pin key_sw[2] uses I/O standard 3.3-V LVTTL at 89 File: C:/Users/User/Downloads/VGA-Framebuffer-main/SourceFiles/TOP/top.v Line: 25
@@ -1815,24 +1206,10 @@ Info: Quartus Prime Fitter was successful. 0 errors, 5 warnings
     Info (169178): Pin clk uses I/O standard 3.3-V LVTTL at 23 File: C:/Users/User/Downloads/VGA-Framebuffer-main/SourceFiles/TOP/top.v Line: 22
 Info (144001): Generated suppressed messages file C:/Users/User/Downloads/VGA-Framebuffer-main/Project/output_files/VGA-FRAMEBUFFER.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 5 warnings
-=======
-    Info (169178): Pin key_sw[0] uses I/O standard 3.3-V LVTTL at 91 File: C:/Users/User/Downloads/VGA-Framebuffer-main/SourceFiles/TOP/top.v Line: 25
-    Info (169178): Pin key_sw[1] uses I/O standard 3.3-V LVTTL at 90 File: C:/Users/User/Downloads/VGA-Framebuffer-main/SourceFiles/TOP/top.v Line: 25
-    Info (169178): Pin key_sw[2] uses I/O standard 3.3-V LVTTL at 89 File: C:/Users/User/Downloads/VGA-Framebuffer-main/SourceFiles/TOP/top.v Line: 25
-    Info (169178): Pin key_sw[3] uses I/O standard 3.3-V LVTTL at 88 File: C:/Users/User/Downloads/VGA-Framebuffer-main/SourceFiles/TOP/top.v Line: 25
-    Info (169178): Pin reset_n uses I/O standard 3.3-V LVTTL at 25 File: C:/Users/User/Downloads/VGA-Framebuffer-main/SourceFiles/TOP/top.v Line: 23
-    Info (169178): Pin clk uses I/O standard 3.3-V LVTTL at 23 File: C:/Users/User/Downloads/VGA-Framebuffer-main/SourceFiles/TOP/top.v Line: 22
-Info (144001): Generated suppressed messages file C:/Users/User/Downloads/VGA-Framebuffer-main/Project/output_files/VGA-FRAMEBUFFER.fit.smsg
-Info: Quartus Prime Fitter was successful. 0 errors, 5 warnings
->>>>>>> Stashed changes
     Info: Peak virtual memory: 5645 megabytes
     Info: Processing ended: Mon Jul 25 16:57:16 2022
     Info: Elapsed time: 00:00:06
     Info: Total CPU time (on all processors): 00:00:08
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
 
 
 +----------------------------+
