@@ -1,10 +1,21 @@
-# VGA-Framebuffer
-FB project for ChipExpo(and my Diploma Project)
-## Features
-- Fixed memory codec's glitch, which is supposed to be responsible for white tracks in a monitor.
-- Enhanced memory size up to full-scale RGB.
-- Implemented the ping-pong mode in memory read/write behavior.(read during active screen area, write during blank area)
-- Fixed FIFO.
+# VGA-Framebuffer(v. 1.0)
+ФБ для статичных изображений
+Сделан под плату OMDAZZ с чипом Cyclone IV E: EP4CE10E22C8
+## Краткое описание папок
+- BitStreams - набор дизайнов для ПЛИС в виде готовых програмных файлов
+- FBTest - проекты ModelSim для отладки дизайна
+- Project - проектный файл Quartus-а и его рабочая папка
+- RGBPaint - проект графического редактора для Visual Studio
+- Sourcefiles - папки с файлами-исходниками фреймбуфера
+
+## Описание 
+Дизайн представляет собой кадровый буфер для вывода изображений посредством VGA-интерфейса. При его создании делался акцент на минимизацию требуемых аппаратных ресурсов ПЛИС и предоставление максимальных возможностей для будущей модификации, расширения и использования в других проектах. Кроме непосредственно буфера, к нему идет отладочное ПО, позволяющее легче искать ошибки при модификации.
+
+## Особенности
+- Разрешение данной версии кадрового буфера фиксированно и составляет 80x60.
+- Разрешение экрана (пока) также фиксированно как 640x480.
+- Буфер может осуществлять сброс памяти и перезапись изображения, в случае необходимости.
+
 ## Problems
 - Cursor-brush hasnt changed yet.
 ## Bottlenecks
