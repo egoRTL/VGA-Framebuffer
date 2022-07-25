@@ -42,15 +42,21 @@ module ROM_top
 	//$readmemh("hex_RGB_ALLWhite.txt", RGBROM);
 	//$readmemh("hex_RGB_Checkmates.txt", RGBROM);
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 	$readmemh("hex_RGB_TestPicture1.txt", RGBROM);
 	//$readmemh("hex_RGB_TestPicture2.txt", RGBROM);
 	//$readmemh("hex_RGB_TestPicture3.txt", RGBROM);
 	//$readmemh("hex_RGB_Working.txt", RGBROM);
 =======
+=======
+>>>>>>> Stashed changes
 	//$readmemh("hex_RGB_TestPicture1.txt", RGBROM);
 	//$readmemh("hex_RGB_TestPicture2.txt", RGBROM);
 	//$readmemh("hex_RGB_TestPicture3.txt", RGBROM);
 	$readmemh("hex_RGB_Working.txt", RGBROM);
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 	end
 	

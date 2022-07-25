@@ -1,7 +1,12 @@
 Assembler report for VGA-FRAMEBUFFER
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 Sat Jul 23 18:30:31 2022
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+=======
+Mon Jul 25 16:57:18 2022
+Quartus Prime Version 20.1.1 Build 720 11/11/2020 Patches 1.02i SJ Lite Edition
+>>>>>>> Stashed changes
 =======
 Mon Jul 25 16:57:18 2022
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 Patches 1.02i SJ Lite Edition
@@ -44,7 +49,11 @@ https://fpgasoftware.intel.com/eula.
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 ; Assembler Status      ; Successful - Sat Jul 23 18:30:31 2022 ;
+=======
+; Assembler Status      ; Successful - Mon Jul 25 16:57:18 2022 ;
+>>>>>>> Stashed changes
 =======
 ; Assembler Status      ; Successful - Mon Jul 25 16:57:18 2022 ;
 >>>>>>> Stashed changes
@@ -72,6 +81,7 @@ https://fpgasoftware.intel.com/eula.
 
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 +--------------------------------------------------------------------------------------------------------------------+
 ; Assembler Device Options: D:/Users/callo/Documents/GitHub/VGA-Framebuffer/Project/output_files/VGA-FRAMEBUFFER.sof ;
 +----------------+---------------------------------------------------------------------------------------------------+
@@ -81,6 +91,8 @@ https://fpgasoftware.intel.com/eula.
 ; Checksum       ; 0x00161543                                                                                        ;
 +----------------+---------------------------------------------------------------------------------------------------+
 =======
+=======
+>>>>>>> Stashed changes
 +-----------------------------------------------------------------------------------------------------------------+
 ; Assembler Device Options: C:/Users/User/Downloads/VGA-Framebuffer-main/Project/output_files/VGA-FRAMEBUFFER.sof ;
 +----------------+------------------------------------------------------------------------------------------------+
@@ -89,6 +101,9 @@ https://fpgasoftware.intel.com/eula.
 ; JTAG usercode  ; 0x0012CEAA                                                                                     ;
 ; Checksum       ; 0x0012CEAA                                                                                     ;
 +----------------+------------------------------------------------------------------------------------------------+
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 
 
@@ -98,8 +113,13 @@ https://fpgasoftware.intel.com/eula.
 Info: *******************************************************************
 Info: Running Quartus Prime Assembler
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
     Info: Processing started: Sat Jul 23 18:30:31 2022
+=======
+    Info: Version 20.1.1 Build 720 11/11/2020 Patches 1.02i SJ Lite Edition
+    Info: Processing started: Mon Jul 25 16:57:17 2022
+>>>>>>> Stashed changes
 =======
     Info: Version 20.1.1 Build 720 11/11/2020 Patches 1.02i SJ Lite Edition
     Info: Processing started: Mon Jul 25 16:57:17 2022
@@ -110,10 +130,13 @@ Info (115031): Writing out detailed assembly data for power analysis
 Info (115030): Assembler is generating device programming files
 Info: Quartus Prime Assembler was successful. 0 errors, 1 warning
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     Info: Peak virtual memory: 4682 megabytes
     Info: Processing ended: Sat Jul 23 18:30:31 2022
     Info: Elapsed time: 00:00:00
 =======
+=======
+>>>>>>> Stashed changes
     Info: Peak virtual memory: 4680 megabytes
     Info: Processing ended: Mon Jul 25 16:57:18 2022
     Info: Elapsed time: 00:00:01

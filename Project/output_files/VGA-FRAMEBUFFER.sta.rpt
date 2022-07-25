@@ -1,7 +1,12 @@
 Timing Analyzer report for VGA-FRAMEBUFFER
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 Sat Jul 23 18:30:35 2022
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+=======
+Mon Jul 25 16:57:21 2022
+Quartus Prime Version 20.1.1 Build 720 11/11/2020 Patches 1.02i SJ Lite Edition
+>>>>>>> Stashed changes
 =======
 Mon Jul 25 16:57:21 2022
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 Patches 1.02i SJ Lite Edition
@@ -105,6 +110,7 @@ https://fpgasoftware.intel.com/eula.
 ; Maximum allowed            ; 6           ;
 ;                            ;             ;
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 ; Average used               ; 1.29        ;
 ; Maximum used               ; 4           ;
 ;                            ;             ;
@@ -144,6 +150,29 @@ https://fpgasoftware.intel.com/eula.
 ; 38.64 MHz ; 38.64 MHz       ; clk        ;      ;
 +-----------+-----------------+------------+------+
 =======
+=======
+; Average used               ; 1.20        ;
+; Maximum used               ; 6           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processor 2            ;  11.3%      ;
+;     Processor 3            ;   2.6%      ;
+;     Processors 4-6         ;   1.9%      ;
++----------------------------+-------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clocks                                                                                                                                                                                                                                                                                                           ;
++-------------------------------------------------+-----------+--------+-----------+-------+--------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+---------------------------------------------------+-----------------------------------------------------+
+; Clock Name                                      ; Type      ; Period ; Frequency ; Rise  ; Fall   ; Duty Cycle ; Divide by ; Multiply by ; Phase ; Offset ; Edge List ; Edge Shift ; Inverted ; Master ; Source                                            ; Targets                                             ;
++-------------------------------------------------+-----------+--------+-----------+-------+--------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+---------------------------------------------------+-----------------------------------------------------+
+; clk                                             ; Base      ; 20.000 ; 50.0 MHz  ; 0.000 ; 10.000 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;                                                   ; { clk }                                             ;
+; pll|altpll_component|auto_generated|pll1|clk[0] ; Generated ; 40.000 ; 25.0 MHz  ; 0.000 ; 20.000 ; 50.00      ; 2         ; 1           ;       ;        ;           ;            ; false    ; clk    ; pll|altpll_component|auto_generated|pll1|inclk[0] ; { pll|altpll_component|auto_generated|pll1|clk[0] } ;
++-------------------------------------------------+-----------+--------+-----------+-------+--------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+---------------------------------------------------+-----------------------------------------------------+
+
+
+>>>>>>> Stashed changes
 +--------------------------------------------------------------------------------------+
 ; Slow 1200mV 85C Model Fmax Summary                                                   ;
 +-----------+-----------------+-------------------------------------------------+------+
@@ -151,6 +180,9 @@ https://fpgasoftware.intel.com/eula.
 +-----------+-----------------+-------------------------------------------------+------+
 ; 35.55 MHz ; 35.55 MHz       ; pll|altpll_component|auto_generated|pll1|clk[0] ;      ;
 +-----------+-----------------+-------------------------------------------------+------+
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
@@ -1761,8 +1793,13 @@ No synchronizer chains to report.
 ; key_sw[2]               ; 3.3-V LVTTL  ; 2640 ps         ; 2640 ps         ;
 ; key_sw[3]               ; 3.3-V LVTTL  ; 2640 ps         ; 2640 ps         ;
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 ; clk                     ; 3.3-V LVTTL  ; 2640 ps         ; 2640 ps         ;
 ; reset_n                 ; 3.3-V LVTTL  ; 2640 ps         ; 2640 ps         ;
+=======
+; reset_n                 ; 3.3-V LVTTL  ; 2640 ps         ; 2640 ps         ;
+; clk                     ; 3.3-V LVTTL  ; 2640 ps         ; 2640 ps         ;
+>>>>>>> Stashed changes
 =======
 ; reset_n                 ; 3.3-V LVTTL  ; 2640 ps         ; 2640 ps         ;
 ; clk                     ; 3.3-V LVTTL  ; 2640 ps         ; 2640 ps         ;
@@ -1927,7 +1964,11 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 ; Unconstrained Clocks            ; 0     ; 0    ;
 ; Unconstrained Input Ports       ; 5     ; 5    ;
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 ; Unconstrained Input Port Paths  ; 253   ; 253  ;
+=======
+; Unconstrained Input Port Paths  ; 251   ; 251  ;
+>>>>>>> Stashed changes
 =======
 ; Unconstrained Input Port Paths  ; 251   ; 251  ;
 >>>>>>> Stashed changes
@@ -2011,8 +2052,13 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus Prime Timing Analyzer
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
     Info: Processing started: Sat Jul 23 18:30:32 2022
+=======
+    Info: Version 20.1.1 Build 720 11/11/2020 Patches 1.02i SJ Lite Edition
+    Info: Processing started: Mon Jul 25 16:57:19 2022
+>>>>>>> Stashed changes
 =======
     Info: Version 20.1.1 Build 720 11/11/2020 Patches 1.02i SJ Lite Edition
     Info: Processing started: Mon Jul 25 16:57:19 2022
@@ -2032,12 +2078,19 @@ Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Tim
 Info: Found TIMING_ANALYZER_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
 Info: Analyzing Slow 1200mV 85C Model
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 Critical Warning (332148): Timing requirements not met
     Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the Timing Analyzer.
 Info (332146): Worst-case setup slack is -24.883
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
     Info (332119):   -24.883           -1584.203 clk 
+=======
+Info (332146): Worst-case setup slack is 11.870
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    11.870               0.000 pll|altpll_component|auto_generated|pll1|clk[0] 
+>>>>>>> Stashed changes
 =======
 Info (332146): Worst-case setup slack is 11.870
     Info (332119):     Slack       End Point TNS Clock 
@@ -2051,11 +2104,14 @@ Info (332146): Worst-case hold slack is 0.452
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 Info (332146): Worst-case minimum pulse width slack is -3.201
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
     Info (332119):    -3.201            -460.746 clk 
 =======
+=======
+>>>>>>> Stashed changes
 Info (332146): Worst-case minimum pulse width slack is 9.858
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
@@ -2066,6 +2122,7 @@ Info: Analyzing Slow 1200mV 0C Model
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 Critical Warning (332148): Timing requirements not met
     Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the Timing Analyzer.
@@ -2132,6 +2189,32 @@ Info (332146): Worst-case setup slack is 28.400
 Info (332146): Worst-case hold slack is 0.180
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
+=======
+Info (332146): Worst-case setup slack is 14.281
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    14.281               0.000 pll|altpll_component|auto_generated|pll1|clk[0] 
+Info (332146): Worst-case hold slack is 0.400
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):     0.400               0.000 pll|altpll_component|auto_generated|pll1|clk[0] 
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332146): Worst-case minimum pulse width slack is 9.855
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):     9.855               0.000 clk 
+    Info (332119):    19.714               0.000 pll|altpll_component|auto_generated|pll1|clk[0] 
+Info: Analyzing Fast 1200mV 0C Model
+Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
+Info (332146): Worst-case setup slack is 28.400
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    28.400               0.000 pll|altpll_component|auto_generated|pll1|clk[0] 
+Info (332146): Worst-case hold slack is 0.180
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+>>>>>>> Stashed changes
     Info (332119):     0.180               0.000 pll|altpll_component|auto_generated|pll1|clk[0] 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
@@ -2146,6 +2229,9 @@ Info: Quartus Prime Timing Analyzer was successful. 0 errors, 2 warnings
     Info: Peak virtual memory: 4799 megabytes
     Info: Processing ended: Mon Jul 25 16:57:21 2022
     Info: Elapsed time: 00:00:02
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
     Info: Total CPU time (on all processors): 00:00:02
 

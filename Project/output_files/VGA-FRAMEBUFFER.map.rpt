@@ -1,7 +1,12 @@
 Analysis & Synthesis report for VGA-FRAMEBUFFER
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 Sat Jul 23 18:30:20 2022
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+=======
+Mon Jul 25 16:57:09 2022
+Quartus Prime Version 20.1.1 Build 720 11/11/2020 Patches 1.02i SJ Lite Edition
+>>>>>>> Stashed changes
 =======
 Mon Jul 25 16:57:09 2022
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 Patches 1.02i SJ Lite Edition
@@ -83,6 +88,7 @@ https://fpgasoftware.intel.com/eula.
 
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
@@ -102,6 +108,8 @@ https://fpgasoftware.intel.com/eula.
 ; Total PLLs                         ; 0                                           ;
 +------------------------------------+---------------------------------------------+
 =======
+=======
+>>>>>>> Stashed changes
 +------------------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                                   ;
 +------------------------------------+-----------------------------------------------------------+
@@ -120,6 +128,9 @@ https://fpgasoftware.intel.com/eula.
 ; Embedded Multiplier 9-bit elements ; 0                                                         ;
 ; Total PLLs                         ; 1                                                         ;
 +------------------------------------+-----------------------------------------------------------+
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 
 
@@ -231,6 +242,7 @@ https://fpgasoftware.intel.com/eula.
 
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Source Files Read                                                                                                                                             ;
 +------------------------------------+-----------------+------------------------------+------------------------------------------------------------------------------------+---------+
@@ -275,6 +287,58 @@ https://fpgasoftware.intel.com/eula.
 ; db/alt_u_div_64f.tdf               ; yes             ; Auto-Generated Megafunction  ; D:/Users/callo/Documents/GitHub/VGA-Framebuffer/Project/db/alt_u_div_64f.tdf       ;         ;
 ; db/lpm_divide_uam.tdf              ; yes             ; Auto-Generated Megafunction  ; D:/Users/callo/Documents/GitHub/VGA-Framebuffer/Project/db/lpm_divide_uam.tdf      ;         ;
 +------------------------------------+-----------------+------------------------------+------------------------------------------------------------------------------------+---------+
+=======
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                          ;
++------------------------------------+-----------------+------------------------------+---------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path   ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                    ; Library ;
++------------------------------------+-----------------+------------------------------+---------------------------------------------------------------------------------+---------+
+; ../SourceFiles/FIFO/FIFO_top.v     ; yes             ; User SystemVerilog HDL File  ; C:/Users/User/Downloads/VGA-Framebuffer-main/SourceFiles/FIFO/FIFO_top.v        ;         ;
+; ../SourceFiles/MEM/RGBMemory_top.v ; yes             ; User Verilog HDL File        ; C:/Users/User/Downloads/VGA-Framebuffer-main/SourceFiles/MEM/RGBMemory_top.v    ;         ;
+; ../SourceFiles/MEM/RGBmemcodec2.v  ; yes             ; User Verilog HDL File        ; C:/Users/User/Downloads/VGA-Framebuffer-main/SourceFiles/MEM/RGBmemcodec2.v     ;         ;
+; ../SourceFiles/PLL/pll.v           ; yes             ; User Wizard-Generated File   ; C:/Users/User/Downloads/VGA-Framebuffer-main/SourceFiles/PLL/pll.v              ;         ;
+; ../SourceFiles/ROM/ROM_top.v       ; yes             ; User Verilog HDL File        ; C:/Users/User/Downloads/VGA-Framebuffer-main/SourceFiles/ROM/ROM_top.v          ;         ;
+; ../SourceFiles/TOP/vga.v           ; yes             ; User Verilog HDL File        ; C:/Users/User/Downloads/VGA-Framebuffer-main/SourceFiles/TOP/vga.v              ;         ;
+; ../SourceFiles/TOP/top.v           ; yes             ; User Verilog HDL File        ; C:/Users/User/Downloads/VGA-Framebuffer-main/SourceFiles/TOP/top.v              ;         ;
+; ../SourceFiles/TOP/memsyncreset.v  ; yes             ; User SystemVerilog HDL File  ; C:/Users/User/Downloads/VGA-Framebuffer-main/SourceFiles/TOP/memsyncreset.v     ;         ;
+; ../SourceFiles/FIFO/fifo.v         ; yes             ; User SystemVerilog HDL File  ; C:/Users/User/Downloads/VGA-Framebuffer-main/SourceFiles/FIFO/fifo.v            ;         ;
+; ../SourceFiles/MEM/RAM.v           ; yes             ; User SystemVerilog HDL File  ; C:/Users/User/Downloads/VGA-Framebuffer-main/SourceFiles/MEM/RAM.v              ;         ;
+; hex_vposes.txt                     ; yes             ; Auto-Found File              ; C:/Users/User/Downloads/VGA-Framebuffer-main/Project/hex_vposes.txt             ;         ;
+; hex_rgb_working.txt                ; yes             ; Auto-Found File              ; C:/Users/User/Downloads/VGA-Framebuffer-main/Project/hex_rgb_working.txt        ;         ;
+; hex_hposes.txt                     ; yes             ; Auto-Found File              ; C:/Users/User/Downloads/VGA-Framebuffer-main/Project/hex_hposes.txt             ;         ;
+; altpll.tdf                         ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altpll.tdf               ;         ;
+; aglobal201.inc                     ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/aglobal201.inc           ;         ;
+; stratix_pll.inc                    ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/stratix_pll.inc          ;         ;
+; stratixii_pll.inc                  ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/stratixii_pll.inc        ;         ;
+; cycloneii_pll.inc                  ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/cycloneii_pll.inc        ;         ;
+; db/pll_altpll.v                    ; yes             ; Auto-Generated Megafunction  ; C:/Users/User/Downloads/VGA-Framebuffer-main/Project/db/pll_altpll.v            ;         ;
+; altsyncram.tdf                     ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altsyncram.tdf           ;         ;
+; stratix_ram_block.inc              ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/stratix_ram_block.inc    ;         ;
+; lpm_mux.inc                        ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_mux.inc              ;         ;
+; lpm_decode.inc                     ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_decode.inc           ;         ;
+; a_rdenreg.inc                      ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/a_rdenreg.inc            ;         ;
+; altrom.inc                         ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altrom.inc               ;         ;
+; altram.inc                         ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altram.inc               ;         ;
+; altdpram.inc                       ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altdpram.inc             ;         ;
+; db/altsyncram_1of1.tdf             ; yes             ; Auto-Generated Megafunction  ; C:/Users/User/Downloads/VGA-Framebuffer-main/Project/db/altsyncram_1of1.tdf     ;         ;
+; db/altsyncram_acc1.tdf             ; yes             ; Auto-Generated Megafunction  ; C:/Users/User/Downloads/VGA-Framebuffer-main/Project/db/altsyncram_acc1.tdf     ;         ;
+; lpm_divide.tdf                     ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_divide.tdf           ;         ;
+; abs_divider.inc                    ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/abs_divider.inc          ;         ;
+; sign_div_unsign.inc                ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/sign_div_unsign.inc      ;         ;
+; db/lpm_divide_rim.tdf              ; yes             ; Auto-Generated Megafunction  ; C:/Users/User/Downloads/VGA-Framebuffer-main/Project/db/lpm_divide_rim.tdf      ;         ;
+; db/sign_div_unsign_jlh.tdf         ; yes             ; Auto-Generated Megafunction  ; C:/Users/User/Downloads/VGA-Framebuffer-main/Project/db/sign_div_unsign_jlh.tdf ;         ;
+; db/alt_u_div_q6f.tdf               ; yes             ; Auto-Generated Megafunction  ; C:/Users/User/Downloads/VGA-Framebuffer-main/Project/db/alt_u_div_q6f.tdf       ;         ;
+; db/add_sub_7pc.tdf                 ; yes             ; Auto-Generated Megafunction  ; C:/Users/User/Downloads/VGA-Framebuffer-main/Project/db/add_sub_7pc.tdf         ;         ;
+; db/add_sub_8pc.tdf                 ; yes             ; Auto-Generated Megafunction  ; C:/Users/User/Downloads/VGA-Framebuffer-main/Project/db/add_sub_8pc.tdf         ;         ;
+; db/lpm_divide_uim.tdf              ; yes             ; Auto-Generated Megafunction  ; C:/Users/User/Downloads/VGA-Framebuffer-main/Project/db/lpm_divide_uim.tdf      ;         ;
+; db/sign_div_unsign_mlh.tdf         ; yes             ; Auto-Generated Megafunction  ; C:/Users/User/Downloads/VGA-Framebuffer-main/Project/db/sign_div_unsign_mlh.tdf ;         ;
+; db/alt_u_div_07f.tdf               ; yes             ; Auto-Generated Megafunction  ; C:/Users/User/Downloads/VGA-Framebuffer-main/Project/db/alt_u_div_07f.tdf       ;         ;
+; db/lpm_divide_k9m.tdf              ; yes             ; Auto-Generated Megafunction  ; C:/Users/User/Downloads/VGA-Framebuffer-main/Project/db/lpm_divide_k9m.tdf      ;         ;
+; db/sign_div_unsign_9kh.tdf         ; yes             ; Auto-Generated Megafunction  ; C:/Users/User/Downloads/VGA-Framebuffer-main/Project/db/sign_div_unsign_9kh.tdf ;         ;
+; db/alt_u_div_64f.tdf               ; yes             ; Auto-Generated Megafunction  ; C:/Users/User/Downloads/VGA-Framebuffer-main/Project/db/alt_u_div_64f.tdf       ;         ;
+; db/lpm_divide_uam.tdf              ; yes             ; Auto-Generated Megafunction  ; C:/Users/User/Downloads/VGA-Framebuffer-main/Project/db/lpm_divide_uam.tdf      ;         ;
++------------------------------------+-----------------+------------------------------+---------------------------------------------------------------------------------+---------+
+>>>>>>> Stashed changes
 
 
 +---------------------------------------------------------+
@@ -404,7 +468,11 @@ https://fpgasoftware.intel.com/eula.
 ; Compilation Hierarchy Node                   ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                                         ; Entity Name          ; Library Name ;
 +----------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------+--------------+
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 ; |top                                         ; 1451 (30)           ; 282 (0)                   ; 15000       ; 0            ; 0       ; 0         ; 28   ; 0            ; |top                                                                                                                                                        ; top                  ; work         ;
+=======
+; |top                                         ; 1052 (30)           ; 280 (0)                   ; 15000       ; 0            ; 0       ; 0         ; 28   ; 0            ; |top                                                                                                                                                        ; top                  ; work         ;
+>>>>>>> Stashed changes
 =======
 ; |top                                         ; 1052 (30)           ; 280 (0)                   ; 15000       ; 0            ; 0       ; 0         ; 28   ; 0            ; |top                                                                                                                                                        ; top                  ; work         ;
 >>>>>>> Stashed changes
@@ -417,6 +485,7 @@ https://fpgasoftware.intel.com/eula.
 ;          |altsyncram:data_rtl_0|             ; 0 (0)               ; 0 (0)                     ; 300         ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|FIFO_top:FIFO|flip_flop_fifo:VPOS_FIFO|altsyncram:data_rtl_0                                                                                           ; altsyncram           ; work         ;
 ;             |altsyncram_acc1:auto_generated| ; 0 (0)               ; 0 (0)                     ; 300         ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|FIFO_top:FIFO|flip_flop_fifo:VPOS_FIFO|altsyncram:data_rtl_0|altsyncram_acc1:auto_generated                                                            ; altsyncram_acc1      ; work         ;
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 ;    |RGBMemory_top:FrameBuffer|               ; 390 (0)             ; 71 (0)                    ; 14400       ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|RGBMemory_top:FrameBuffer                                                                                                                              ; RGBMemory_top        ; work         ;
 ;       |RGBmemcoderdecoderv2:FBCODEC|         ; 351 (109)           ; 71 (71)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|RGBMemory_top:FrameBuffer|RGBmemcoderdecoderv2:FBCODEC                                                                                                 ; RGBmemcoderdecoderv2 ; work         ;
 ;          |lpm_divide:Div0|                   ; 49 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|RGBMemory_top:FrameBuffer|RGBmemcoderdecoderv2:FBCODEC|lpm_divide:Div0                                                                                 ; lpm_divide           ; work         ;
@@ -424,12 +493,17 @@ https://fpgasoftware.intel.com/eula.
 ;                |sign_div_unsign_mlh:divider| ; 49 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|RGBMemory_top:FrameBuffer|RGBmemcoderdecoderv2:FBCODEC|lpm_divide:Div0|lpm_divide_uim:auto_generated|sign_div_unsign_mlh:divider                       ; sign_div_unsign_mlh  ; work         ;
 ;                   |alt_u_div_07f:divider|    ; 49 (49)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|RGBMemory_top:FrameBuffer|RGBmemcoderdecoderv2:FBCODEC|lpm_divide:Div0|lpm_divide_uim:auto_generated|sign_div_unsign_mlh:divider|alt_u_div_07f:divider ; alt_u_div_07f        ; work         ;
 =======
+=======
+>>>>>>> Stashed changes
 ;    |RGBMemory_top:FrameBuffer|               ; 395 (0)             ; 71 (0)                    ; 14400       ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|RGBMemory_top:FrameBuffer                                                                                                                              ; RGBMemory_top        ; work         ;
 ;       |RGBmemcoderdecoderv2:FBCODEC|         ; 356 (109)           ; 71 (71)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|RGBMemory_top:FrameBuffer|RGBmemcoderdecoderv2:FBCODEC                                                                                                 ; RGBmemcoderdecoderv2 ; work         ;
 ;          |lpm_divide:Div0|                   ; 54 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|RGBMemory_top:FrameBuffer|RGBmemcoderdecoderv2:FBCODEC|lpm_divide:Div0                                                                                 ; lpm_divide           ; work         ;
 ;             |lpm_divide_uim:auto_generated|  ; 54 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|RGBMemory_top:FrameBuffer|RGBmemcoderdecoderv2:FBCODEC|lpm_divide:Div0|lpm_divide_uim:auto_generated                                                   ; lpm_divide_uim       ; work         ;
 ;                |sign_div_unsign_mlh:divider| ; 54 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|RGBMemory_top:FrameBuffer|RGBmemcoderdecoderv2:FBCODEC|lpm_divide:Div0|lpm_divide_uim:auto_generated|sign_div_unsign_mlh:divider                       ; sign_div_unsign_mlh  ; work         ;
 ;                   |alt_u_div_07f:divider|    ; 54 (54)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|RGBMemory_top:FrameBuffer|RGBmemcoderdecoderv2:FBCODEC|lpm_divide:Div0|lpm_divide_uim:auto_generated|sign_div_unsign_mlh:divider|alt_u_div_07f:divider ; alt_u_div_07f        ; work         ;
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 ;          |lpm_divide:Div1|                   ; 73 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|RGBMemory_top:FrameBuffer|RGBmemcoderdecoderv2:FBCODEC|lpm_divide:Div1                                                                                 ; lpm_divide           ; work         ;
 ;             |lpm_divide_rim:auto_generated|  ; 73 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|RGBMemory_top:FrameBuffer|RGBmemcoderdecoderv2:FBCODEC|lpm_divide:Div1|lpm_divide_rim:auto_generated                                                   ; lpm_divide_rim       ; work         ;
@@ -453,7 +527,11 @@ https://fpgasoftware.intel.com/eula.
 ;          |altsyncram:ramblock_rtl_0|         ; 0 (0)               ; 0 (0)                     ; 4800        ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|RGBMemory_top:FrameBuffer|single_port_ram:R_MEMORY|altsyncram:ramblock_rtl_0                                                                           ; altsyncram           ; work         ;
 ;             |altsyncram_1of1:auto_generated| ; 0 (0)               ; 0 (0)                     ; 4800        ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|RGBMemory_top:FrameBuffer|single_port_ram:R_MEMORY|altsyncram:ramblock_rtl_0|altsyncram_1of1:auto_generated                                            ; altsyncram_1of1      ; work         ;
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 ;    |ROM_top:ROM|                             ; 803 (803)           ; 30 (30)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|ROM_top:ROM                                                                                                                                            ; ROM_top              ; work         ;
+=======
+;    |ROM_top:ROM|                             ; 399 (399)           ; 28 (28)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|ROM_top:ROM                                                                                                                                            ; ROM_top              ; work         ;
+>>>>>>> Stashed changes
 =======
 ;    |ROM_top:ROM|                             ; 399 (399)           ; 28 (28)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|ROM_top:ROM                                                                                                                                            ; ROM_top              ; work         ;
 >>>>>>> Stashed changes
@@ -545,8 +623,11 @@ Encoding Type:  One-Hot
 ; RGBMemory_top:FrameBuffer|RGBmemcoderdecoderv2:FBCODEC|w_state~7 ; Lost fanout                                                  ;
 ; RGBMemory_top:FrameBuffer|RGBmemcoderdecoderv2:FBCODEC|w_state~8 ; Lost fanout                                                  ;
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 ; Total Number of Removed Registers = 47                           ;                                                              ;
 =======
+=======
+>>>>>>> Stashed changes
 ; ROM_top:ROM|RGB[1,2]                                             ; Merged with ROM_top:ROM|RGB[0]                               ;
 ; Total Number of Removed Registers = 49                           ;                                                              ;
 >>>>>>> Stashed changes
@@ -581,6 +662,7 @@ Encoding Type:  One-Hot
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 ; Total registers                              ; 282   ;
 ; Number of registers using Synchronous Clear  ; 64    ;
 ; Number of registers using Synchronous Load   ; 6     ;
@@ -588,12 +670,17 @@ Encoding Type:  One-Hot
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 224   ;
 =======
+=======
+>>>>>>> Stashed changes
 ; Total registers                              ; 280   ;
 ; Number of registers using Synchronous Clear  ; 62    ;
 ; Number of registers using Synchronous Load   ; 6     ;
 ; Number of registers using Asynchronous Clear ; 23    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 223   ;
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
@@ -1417,6 +1504,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; boundary_port         ; 28                          ;
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 ; cycloneiii_ff         ; 282                         ;
 ;     ENA               ; 138                         ;
 ;     ENA CLR           ; 23                          ;
@@ -1439,6 +1527,8 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Max LUT depth         ; 22.60                       ;
 ; Average LUT depth     ; 8.34                        ;
 =======
+=======
+>>>>>>> Stashed changes
 ; cycloneiii_ff         ; 280                         ;
 ;     ENA               ; 139                         ;
 ;     ENA CLR           ; 23                          ;
@@ -1461,6 +1551,9 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;                       ;                             ;
 ; Max LUT depth         ; 22.60                       ;
 ; Average LUT depth     ; 8.35                        ;
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 +-----------------------+-----------------------------+
 
@@ -1471,7 +1564,11 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 ; Top            ; 00:00:06     ;
+=======
+; Top            ; 00:00:05     ;
+>>>>>>> Stashed changes
 =======
 ; Top            ; 00:00:05     ;
 >>>>>>> Stashed changes
@@ -1484,8 +1581,13 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
     Info: Processing started: Sat Jul 23 18:30:04 2022
+=======
+    Info: Version 20.1.1 Build 720 11/11/2020 Patches 1.02i SJ Lite Edition
+    Info: Processing started: Mon Jul 25 16:56:54 2022
+>>>>>>> Stashed changes
 =======
     Info: Version 20.1.1 Build 720 11/11/2020 Patches 1.02i SJ Lite Edition
     Info: Processing started: Mon Jul 25 16:56:54 2022
@@ -1514,6 +1616,7 @@ Info (12021): Found 1 design units, including 1 entities, in source file /users/
 Info (12021): Found 1 design units, including 1 entities, in source file /users/user/downloads/vga-framebuffer-main/sourcefiles/mem/ram.v
     Info (12023): Found entity 1: single_port_ram File: C:/Users/User/Downloads/VGA-Framebuffer-main/SourceFiles/MEM/RAM.v Line: 1
 Info (12127): Elaborating entity "top" for the top level hierarchy
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 Info (12128): Elaborating entity "vga" for hierarchy "vga:i_vga" File: D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/TOP/top.v Line: 92
 Info (12128): Elaborating entity "ROM_top" for hierarchy "ROM_top:ROM" File: D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/TOP/top.v Line: 157
@@ -6351,6 +6454,8 @@ Warning (10230): Verilog HDL assignment warning at RAM.v(29): truncated value wi
 Info (12128): Elaborating entity "memsyncreset" for hierarchy "memsyncreset:memsyncreset" File: D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/TOP/top.v Line: 216
 Warning (10230): Verilog HDL assignment warning at memsyncreset.v(27): truncated value with size 32 to match size of target (11) File: D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/TOP/memsyncreset.v Line: 27
 =======
+=======
+>>>>>>> Stashed changes
 Info (12128): Elaborating entity "pll" for hierarchy "pll:pll" File: C:/Users/User/Downloads/VGA-Framebuffer-main/SourceFiles/TOP/top.v Line: 64
 Info (12128): Elaborating entity "altpll" for hierarchy "pll:pll|altpll:altpll_component" File: C:/Users/User/Downloads/VGA-Framebuffer-main/SourceFiles/PLL/pll.v Line: 100
 Info (12130): Elaborated megafunction instantiation "pll:pll|altpll:altpll_component" File: C:/Users/User/Downloads/VGA-Framebuffer-main/SourceFiles/PLL/pll.v Line: 100
@@ -11247,6 +11352,9 @@ Info (12128): Elaborating entity "single_port_ram" for hierarchy "RGBMemory_top:
 Warning (10230): Verilog HDL assignment warning at RAM.v(29): truncated value with size 32 to match size of target (1) File: C:/Users/User/Downloads/VGA-Framebuffer-main/SourceFiles/MEM/RAM.v Line: 29
 Info (12128): Elaborating entity "memsyncreset" for hierarchy "memsyncreset:memsyncreset" File: C:/Users/User/Downloads/VGA-Framebuffer-main/SourceFiles/TOP/top.v Line: 216
 Warning (10230): Verilog HDL assignment warning at memsyncreset.v(27): truncated value with size 32 to match size of target (11) File: C:/Users/User/Downloads/VGA-Framebuffer-main/SourceFiles/TOP/memsyncreset.v Line: 27
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 Warning (276027): Inferred dual-clock RAM node "RGBMemory_top:FrameBuffer|single_port_ram:B_MEMORY|ramblock_rtl_0" from synchronous design logic.  The read-during-write behavior of a dual-clock RAM is undefined and may not match the behavior of the original design.
 Warning (276027): Inferred dual-clock RAM node "RGBMemory_top:FrameBuffer|single_port_ram:G_MEMORY|ramblock_rtl_0" from synchronous design logic.  The read-during-write behavior of a dual-clock RAM is undefined and may not match the behavior of the original design.
@@ -11339,15 +11447,21 @@ Info (19000): Inferred 5 megafunctions from design logic
         Info (286033): Parameter WRCONTROL_ACLR_A set to NONE
 Info (278001): Inferred 4 megafunctions from design logic
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "RGBMemory_top:FrameBuffer|RGBmemcoderdecoderv2:FBCODEC|Div1" File: D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/MEM/RGBmemcodec2.v Line: 63
     Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "RGBMemory_top:FrameBuffer|RGBmemcoderdecoderv2:FBCODEC|Div0" File: D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/MEM/RGBmemcodec2.v Line: 59
     Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "RGBMemory_top:FrameBuffer|RGBmemcoderdecoderv2:FBCODEC|Mod0" File: D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/MEM/RGBmemcodec2.v Line: 60
     Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "RGBMemory_top:FrameBuffer|RGBmemcoderdecoderv2:FBCODEC|Mod1" File: D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/MEM/RGBmemcodec2.v Line: 77
 =======
+=======
+>>>>>>> Stashed changes
     Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "RGBMemory_top:FrameBuffer|RGBmemcoderdecoderv2:FBCODEC|Div1" File: C:/Users/User/Downloads/VGA-Framebuffer-main/SourceFiles/MEM/RGBmemcodec2.v Line: 63
     Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "RGBMemory_top:FrameBuffer|RGBmemcoderdecoderv2:FBCODEC|Div0" File: C:/Users/User/Downloads/VGA-Framebuffer-main/SourceFiles/MEM/RGBmemcodec2.v Line: 59
     Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "RGBMemory_top:FrameBuffer|RGBmemcoderdecoderv2:FBCODEC|Mod0" File: C:/Users/User/Downloads/VGA-Framebuffer-main/SourceFiles/MEM/RGBmemcodec2.v Line: 60
     Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "RGBMemory_top:FrameBuffer|RGBmemcoderdecoderv2:FBCODEC|Mod1" File: C:/Users/User/Downloads/VGA-Framebuffer-main/SourceFiles/MEM/RGBmemcodec2.v Line: 77
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 Info (12130): Elaborated megafunction instantiation "RGBMemory_top:FrameBuffer|single_port_ram:B_MEMORY|altsyncram:ramblock_rtl_0"
 Info (12133): Instantiated megafunction "RGBMemory_top:FrameBuffer|single_port_ram:B_MEMORY|altsyncram:ramblock_rtl_0" with the following parameter:
@@ -11442,9 +11556,15 @@ Info (12021): Found 1 design units, including 1 entities, in source file db/sign
     Info (12023): Found entity 1: sign_div_unsign_9kh File: C:/Users/User/Downloads/VGA-Framebuffer-main/Project/db/sign_div_unsign_9kh.tdf Line: 25
 Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_64f.tdf
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     Info (12023): Found entity 1: alt_u_div_64f File: D:/Users/callo/Documents/GitHub/VGA-Framebuffer/Project/db/alt_u_div_64f.tdf Line: 27
 Info (12130): Elaborated megafunction instantiation "RGBMemory_top:FrameBuffer|RGBmemcoderdecoderv2:FBCODEC|lpm_divide:Mod1" File: D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/MEM/RGBmemcodec2.v Line: 77
 Info (12133): Instantiated megafunction "RGBMemory_top:FrameBuffer|RGBmemcoderdecoderv2:FBCODEC|lpm_divide:Mod1" with the following parameter: File: D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/MEM/RGBmemcodec2.v Line: 77
+=======
+    Info (12023): Found entity 1: alt_u_div_64f File: C:/Users/User/Downloads/VGA-Framebuffer-main/Project/db/alt_u_div_64f.tdf Line: 27
+Info (12130): Elaborated megafunction instantiation "RGBMemory_top:FrameBuffer|RGBmemcoderdecoderv2:FBCODEC|lpm_divide:Mod1" File: C:/Users/User/Downloads/VGA-Framebuffer-main/SourceFiles/MEM/RGBmemcodec2.v Line: 77
+Info (12133): Instantiated megafunction "RGBMemory_top:FrameBuffer|RGBmemcoderdecoderv2:FBCODEC|lpm_divide:Mod1" with the following parameter: File: C:/Users/User/Downloads/VGA-Framebuffer-main/SourceFiles/MEM/RGBmemcodec2.v Line: 77
+>>>>>>> Stashed changes
 =======
     Info (12023): Found entity 1: alt_u_div_64f File: C:/Users/User/Downloads/VGA-Framebuffer-main/Project/db/alt_u_div_64f.tdf Line: 27
 Info (12130): Elaborated megafunction instantiation "RGBMemory_top:FrameBuffer|RGBmemcoderdecoderv2:FBCODEC|lpm_divide:Mod1" File: C:/Users/User/Downloads/VGA-Framebuffer-main/SourceFiles/MEM/RGBmemcodec2.v Line: 77
@@ -11486,19 +11606,28 @@ Info (21057): Implemented 1268 device resources after synthesis - the final reso
     Info (21058): Implemented 6 input pins
     Info (21059): Implemented 22 output pins
     Info (21061): Implemented 1201 logic cells
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
     Info (21064): Implemented 38 RAM segments
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 4850 warnings
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
     Info: Peak virtual memory: 4793 megabytes
     Info: Processing ended: Sat Jul 23 18:30:20 2022
     Info: Elapsed time: 00:00:16
     Info: Total CPU time (on all processors): 00:00:25
 =======
+=======
+>>>>>>> Stashed changes
     Info: Peak virtual memory: 4814 megabytes
     Info: Processing ended: Mon Jul 25 16:57:09 2022
     Info: Elapsed time: 00:00:15
     Info: Total CPU time (on all processors): 00:00:27
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 
 
