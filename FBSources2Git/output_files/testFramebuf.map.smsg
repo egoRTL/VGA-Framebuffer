@@ -1,2 +1,0 @@
-Warning (10268): Verilog HDL information at RGMmemcodec.v(45): always construct contains both blocking and non-blocking assignments File: C:/Users/callo/Desktop/Science/Quartus Projects/testFramebuf/RGMmemcodec.v Line: 45
-Warning (10268): Verilog HDL information at RGMmemcodec.v(115): always construct contains both blocking and non-blocking assignments File: C:/Users/callo/Desktop/Science/Quartus Projects/testFramebuf/RGMmemcodec.v Line: 115
