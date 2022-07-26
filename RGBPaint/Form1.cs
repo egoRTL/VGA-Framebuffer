@@ -83,9 +83,9 @@ namespace RGBPaint
             string xpath, ypath, rgbpath;
             saveTXTFileDialog2.ShowDialog();
             rgbpath = saveTXTFileDialog2.FileName;
-            //xpath = @"D:\Users\callo\Documents\GitHub\VGA-Framebuffer\FBTest2Git\hex_hposes.txt";
-            //ypath = @"D:\Users\callo\Documents\GitHub\VGA-Framebuffer\FBTest2Git\hex_vposes.txt";
-            System.IO.StreamWriter rgbwriter, xwriter, ywriter ;
+            //xpath = @"";
+            //ypath = @"";
+            System.IO.StreamWriter rgbwriter;//, xwriter, ywriter ;
             rgbwriter = new System.IO.StreamWriter(rgbpath, false);
             //xwriter = new System.IO.StreamWriter(xpath, false);
             //ywriter = new System.IO.StreamWriter(ypath, false);
