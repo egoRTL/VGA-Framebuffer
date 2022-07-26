@@ -1,5 +1,6 @@
 # VGA-Framebuffer(v. 1.0)
 ФБ для статичных изображений
+
 Сделан для платы OMDAZZ с чипом Cyclone IV E: EP4CE10E22C8
 
 # Содержание
