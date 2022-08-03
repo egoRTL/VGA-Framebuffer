@@ -9,46 +9,69 @@ z2
 !i10f 100
 cModel Technology
 dC:/NewModelSim/20.1/modelsim_ase/win32aloem
+vbrush
+!s110 1659564411
+!i10b 1
+!s100 2IbGgPl0>aHZhYbeFL5X70
+Z0 !s11b Dg1SIo80bB@j0V0VzS_@n1
+ITOD;kMKL^3Pi8Gg?F^[[02
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dD:/Users/callo/Documents/GitHub/VGA-Framebuffer/FBTest2Git
+w1659564387
+8D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/BRUSH/brush.v
+FD:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/BRUSH/brush.v
+!i122 481
+L0 1 62
+Z3 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z4 !s108 1659564411.000000
+!s107 D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/BRUSH/brush.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/BRUSH/brush.v|
+!i113 1
+Z5 o-work work
+Z6 tCvgOpt 0
 vFIFO_top
-Z0 !s110 1658589933
+Z7 !s110 1658589933
 !i10b 1
 !s100 U5Z3oHhQlgF=3UcXEW6de0
-Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
+R0
 II=SPZo`bc`B136ILCmnn<1
-Z2 VDg1SIo80bB@j0V0VzS_@n1
-Z3 dD:/Users/callo/Documents/GitHub/VGA-Framebuffer/FBTest2Git
+R1
+R2
 w1658253016
 8D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/FIFO/FIFO_top.v
 FD:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/FIFO/FIFO_top.v
 !i122 464
 L0 1 96
-Z4 OV;L;2020.1;71
+R3
 r1
 !s85 0
 31
-Z5 !s108 1658589933.000000
+Z8 !s108 1658589933.000000
 !s107 D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/FIFO/FIFO_top.v|
 !s90 -reportprogress|300|-work|work|-stats=none|D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/FIFO/FIFO_top.v|
 !i113 1
-Z6 o-work work
-Z7 tCvgOpt 0
+R5
+R6
 n@f@i@f@o_top
 vFIFOTestBench
-Z8 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
+Z9 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
 !s110 1657364807
 !i10b 1
 !s100 <lOYjgcm4VmOS_`:M25VP0
-R1
+R0
 I]zfN?12ZC><dPl_A6oKR=1
-R2
+R1
 S1
-R3
+R2
 w1657364800
 8D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/FIFO/FIFOTestBench.sv
 FD:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/FIFO/FIFOTestBench.sv
 !i122 285
 L0 3 92
-R4
+R3
 r1
 !s85 0
 31
@@ -56,71 +79,71 @@ r1
 !s107 D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/FIFO/FIFOTestBench.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/FIFO/FIFOTestBench.sv|
 !i113 1
-Z9 o-work work -sv
-R7
+Z10 o-work work -sv
+R6
 n@f@i@f@o@test@bench
 vflip_flop_fifo
-R8
-R0
+R9
+R7
 !i10b 1
 !s100 n6:F2[g^SW<JaMCdFmIe50
-R1
+R0
 I9Mb3MKUDjMDT5^:;9b_@Q0
-R2
+R1
 S1
-R3
+R2
 w1655315531
 8D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/FIFO/fifo.v
 FD:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/FIFO/fifo.v
 !i122 463
 L0 1 67
-R4
+R3
 r1
 !s85 0
 31
-R5
+R8
 !s107 D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/FIFO/fifo.v|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/FIFO/fifo.v|
 !i113 1
-R9
-R7
+R10
+R6
 vmemsyncreset
-R0
+R7
 !i10b 1
 !s100 JYgOinNBzFgmel=H=[jn32
-R1
+R0
 I:Un4g3oUl4`FMKA`4FThU3
+R1
 R2
-R3
 w1650082380
 8C:/Users/callo/Desktop/Science/Quartus Projects/lab_11_vga_squares/memsyncreset.v
 FC:/Users/callo/Desktop/Science/Quartus Projects/lab_11_vga_squares/memsyncreset.v
 !i122 465
 L0 1 46
-R4
+R3
 r1
 !s85 0
 31
-R5
+R8
 !s107 C:/Users/callo/Desktop/Science/Quartus Projects/lab_11_vga_squares/memsyncreset.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/callo/Desktop/Science/Quartus Projects/lab_11_vga_squares/memsyncreset.v|
 !i113 1
+R5
 R6
-R7
 vRGBmemcoderdecoder
 !s110 1655165560
 !i10b 1
 !s100 ;8bZ:`EI=]J2m=:hFL0[<2
-R1
+R0
 IPL9kQHXNC=oSI6Fe5gn`e1
-R2
+R1
 dC:/Users/callo/Desktop/Science/ModelSim/NewMSTest
 w1655076151
 8C:/Users/callo/Desktop/Science/Quartus Projects/testFramebuf/RGMmemcodec.v
 FC:/Users/callo/Desktop/Science/Quartus Projects/testFramebuf/RGMmemcodec.v
 !i122 79
 L0 1 139
-R4
+R3
 r1
 !s85 0
 31
@@ -128,95 +151,95 @@ r1
 !s107 C:/Users/callo/Desktop/Science/Quartus Projects/testFramebuf/RGMmemcodec.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/callo/Desktop/Science/Quartus Projects/testFramebuf/RGMmemcodec.v|
 !i113 1
+R5
 R6
-R7
 n@r@g@bmemcoderdecoder
 vRGBmemcoderdecoderv2
-R0
+R7
 !i10b 1
 !s100 h5H;eZSg`:<XRT1Bm34lD3
-R1
+R0
 IHhASDJ]RYWdCd_AVYFiWY1
+R1
 R2
-R3
 w1658587892
 8D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/MEM/RGBmemcodec2.v
 FD:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/MEM/RGBmemcodec2.v
 !i122 461
 L0 1 137
-R4
+R3
 r1
 !s85 0
 31
-Z10 !s108 1658589932.000000
+Z11 !s108 1658589932.000000
 !s107 D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/MEM/RGBmemcodec2.v|
 !s90 -reportprogress|300|-work|work|-stats=none|D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/MEM/RGBmemcodec2.v|
 !i113 1
+R5
 R6
-R7
 n@r@g@bmemcoderdecoderv2
 vRGBMemory_top
-R0
+R7
 !i10b 1
 !s100 LJVSeW9kk_C?gUoUnHFEd0
-R1
+R0
 IWBHi]PH0j]JMo8cnOXj0i0
+R1
 R2
-R3
 w1657376856
 8D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/MEM/RGBMemory_top.v
 FD:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/MEM/RGBMemory_top.v
 !i122 462
 L0 1 115
-R4
+R3
 r1
 !s85 0
 31
-R5
+R8
 !s107 D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/MEM/RGBMemory_top.v|
 !s90 -reportprogress|300|-work|work|-stats=none|D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/MEM/RGBMemory_top.v|
 !i113 1
+R5
 R6
-R7
 n@r@g@b@memory_top
 vROM_top
-Z11 !s110 1658589932
+Z12 !s110 1658589932
 !i10b 1
 !s100 T]bAJY^iRMe@3M9^Vl`ZF0
-R1
+R0
 I6TXNHhGEmZgS0:9`PjU1h2
+R1
 R2
-R3
 w1658589909
 8D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/ROM/ROM_top.v
 FD:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/ROM/ROM_top.v
 !i122 459
 L0 1 73
-R4
+R3
 r1
 !s85 0
 31
-R10
+R11
 !s107 D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/ROM/ROM_top.v|
 !s90 -reportprogress|300|-work|work|-stats=none|D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/ROM/ROM_top.v|
 !i113 1
+R5
 R6
-R7
 n@r@o@m_top
 vROM_topTestBench
 !s110 1657248472
 !i10b 1
 !s100 K?TY_1NbX7`[QU23W=NR60
-R1
+R0
 I1o0]P=>17c9PlTY=>]SHh3
+R1
 R2
-R3
 w1656263775
 8D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/ROM/ROM_topTestBench.v
 FD:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/ROM/ROM_topTestBench.v
 !i122 230
-Z12 L0 3 20
-R4
+Z13 L0 3 20
+R3
 r1
 !s85 0
 31
@@ -224,48 +247,48 @@ r1
 !s107 D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/ROM/ROM_topTestBench.v|
 !s90 -reportprogress|300|-work|work|-stats=none|D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/ROM/ROM_topTestBench.v|
 !i113 1
+R5
 R6
-R7
 n@r@o@m_top@test@bench
 vsingle_port_ram
-R11
+R12
 !i10b 1
 !s100 zB@cHm1hVB]9XT?_kHmXJ0
-R1
+R0
 I:aKe=0JIN<l>R4H596L[g0
+R1
 R2
-R3
 w1655044945
 8D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/MEM/RAM.v
 FD:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/MEM/RAM.v
 !i122 460
 L0 1 44
-R4
+R3
 r1
 !s85 0
 31
-R10
+R11
 !s107 D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/MEM/RAM.v|
 !s90 -reportprogress|300|-work|work|-stats=none|D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/MEM/RAM.v|
 !i113 1
+R5
 R6
-R7
 vTestBench
-R8
+R9
 !s110 1658587933
 !i10b 1
 !s100 AiPD@g1dG3>;TPoT;dzSd3
-R1
+R0
 I[zRTL3jM4O<0K>:N372HI2
-R2
+R1
 S1
-R3
+R2
 w1658587919
 8D:\Users\callo\Documents\GitHub\VGA-Framebuffer\SourceFiles\MEM\MEMTestBench.sv
 FD:\Users\callo\Documents\GitHub\VGA-Framebuffer\SourceFiles\MEM\MEMTestBench.sv
 !i122 435
 L0 3 149
-R4
+R3
 r1
 !s85 0
 31
@@ -273,78 +296,127 @@ r1
 !s107 D:\Users\callo\Documents\GitHub\VGA-Framebuffer\SourceFiles\MEM\MEMTestBench.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|D:\Users\callo\Documents\GitHub\VGA-Framebuffer\SourceFiles\MEM\MEMTestBench.sv|
 !i113 1
-R9
-R7
+R10
+R6
 n@test@bench
+vTestBench_brush
+Z14 !s110 1659564412
+R1
+r1
+!s85 0
+!i10b 1
+!s100 TC9>3mb_g:?BiIXdzQZe10
+I]Mz>9zji37Ne5EHTo`ZUI0
+R2
+Z15 w1659564405
+Z16 8D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/BRUSH/TestBench_brush.v
+Z17 FD:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/BRUSH/TestBench_brush.v
+!i122 482
+L0 2 80
+R3
+31
+R4
+!s107 D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/BRUSH/TestBench_brush.v|
+Z18 !s90 -reportprogress|300|-work|work|-stats=none|D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/BRUSH/TestBench_brush.v|
+!i113 1
+R5
+R6
+n@test@bench_brush
+XTestBench_brush_v_unit
+R9
+R14
+Von>0hEN`M`3PoD4MI=K580
+r1
+!s85 0
+!i10b 1
+!s100 TdDNA;n^II4_58Qn=:S@g2
+Ion>0hEN`M`3PoD4MI=K580
+!i103 1
+S1
+R2
+R15
+R16
+R17
+!i122 482
+L0 1 0
+R3
+31
+R4
+Z19 !s107 D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/BRUSH/TestBench_brush.v|
+R18
+!i113 1
+R5
+R6
+n@test@bench_brush_v_unit
 vtop
-Z13 !s110 1658589934
+Z20 !s110 1658589934
 !i10b 1
 !s100 JbO5Qj9DkeobO>FYceTCJ3
-R1
+R0
 I=<Z5cU[aKQCQ37A?O]j:B2
+R1
 R2
-R3
 w1658577963
 8D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/TOP/top.v
 FD:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/TOP/top.v
 !i122 468
 L0 4 220
-R4
+R3
 r1
 !s85 0
 31
-Z14 !s108 1658589934.000000
+Z21 !s108 1658589934.000000
 !s107 D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/TOP/top.v|
 !s90 -reportprogress|300|-work|work|-stats=none|D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/TOP/top.v|
 !i113 1
+R5
 R6
-R7
 vTop_FB_TestBench
-R8
-R13
+R9
+R20
 !i10b 1
 !s100 8zec8bQ_4@CLdKmkn3<l00
-R1
+R0
 Ie<@POKGMQPa1N46:f;25X3
-R2
+R1
 S1
-R3
+R2
 w1657203398
 8D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/TOP/Top_TestBench.sv
 FD:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/TOP/Top_TestBench.sv
 !i122 467
-R12
-R4
+R13
+R3
 r1
 !s85 0
 31
-R14
+R21
 !s107 D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/TOP/Top_TestBench.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/TOP/Top_TestBench.sv|
 !i113 1
-R9
-R7
+R10
+R6
 n@top_@f@b_@test@bench
 vvga
-R13
+R20
 !i10b 1
 !s100 LM77DU^<i<c9n?dhn4n<B3
-R1
+R0
 IF>O<d`hDaIQEI1?4=G^i_2
+R1
 R2
-R3
 w1649987084
 8C:/Users/callo/Desktop/Science/Quartus Projects/lab_11_vga_squares/vga.v
 FC:/Users/callo/Desktop/Science/Quartus Projects/lab_11_vga_squares/vga.v
 !i122 466
 L0 1 97
-R4
+R3
 r1
 !s85 0
 31
-R5
+R8
 !s107 C:/Users/callo/Desktop/Science/Quartus Projects/lab_11_vga_squares/vga.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/callo/Desktop/Science/Quartus Projects/lab_11_vga_squares/vga.v|
 !i113 1
+R5
 R6
-R7

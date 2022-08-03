@@ -50,7 +50,7 @@ module top
 	 // webuf - write enable for framebuffer and decoder;
 	 //rinwire - r component of rgb pixel, which supposed to be written to memory
 	
-	 wire [2:0] RGBfifo,ROM_RGB;
+	 wire [2:0] RGBfifo,ROM_RGB,FB_RGB;
 	
 	 wire [X_WIRE_WIDTH - 1:0] hpos,hpos_to_fb,hposfifo,ROM_hpos;
 
@@ -91,6 +91,24 @@ module top
 		  .enable	  ( enable		)
     );
 	 
+	 brush
+	 #(
+	 .RESOLUTION_H   ( RESOLUTION_H ),
+	 .RESOLUTION_V   ( RESOLUTION_V ),
+	 .HPOS_WIDTH	  ( X_WIRE_WIDTH ),
+	 .VPOS_WIDTH 	  ( Y_WIRE_WIDTH )
+	 )
+	 Painting_Brush
+	 (
+			.clk		  ( pllclk		),
+			.reset	  ( ~reset_n 	),
+			.BTN		  ( key_sw		), // [2:0]movedirection=[2:0]key_sw
+			.enable	  ( enable		),
+			.hpos		  ( hpos			),
+			.vpos		  ( vpos			),
+			.FB_RGB	  ( FB_RGB		),
+			.rgb		  ( rgb			)
+	 );
 //	vgasprites
 //	#(.CURSOR_SIZE(CURSOR_SIZE),
 //	  .H_DISPLAY(RESOLUTION_H),  // Horizontal display width
@@ -112,30 +130,7 @@ module top
 //	.cursor_ypos(cursor_ypos),
 //	.rfromFB(rout)
 //	);
-	
-//		brush // module for painting pixels on the screen
-//    # (
-//       .HPOS_WIDTH  ( X_WIRE_WIDTH    ),
-//       .VPOS_WIDTH  ( Y_WIRE_WIDTH    ),
-//		 .H_DISPLAY   ( RESOLUTION_H	  ),
-//		 .V_DISPLAY	  ( RESOLUTION_V	  ),
-//		 .INITIAL_VALUE(INITIAL			  )
-//    )
-//    brush
-//    (
-//        .clk(pllclk),
-//		  .reset(~reset_n),
-//		  .enable(enable),
-//		  .key_sw(~key_sw[3]),
-//		  .cursor_xpos(cursor_xpos),
-//		  .cursor_ypos(cursor_ypos),
-//		  .tofifo(tofifo), // fifo data structure:{[XPOS][YPOS][Rdata]}
-//		  .push(fifopush),
-//		  .pop(fifopop),
-//		  .empty(fifoempty),
-//		  .full(fifofull),
-//		  .webuf(webuf)
-//    );
+
 	 
 	 ROM_top
 	 #(.X_WIRE_WIDTH(X_WIRE_WIDTH),
@@ -198,7 +193,7 @@ module top
 		.RGBin(RGBfifo),
 		.hpos(hpos_to_fb),
 		.vpos(vpos_to_fb),
-		.RGB(rgb),
+		.RGB(FB_RGB),
 		.fifoempty(fifoempty)
 	 );
 	 

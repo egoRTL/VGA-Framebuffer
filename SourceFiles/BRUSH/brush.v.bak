@@ -1,0 +1,72 @@
+module cursor
+# (
+	parameter SLOWNESS = 18,//number of position of counter clock divider
+				 RESOLUTION_H = 0,
+				 RESOLUTION_V = 0,
+	//cursor moving speed is  CLK/2^SLOWNESS
+//			    COLOR = 3, //color of cursor_rgb
+				 HPOS_WIDTH=0, //coordinate wires width
+				 VPOS_WIDTH=0,
+				 CURSOR_SIZE=4,
+				 INIT_XPOS = RESOLUTION_H/2,
+				 INIT_YPOS = RESOLUTION_V/2
+
+)
+(
+	input clk,
+	input reset,
+	input [3:0] BTN, // [2:0]movedirection=[2:0]key_sw
+	input enable,
+	input [HPOS_WIDTH - 1:0]hpos,
+	input [VPOS_WIDTH - 1:0]vpos,
+	input [2:0]FB_RGB,
+	output reg [2:0] rgb
+);
+
+reg [1:0] sw_cntclk=0;
+
+localparam SPRITECNT_WIDTH = $clog2 (CURSOR_SIZE*CURSOR_SIZE);
+
+reg [31:0] counterclk=0; //clkdiv counter
+
+reg [2:0] cursorsprite [CURSOR_SIZE*CURSOR_SIZE-1:0];
+
+reg [SPRITECNT_WIDTH-1:0] spritecounter=0;
+
+//reg [2:0] resetstage;
+//reg [RESETCNT_WIDTH-1:0] resetcnt = 0;
+
+always@(posedge clk)
+if(reset) begin
+counterclk<=0;
+end
+else 
+begin
+counterclk<=counterclk+1;
+sw_cntclk<={sw_cntclk[0],counterclk[SLOWNESS]};
+//case (COLOR)	//color of cursor_rgb
+// 1: cursor_rgb<=3'b001;
+// 2: cursor_rgb<=3'b010;
+// 3: cursor_rgb<=3'b100;
+//endcase 
+end
+
+wire cntclkenable = (sw_cntclk[0]&&~sw_cntclk[1]) ? 1 : 0;
+//cursor movement
+
+always@(posedge clk or posedge reset)
+if(reset) begin
+	cursor_xpos<=init_xpos;
+	cursor_ypos<=init_ypos;
+end else if(enable && cntclkenable) begin
+	if (movedirection[2]) begin //key_sw[2] is responsible for forward/backward mode of cursor movement
+		if(movedirection[0]) cursor_xpos<=cursor_xpos+'b1; // key_sw[0] drives x-coordinate move
+		if(movedirection[1]) cursor_ypos<=cursor_ypos+'b1; // key_sw[1] drives y-coordinate move
+		end
+	else if (~movedirection[2]) begin
+		if(movedirection[0]) cursor_xpos<=cursor_xpos-'b1;
+		if(movedirection[1]) cursor_ypos<=cursor_ypos-'b1;
+	end
+end
+
+endmodule 
