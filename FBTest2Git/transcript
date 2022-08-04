@@ -1,68 +1,102 @@
 # Compile of brush.v was successful.
-# Compile of TestBench_brush.v failed with 1 errors.
-# Compile of TestBench_brush.v failed with 3 errors.
-# Compile of TestBench_brush.v failed with 1 errors.
-# Compile of TestBench_brush.v failed with 1 errors.
+# Compile of TestBench_brush.v was successful with warnings.
+# 2 compiles, 0 failed with no errors.
 # Compile of TestBench_brush.v was successful with warnings.
 vsim work.TestBench_brush
 # vsim work.TestBench_brush 
-# Start time: 00:19:58 on Aug 04,2022
+# Start time: 00:22:52 on Aug 05,2022
 # Loading work.TestBench_brush
 # Loading work.brush
 # ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'Painting_Brush'.  Expected 8, found 7.
-#    Time: 0 ns  Iteration: 0  Instance: /TestBench_brush/Painting_Brush File: D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/BRUSH/TestBench_brush.v Line: 35
-# ** Warning: (vsim-3015) [PCDPC] - Port size (10) does not match connection size (2) for port 'hpos'. The port definition is at: D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/BRUSH/brush.v(21).
-#    Time: 0 ns  Iteration: 0  Instance: /TestBench_brush/Painting_Brush File: D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/BRUSH/TestBench_brush.v Line: 35
-# ** Warning: (vsim-3015) [PCDPC] - Port size (10) does not match connection size (2) for port 'vpos'. The port definition is at: D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/BRUSH/brush.v(22).
-#    Time: 0 ns  Iteration: 0  Instance: /TestBench_brush/Painting_Brush File: D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/BRUSH/TestBench_brush.v Line: 35
-# ** Warning: (vsim-3722) D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/BRUSH/TestBench_brush.v(35): [TFMPC] - Missing connection for port 'rgb'.
-add wave -position end  sim:/TestBench_brush/clk
-add wave -position end  sim:/TestBench_brush/reset_n
-add wave -position end  sim:/TestBench_brush/enable
-add wave -position end  sim:/TestBench_brush/BTN
-add wave -position end  sim:/TestBench_brush/hpos
-add wave -position end  sim:/TestBench_brush/vpos
-add wave -position end  sim:/TestBench_brush/FB_RGB
+#    Time: 0 ns  Iteration: 0  Instance: /TestBench_brush/Painting_Brush File: D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/BRUSH/TestBench_brush.v Line: 42
+# ** Warning: (vsim-3722) D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/BRUSH/TestBench_brush.v(42): [TFMPC] - Missing connection for port 'rgb'.
 run
-write format wave -window .main_pane.wave.interior.cs.body.pw.wf D:/Users/callo/Documents/GitHub/VGA-Framebuffer/FBTest2Git/BRUSHwave.do
-quit -sim
-# End time: 00:23:28 on Aug 04,2022, Elapsed time: 0:03:30
-# Errors: 0, Warnings: 18
-# Compile of TestBench_brush.v was successful with warnings.
-vsim work.TestBench_brush
-# vsim work.TestBench_brush 
-# Start time: 00:23:52 on Aug 04,2022
-# Loading work.TestBench_brush
-# Loading work.brush
-# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'Painting_Brush'.  Expected 8, found 7.
-#    Time: 0 ns  Iteration: 0  Instance: /TestBench_brush/Painting_Brush File: D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/BRUSH/TestBench_brush.v Line: 35
-# ** Warning: (vsim-3722) D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/BRUSH/TestBench_brush.v(35): [TFMPC] - Missing connection for port 'rgb'.
 run
-add wave -position end  sim:/TestBench_brush/Painting_Brush/rgb
-add wave -position end  sim:/TestBench_brush/Painting_Brush/counterclk
-add wave -position end  sim:/TestBench_brush/Painting_Brush/cursor_xpos
-add wave -position end  sim:/TestBench_brush/Painting_Brush/cursor_ypos
-write format wave -window .main_pane.wave.interior.cs.body.pw.wf D:/Users/callo/Documents/GitHub/VGA-Framebuffer/FBTest2Git/BRUSHwave.do
-restart
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'Painting_Brush'.  Expected 8, found 7.
-#    Time: 0 ns  Iteration: 0  Instance: /TestBench_brush/Painting_Brush File: D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/BRUSH/TestBench_brush.v Line: 35
-# ** Warning: (vsim-3722) D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/BRUSH/TestBench_brush.v(35): [TFMPC] - Missing connection for port 'rgb'.
+run
+run
+run
+run
+run
+run
+run
+run
+force -freeze sim:/TestBench_brush/BTN 0010 0
+run
+run
+force -freeze sim:/TestBench_brush/BTN 0000 0
 run
 quit -sim
-# End time: 00:30:38 on Aug 04,2022, Elapsed time: 0:06:46
-# Errors: 0, Warnings: 3
+# End time: 00:26:07 on Aug 05,2022, Elapsed time: 0:03:15
+# Errors: 0, Warnings: 5
 # Compile of brush.v was successful.
 # Compile of TestBench_brush.v was successful with warnings.
 # 2 compiles, 0 failed with no errors.
 vsim work.TestBench_brush
 # vsim work.TestBench_brush 
-# Start time: 00:31:21 on Aug 04,2022
+# Start time: 00:28:01 on Aug 05,2022
 # Loading work.TestBench_brush
 # Loading work.brush
 # ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'Painting_Brush'.  Expected 8, found 7.
-#    Time: 0 ns  Iteration: 0  Instance: /TestBench_brush/Painting_Brush File: D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/BRUSH/TestBench_brush.v Line: 35
-# ** Warning: (vsim-3722) D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/BRUSH/TestBench_brush.v(35): [TFMPC] - Missing connection for port 'rgb'.
+#    Time: 0 ns  Iteration: 0  Instance: /TestBench_brush/Painting_Brush File: D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/BRUSH/TestBench_brush.v Line: 42
+# ** Warning: (vsim-3722) D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/BRUSH/TestBench_brush.v(42): [TFMPC] - Missing connection for port 'rgb'.
+run
+quit -sim
+# End time: 00:28:27 on Aug 05,2022, Elapsed time: 0:00:26
+# Errors: 0, Warnings: 4
+# Compile of brush.v was successful.
+# Compile of TestBench_brush.v was successful with warnings.
+# 2 compiles, 0 failed with no errors.
+vsim work.TestBench_brush
+# vsim work.TestBench_brush 
+# Start time: 00:28:57 on Aug 05,2022
+# Loading work.TestBench_brush
+# Loading work.brush
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'Painting_Brush'.  Expected 8, found 7.
+#    Time: 0 ns  Iteration: 0  Instance: /TestBench_brush/Painting_Brush File: D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/BRUSH/TestBench_brush.v Line: 42
+# ** Warning: (vsim-3722) D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/BRUSH/TestBench_brush.v(42): [TFMPC] - Missing connection for port 'rgb'.
+run
+quit -sim
+# End time: 00:29:52 on Aug 05,2022, Elapsed time: 0:00:55
+# Errors: 0, Warnings: 4
+# Compile of brush.v was successful.
+# Compile of TestBench_brush.v was successful with warnings.
+# 2 compiles, 0 failed with no errors.
+vsim work.TestBench_brush
+# vsim work.TestBench_brush 
+# Start time: 00:54:18 on Aug 05,2022
+# Loading work.TestBench_brush
+# Loading work.brush
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'Painting_Brush'.  Expected 8, found 7.
+#    Time: 0 ns  Iteration: 0  Instance: /TestBench_brush/Painting_Brush File: D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/BRUSH/TestBench_brush.v Line: 42
+# ** Warning: (vsim-3722) D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/BRUSH/TestBench_brush.v(42): [TFMPC] - Missing connection for port 'rgb'.
+run
+quit -sim
+# End time: 00:54:44 on Aug 05,2022, Elapsed time: 0:00:26
+# Errors: 0, Warnings: 5
+# Compile of brush.v was successful.
+# Compile of TestBench_brush.v was successful with warnings.
+# 2 compiles, 0 failed with no errors.
+vsim work.TestBench_brush
+# vsim work.TestBench_brush 
+# Start time: 00:54:59 on Aug 05,2022
+# Loading work.TestBench_brush
+# Loading work.brush
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'Painting_Brush'.  Expected 8, found 7.
+#    Time: 0 ns  Iteration: 0  Instance: /TestBench_brush/Painting_Brush File: D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/BRUSH/TestBench_brush.v Line: 42
+# ** Warning: (vsim-3722) D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/BRUSH/TestBench_brush.v(42): [TFMPC] - Missing connection for port 'rgb'.
+run
+force -freeze sim:/TestBench_brush/BTN 0010 0
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
 run
 run
 run
@@ -75,122 +109,50 @@ run
 run
 run
 quit -sim
-# End time: 00:33:38 on Aug 04,2022, Elapsed time: 0:02:17
+# End time: 00:57:24 on Aug 05,2022, Elapsed time: 0:02:25
 # Errors: 0, Warnings: 4
-# Compile of TestBench_brush.v was successful with warnings.
 vsim work.TestBench_brush
 # vsim work.TestBench_brush 
-# Start time: 00:40:18 on Aug 04,2022
+# Start time: 00:57:32 on Aug 05,2022
 # Loading work.TestBench_brush
 # Loading work.brush
 # ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'Painting_Brush'.  Expected 8, found 7.
-#    Time: 0 ns  Iteration: 0  Instance: /TestBench_brush/Painting_Brush File: D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/BRUSH/TestBench_brush.v Line: 35
-# ** Warning: (vsim-3722) D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/BRUSH/TestBench_brush.v(35): [TFMPC] - Missing connection for port 'rgb'.
-run
-write format wave -window .main_pane.wave.interior.cs.body.pw.wf D:/Users/callo/Documents/GitHub/VGA-Framebuffer/FBTest2Git/BRUSHwave.do
+#    Time: 0 ns  Iteration: 0  Instance: /TestBench_brush/Painting_Brush File: D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/BRUSH/TestBench_brush.v Line: 42
+# ** Warning: (vsim-3722) D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/BRUSH/TestBench_brush.v(42): [TFMPC] - Missing connection for port 'rgb'.
 run
 run
-run
+force -freeze sim:/TestBench_brush/BTN 0010 0
 run
 run
 # WARNING: No extended dataflow license exists
+force -freeze sim:/TestBench_brush/BTN 0000 0
+force -freeze sim:/TestBench_brush/reset_n 0 0
 run
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-quit -sim
-# End time: 00:44:20 on Aug 04,2022, Elapsed time: 0:04:02
-# Errors: 0, Warnings: 4
-# Compile of TestBench_brush.v was successful with warnings.
-vsim work.TestBench_brush
-# vsim work.TestBench_brush 
-# Start time: 00:44:51 on Aug 04,2022
-# Loading work.TestBench_brush
-# Loading work.brush
-# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'Painting_Brush'.  Expected 8, found 7.
-#    Time: 0 ns  Iteration: 0  Instance: /TestBench_brush/Painting_Brush File: D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/BRUSH/TestBench_brush.v Line: 35
-# ** Warning: (vsim-3722) D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/BRUSH/TestBench_brush.v(35): [TFMPC] - Missing connection for port 'rgb'.
-run
-run
-run
-run
+force -freeze sim:/TestBench_brush/reset_n 1 0
 run
 quit -sim
-# End time: 00:45:25 on Aug 04,2022, Elapsed time: 0:00:34
-# Errors: 0, Warnings: 4
-# Compile of TestBench_brush.v failed with 2 errors.
-# Compile of TestBench_brush.v failed with 1 errors.
-# Compile of TestBench_brush.v was successful with warnings.
-vsim work.TestBench_brush
-# vsim work.TestBench_brush 
-# Start time: 00:58:33 on Aug 04,2022
-# Loading work.TestBench_brush
-# Loading work.brush
-# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'Painting_Brush'.  Expected 8, found 7.
-#    Time: 0 ns  Iteration: 0  Instance: /TestBench_brush/Painting_Brush File: D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/BRUSH/TestBench_brush.v Line: 40
-# ** Warning: (vsim-3722) D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/BRUSH/TestBench_brush.v(40): [TFMPC] - Missing connection for port 'rgb'.
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-quit -sim
-# End time: 01:00:18 on Aug 04,2022, Elapsed time: 0:01:45
-# Errors: 0, Warnings: 6
-# Compile of TestBench_brush.v was successful with warnings.
-vsim work.TestBench_brush
-# vsim work.TestBench_brush 
-# Start time: 01:00:56 on Aug 04,2022
-# Loading work.TestBench_brush
-# Loading work.brush
-# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'Painting_Brush'.  Expected 8, found 7.
-#    Time: 0 ns  Iteration: 0  Instance: /TestBench_brush/Painting_Brush File: D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/BRUSH/TestBench_brush.v Line: 40
-# ** Warning: (vsim-3722) D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/BRUSH/TestBench_brush.v(40): [TFMPC] - Missing connection for port 'rgb'.
-run
-run
-run
-quit -sim
-# End time: 01:01:46 on Aug 04,2022, Elapsed time: 0:00:50
-# Errors: 0, Warnings: 4
+# End time: 01:00:34 on Aug 05,2022, Elapsed time: 0:03:02
+# Errors: 0, Warnings: 3
 # Compile of brush.v was successful.
 vsim work.TestBench_brush
 # vsim work.TestBench_brush 
-# Start time: 01:05:54 on Aug 04,2022
+# Start time: 01:34:46 on Aug 05,2022
 # Loading work.TestBench_brush
 # Loading work.brush
 # ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'Painting_Brush'.  Expected 8, found 7.
-#    Time: 0 ns  Iteration: 0  Instance: /TestBench_brush/Painting_Brush File: D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/BRUSH/TestBench_brush.v Line: 40
-# ** Warning: (vsim-3722) D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/BRUSH/TestBench_brush.v(40): [TFMPC] - Missing connection for port 'rgb'.
+#    Time: 0 ns  Iteration: 0  Instance: /TestBench_brush/Painting_Brush File: D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/BRUSH/TestBench_brush.v Line: 42
+# ** Warning: (vsim-3722) D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/BRUSH/TestBench_brush.v(42): [TFMPC] - Missing connection for port 'rgb'.
+run
+run
+force -freeze sim:/TestBench_brush/BTN 0010 0
+run
+run
+force -freeze sim:/TestBench_brush/BTN 0000 0
+run
+force -freeze sim:/TestBench_brush/reset_n 0 0
+run
+force -freeze sim:/TestBench_brush/reset_n 1 0
 run
 quit -sim
-# End time: 01:06:36 on Aug 04,2022, Elapsed time: 0:00:42
-# Errors: 0, Warnings: 4
-# Compile of brush.v was successful.
-# Compile of TestBench_brush.v was successful with warnings.
-# 2 compiles, 0 failed with no errors.
-vsim work.TestBench_brush
-# vsim work.TestBench_brush 
-# Start time: 01:06:54 on Aug 04,2022
-# Loading work.TestBench_brush
-# Loading work.brush
-# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'Painting_Brush'.  Expected 8, found 7.
-#    Time: 0 ns  Iteration: 0  Instance: /TestBench_brush/Painting_Brush File: D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/BRUSH/TestBench_brush.v Line: 40
-# ** Warning: (vsim-3722) D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/BRUSH/TestBench_brush.v(40): [TFMPC] - Missing connection for port 'rgb'.
-run
-run
-force -freeze sim:/TestBench_brush/BTN 0001 0
-run
-run
-run
-quit -sim
-# End time: 01:17:12 on Aug 04,2022, Elapsed time: 0:10:18
+# End time: 01:37:25 on Aug 05,2022, Elapsed time: 0:02:39
 # Errors: 0, Warnings: 4

@@ -3,17 +3,17 @@
 
 module top
 # (
-    parameter clk_mhz = 50, //not used. just reminder
+					clk_mhz = 50, //not used. just reminder
 				  INITIAL = 6'b111111, //Initial value of RAM and decoder's buffer
 				  RAM_RESOLUTION_H = 80, // number of RAM regs in a row
-	 parameter RESOLUTION_H =640,
-	 parameter RESOLUTION_V =480,
-	 parameter V_TOP = 	  	10,
-	 parameter V_SYNC = 	  	2,
-	 parameter V_BOTTOM =  	33,
-	 parameter H_FRONT =	  	16,
-	 parameter H_SYNC =	  	96,
-	 parameter H_BACK = 	  	48,
+					RESOLUTION_H =640,
+					RESOLUTION_V =480,
+					V_TOP = 	  	10,
+					V_SYNC = 	  	2,
+					V_BOTTOM =  	33,
+					H_FRONT =	  	16,
+					H_SYNC =	  	96,
+					H_BACK = 	  	48,
 				  DATA_WIDTH = 6,
 				  RAMLENGTH  = 800,
 				  CURSOR_SIZE = 4 //Isnt changable yet...
@@ -102,7 +102,7 @@ module top
 	 (
 			.clk		  ( pllclk		),
 			.reset	  ( ~reset_n 	),
-			.BTN		  ( key_sw		), // [2:0]movedirection=[2:0]key_sw
+			.BTN		  ( ~key_sw		), // [2:0]movedirection=[2:0]key_sw
 			.enable	  ( enable		),
 			.hpos		  ( hpos			),
 			.vpos		  ( vpos			),
