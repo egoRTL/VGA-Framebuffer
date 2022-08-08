@@ -45,7 +45,7 @@ module top
     assign buzzer    = 1'b1;
 
     //------------------------------------------------------------------------
-	 
+	 wire [3:0] BTN,BTN_POSEDGE,BTN_NEGEDGE;
 	 wire enable,pllclk,fifoempty,fifofull,display_on,fifopush,fifopop,ROMready;
 	 // webuf - write enable for framebuffer and decoder;
 	 //rinwire - r component of rgb pixel, which supposed to be written to memory
@@ -91,6 +91,16 @@ module top
 		  .enable	  ( enable		)
     );
 	 
+	 button_debouncer Debouncer
+	 (
+	  .clk			( pllclk		), 
+	  .reset			( ~reset_n 	),
+	  .RAW_BTN		( ~key_sw	),
+	  .BTN			(	BTN		),
+	  .BTN_POSEDGE	(BTN_POSEDGE),
+	  .BTN_NEGEDGE	(BTN_NEGEDGE)
+	 );
+	 
 	 brush
 	 #(
 	 .RESOLUTION_H   ( RESOLUTION_H ),
@@ -102,8 +112,8 @@ module top
 	 (
 			.clk		  ( pllclk		),
 			.reset	  ( ~reset_n 	),
-			.BTN		  ( ~key_sw		), // [2:0]movedirection=[2:0]key_sw
-			.enable	  ( enable		),
+			.BTN		  ( BTN			), // [2:0]movedirection=[2:0]key_sw
+			.display_on(display_on	),
 			.hpos		  ( hpos			),
 			.vpos		  ( vpos			),
 			.FB_RGB	  ( FB_RGB		),

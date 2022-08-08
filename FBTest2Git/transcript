@@ -1,15 +1,64 @@
-# Compile of brush.v was successful.
-# Compile of TestBench_brush.v was successful with warnings.
+# Compile of button_debouncer.v was successful.
+# Compile of TestBench_debouncer.v failed with 2 errors.
+# 2 compiles, 1 failed with 2 errors.
+# Compile of button_debouncer.v was successful.
+# Compile of TestBench_debouncer.v failed with 1 errors.
+# 2 compiles, 1 failed with 1 error.
+# Compile of button_debouncer.v was successful.
+# Compile of TestBench_debouncer.v was successful with warnings.
 # 2 compiles, 0 failed with no errors.
-# Compile of TestBench_brush.v was successful with warnings.
-vsim work.TestBench_brush
-# vsim work.TestBench_brush 
-# Start time: 00:22:52 on Aug 05,2022
-# Loading work.TestBench_brush
-# Loading work.brush
-# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'Painting_Brush'.  Expected 8, found 7.
-#    Time: 0 ns  Iteration: 0  Instance: /TestBench_brush/Painting_Brush File: D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/BRUSH/TestBench_brush.v Line: 42
-# ** Warning: (vsim-3722) D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/BRUSH/TestBench_brush.v(42): [TFMPC] - Missing connection for port 'rgb'.
+vsim work.button_debouncer work.TestBench_debouncer
+# vsim work.button_debouncer work.TestBench_debouncer 
+# Start time: 19:26:16 on Aug 06,2022
+# Loading work.button_debouncer
+# Loading work.TestBench_debouncer
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'DUT'.  Expected 5, found 2.
+#    Time: 0 ns  Iteration: 0  Instance: /TestBench_debouncer/DUT File: C:/Users/User/Downloads/VGA-Framebuffer-main/SourceFiles/DEBOUNCER/TestBench_debouncer.v Line: 9
+# ** Warning: (vsim-3722) C:/Users/User/Downloads/VGA-Framebuffer-main/SourceFiles/DEBOUNCER/TestBench_debouncer.v(9): [TFMPC] - Missing connection for port 'BTN'.
+# ** Warning: (vsim-3722) C:/Users/User/Downloads/VGA-Framebuffer-main/SourceFiles/DEBOUNCER/TestBench_debouncer.v(9): [TFMPC] - Missing connection for port 'BTN_POSEDGE'.
+# ** Warning: (vsim-3722) C:/Users/User/Downloads/VGA-Framebuffer-main/SourceFiles/DEBOUNCER/TestBench_debouncer.v(9): [TFMPC] - Missing connection for port 'BTN_NEGEDGE'.
+add wave -position insertpoint  \
+sim:/TestBench_debouncer/DUT/DEBOUNCE_TIMER \
+sim:/TestBench_debouncer/DUT/clk \
+sim:/TestBench_debouncer/DUT/RAW_BTN \
+sim:/TestBench_debouncer/DUT/BTN \
+sim:/TestBench_debouncer/DUT/BTN_POSEDGE \
+sim:/TestBench_debouncer/DUT/BTN_NEGEDGE \
+sim:/TestBench_debouncer/DUT/states_of_button_0 \
+sim:/TestBench_debouncer/DUT/states_of_button_1 \
+sim:/TestBench_debouncer/DUT/states_of_button_2 \
+sim:/TestBench_debouncer/DUT/states_of_button_3 \
+sim:/TestBench_debouncer/DUT/counter
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/User/Downloads/VGA-Framebuffer-main/FBTest2Git/DEBOUNCERwave.do
+run
+# ** Note: $stop    : C:/Users/User/Downloads/VGA-Framebuffer-main/SourceFiles/DEBOUNCER/TestBench_debouncer.v(26)
+#    Time: 60 ns  Iteration: 0  Instance: /TestBench_debouncer
+# Break in Module TestBench_debouncer at C:/Users/User/Downloads/VGA-Framebuffer-main/SourceFiles/DEBOUNCER/TestBench_debouncer.v line 26
+quit -sim
+# End time: 19:27:24 on Aug 06,2022, Elapsed time: 0:01:08
+# Errors: 0, Warnings: 15
+# Compile of TestBench_debouncer.v was successful with warnings.
+# Compile of button_debouncer.v was successful.
+# Compile of TestBench_debouncer.v was successful with warnings.
+# 2 compiles, 0 failed with no errors.
+vsim work.button_debouncer work.TestBench_debouncer
+# vsim work.button_debouncer work.TestBench_debouncer 
+# Start time: 19:27:41 on Aug 06,2022
+# Loading work.button_debouncer
+# Loading work.TestBench_debouncer
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'DUT'.  Expected 5, found 2.
+#    Time: 0 ns  Iteration: 0  Instance: /TestBench_debouncer/DUT File: C:/Users/User/Downloads/VGA-Framebuffer-main/SourceFiles/DEBOUNCER/TestBench_debouncer.v Line: 9
+# ** Warning: (vsim-3722) C:/Users/User/Downloads/VGA-Framebuffer-main/SourceFiles/DEBOUNCER/TestBench_debouncer.v(9): [TFMPC] - Missing connection for port 'BTN'.
+# ** Warning: (vsim-3722) C:/Users/User/Downloads/VGA-Framebuffer-main/SourceFiles/DEBOUNCER/TestBench_debouncer.v(9): [TFMPC] - Missing connection for port 'BTN_POSEDGE'.
+# ** Warning: (vsim-3722) C:/Users/User/Downloads/VGA-Framebuffer-main/SourceFiles/DEBOUNCER/TestBench_debouncer.v(9): [TFMPC] - Missing connection for port 'BTN_NEGEDGE'.
+run
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'DUT'.  Expected 5, found 2.
+#    Time: 0 ns  Iteration: 0  Instance: /TestBench_debouncer/DUT File: C:/Users/User/Downloads/VGA-Framebuffer-main/SourceFiles/DEBOUNCER/TestBench_debouncer.v Line: 9
+# ** Warning: (vsim-3722) C:/Users/User/Downloads/VGA-Framebuffer-main/SourceFiles/DEBOUNCER/TestBench_debouncer.v(9): [TFMPC] - Missing connection for port 'BTN'.
+# ** Warning: (vsim-3722) C:/Users/User/Downloads/VGA-Framebuffer-main/SourceFiles/DEBOUNCER/TestBench_debouncer.v(9): [TFMPC] - Missing connection for port 'BTN_POSEDGE'.
+# ** Warning: (vsim-3722) C:/Users/User/Downloads/VGA-Framebuffer-main/SourceFiles/DEBOUNCER/TestBench_debouncer.v(9): [TFMPC] - Missing connection for port 'BTN_NEGEDGE'.
 run
 run
 run
@@ -17,142 +66,180 @@ run
 run
 run
 run
-run
-run
-run
-force -freeze sim:/TestBench_brush/BTN 0010 0
-run
-run
-force -freeze sim:/TestBench_brush/BTN 0000 0
 run
 quit -sim
-# End time: 00:26:07 on Aug 05,2022, Elapsed time: 0:03:15
+# End time: 19:29:40 on Aug 06,2022, Elapsed time: 0:01:59
+# Errors: 0, Warnings: 6
+# Compile of button_debouncer.v was successful.
+# Compile of TestBench_debouncer.v was successful with warnings.
+# 2 compiles, 0 failed with no errors.
+vsim work.button_debouncer work.TestBench_debouncer
+# vsim work.button_debouncer work.TestBench_debouncer 
+# Start time: 19:30:07 on Aug 06,2022
+# Loading work.button_debouncer
+# Loading work.TestBench_debouncer
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'DUT'.  Expected 5, found 2.
+#    Time: 0 ns  Iteration: 0  Instance: /TestBench_debouncer/DUT File: C:/Users/User/Downloads/VGA-Framebuffer-main/SourceFiles/DEBOUNCER/TestBench_debouncer.v Line: 9
+# ** Warning: (vsim-3722) C:/Users/User/Downloads/VGA-Framebuffer-main/SourceFiles/DEBOUNCER/TestBench_debouncer.v(9): [TFMPC] - Missing connection for port 'BTN'.
+# ** Warning: (vsim-3722) C:/Users/User/Downloads/VGA-Framebuffer-main/SourceFiles/DEBOUNCER/TestBench_debouncer.v(9): [TFMPC] - Missing connection for port 'BTN_POSEDGE'.
+# ** Warning: (vsim-3722) C:/Users/User/Downloads/VGA-Framebuffer-main/SourceFiles/DEBOUNCER/TestBench_debouncer.v(9): [TFMPC] - Missing connection for port 'BTN_NEGEDGE'.
+run
+quit -sim
+# End time: 19:30:46 on Aug 06,2022, Elapsed time: 0:00:39
+# Errors: 0, Warnings: 6
+# Compile of button_debouncer.v was successful.
+# Compile of TestBench_debouncer.v was successful with warnings.
+# 2 compiles, 0 failed with no errors.
+vsim work.button_debouncer work.TestBench_debouncer
+# vsim work.button_debouncer work.TestBench_debouncer 
+# Start time: 19:39:35 on Aug 06,2022
+# Loading work.button_debouncer
+# Loading work.TestBench_debouncer
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'DUT'.  Expected 5, found 2.
+#    Time: 0 ns  Iteration: 0  Instance: /TestBench_debouncer/DUT File: C:/Users/User/Downloads/VGA-Framebuffer-main/SourceFiles/DEBOUNCER/TestBench_debouncer.v Line: 9
+# ** Warning: (vsim-3722) C:/Users/User/Downloads/VGA-Framebuffer-main/SourceFiles/DEBOUNCER/TestBench_debouncer.v(9): [TFMPC] - Missing connection for port 'BTN'.
+# ** Warning: (vsim-3722) C:/Users/User/Downloads/VGA-Framebuffer-main/SourceFiles/DEBOUNCER/TestBench_debouncer.v(9): [TFMPC] - Missing connection for port 'BTN_POSEDGE'.
+# ** Warning: (vsim-3722) C:/Users/User/Downloads/VGA-Framebuffer-main/SourceFiles/DEBOUNCER/TestBench_debouncer.v(9): [TFMPC] - Missing connection for port 'BTN_NEGEDGE'.
+add wave -position end  sim:/TestBench_debouncer/DUT/state_changed
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/User/Downloads/VGA-Framebuffer-main/FBTest2Git/DEBOUNCERwave.do
+run
+quit -sim
+# End time: 19:40:26 on Aug 06,2022, Elapsed time: 0:00:51
+# Errors: 0, Warnings: 6
+vsim work.button_debouncer work.TestBench_debouncer
+# vsim work.button_debouncer work.TestBench_debouncer 
+# Start time: 19:41:01 on Aug 06,2022
+# Loading work.button_debouncer
+# Loading work.TestBench_debouncer
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'DUT'.  Expected 5, found 2.
+#    Time: 0 ns  Iteration: 0  Instance: /TestBench_debouncer/DUT File: C:/Users/User/Downloads/VGA-Framebuffer-main/SourceFiles/DEBOUNCER/TestBench_debouncer.v Line: 9
+# ** Warning: (vsim-3722) C:/Users/User/Downloads/VGA-Framebuffer-main/SourceFiles/DEBOUNCER/TestBench_debouncer.v(9): [TFMPC] - Missing connection for port 'BTN'.
+# ** Warning: (vsim-3722) C:/Users/User/Downloads/VGA-Framebuffer-main/SourceFiles/DEBOUNCER/TestBench_debouncer.v(9): [TFMPC] - Missing connection for port 'BTN_POSEDGE'.
+# ** Warning: (vsim-3722) C:/Users/User/Downloads/VGA-Framebuffer-main/SourceFiles/DEBOUNCER/TestBench_debouncer.v(9): [TFMPC] - Missing connection for port 'BTN_NEGEDGE'.
+run
+# Compile of button_debouncer.v was successful.
+# Compile of TestBench_debouncer.v was successful with warnings.
+# 2 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.button_debouncer
+# Loading work.TestBench_debouncer
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'DUT'.  Expected 5, found 2.
+#    Time: 0 ns  Iteration: 0  Instance: /TestBench_debouncer/DUT File: C:/Users/User/Downloads/VGA-Framebuffer-main/SourceFiles/DEBOUNCER/TestBench_debouncer.v Line: 9
+# ** Warning: (vsim-3722) C:/Users/User/Downloads/VGA-Framebuffer-main/SourceFiles/DEBOUNCER/TestBench_debouncer.v(9): [TFMPC] - Missing connection for port 'BTN'.
+# ** Warning: (vsim-3722) C:/Users/User/Downloads/VGA-Framebuffer-main/SourceFiles/DEBOUNCER/TestBench_debouncer.v(9): [TFMPC] - Missing connection for port 'BTN_POSEDGE'.
+# ** Warning: (vsim-3722) C:/Users/User/Downloads/VGA-Framebuffer-main/SourceFiles/DEBOUNCER/TestBench_debouncer.v(9): [TFMPC] - Missing connection for port 'BTN_NEGEDGE'.
+run
+run
+# Compile of button_debouncer.v failed with 1 errors.
+# Compile of TestBench_debouncer.v was successful with warnings.
+# 2 compiles, 1 failed with 1 error.
+# Compile of button_debouncer.v was successful.
+# Compile of TestBench_debouncer.v was successful with warnings.
+# 2 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.button_debouncer
+# Loading work.TestBench_debouncer
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'DUT'.  Expected 6, found 3.
+#    Time: 0 ns  Iteration: 0  Instance: /TestBench_debouncer/DUT File: C:/Users/User/Downloads/VGA-Framebuffer-main/SourceFiles/DEBOUNCER/TestBench_debouncer.v Line: 9
+# ** Warning: (vsim-3722) C:/Users/User/Downloads/VGA-Framebuffer-main/SourceFiles/DEBOUNCER/TestBench_debouncer.v(9): [TFMPC] - Missing connection for port 'BTN'.
+# ** Warning: (vsim-3722) C:/Users/User/Downloads/VGA-Framebuffer-main/SourceFiles/DEBOUNCER/TestBench_debouncer.v(9): [TFMPC] - Missing connection for port 'BTN_POSEDGE'.
+# ** Warning: (vsim-3722) C:/Users/User/Downloads/VGA-Framebuffer-main/SourceFiles/DEBOUNCER/TestBench_debouncer.v(9): [TFMPC] - Missing connection for port 'BTN_NEGEDGE'.
+run
+quit -sim
+# End time: 19:46:48 on Aug 06,2022, Elapsed time: 0:05:47
 # Errors: 0, Warnings: 5
-# Compile of brush.v was successful.
-# Compile of TestBench_brush.v was successful with warnings.
+# Compile of button_debouncer.v was successful.
+# Compile of TestBench_debouncer.v was successful with warnings.
 # 2 compiles, 0 failed with no errors.
-vsim work.TestBench_brush
-# vsim work.TestBench_brush 
-# Start time: 00:28:01 on Aug 05,2022
-# Loading work.TestBench_brush
-# Loading work.brush
-# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'Painting_Brush'.  Expected 8, found 7.
-#    Time: 0 ns  Iteration: 0  Instance: /TestBench_brush/Painting_Brush File: D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/BRUSH/TestBench_brush.v Line: 42
-# ** Warning: (vsim-3722) D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/BRUSH/TestBench_brush.v(42): [TFMPC] - Missing connection for port 'rgb'.
+vsim work.button_debouncer work.TestBench_debouncer
+# vsim work.button_debouncer work.TestBench_debouncer 
+# Start time: 19:47:56 on Aug 06,2022
+# Loading work.button_debouncer
+# Loading work.TestBench_debouncer
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'DUT'.  Expected 6, found 3.
+#    Time: 0 ns  Iteration: 0  Instance: /TestBench_debouncer/DUT File: C:/Users/User/Downloads/VGA-Framebuffer-main/SourceFiles/DEBOUNCER/TestBench_debouncer.v Line: 9
+# ** Warning: (vsim-3722) C:/Users/User/Downloads/VGA-Framebuffer-main/SourceFiles/DEBOUNCER/TestBench_debouncer.v(9): [TFMPC] - Missing connection for port 'BTN'.
+# ** Warning: (vsim-3722) C:/Users/User/Downloads/VGA-Framebuffer-main/SourceFiles/DEBOUNCER/TestBench_debouncer.v(9): [TFMPC] - Missing connection for port 'BTN_POSEDGE'.
+# ** Warning: (vsim-3722) C:/Users/User/Downloads/VGA-Framebuffer-main/SourceFiles/DEBOUNCER/TestBench_debouncer.v(9): [TFMPC] - Missing connection for port 'BTN_NEGEDGE'.
 run
 quit -sim
-# End time: 00:28:27 on Aug 05,2022, Elapsed time: 0:00:26
-# Errors: 0, Warnings: 4
-# Compile of brush.v was successful.
-# Compile of TestBench_brush.v was successful with warnings.
+# End time: 19:48:48 on Aug 06,2022, Elapsed time: 0:00:52
+# Errors: 0, Warnings: 6
+# Compile of button_debouncer.v was successful.
+# Compile of TestBench_debouncer.v was successful with warnings.
 # 2 compiles, 0 failed with no errors.
-vsim work.TestBench_brush
-# vsim work.TestBench_brush 
-# Start time: 00:28:57 on Aug 05,2022
-# Loading work.TestBench_brush
-# Loading work.brush
-# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'Painting_Brush'.  Expected 8, found 7.
-#    Time: 0 ns  Iteration: 0  Instance: /TestBench_brush/Painting_Brush File: D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/BRUSH/TestBench_brush.v Line: 42
-# ** Warning: (vsim-3722) D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/BRUSH/TestBench_brush.v(42): [TFMPC] - Missing connection for port 'rgb'.
+vsim work.button_debouncer work.TestBench_debouncer
+# vsim work.button_debouncer work.TestBench_debouncer 
+# Start time: 19:48:53 on Aug 06,2022
+# Loading work.button_debouncer
+# Loading work.TestBench_debouncer
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'DUT'.  Expected 6, found 3.
+#    Time: 0 ns  Iteration: 0  Instance: /TestBench_debouncer/DUT File: C:/Users/User/Downloads/VGA-Framebuffer-main/SourceFiles/DEBOUNCER/TestBench_debouncer.v Line: 9
+# ** Warning: (vsim-3722) C:/Users/User/Downloads/VGA-Framebuffer-main/SourceFiles/DEBOUNCER/TestBench_debouncer.v(9): [TFMPC] - Missing connection for port 'BTN'.
+# ** Warning: (vsim-3722) C:/Users/User/Downloads/VGA-Framebuffer-main/SourceFiles/DEBOUNCER/TestBench_debouncer.v(9): [TFMPC] - Missing connection for port 'BTN_POSEDGE'.
+# ** Warning: (vsim-3722) C:/Users/User/Downloads/VGA-Framebuffer-main/SourceFiles/DEBOUNCER/TestBench_debouncer.v(9): [TFMPC] - Missing connection for port 'BTN_NEGEDGE'.
+run
+run
 run
 quit -sim
-# End time: 00:29:52 on Aug 05,2022, Elapsed time: 0:00:55
-# Errors: 0, Warnings: 4
-# Compile of brush.v was successful.
-# Compile of TestBench_brush.v was successful with warnings.
+# End time: 19:50:26 on Aug 06,2022, Elapsed time: 0:01:33
+# Errors: 0, Warnings: 6
+# Compile of button_debouncer.v was successful.
+# Compile of TestBench_debouncer.v was successful with warnings.
 # 2 compiles, 0 failed with no errors.
-vsim work.TestBench_brush
-# vsim work.TestBench_brush 
-# Start time: 00:54:18 on Aug 05,2022
-# Loading work.TestBench_brush
-# Loading work.brush
-# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'Painting_Brush'.  Expected 8, found 7.
-#    Time: 0 ns  Iteration: 0  Instance: /TestBench_brush/Painting_Brush File: D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/BRUSH/TestBench_brush.v Line: 42
-# ** Warning: (vsim-3722) D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/BRUSH/TestBench_brush.v(42): [TFMPC] - Missing connection for port 'rgb'.
+vsim work.button_debouncer work.TestBench_debouncer
+# vsim work.button_debouncer work.TestBench_debouncer 
+# Start time: 19:51:15 on Aug 06,2022
+# Loading work.button_debouncer
+# Loading work.TestBench_debouncer
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'DUT'.  Expected 6, found 3.
+#    Time: 0 ns  Iteration: 0  Instance: /TestBench_debouncer/DUT File: C:/Users/User/Downloads/VGA-Framebuffer-main/SourceFiles/DEBOUNCER/TestBench_debouncer.v Line: 9
+# ** Warning: (vsim-3722) C:/Users/User/Downloads/VGA-Framebuffer-main/SourceFiles/DEBOUNCER/TestBench_debouncer.v(9): [TFMPC] - Missing connection for port 'BTN'.
+# ** Warning: (vsim-3722) C:/Users/User/Downloads/VGA-Framebuffer-main/SourceFiles/DEBOUNCER/TestBench_debouncer.v(9): [TFMPC] - Missing connection for port 'BTN_POSEDGE'.
+# ** Warning: (vsim-3722) C:/Users/User/Downloads/VGA-Framebuffer-main/SourceFiles/DEBOUNCER/TestBench_debouncer.v(9): [TFMPC] - Missing connection for port 'BTN_NEGEDGE'.
+run
+run
+run
+force -freeze sim:/TestBench_debouncer/DUT/BTN 0001 0
+run
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'DUT'.  Expected 6, found 3.
+#    Time: 0 ns  Iteration: 0  Instance: /TestBench_debouncer/DUT File: C:/Users/User/Downloads/VGA-Framebuffer-main/SourceFiles/DEBOUNCER/TestBench_debouncer.v Line: 9
+# ** Warning: (vsim-3722) C:/Users/User/Downloads/VGA-Framebuffer-main/SourceFiles/DEBOUNCER/TestBench_debouncer.v(9): [TFMPC] - Missing connection for port 'BTN'.
+# ** Warning: (vsim-3722) C:/Users/User/Downloads/VGA-Framebuffer-main/SourceFiles/DEBOUNCER/TestBench_debouncer.v(9): [TFMPC] - Missing connection for port 'BTN_POSEDGE'.
+# ** Warning: (vsim-3722) C:/Users/User/Downloads/VGA-Framebuffer-main/SourceFiles/DEBOUNCER/TestBench_debouncer.v(9): [TFMPC] - Missing connection for port 'BTN_NEGEDGE'.
+run
+run
+force -freeze sim:/TestBench_debouncer/DUT/RAW_BTN 0001 0
 run
 quit -sim
-# End time: 00:54:44 on Aug 05,2022, Elapsed time: 0:00:26
+# End time: 19:55:13 on Aug 06,2022, Elapsed time: 0:03:58
 # Errors: 0, Warnings: 5
-# Compile of brush.v was successful.
-# Compile of TestBench_brush.v was successful with warnings.
-# 2 compiles, 0 failed with no errors.
-vsim work.TestBench_brush
-# vsim work.TestBench_brush 
-# Start time: 00:54:59 on Aug 05,2022
-# Loading work.TestBench_brush
-# Loading work.brush
-# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'Painting_Brush'.  Expected 8, found 7.
-#    Time: 0 ns  Iteration: 0  Instance: /TestBench_brush/Painting_Brush File: D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/BRUSH/TestBench_brush.v Line: 42
-# ** Warning: (vsim-3722) D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/BRUSH/TestBench_brush.v(42): [TFMPC] - Missing connection for port 'rgb'.
-run
-force -freeze sim:/TestBench_brush/BTN 0010 0
-run
-run
-run
+# Compile of button_debouncer.v failed with 2 errors.
+# Compile of TestBench_debouncer.v was successful with warnings.
+# 2 compiles, 1 failed with 2 errors.
+# Compile of button_debouncer.v was successful.
+vsim work.button_debouncer work.TestBench_debouncer
+# vsim work.button_debouncer work.TestBench_debouncer 
+# Start time: 19:55:44 on Aug 06,2022
+# Loading work.button_debouncer
+# Loading work.TestBench_debouncer
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'DUT'.  Expected 6, found 3.
+#    Time: 0 ns  Iteration: 0  Instance: /TestBench_debouncer/DUT File: C:/Users/User/Downloads/VGA-Framebuffer-main/SourceFiles/DEBOUNCER/TestBench_debouncer.v Line: 9
+# ** Warning: (vsim-3722) C:/Users/User/Downloads/VGA-Framebuffer-main/SourceFiles/DEBOUNCER/TestBench_debouncer.v(9): [TFMPC] - Missing connection for port 'BTN'.
+# ** Warning: (vsim-3722) C:/Users/User/Downloads/VGA-Framebuffer-main/SourceFiles/DEBOUNCER/TestBench_debouncer.v(9): [TFMPC] - Missing connection for port 'BTN_POSEDGE'.
+# ** Warning: (vsim-3722) C:/Users/User/Downloads/VGA-Framebuffer-main/SourceFiles/DEBOUNCER/TestBench_debouncer.v(9): [TFMPC] - Missing connection for port 'BTN_NEGEDGE'.
 run
 run
+force -freeze sim:/TestBench_debouncer/DUT/RAW_BTN 0101 0
 run
 run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
+force -freeze sim:/TestBench_debouncer/DUT/RAW_BTN 0000 0
 run
 run
 quit -sim
-# End time: 00:57:24 on Aug 05,2022, Elapsed time: 0:02:25
-# Errors: 0, Warnings: 4
-vsim work.TestBench_brush
-# vsim work.TestBench_brush 
-# Start time: 00:57:32 on Aug 05,2022
-# Loading work.TestBench_brush
-# Loading work.brush
-# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'Painting_Brush'.  Expected 8, found 7.
-#    Time: 0 ns  Iteration: 0  Instance: /TestBench_brush/Painting_Brush File: D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/BRUSH/TestBench_brush.v Line: 42
-# ** Warning: (vsim-3722) D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/BRUSH/TestBench_brush.v(42): [TFMPC] - Missing connection for port 'rgb'.
-run
-run
-force -freeze sim:/TestBench_brush/BTN 0010 0
-run
-run
-# WARNING: No extended dataflow license exists
-force -freeze sim:/TestBench_brush/BTN 0000 0
-force -freeze sim:/TestBench_brush/reset_n 0 0
-run
-force -freeze sim:/TestBench_brush/reset_n 1 0
-run
-quit -sim
-# End time: 01:00:34 on Aug 05,2022, Elapsed time: 0:03:02
-# Errors: 0, Warnings: 3
-# Compile of brush.v was successful.
-vsim work.TestBench_brush
-# vsim work.TestBench_brush 
-# Start time: 01:34:46 on Aug 05,2022
-# Loading work.TestBench_brush
-# Loading work.brush
-# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'Painting_Brush'.  Expected 8, found 7.
-#    Time: 0 ns  Iteration: 0  Instance: /TestBench_brush/Painting_Brush File: D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/BRUSH/TestBench_brush.v Line: 42
-# ** Warning: (vsim-3722) D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/BRUSH/TestBench_brush.v(42): [TFMPC] - Missing connection for port 'rgb'.
-run
-run
-force -freeze sim:/TestBench_brush/BTN 0010 0
-run
-run
-force -freeze sim:/TestBench_brush/BTN 0000 0
-run
-force -freeze sim:/TestBench_brush/reset_n 0 0
-run
-force -freeze sim:/TestBench_brush/reset_n 1 0
-run
-quit -sim
-# End time: 01:37:25 on Aug 05,2022, Elapsed time: 0:02:39
-# Errors: 0, Warnings: 4
+# End time: 19:56:56 on Aug 06,2022, Elapsed time: 0:01:12
+# Errors: 0, Warnings: 7

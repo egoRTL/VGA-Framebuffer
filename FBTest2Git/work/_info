@@ -32,14 +32,37 @@ r1
 !i113 1
 Z4 o-work work
 Z5 tCvgOpt 0
+vbutton_debouncer
+!s110 1659804939
+!i10b 1
+!s100 LO>cZkdDfT>N5I@3lfHLI1
+R0
+I>>RLT>mE:a2`7Z17oFb=31
+R1
+Z6 dC:/Users/User/Downloads/VGA-Framebuffer-main/FBTest2Git
+w1659804934
+8C:/Users/User/Downloads/VGA-Framebuffer-main/SourceFiles/DEBOUNCER/button_debouncer.v
+FC:/Users/User/Downloads/VGA-Framebuffer-main/SourceFiles/DEBOUNCER/button_debouncer.v
+!i122 582
+L0 1 88
+R3
+r1
+!s85 0
+31
+!s108 1659804939.000000
+!s107 C:/Users/User/Downloads/VGA-Framebuffer-main/SourceFiles/DEBOUNCER/button_debouncer.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/User/Downloads/VGA-Framebuffer-main/SourceFiles/DEBOUNCER/button_debouncer.v|
+!i113 1
+R4
+R5
 vFIFO_top
-Z6 !s110 1659629827
+Z7 !s110 1659629827
 !i10b 1
 !s100 U5Z3oHhQlgF=3UcXEW6de0
 R0
 I>VH7^`3b4EJFYKAd3N[K00
 R1
-Z7 dC:/Users/User/Downloads/VGA-Framebuffer-main/FBTest2Git
+R6
 Z8 w1659565323
 8C:/Users/User/Downloads/VGA-Framebuffer-main/SourceFiles/FIFO/FIFO_top.v
 FC:/Users/User/Downloads/VGA-Framebuffer-main/SourceFiles/FIFO/FIFO_top.v
@@ -84,14 +107,14 @@ R5
 n@f@i@f@o@test@bench
 vflip_flop_fifo
 R10
-R6
+R7
 !i10b 1
 !s100 n6:F2[g^SW<JaMCdFmIe50
 R0
 I0DTf;EKY0:>>F@7fmeEmW2
 R1
 S1
-R7
+R6
 R8
 8C:/Users/User/Downloads/VGA-Framebuffer-main/SourceFiles/FIFO/fifo.v
 FC:/Users/User/Downloads/VGA-Framebuffer-main/SourceFiles/FIFO/fifo.v
@@ -114,7 +137,7 @@ Z12 !s110 1659629828
 R0
 IBfk5[HQoLRm`[T^T[:__l2
 R1
-R7
+R6
 R8
 8C:/Users/User/Downloads/VGA-Framebuffer-main/SourceFiles/TOP/memsyncreset.v
 FC:/Users/User/Downloads/VGA-Framebuffer-main/SourceFiles/TOP/memsyncreset.v
@@ -161,7 +184,7 @@ R12
 R0
 IUYoZ<7eYI0KIjJLAlc5R70
 R1
-R7
+R6
 R8
 8C:/Users/User/Downloads/VGA-Framebuffer-main/SourceFiles/MEM/RGBmemcodec2.v
 FC:/Users/User/Downloads/VGA-Framebuffer-main/SourceFiles/MEM/RGBmemcodec2.v
@@ -185,7 +208,7 @@ R12
 R0
 IcjOCOFg^HhPJNQMKG0^iO2
 R1
-R7
+R6
 R8
 8C:/Users/User/Downloads/VGA-Framebuffer-main/SourceFiles/MEM/RGBMemory_top.v
 FC:/Users/User/Downloads/VGA-Framebuffer-main/SourceFiles/MEM/RGBMemory_top.v
@@ -209,7 +232,7 @@ R12
 R0
 I23kgWlUXfBfH7YzbPCLjX2
 R1
-R7
+R6
 R8
 8C:/Users/User/Downloads/VGA-Framebuffer-main/SourceFiles/ROM/ROM_top.v
 FC:/Users/User/Downloads/VGA-Framebuffer-main/SourceFiles/ROM/ROM_top.v
@@ -251,13 +274,13 @@ R4
 R5
 n@r@o@m_top@test@bench
 vsingle_port_ram
-R6
+R7
 !i10b 1
 !s100 zB@cHm1hVB]9XT?_kHmXJ0
 R0
 IRk@bK^NEloIDPmDd?JM@>2
 R1
-R7
+R6
 R8
 8C:/Users/User/Downloads/VGA-Framebuffer-main/SourceFiles/MEM/RAM.v
 FC:/Users/User/Downloads/VGA-Framebuffer-main/SourceFiles/MEM/RAM.v
@@ -338,7 +361,7 @@ R16
 R17
 R18
 !i122 557
-L0 1 0
+Z22 L0 1 0
 R3
 31
 R19
@@ -348,6 +371,55 @@ R21
 R4
 R5
 n@test@bench_brush_v_unit
+vTestBench_debouncer
+Z23 !s110 1659804919
+R1
+r1
+!s85 0
+!i10b 1
+!s100 eGh4SIkn5KNMn3j7djF4O0
+IiL1eS5[2o>?j]NTXd^@la1
+R6
+Z24 w1659804669
+Z25 8C:/Users/User/Downloads/VGA-Framebuffer-main/SourceFiles/DEBOUNCER/TestBench_debouncer.v
+Z26 FC:/Users/User/Downloads/VGA-Framebuffer-main/SourceFiles/DEBOUNCER/TestBench_debouncer.v
+!i122 581
+L0 2 33
+R3
+31
+Z27 !s108 1659804918.000000
+Z28 !s107 C:/Users/User/Downloads/VGA-Framebuffer-main/SourceFiles/DEBOUNCER/TestBench_debouncer.v|
+Z29 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/User/Downloads/VGA-Framebuffer-main/SourceFiles/DEBOUNCER/TestBench_debouncer.v|
+!i113 1
+R4
+R5
+n@test@bench_debouncer
+XTestBench_debouncer_v_unit
+R10
+R23
+V`TjHJh1Y`A2kK?V[jDAjY1
+r1
+!s85 0
+!i10b 1
+!s100 3dG:fBoAdii0RIW]F5QK20
+I`TjHJh1Y`A2kK?V[jDAjY1
+!i103 1
+S1
+R6
+R24
+R25
+R26
+!i122 581
+R22
+R3
+31
+R27
+R28
+R29
+!i113 1
+R4
+R5
+n@test@bench_debouncer_v_unit
 vtop
 R10
 R12
@@ -357,7 +429,7 @@ R0
 ICYOIjn=jSN0hZGSL4cNV12
 R1
 S1
-R7
+R6
 w1659629717
 8C:/Users/User/Downloads/VGA-Framebuffer-main/SourceFiles/TOP/top.v
 FC:/Users/User/Downloads/VGA-Framebuffer-main/SourceFiles/TOP/top.v
@@ -382,7 +454,7 @@ R0
 IZNDNcQ?=Z6VQeVPOV_gXi3
 R1
 S1
-R7
+R6
 R8
 8C:/Users/User/Downloads/VGA-Framebuffer-main/SourceFiles/TOP/Top_TestBench.sv
 FC:/Users/User/Downloads/VGA-Framebuffer-main/SourceFiles/TOP/Top_TestBench.sv
@@ -406,7 +478,7 @@ R12
 R0
 IAzNK>D_VaC_K[[96X[_^<2
 R1
-R7
+R6
 R8
 8C:/Users/User/Downloads/VGA-Framebuffer-main/SourceFiles/TOP/vga.v
 FC:/Users/User/Downloads/VGA-Framebuffer-main/SourceFiles/TOP/vga.v
