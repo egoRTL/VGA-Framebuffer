@@ -113,6 +113,7 @@ module top
 			.clk		  ( pllclk		),
 			.reset	  ( ~reset_n 	),
 			.BTN		  ( BTN			), // [2:0]movedirection=[2:0]key_sw
+			.BTN_POSEDGE(BTN_POSEDGE),
 			.display_on(display_on	),
 			.hpos		  ( hpos			),
 			.vpos		  ( vpos			),

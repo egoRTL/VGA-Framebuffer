@@ -1,0 +1,40 @@
+module brush_movement
+# (
+	parameter SLOWNESS = 16,
+				  HPOS_WIDTH=0, //coordinate wires width
+				  VPOS_WIDTH=0
+)
+(
+	input clk,
+	input reset,
+	input [3:0] BTN, // [2:0]movedirection=[2:0]key_sw
+	input [2:0]FB_RGB,
+	output reg [HPOS_WIDTH - 1:0]cursor_xpos,
+	output reg [VPOS_WIDTH - 1:0]cursor_ypos;
+);
+
+reg [SLOWNESS:0] counterclk=0; //clkdiv counter
+
+//brush counter
+always@(posedge clk or posedge reset) begin //ALWAYS MAKE ASYNCRONIC RESET ,WHEN WORKING WITH SPRITES!!!
+if(reset) counterclk<=0;
+else if(display_on) counterclk<=counterclk+1;
+end
+
+//brush movement
+always@(posedge clk or posedge reset) begin
+if(reset) begin
+cursor_xpos<=INIT_XPOS;
+cursor_ypos<=INIT_YPOS;
+end else begin
+	if (BTN[2]) begin // move right or down
+		if(BTN[0]&&(counterclk==0)) if(cursor_xpos!=RESOLUTION_H-brush_size) cursor_xpos<=cursor_xpos+'b1; // move right
+		if(BTN[1]&&(counterclk==0)) if(cursor_ypos!=RESOLUTION_V-brush_size) cursor_ypos<=cursor_ypos+'b1; // move down
+	end else if (~BTN[2]) begin //move left or up
+		if(BTN[0]&&(counterclk==0)) if(cursor_xpos != brush_size) cursor_xpos<=cursor_xpos-'b1; // move left
+		if(BTN[1]&&(counterclk==0)) if(cursor_ypos != brush_size) cursor_ypos<=cursor_ypos-'b1; // move up 
+	end
+end
+end
+
+endmodule

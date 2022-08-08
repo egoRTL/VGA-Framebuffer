@@ -1,12 +1,12 @@
-Analysis & Synthesis Status : Successful - Sat Aug 06 20:02:23 2022
-Quartus Prime Version : 20.1.1 Build 720 11/11/2020 Patches 1.02i SJ Lite Edition
+Analysis & Synthesis Status : Successful - Tue Aug 09 01:38:22 2022
+Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 Revision Name : VGA-FRAMEBUFFER
 Top-level Entity Name : top
 Family : Cyclone IV E
-Total logic elements : 1,362
-    Total combinational functions : 1,235
-    Dedicated logic registers : 362
-Total registers : 362
+Total logic elements : 1,402
+    Total combinational functions : 1,273
+    Dedicated logic registers : 381
+Total registers : 381
 Total pins : 28
 Total virtual pins : 0
 Total memory bits : 15,000
