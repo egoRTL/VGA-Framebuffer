@@ -54,6 +54,13 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 
 Top level modules:
 	brush
 
+} {} {}} D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/MEM/MEM-BRUSH_TestBench.sv {1 {vlog -work work -sv -stats=none D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/MEM/MEM-BRUSH_TestBench.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module MEM_BRUSH_TestBench
+
+Top level modules:
+	MEM_BRUSH_TestBench
+
 } {} {}} D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/MEM/RAM.v {1 {vlog -work work -stats=none D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/MEM/RAM.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
 -- Compiling module single_port_ram
