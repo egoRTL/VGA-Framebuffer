@@ -1,6 +1,6 @@
 Analysis & Synthesis report for VGA-FRAMEBUFFER
-Wed Aug 17 20:21:39 2022
-Quartus Prime Version 20.1.1 Build 720 11/11/2020 Patches 1.02i SJ Lite Edition
+Thu Aug 18 16:47:10 2022
+Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
 ---------------------
@@ -24,11 +24,11 @@ Quartus Prime Version 20.1.1 Build 720 11/11/2020 Patches 1.02i SJ Lite Edition
  16. Registers Added for RAM Pass-Through Logic
  17. Registers Packed Into Inferred Megafunctions
  18. Multiplexer Restructuring Statistics (Restructuring Performed)
- 19. Source assignments for FIFO_top:FIFO|flip_flop_fifo:VPOS_FIFO|altsyncram:data_rtl_0|altsyncram_acc1:auto_generated
+ 19. Source assignments for FIFO_top:FIFO|flip_flop_fifo:VPOS_FIFO|altsyncram:data_rtl_0|altsyncram_ccc1:auto_generated
  20. Source assignments for RGBMemory_top:FrameBuffer|single_port_ram:B_MEMORY|altsyncram:ramblock_rtl_0|altsyncram_1of1:auto_generated
  21. Source assignments for RGBMemory_top:FrameBuffer|single_port_ram:G_MEMORY|altsyncram:ramblock_rtl_0|altsyncram_1of1:auto_generated
  22. Source assignments for RGBMemory_top:FrameBuffer|single_port_ram:R_MEMORY|altsyncram:ramblock_rtl_0|altsyncram_1of1:auto_generated
- 23. Source assignments for FIFO_top:FIFO|flip_flop_fifo:HPOS_FIFO|altsyncram:data_rtl_0|altsyncram_acc1:auto_generated
+ 23. Source assignments for FIFO_top:FIFO|flip_flop_fifo:HPOS_FIFO|altsyncram:data_rtl_0|altsyncram_o9c1:auto_generated
  24. Parameter Settings for User Entity Instance: Top-level Entity: |top
  25. Parameter Settings for User Entity Instance: pll:pll|altpll:altpll_component
  26. Parameter Settings for User Entity Instance: vga:i_vga
@@ -49,16 +49,15 @@ Quartus Prime Version 20.1.1 Build 720 11/11/2020 Patches 1.02i SJ Lite Edition
  41. Parameter Settings for Inferred Entity Instance: RGBMemory_top:FrameBuffer|single_port_ram:G_MEMORY|altsyncram:ramblock_rtl_0
  42. Parameter Settings for Inferred Entity Instance: RGBMemory_top:FrameBuffer|single_port_ram:R_MEMORY|altsyncram:ramblock_rtl_0
  43. Parameter Settings for Inferred Entity Instance: FIFO_top:FIFO|flip_flop_fifo:HPOS_FIFO|altsyncram:data_rtl_0
- 44. Parameter Settings for Inferred Entity Instance: RGBMemory_top:FrameBuffer|RGBmemcoderdecoderv2:FBCODEC|lpm_divide:Div1
- 45. Parameter Settings for Inferred Entity Instance: RGBMemory_top:FrameBuffer|RGBmemcoderdecoderv2:FBCODEC|lpm_divide:Div0
- 46. Parameter Settings for Inferred Entity Instance: RGBMemory_top:FrameBuffer|RGBmemcoderdecoderv2:FBCODEC|lpm_divide:Mod0
- 47. altpll Parameter Settings by Entity Instance
- 48. altsyncram Parameter Settings by Entity Instance
- 49. Port Connectivity Checks: "RGBMemory_top:FrameBuffer"
- 50. Port Connectivity Checks: "button_debouncer:Debouncer"
- 51. Post-Synthesis Netlist Statistics for Top Partition
- 52. Elapsed Time Per Partition
- 53. Analysis & Synthesis Messages
+ 44. Parameter Settings for Inferred Entity Instance: RGBMemory_top:FrameBuffer|RGBmemcoderdecoderv2:FBCODEC|lpm_divide:Div0
+ 45. Parameter Settings for Inferred Entity Instance: RGBMemory_top:FrameBuffer|RGBmemcoderdecoderv2:FBCODEC|lpm_divide:Mod0
+ 46. altpll Parameter Settings by Entity Instance
+ 47. altsyncram Parameter Settings by Entity Instance
+ 48. Port Connectivity Checks: "RGBMemory_top:FrameBuffer"
+ 49. Port Connectivity Checks: "button_debouncer:Debouncer"
+ 50. Post-Synthesis Netlist Statistics for Top Partition
+ 51. Elapsed Time Per Partition
+ 52. Analysis & Synthesis Messages
 
 
 
@@ -82,24 +81,24 @@ https://fpgasoftware.intel.com/eula.
 
 
 
-+------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Summary                                                                   ;
-+------------------------------------+-----------------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Wed Aug 17 20:21:39 2022                     ;
-; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 Patches 1.02i SJ Lite Edition ;
-; Revision Name                      ; VGA-FRAMEBUFFER                                           ;
-; Top-level Entity Name              ; top                                                       ;
-; Family                             ; Cyclone IV E                                              ;
-; Total logic elements               ; 792                                                       ;
-;     Total combinational functions  ; 743                                                       ;
-;     Dedicated logic registers      ; 274                                                       ;
-; Total registers                    ; 274                                                       ;
-; Total pins                         ; 28                                                        ;
-; Total virtual pins                 ; 0                                                         ;
-; Total memory bits                  ; 14,970                                                    ;
-; Embedded Multiplier 9-bit elements ; 0                                                         ;
-; Total PLLs                         ; 1                                                         ;
-+------------------------------------+-----------------------------------------------------------+
++----------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                     ;
++------------------------------------+---------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Thu Aug 18 16:47:10 2022       ;
+; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
+; Revision Name                      ; VGA-FRAMEBUFFER                             ;
+; Top-level Entity Name              ; top                                         ;
+; Family                             ; Cyclone IV E                                ;
+; Total logic elements               ; 729                                         ;
+;     Total combinational functions  ; 675                                         ;
+;     Dedicated logic registers      ; 289                                         ;
+; Total registers                    ; 289                                         ;
+; Total pins                         ; 28                                          ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 14,834                                      ;
+; Embedded Multiplier 9-bit elements ; 0                                           ;
+; Total PLLs                         ; 1                                           ;
++------------------------------------+---------------------------------------------+
 
 
 +------------------------------------------------------------------------------------------------------------+
@@ -193,69 +192,65 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 12          ;
-; Maximum allowed            ; 6           ;
+; Number detected on machine ; 4           ;
+; Maximum allowed            ; 4           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 6           ;
+; Maximum used               ; 4           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.0%      ;
+;     Processor 2            ;   0.1%      ;
 ;     Processor 3            ;   0.0%      ;
 ;     Processor 4            ;   0.0%      ;
-;     Processor 5            ;   0.0%      ;
-;     Processor 6            ;   0.0%      ;
 +----------------------------+-------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                                                   ;
-+---------------------------------------------+-----------------+------------------------------+-----------------------------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path            ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                                                    ; Library ;
-+---------------------------------------------+-----------------+------------------------------+-----------------------------------------------------------------------------------------------------------------+---------+
-; ../SourceFiles/FIFO/FIFO_top.v              ; yes             ; User SystemVerilog HDL File  ; C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/SourceFiles/FIFO/FIFO_top.v              ;         ;
-; ../SourceFiles/MEM/RGBMemory_top.v          ; yes             ; User Verilog HDL File        ; C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/SourceFiles/MEM/RGBMemory_top.v          ;         ;
-; ../SourceFiles/MEM/RGBmemcodec2.v           ; yes             ; User Verilog HDL File        ; C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/SourceFiles/MEM/RGBmemcodec2.v           ;         ;
-; ../SourceFiles/PLL/pll.v                    ; yes             ; User Wizard-Generated File   ; C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/SourceFiles/PLL/pll.v                    ;         ;
-; ../SourceFiles/TOP/vga.v                    ; yes             ; User Verilog HDL File        ; C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/SourceFiles/TOP/vga.v                    ;         ;
-; ../SourceFiles/TOP/top.v                    ; yes             ; User Verilog HDL File        ; C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/SourceFiles/TOP/top.v                    ;         ;
-; ../SourceFiles/TOP/memsyncreset.v           ; yes             ; User SystemVerilog HDL File  ; C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/SourceFiles/TOP/memsyncreset.v           ;         ;
-; ../SourceFiles/FIFO/fifo.v                  ; yes             ; User SystemVerilog HDL File  ; C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/SourceFiles/FIFO/fifo.v                  ;         ;
-; ../SourceFiles/MEM/RAM.v                    ; yes             ; User SystemVerilog HDL File  ; C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/SourceFiles/MEM/RAM.v                    ;         ;
-; ../SourceFiles/BRUSH/brush.v                ; yes             ; User Verilog HDL File        ; C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/SourceFiles/BRUSH/brush.v                ;         ;
-; ../SourceFiles/DEBOUNCER/button_debouncer.v ; yes             ; User Verilog HDL File        ; C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/SourceFiles/DEBOUNCER/button_debouncer.v ;         ;
-; altpll.tdf                                  ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altpll.tdf                                               ;         ;
-; aglobal201.inc                              ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/aglobal201.inc                                           ;         ;
-; stratix_pll.inc                             ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/stratix_pll.inc                                          ;         ;
-; stratixii_pll.inc                           ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/stratixii_pll.inc                                        ;         ;
-; cycloneii_pll.inc                           ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/cycloneii_pll.inc                                        ;         ;
-; db/pll_altpll.v                             ; yes             ; Auto-Generated Megafunction  ; C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/Project/db/pll_altpll.v                  ;         ;
-; altsyncram.tdf                              ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altsyncram.tdf                                           ;         ;
-; stratix_ram_block.inc                       ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/stratix_ram_block.inc                                    ;         ;
-; lpm_mux.inc                                 ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_mux.inc                                              ;         ;
-; lpm_decode.inc                              ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_decode.inc                                           ;         ;
-; a_rdenreg.inc                               ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/a_rdenreg.inc                                            ;         ;
-; altrom.inc                                  ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altrom.inc                                               ;         ;
-; altram.inc                                  ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altram.inc                                               ;         ;
-; altdpram.inc                                ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altdpram.inc                                             ;         ;
-; db/altsyncram_acc1.tdf                      ; yes             ; Auto-Generated Megafunction  ; C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/Project/db/altsyncram_acc1.tdf           ;         ;
-; db/altsyncram_1of1.tdf                      ; yes             ; Auto-Generated Megafunction  ; C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/Project/db/altsyncram_1of1.tdf           ;         ;
-; lpm_divide.tdf                              ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_divide.tdf                                           ;         ;
-; abs_divider.inc                             ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/abs_divider.inc                                          ;         ;
-; sign_div_unsign.inc                         ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/sign_div_unsign.inc                                      ;         ;
-; db/lpm_divide_rim.tdf                       ; yes             ; Auto-Generated Megafunction  ; C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/Project/db/lpm_divide_rim.tdf            ;         ;
-; db/sign_div_unsign_jlh.tdf                  ; yes             ; Auto-Generated Megafunction  ; C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/Project/db/sign_div_unsign_jlh.tdf       ;         ;
-; db/alt_u_div_q6f.tdf                        ; yes             ; Auto-Generated Megafunction  ; C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/Project/db/alt_u_div_q6f.tdf             ;         ;
-; db/add_sub_7pc.tdf                          ; yes             ; Auto-Generated Megafunction  ; C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/Project/db/add_sub_7pc.tdf               ;         ;
-; db/add_sub_8pc.tdf                          ; yes             ; Auto-Generated Megafunction  ; C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/Project/db/add_sub_8pc.tdf               ;         ;
-; db/lpm_divide_uim.tdf                       ; yes             ; Auto-Generated Megafunction  ; C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/Project/db/lpm_divide_uim.tdf            ;         ;
-; db/sign_div_unsign_mlh.tdf                  ; yes             ; Auto-Generated Megafunction  ; C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/Project/db/sign_div_unsign_mlh.tdf       ;         ;
-; db/alt_u_div_07f.tdf                        ; yes             ; Auto-Generated Megafunction  ; C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/Project/db/alt_u_div_07f.tdf             ;         ;
-; db/lpm_divide_k9m.tdf                       ; yes             ; Auto-Generated Megafunction  ; C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/Project/db/lpm_divide_k9m.tdf            ;         ;
-; db/sign_div_unsign_9kh.tdf                  ; yes             ; Auto-Generated Megafunction  ; C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/Project/db/sign_div_unsign_9kh.tdf       ;         ;
-; db/alt_u_div_64f.tdf                        ; yes             ; Auto-Generated Megafunction  ; C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/Project/db/alt_u_div_64f.tdf             ;         ;
-+---------------------------------------------+-----------------+------------------------------+-----------------------------------------------------------------------------------------------------------------+---------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                            ;
++---------------------------------------------+-----------------+------------------------------+------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path            ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                             ; Library ;
++---------------------------------------------+-----------------+------------------------------+------------------------------------------------------------------------------------------+---------+
+; ../SourceFiles/FIFO/FIFO_top.v              ; yes             ; User SystemVerilog HDL File  ; D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/FIFO/FIFO_top.v              ;         ;
+; ../SourceFiles/MEM/RGBMemory_top.v          ; yes             ; User Verilog HDL File        ; D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/MEM/RGBMemory_top.v          ;         ;
+; ../SourceFiles/MEM/RGBmemcodec2.v           ; yes             ; User Verilog HDL File        ; D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/MEM/RGBmemcodec2.v           ;         ;
+; ../SourceFiles/PLL/pll.v                    ; yes             ; User Wizard-Generated File   ; D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/PLL/pll.v                    ;         ;
+; ../SourceFiles/TOP/vga.v                    ; yes             ; User Verilog HDL File        ; D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/TOP/vga.v                    ;         ;
+; ../SourceFiles/TOP/top.v                    ; yes             ; User Verilog HDL File        ; D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/TOP/top.v                    ;         ;
+; ../SourceFiles/TOP/memsyncreset.v           ; yes             ; User SystemVerilog HDL File  ; D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/TOP/memsyncreset.v           ;         ;
+; ../SourceFiles/FIFO/fifo.v                  ; yes             ; User SystemVerilog HDL File  ; D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/FIFO/fifo.v                  ;         ;
+; ../SourceFiles/MEM/RAM.v                    ; yes             ; User SystemVerilog HDL File  ; D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/MEM/RAM.v                    ;         ;
+; ../SourceFiles/BRUSH/brush.v                ; yes             ; User Verilog HDL File        ; D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/BRUSH/brush.v                ;         ;
+; ../SourceFiles/DEBOUNCER/button_debouncer.v ; yes             ; User Verilog HDL File        ; D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/DEBOUNCER/button_debouncer.v ;         ;
+; altpll.tdf                                  ; yes             ; Megafunction                 ; d:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altpll.tdf                        ;         ;
+; aglobal201.inc                              ; yes             ; Megafunction                 ; d:/intelfpga_lite/20.1/quartus/libraries/megafunctions/aglobal201.inc                    ;         ;
+; stratix_pll.inc                             ; yes             ; Megafunction                 ; d:/intelfpga_lite/20.1/quartus/libraries/megafunctions/stratix_pll.inc                   ;         ;
+; stratixii_pll.inc                           ; yes             ; Megafunction                 ; d:/intelfpga_lite/20.1/quartus/libraries/megafunctions/stratixii_pll.inc                 ;         ;
+; cycloneii_pll.inc                           ; yes             ; Megafunction                 ; d:/intelfpga_lite/20.1/quartus/libraries/megafunctions/cycloneii_pll.inc                 ;         ;
+; db/pll_altpll.v                             ; yes             ; Auto-Generated Megafunction  ; D:/Users/callo/Documents/GitHub/VGA-Framebuffer/Project/db/pll_altpll.v                  ;         ;
+; altsyncram.tdf                              ; yes             ; Megafunction                 ; d:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altsyncram.tdf                    ;         ;
+; stratix_ram_block.inc                       ; yes             ; Megafunction                 ; d:/intelfpga_lite/20.1/quartus/libraries/megafunctions/stratix_ram_block.inc             ;         ;
+; lpm_mux.inc                                 ; yes             ; Megafunction                 ; d:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_mux.inc                       ;         ;
+; lpm_decode.inc                              ; yes             ; Megafunction                 ; d:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_decode.inc                    ;         ;
+; a_rdenreg.inc                               ; yes             ; Megafunction                 ; d:/intelfpga_lite/20.1/quartus/libraries/megafunctions/a_rdenreg.inc                     ;         ;
+; altrom.inc                                  ; yes             ; Megafunction                 ; d:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altrom.inc                        ;         ;
+; altram.inc                                  ; yes             ; Megafunction                 ; d:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altram.inc                        ;         ;
+; altdpram.inc                                ; yes             ; Megafunction                 ; d:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altdpram.inc                      ;         ;
+; db/altsyncram_ccc1.tdf                      ; yes             ; Auto-Generated Megafunction  ; D:/Users/callo/Documents/GitHub/VGA-Framebuffer/Project/db/altsyncram_ccc1.tdf           ;         ;
+; db/altsyncram_1of1.tdf                      ; yes             ; Auto-Generated Megafunction  ; D:/Users/callo/Documents/GitHub/VGA-Framebuffer/Project/db/altsyncram_1of1.tdf           ;         ;
+; db/altsyncram_o9c1.tdf                      ; yes             ; Auto-Generated Megafunction  ; D:/Users/callo/Documents/GitHub/VGA-Framebuffer/Project/db/altsyncram_o9c1.tdf           ;         ;
+; lpm_divide.tdf                              ; yes             ; Megafunction                 ; d:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_divide.tdf                    ;         ;
+; abs_divider.inc                             ; yes             ; Megafunction                 ; d:/intelfpga_lite/20.1/quartus/libraries/megafunctions/abs_divider.inc                   ;         ;
+; sign_div_unsign.inc                         ; yes             ; Megafunction                 ; d:/intelfpga_lite/20.1/quartus/libraries/megafunctions/sign_div_unsign.inc               ;         ;
+; db/lpm_divide_uim.tdf                       ; yes             ; Auto-Generated Megafunction  ; D:/Users/callo/Documents/GitHub/VGA-Framebuffer/Project/db/lpm_divide_uim.tdf            ;         ;
+; db/sign_div_unsign_mlh.tdf                  ; yes             ; Auto-Generated Megafunction  ; D:/Users/callo/Documents/GitHub/VGA-Framebuffer/Project/db/sign_div_unsign_mlh.tdf       ;         ;
+; db/alt_u_div_07f.tdf                        ; yes             ; Auto-Generated Megafunction  ; D:/Users/callo/Documents/GitHub/VGA-Framebuffer/Project/db/alt_u_div_07f.tdf             ;         ;
+; db/add_sub_7pc.tdf                          ; yes             ; Auto-Generated Megafunction  ; D:/Users/callo/Documents/GitHub/VGA-Framebuffer/Project/db/add_sub_7pc.tdf               ;         ;
+; db/add_sub_8pc.tdf                          ; yes             ; Auto-Generated Megafunction  ; D:/Users/callo/Documents/GitHub/VGA-Framebuffer/Project/db/add_sub_8pc.tdf               ;         ;
+; db/lpm_divide_k9m.tdf                       ; yes             ; Auto-Generated Megafunction  ; D:/Users/callo/Documents/GitHub/VGA-Framebuffer/Project/db/lpm_divide_k9m.tdf            ;         ;
+; db/sign_div_unsign_9kh.tdf                  ; yes             ; Auto-Generated Megafunction  ; D:/Users/callo/Documents/GitHub/VGA-Framebuffer/Project/db/sign_div_unsign_9kh.tdf       ;         ;
+; db/alt_u_div_64f.tdf                        ; yes             ; Auto-Generated Megafunction  ; D:/Users/callo/Documents/GitHub/VGA-Framebuffer/Project/db/alt_u_div_64f.tdf             ;         ;
++---------------------------------------------+-----------------+------------------------------+------------------------------------------------------------------------------------------+---------+
 
 
 +--------------------------------------------------------------------------------------------------------------------------+
@@ -263,24 +258,24 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+----------------------------------------------------------------------------+
 ; Resource                                    ; Usage                                                                      ;
 +---------------------------------------------+----------------------------------------------------------------------------+
-; Estimated Total logic elements              ; 792                                                                        ;
+; Estimated Total logic elements              ; 729                                                                        ;
 ;                                             ;                                                                            ;
-; Total combinational functions               ; 743                                                                        ;
+; Total combinational functions               ; 675                                                                        ;
 ; Logic element usage by number of LUT inputs ;                                                                            ;
-;     -- 4 input functions                    ; 261                                                                        ;
-;     -- 3 input functions                    ; 195                                                                        ;
-;     -- <=2 input functions                  ; 287                                                                        ;
+;     -- 4 input functions                    ; 253                                                                        ;
+;     -- 3 input functions                    ; 169                                                                        ;
+;     -- <=2 input functions                  ; 253                                                                        ;
 ;                                             ;                                                                            ;
 ; Logic elements by mode                      ;                                                                            ;
-;     -- normal mode                          ; 482                                                                        ;
-;     -- arithmetic mode                      ; 261                                                                        ;
+;     -- normal mode                          ; 430                                                                        ;
+;     -- arithmetic mode                      ; 245                                                                        ;
 ;                                             ;                                                                            ;
-; Total registers                             ; 274                                                                        ;
-;     -- Dedicated logic registers            ; 274                                                                        ;
+; Total registers                             ; 289                                                                        ;
+;     -- Dedicated logic registers            ; 289                                                                        ;
 ;     -- I/O registers                        ; 0                                                                          ;
 ;                                             ;                                                                            ;
 ; I/O pins                                    ; 28                                                                         ;
-; Total memory bits                           ; 14970                                                                      ;
+; Total memory bits                           ; 14834                                                                      ;
 ;                                             ;                                                                            ;
 ; Embedded Multiplier 9-bit elements          ; 0                                                                          ;
 ;                                             ;                                                                            ;
@@ -288,8 +283,8 @@ https://fpgasoftware.intel.com/eula.
 ;     -- PLLs                                 ; 1                                                                          ;
 ;                                             ;                                                                            ;
 ; Maximum fan-out node                        ; pll:pll|altpll:altpll_component|pll_altpll:auto_generated|wire_pll1_clk[0] ;
-; Maximum fan-out                             ; 312                                                                        ;
-; Total fan-out                               ; 3553                                                                       ;
+; Maximum fan-out                             ; 322                                                                        ;
+; Total fan-out                               ; 3373                                                                       ;
 ; Average fan-out                             ; 3.20                                                                       ;
 +---------------------------------------------+----------------------------------------------------------------------------+
 
@@ -299,30 +294,26 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------+--------------+
 ; Compilation Hierarchy Node                   ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                                         ; Entity Name          ; Library Name ;
 +----------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------+--------------+
-; |top                                         ; 743 (12)            ; 274 (0)                   ; 14970       ; 0            ; 0       ; 0         ; 28   ; 0            ; |top                                                                                                                                                        ; top                  ; work         ;
-;    |FIFO_top:FIFO|                           ; 48 (4)              ; 60 (4)                    ; 570         ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|FIFO_top:FIFO                                                                                                                                          ; FIFO_top             ; work         ;
-;       |flip_flop_fifo:HPOS_FIFO|             ; 39 (39)             ; 36 (36)                   ; 300         ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|FIFO_top:FIFO|flip_flop_fifo:HPOS_FIFO                                                                                                                 ; flip_flop_fifo       ; work         ;
-;          |altsyncram:data_rtl_0|             ; 0 (0)               ; 0 (0)                     ; 300         ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|FIFO_top:FIFO|flip_flop_fifo:HPOS_FIFO|altsyncram:data_rtl_0                                                                                           ; altsyncram           ; work         ;
-;             |altsyncram_acc1:auto_generated| ; 0 (0)               ; 0 (0)                     ; 300         ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|FIFO_top:FIFO|flip_flop_fifo:HPOS_FIFO|altsyncram:data_rtl_0|altsyncram_acc1:auto_generated                                                            ; altsyncram_acc1      ; work         ;
-;       |flip_flop_fifo:RGB_FIFO|              ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|FIFO_top:FIFO|flip_flop_fifo:RGB_FIFO                                                                                                                  ; flip_flop_fifo       ; work         ;
-;       |flip_flop_fifo:VPOS_FIFO|             ; 4 (4)               ; 20 (20)                   ; 270         ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|FIFO_top:FIFO|flip_flop_fifo:VPOS_FIFO                                                                                                                 ; flip_flop_fifo       ; work         ;
-;          |altsyncram:data_rtl_0|             ; 0 (0)               ; 0 (0)                     ; 270         ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|FIFO_top:FIFO|flip_flop_fifo:VPOS_FIFO|altsyncram:data_rtl_0                                                                                           ; altsyncram           ; work         ;
-;             |altsyncram_acc1:auto_generated| ; 0 (0)               ; 0 (0)                     ; 270         ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|FIFO_top:FIFO|flip_flop_fifo:VPOS_FIFO|altsyncram:data_rtl_0|altsyncram_acc1:auto_generated                                                            ; altsyncram_acc1      ; work         ;
-;    |RGBMemory_top:FrameBuffer|               ; 326 (0)             ; 51 (0)                    ; 14400       ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|RGBMemory_top:FrameBuffer                                                                                                                              ; RGBMemory_top        ; work         ;
-;       |RGBmemcoderdecoderv2:FBCODEC|         ; 293 (116)           ; 51 (51)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|RGBMemory_top:FrameBuffer|RGBmemcoderdecoderv2:FBCODEC                                                                                                 ; RGBmemcoderdecoderv2 ; work         ;
-;          |lpm_divide:Div0|                   ; 61 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|RGBMemory_top:FrameBuffer|RGBmemcoderdecoderv2:FBCODEC|lpm_divide:Div0                                                                                 ; lpm_divide           ; work         ;
-;             |lpm_divide_uim:auto_generated|  ; 61 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|RGBMemory_top:FrameBuffer|RGBmemcoderdecoderv2:FBCODEC|lpm_divide:Div0|lpm_divide_uim:auto_generated                                                   ; lpm_divide_uim       ; work         ;
-;                |sign_div_unsign_mlh:divider| ; 61 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|RGBMemory_top:FrameBuffer|RGBmemcoderdecoderv2:FBCODEC|lpm_divide:Div0|lpm_divide_uim:auto_generated|sign_div_unsign_mlh:divider                       ; sign_div_unsign_mlh  ; work         ;
-;                   |alt_u_div_07f:divider|    ; 61 (61)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|RGBMemory_top:FrameBuffer|RGBmemcoderdecoderv2:FBCODEC|lpm_divide:Div0|lpm_divide_uim:auto_generated|sign_div_unsign_mlh:divider|alt_u_div_07f:divider ; alt_u_div_07f        ; work         ;
-;          |lpm_divide:Div1|                   ; 73 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|RGBMemory_top:FrameBuffer|RGBmemcoderdecoderv2:FBCODEC|lpm_divide:Div1                                                                                 ; lpm_divide           ; work         ;
-;             |lpm_divide_rim:auto_generated|  ; 73 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|RGBMemory_top:FrameBuffer|RGBmemcoderdecoderv2:FBCODEC|lpm_divide:Div1|lpm_divide_rim:auto_generated                                                   ; lpm_divide_rim       ; work         ;
-;                |sign_div_unsign_jlh:divider| ; 73 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|RGBMemory_top:FrameBuffer|RGBmemcoderdecoderv2:FBCODEC|lpm_divide:Div1|lpm_divide_rim:auto_generated|sign_div_unsign_jlh:divider                       ; sign_div_unsign_jlh  ; work         ;
-;                   |alt_u_div_q6f:divider|    ; 73 (73)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|RGBMemory_top:FrameBuffer|RGBmemcoderdecoderv2:FBCODEC|lpm_divide:Div1|lpm_divide_rim:auto_generated|sign_div_unsign_jlh:divider|alt_u_div_q6f:divider ; alt_u_div_q6f        ; work         ;
+; |top                                         ; 675 (17)            ; 289 (0)                   ; 14834       ; 0            ; 0       ; 0         ; 28   ; 0            ; |top                                                                                                                                                        ; top                  ; work         ;
+;    |FIFO_top:FIFO|                           ; 49 (4)              ; 55 (4)                    ; 434         ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|FIFO_top:FIFO                                                                                                                                          ; FIFO_top             ; work         ;
+;       |flip_flop_fifo:HPOS_FIFO|             ; 40 (40)             ; 33 (33)                   ; 217         ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|FIFO_top:FIFO|flip_flop_fifo:HPOS_FIFO                                                                                                                 ; flip_flop_fifo       ; work         ;
+;          |altsyncram:data_rtl_0|             ; 0 (0)               ; 0 (0)                     ; 217         ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|FIFO_top:FIFO|flip_flop_fifo:HPOS_FIFO|altsyncram:data_rtl_0                                                                                           ; altsyncram           ; work         ;
+;             |altsyncram_o9c1:auto_generated| ; 0 (0)               ; 0 (0)                     ; 217         ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|FIFO_top:FIFO|flip_flop_fifo:HPOS_FIFO|altsyncram:data_rtl_0|altsyncram_o9c1:auto_generated                                                            ; altsyncram_o9c1      ; work         ;
+;       |flip_flop_fifo:RGB_FIFO|              ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|FIFO_top:FIFO|flip_flop_fifo:RGB_FIFO                                                                                                                  ; flip_flop_fifo       ; work         ;
+;       |flip_flop_fifo:VPOS_FIFO|             ; 3 (3)               ; 18 (18)                   ; 217         ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|FIFO_top:FIFO|flip_flop_fifo:VPOS_FIFO                                                                                                                 ; flip_flop_fifo       ; work         ;
+;          |altsyncram:data_rtl_0|             ; 0 (0)               ; 0 (0)                     ; 217         ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|FIFO_top:FIFO|flip_flop_fifo:VPOS_FIFO|altsyncram:data_rtl_0                                                                                           ; altsyncram           ; work         ;
+;             |altsyncram_ccc1:auto_generated| ; 0 (0)               ; 0 (0)                     ; 217         ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|FIFO_top:FIFO|flip_flop_fifo:VPOS_FIFO|altsyncram:data_rtl_0|altsyncram_ccc1:auto_generated                                                            ; altsyncram_ccc1      ; work         ;
+;    |RGBMemory_top:FrameBuffer|               ; 241 (0)             ; 71 (0)                    ; 14400       ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|RGBMemory_top:FrameBuffer                                                                                                                              ; RGBMemory_top        ; work         ;
+;       |RGBmemcoderdecoderv2:FBCODEC|         ; 202 (105)           ; 71 (71)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|RGBMemory_top:FrameBuffer|RGBmemcoderdecoderv2:FBCODEC                                                                                                 ; RGBmemcoderdecoderv2 ; work         ;
+;          |lpm_divide:Div0|                   ; 54 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|RGBMemory_top:FrameBuffer|RGBmemcoderdecoderv2:FBCODEC|lpm_divide:Div0                                                                                 ; lpm_divide           ; work         ;
+;             |lpm_divide_uim:auto_generated|  ; 54 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|RGBMemory_top:FrameBuffer|RGBmemcoderdecoderv2:FBCODEC|lpm_divide:Div0|lpm_divide_uim:auto_generated                                                   ; lpm_divide_uim       ; work         ;
+;                |sign_div_unsign_mlh:divider| ; 54 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|RGBMemory_top:FrameBuffer|RGBmemcoderdecoderv2:FBCODEC|lpm_divide:Div0|lpm_divide_uim:auto_generated|sign_div_unsign_mlh:divider                       ; sign_div_unsign_mlh  ; work         ;
+;                   |alt_u_div_07f:divider|    ; 54 (54)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|RGBMemory_top:FrameBuffer|RGBmemcoderdecoderv2:FBCODEC|lpm_divide:Div0|lpm_divide_uim:auto_generated|sign_div_unsign_mlh:divider|alt_u_div_07f:divider ; alt_u_div_07f        ; work         ;
 ;          |lpm_divide:Mod0|                   ; 43 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|RGBMemory_top:FrameBuffer|RGBmemcoderdecoderv2:FBCODEC|lpm_divide:Mod0                                                                                 ; lpm_divide           ; work         ;
 ;             |lpm_divide_k9m:auto_generated|  ; 43 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|RGBMemory_top:FrameBuffer|RGBmemcoderdecoderv2:FBCODEC|lpm_divide:Mod0|lpm_divide_k9m:auto_generated                                                   ; lpm_divide_k9m       ; work         ;
 ;                |sign_div_unsign_9kh:divider| ; 43 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|RGBMemory_top:FrameBuffer|RGBmemcoderdecoderv2:FBCODEC|lpm_divide:Mod0|lpm_divide_k9m:auto_generated|sign_div_unsign_9kh:divider                       ; sign_div_unsign_9kh  ; work         ;
 ;                   |alt_u_div_64f:divider|    ; 43 (43)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|RGBMemory_top:FrameBuffer|RGBmemcoderdecoderv2:FBCODEC|lpm_divide:Mod0|lpm_divide_k9m:auto_generated|sign_div_unsign_9kh:divider|alt_u_div_64f:divider ; alt_u_div_64f        ; work         ;
-;       |single_port_ram:B_MEMORY|             ; 21 (21)             ; 0 (0)                     ; 4800        ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|RGBMemory_top:FrameBuffer|single_port_ram:B_MEMORY                                                                                                     ; single_port_ram      ; work         ;
+;       |single_port_ram:B_MEMORY|             ; 27 (27)             ; 0 (0)                     ; 4800        ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|RGBMemory_top:FrameBuffer|single_port_ram:B_MEMORY                                                                                                     ; single_port_ram      ; work         ;
 ;          |altsyncram:ramblock_rtl_0|         ; 0 (0)               ; 0 (0)                     ; 4800        ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|RGBMemory_top:FrameBuffer|single_port_ram:B_MEMORY|altsyncram:ramblock_rtl_0                                                                           ; altsyncram           ; work         ;
 ;             |altsyncram_1of1:auto_generated| ; 0 (0)               ; 0 (0)                     ; 4800        ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|RGBMemory_top:FrameBuffer|single_port_ram:B_MEMORY|altsyncram:ramblock_rtl_0|altsyncram_1of1:auto_generated                                            ; altsyncram_1of1      ; work         ;
 ;       |single_port_ram:G_MEMORY|             ; 6 (6)               ; 0 (0)                     ; 4800        ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|RGBMemory_top:FrameBuffer|single_port_ram:G_MEMORY                                                                                                     ; single_port_ram      ; work         ;
@@ -331,7 +322,7 @@ https://fpgasoftware.intel.com/eula.
 ;       |single_port_ram:R_MEMORY|             ; 6 (6)               ; 0 (0)                     ; 4800        ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|RGBMemory_top:FrameBuffer|single_port_ram:R_MEMORY                                                                                                     ; single_port_ram      ; work         ;
 ;          |altsyncram:ramblock_rtl_0|         ; 0 (0)               ; 0 (0)                     ; 4800        ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|RGBMemory_top:FrameBuffer|single_port_ram:R_MEMORY|altsyncram:ramblock_rtl_0                                                                           ; altsyncram           ; work         ;
 ;             |altsyncram_1of1:auto_generated| ; 0 (0)               ; 0 (0)                     ; 4800        ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|RGBMemory_top:FrameBuffer|single_port_ram:R_MEMORY|altsyncram:ramblock_rtl_0|altsyncram_1of1:auto_generated                                            ; altsyncram_1of1      ; work         ;
-;    |brush:Painting_Brush|                    ; 211 (211)           ; 69 (69)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|brush:Painting_Brush                                                                                                                                   ; brush                ; work         ;
+;    |brush:Painting_Brush|                    ; 222 (222)           ; 69 (69)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|brush:Painting_Brush                                                                                                                                   ; brush                ; work         ;
 ;    |button_debouncer:Debouncer|              ; 68 (68)             ; 57 (57)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|button_debouncer:Debouncer                                                                                                                             ; button_debouncer     ; work         ;
 ;    |memsyncreset:memsyncreset|               ; 29 (29)             ; 14 (14)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|memsyncreset:memsyncreset                                                                                                                              ; memsyncreset         ; work         ;
 ;    |pll:pll|                                 ; 0 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|pll:pll                                                                                                                                                ; pll                  ; work         ;
@@ -347,8 +338,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +------------------------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+------+------+
 ; Name                                                                                                                   ; Type ; Mode             ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size ; MIF  ;
 +------------------------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+------+------+
-; FIFO_top:FIFO|flip_flop_fifo:HPOS_FIFO|altsyncram:data_rtl_0|altsyncram_acc1:auto_generated|ALTSYNCRAM                 ; AUTO ; Simple Dual Port ; 30           ; 10           ; 30           ; 10           ; 300  ; None ;
-; FIFO_top:FIFO|flip_flop_fifo:VPOS_FIFO|altsyncram:data_rtl_0|altsyncram_acc1:auto_generated|ALTSYNCRAM                 ; AUTO ; Simple Dual Port ; 30           ; 10           ; 30           ; 10           ; 300  ; None ;
+; FIFO_top:FIFO|flip_flop_fifo:HPOS_FIFO|altsyncram:data_rtl_0|altsyncram_o9c1:auto_generated|ALTSYNCRAM                 ; AUTO ; Simple Dual Port ; 31           ; 7            ; 31           ; 7            ; 217  ; None ;
+; FIFO_top:FIFO|flip_flop_fifo:VPOS_FIFO|altsyncram:data_rtl_0|altsyncram_ccc1:auto_generated|ALTSYNCRAM                 ; AUTO ; Simple Dual Port ; 31           ; 10           ; 31           ; 10           ; 310  ; None ;
 ; RGBMemory_top:FrameBuffer|single_port_ram:B_MEMORY|altsyncram:ramblock_rtl_0|altsyncram_1of1:auto_generated|ALTSYNCRAM ; M9K  ; Simple Dual Port ; 800          ; 6            ; 800          ; 6            ; 4800 ; None ;
 ; RGBMemory_top:FrameBuffer|single_port_ram:G_MEMORY|altsyncram:ramblock_rtl_0|altsyncram_1of1:auto_generated|ALTSYNCRAM ; M9K  ; Simple Dual Port ; 800          ; 6            ; 800          ; 6            ; 4800 ; None ;
 ; RGBMemory_top:FrameBuffer|single_port_ram:R_MEMORY|altsyncram:ramblock_rtl_0|altsyncram_1of1:auto_generated|ALTSYNCRAM ; M9K  ; Simple Dual Port ; 800          ; 6            ; 800          ; 6            ; 4800 ; None ;
@@ -446,67 +437,69 @@ Encoding Type:  One-Hot
 ; brush:Painting_Brush|writestate~7                                ; Lost fanout                                                  ;
 ; brush:Painting_Brush|writestate~8                                ; Lost fanout                                                  ;
 ; FIFO_top:FIFO|flip_flop_fifo:RGB_FIFO|data~20                    ; Stuck at VCC due to stuck port data_in                       ;
-; FIFO_top:FIFO|flip_flop_fifo:RGB_FIFO|data~12                    ; Stuck at VCC due to stuck port data_in                       ;
-; FIFO_top:FIFO|flip_flop_fifo:RGB_FIFO|data~4                     ; Stuck at VCC due to stuck port data_in                       ;
-; FIFO_top:FIFO|flip_flop_fifo:RGB_FIFO|data~28                    ; Stuck at VCC due to stuck port data_in                       ;
-; FIFO_top:FIFO|flip_flop_fifo:RGB_FIFO|data~10                    ; Stuck at VCC due to stuck port data_in                       ;
 ; FIFO_top:FIFO|flip_flop_fifo:RGB_FIFO|data~18                    ; Stuck at VCC due to stuck port data_in                       ;
-; FIFO_top:FIFO|flip_flop_fifo:RGB_FIFO|data~2                     ; Stuck at VCC due to stuck port data_in                       ;
-; FIFO_top:FIFO|flip_flop_fifo:RGB_FIFO|data~26                    ; Stuck at VCC due to stuck port data_in                       ;
 ; FIFO_top:FIFO|flip_flop_fifo:RGB_FIFO|data~16                    ; Stuck at VCC due to stuck port data_in                       ;
-; FIFO_top:FIFO|flip_flop_fifo:RGB_FIFO|data~8                     ; Stuck at VCC due to stuck port data_in                       ;
-; FIFO_top:FIFO|flip_flop_fifo:RGB_FIFO|data~0                     ; Stuck at VCC due to stuck port data_in                       ;
-; FIFO_top:FIFO|flip_flop_fifo:RGB_FIFO|data~24                    ; Stuck at VCC due to stuck port data_in                       ;
-; FIFO_top:FIFO|flip_flop_fifo:RGB_FIFO|data~14                    ; Stuck at VCC due to stuck port data_in                       ;
 ; FIFO_top:FIFO|flip_flop_fifo:RGB_FIFO|data~22                    ; Stuck at VCC due to stuck port data_in                       ;
+; FIFO_top:FIFO|flip_flop_fifo:RGB_FIFO|data~10                    ; Stuck at VCC due to stuck port data_in                       ;
+; FIFO_top:FIFO|flip_flop_fifo:RGB_FIFO|data~12                    ; Stuck at VCC due to stuck port data_in                       ;
+; FIFO_top:FIFO|flip_flop_fifo:RGB_FIFO|data~8                     ; Stuck at VCC due to stuck port data_in                       ;
+; FIFO_top:FIFO|flip_flop_fifo:RGB_FIFO|data~14                    ; Stuck at VCC due to stuck port data_in                       ;
+; FIFO_top:FIFO|flip_flop_fifo:RGB_FIFO|data~4                     ; Stuck at VCC due to stuck port data_in                       ;
+; FIFO_top:FIFO|flip_flop_fifo:RGB_FIFO|data~2                     ; Stuck at VCC due to stuck port data_in                       ;
+; FIFO_top:FIFO|flip_flop_fifo:RGB_FIFO|data~0                     ; Stuck at VCC due to stuck port data_in                       ;
 ; FIFO_top:FIFO|flip_flop_fifo:RGB_FIFO|data~6                     ; Stuck at VCC due to stuck port data_in                       ;
+; FIFO_top:FIFO|flip_flop_fifo:RGB_FIFO|data~26                    ; Stuck at VCC due to stuck port data_in                       ;
+; FIFO_top:FIFO|flip_flop_fifo:RGB_FIFO|data~28                    ; Stuck at VCC due to stuck port data_in                       ;
+; FIFO_top:FIFO|flip_flop_fifo:RGB_FIFO|data~24                    ; Stuck at VCC due to stuck port data_in                       ;
 ; FIFO_top:FIFO|flip_flop_fifo:RGB_FIFO|data~30                    ; Stuck at VCC due to stuck port data_in                       ;
-; FIFO_top:FIFO|flip_flop_fifo:RGB_FIFO|data~52                    ; Stuck at VCC due to stuck port data_in                       ;
-; FIFO_top:FIFO|flip_flop_fifo:RGB_FIFO|data~50                    ; Stuck at VCC due to stuck port data_in                       ;
-; FIFO_top:FIFO|flip_flop_fifo:RGB_FIFO|data~48                    ; Stuck at VCC due to stuck port data_in                       ;
-; FIFO_top:FIFO|flip_flop_fifo:RGB_FIFO|data~54                    ; Stuck at VCC due to stuck port data_in                       ;
-; FIFO_top:FIFO|flip_flop_fifo:RGB_FIFO|data~42                    ; Stuck at VCC due to stuck port data_in                       ;
 ; FIFO_top:FIFO|flip_flop_fifo:RGB_FIFO|data~44                    ; Stuck at VCC due to stuck port data_in                       ;
-; FIFO_top:FIFO|flip_flop_fifo:RGB_FIFO|data~40                    ; Stuck at VCC due to stuck port data_in                       ;
-; FIFO_top:FIFO|flip_flop_fifo:RGB_FIFO|data~46                    ; Stuck at VCC due to stuck port data_in                       ;
+; FIFO_top:FIFO|flip_flop_fifo:RGB_FIFO|data~52                    ; Stuck at VCC due to stuck port data_in                       ;
 ; FIFO_top:FIFO|flip_flop_fifo:RGB_FIFO|data~36                    ; Stuck at VCC due to stuck port data_in                       ;
+; FIFO_top:FIFO|flip_flop_fifo:RGB_FIFO|data~60                    ; Stuck at VCC due to stuck port data_in                       ;
+; FIFO_top:FIFO|flip_flop_fifo:RGB_FIFO|data~50                    ; Stuck at VCC due to stuck port data_in                       ;
+; FIFO_top:FIFO|flip_flop_fifo:RGB_FIFO|data~42                    ; Stuck at VCC due to stuck port data_in                       ;
 ; FIFO_top:FIFO|flip_flop_fifo:RGB_FIFO|data~34                    ; Stuck at VCC due to stuck port data_in                       ;
-; FIFO_top:FIFO|flip_flop_fifo:RGB_FIFO|data~32                    ; Stuck at VCC due to stuck port data_in                       ;
-; FIFO_top:FIFO|flip_flop_fifo:RGB_FIFO|data~38                    ; Stuck at VCC due to stuck port data_in                       ;
-; FIFO_top:FIFO|flip_flop_fifo:RGB_FIFO|data~56                    ; Stuck at VCC due to stuck port data_in                       ;
 ; FIFO_top:FIFO|flip_flop_fifo:RGB_FIFO|data~58                    ; Stuck at VCC due to stuck port data_in                       ;
-; FIFO_top:FIFO|flip_flop_fifo:RGB_FIFO|data~11                    ; Stuck at VCC due to stuck port data_in                       ;
+; FIFO_top:FIFO|flip_flop_fifo:RGB_FIFO|data~40                    ; Stuck at VCC due to stuck port data_in                       ;
+; FIFO_top:FIFO|flip_flop_fifo:RGB_FIFO|data~48                    ; Stuck at VCC due to stuck port data_in                       ;
+; FIFO_top:FIFO|flip_flop_fifo:RGB_FIFO|data~32                    ; Stuck at VCC due to stuck port data_in                       ;
+; FIFO_top:FIFO|flip_flop_fifo:RGB_FIFO|data~56                    ; Stuck at VCC due to stuck port data_in                       ;
+; FIFO_top:FIFO|flip_flop_fifo:RGB_FIFO|data~38                    ; Stuck at VCC due to stuck port data_in                       ;
+; FIFO_top:FIFO|flip_flop_fifo:RGB_FIFO|data~46                    ; Stuck at VCC due to stuck port data_in                       ;
+; FIFO_top:FIFO|flip_flop_fifo:RGB_FIFO|data~54                    ; Stuck at VCC due to stuck port data_in                       ;
 ; FIFO_top:FIFO|flip_flop_fifo:RGB_FIFO|data~19                    ; Stuck at VCC due to stuck port data_in                       ;
-; FIFO_top:FIFO|flip_flop_fifo:RGB_FIFO|data~3                     ; Stuck at VCC due to stuck port data_in                       ;
-; FIFO_top:FIFO|flip_flop_fifo:RGB_FIFO|data~27                    ; Stuck at VCC due to stuck port data_in                       ;
 ; FIFO_top:FIFO|flip_flop_fifo:RGB_FIFO|data~21                    ; Stuck at VCC due to stuck port data_in                       ;
-; FIFO_top:FIFO|flip_flop_fifo:RGB_FIFO|data~13                    ; Stuck at VCC due to stuck port data_in                       ;
-; FIFO_top:FIFO|flip_flop_fifo:RGB_FIFO|data~5                     ; Stuck at VCC due to stuck port data_in                       ;
-; FIFO_top:FIFO|flip_flop_fifo:RGB_FIFO|data~29                    ; Stuck at VCC due to stuck port data_in                       ;
 ; FIFO_top:FIFO|flip_flop_fifo:RGB_FIFO|data~17                    ; Stuck at VCC due to stuck port data_in                       ;
-; FIFO_top:FIFO|flip_flop_fifo:RGB_FIFO|data~9                     ; Stuck at VCC due to stuck port data_in                       ;
-; FIFO_top:FIFO|flip_flop_fifo:RGB_FIFO|data~1                     ; Stuck at VCC due to stuck port data_in                       ;
-; FIFO_top:FIFO|flip_flop_fifo:RGB_FIFO|data~25                    ; Stuck at VCC due to stuck port data_in                       ;
-; FIFO_top:FIFO|flip_flop_fifo:RGB_FIFO|data~15                    ; Stuck at VCC due to stuck port data_in                       ;
 ; FIFO_top:FIFO|flip_flop_fifo:RGB_FIFO|data~23                    ; Stuck at VCC due to stuck port data_in                       ;
+; FIFO_top:FIFO|flip_flop_fifo:RGB_FIFO|data~13                    ; Stuck at VCC due to stuck port data_in                       ;
+; FIFO_top:FIFO|flip_flop_fifo:RGB_FIFO|data~11                    ; Stuck at VCC due to stuck port data_in                       ;
+; FIFO_top:FIFO|flip_flop_fifo:RGB_FIFO|data~9                     ; Stuck at VCC due to stuck port data_in                       ;
+; FIFO_top:FIFO|flip_flop_fifo:RGB_FIFO|data~15                    ; Stuck at VCC due to stuck port data_in                       ;
+; FIFO_top:FIFO|flip_flop_fifo:RGB_FIFO|data~3                     ; Stuck at VCC due to stuck port data_in                       ;
+; FIFO_top:FIFO|flip_flop_fifo:RGB_FIFO|data~5                     ; Stuck at VCC due to stuck port data_in                       ;
+; FIFO_top:FIFO|flip_flop_fifo:RGB_FIFO|data~1                     ; Stuck at VCC due to stuck port data_in                       ;
 ; FIFO_top:FIFO|flip_flop_fifo:RGB_FIFO|data~7                     ; Stuck at VCC due to stuck port data_in                       ;
+; FIFO_top:FIFO|flip_flop_fifo:RGB_FIFO|data~29                    ; Stuck at VCC due to stuck port data_in                       ;
+; FIFO_top:FIFO|flip_flop_fifo:RGB_FIFO|data~27                    ; Stuck at VCC due to stuck port data_in                       ;
+; FIFO_top:FIFO|flip_flop_fifo:RGB_FIFO|data~25                    ; Stuck at VCC due to stuck port data_in                       ;
 ; FIFO_top:FIFO|flip_flop_fifo:RGB_FIFO|data~31                    ; Stuck at VCC due to stuck port data_in                       ;
-; FIFO_top:FIFO|flip_flop_fifo:RGB_FIFO|data~45                    ; Stuck at VCC due to stuck port data_in                       ;
-; FIFO_top:FIFO|flip_flop_fifo:RGB_FIFO|data~43                    ; Stuck at VCC due to stuck port data_in                       ;
-; FIFO_top:FIFO|flip_flop_fifo:RGB_FIFO|data~41                    ; Stuck at VCC due to stuck port data_in                       ;
-; FIFO_top:FIFO|flip_flop_fifo:RGB_FIFO|data~47                    ; Stuck at VCC due to stuck port data_in                       ;
 ; FIFO_top:FIFO|flip_flop_fifo:RGB_FIFO|data~51                    ; Stuck at VCC due to stuck port data_in                       ;
-; FIFO_top:FIFO|flip_flop_fifo:RGB_FIFO|data~53                    ; Stuck at VCC due to stuck port data_in                       ;
-; FIFO_top:FIFO|flip_flop_fifo:RGB_FIFO|data~49                    ; Stuck at VCC due to stuck port data_in                       ;
-; FIFO_top:FIFO|flip_flop_fifo:RGB_FIFO|data~55                    ; Stuck at VCC due to stuck port data_in                       ;
+; FIFO_top:FIFO|flip_flop_fifo:RGB_FIFO|data~43                    ; Stuck at VCC due to stuck port data_in                       ;
 ; FIFO_top:FIFO|flip_flop_fifo:RGB_FIFO|data~35                    ; Stuck at VCC due to stuck port data_in                       ;
-; FIFO_top:FIFO|flip_flop_fifo:RGB_FIFO|data~37                    ; Stuck at VCC due to stuck port data_in                       ;
-; FIFO_top:FIFO|flip_flop_fifo:RGB_FIFO|data~33                    ; Stuck at VCC due to stuck port data_in                       ;
-; FIFO_top:FIFO|flip_flop_fifo:RGB_FIFO|data~39                    ; Stuck at VCC due to stuck port data_in                       ;
-; FIFO_top:FIFO|flip_flop_fifo:RGB_FIFO|data~57                    ; Stuck at VCC due to stuck port data_in                       ;
 ; FIFO_top:FIFO|flip_flop_fifo:RGB_FIFO|data~59                    ; Stuck at VCC due to stuck port data_in                       ;
-; FIFO_top:FIFO|flip_flop_fifo:VPOS_FIFO|data_rtl_0_bypass[11]     ; Lost fanout                                                  ;
-; Total Number of Removed Registers = 98                           ;                                                              ;
+; FIFO_top:FIFO|flip_flop_fifo:RGB_FIFO|data~45                    ; Stuck at VCC due to stuck port data_in                       ;
+; FIFO_top:FIFO|flip_flop_fifo:RGB_FIFO|data~53                    ; Stuck at VCC due to stuck port data_in                       ;
+; FIFO_top:FIFO|flip_flop_fifo:RGB_FIFO|data~37                    ; Stuck at VCC due to stuck port data_in                       ;
+; FIFO_top:FIFO|flip_flop_fifo:RGB_FIFO|data~61                    ; Stuck at VCC due to stuck port data_in                       ;
+; FIFO_top:FIFO|flip_flop_fifo:RGB_FIFO|data~41                    ; Stuck at VCC due to stuck port data_in                       ;
+; FIFO_top:FIFO|flip_flop_fifo:RGB_FIFO|data~49                    ; Stuck at VCC due to stuck port data_in                       ;
+; FIFO_top:FIFO|flip_flop_fifo:RGB_FIFO|data~33                    ; Stuck at VCC due to stuck port data_in                       ;
+; FIFO_top:FIFO|flip_flop_fifo:RGB_FIFO|data~57                    ; Stuck at VCC due to stuck port data_in                       ;
+; FIFO_top:FIFO|flip_flop_fifo:RGB_FIFO|data~39                    ; Stuck at VCC due to stuck port data_in                       ;
+; FIFO_top:FIFO|flip_flop_fifo:RGB_FIFO|data~47                    ; Stuck at VCC due to stuck port data_in                       ;
+; FIFO_top:FIFO|flip_flop_fifo:RGB_FIFO|data~55                    ; Stuck at VCC due to stuck port data_in                       ;
+; FIFO_top:FIFO|flip_flop_fifo:VPOS_FIFO|data_rtl_0_bypass[11..13] ; Lost fanout                                                  ;
+; Total Number of Removed Registers = 102                          ;                                                              ;
 +------------------------------------------------------------------+--------------------------------------------------------------+
 
 
@@ -515,12 +508,12 @@ Encoding Type:  One-Hot
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 274   ;
+; Total registers                              ; 289   ;
 ; Number of registers using Synchronous Clear  ; 87    ;
 ; Number of registers using Synchronous Load   ; 22    ;
 ; Number of registers using Asynchronous Clear ; 67    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 140   ;
+; Number of registers using Clock Enable       ; 160   ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -586,9 +579,6 @@ Encoding Type:  One-Hot
 ; FIFO_top:FIFO|flip_flop_fifo:HPOS_FIFO|data_rtl_0_bypass[15] ; FIFO_top:FIFO|flip_flop_fifo:HPOS_FIFO|data_rtl_0 ;
 ; FIFO_top:FIFO|flip_flop_fifo:HPOS_FIFO|data_rtl_0_bypass[16] ; FIFO_top:FIFO|flip_flop_fifo:HPOS_FIFO|data_rtl_0 ;
 ; FIFO_top:FIFO|flip_flop_fifo:HPOS_FIFO|data_rtl_0_bypass[17] ; FIFO_top:FIFO|flip_flop_fifo:HPOS_FIFO|data_rtl_0 ;
-; FIFO_top:FIFO|flip_flop_fifo:HPOS_FIFO|data_rtl_0_bypass[18] ; FIFO_top:FIFO|flip_flop_fifo:HPOS_FIFO|data_rtl_0 ;
-; FIFO_top:FIFO|flip_flop_fifo:HPOS_FIFO|data_rtl_0_bypass[19] ; FIFO_top:FIFO|flip_flop_fifo:HPOS_FIFO|data_rtl_0 ;
-; FIFO_top:FIFO|flip_flop_fifo:HPOS_FIFO|data_rtl_0_bypass[20] ; FIFO_top:FIFO|flip_flop_fifo:HPOS_FIFO|data_rtl_0 ;
 +--------------------------------------------------------------+---------------------------------------------------+
 
 
@@ -608,42 +598,42 @@ Encoding Type:  One-Hot
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                  ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------------+
-; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |top|RGBMemory_top:FrameBuffer|RGBmemcoderdecoderv2:FBCODEC|dataselect_r[0] ;
-; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |top|RGBMemory_top:FrameBuffer|RGBmemcoderdecoderv2:FBCODEC|dataselect_w[2] ;
-; 3:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; Yes        ; |top|FIFO_top:FIFO|flip_flop_fifo:HPOS_FIFO|cnt[1]                          ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|brush:Painting_Brush|cursor_xpos[3]                                    ;
-; 3:1                ; 18 bits   ; 36 LEs        ; 18 LEs               ; 18 LEs                 ; Yes        ; |top|RGBMemory_top:FrameBuffer|RGBmemcoderdecoderv2:FBCODEC|Rdatatomem[4]   ;
-; 3:1                ; 11 bits   ; 22 LEs        ; 11 LEs               ; 11 LEs                 ; Yes        ; |top|button_debouncer:Debouncer|counter[3][1]                               ;
-; 3:1                ; 11 bits   ; 22 LEs        ; 11 LEs               ; 11 LEs                 ; Yes        ; |top|button_debouncer:Debouncer|counter[2][10]                              ;
-; 3:1                ; 11 bits   ; 22 LEs        ; 11 LEs               ; 11 LEs                 ; Yes        ; |top|button_debouncer:Debouncer|counter[0][4]                               ;
-; 3:1                ; 11 bits   ; 22 LEs        ; 11 LEs               ; 11 LEs                 ; Yes        ; |top|button_debouncer:Debouncer|counter[1][8]                               ;
-; 4:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; Yes        ; |top|FIFO_top:FIFO|flip_flop_fifo:HPOS_FIFO|wr_ptr[0]                       ;
-; 4:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |top|brush:Painting_Brush|cursor_ypos[8]                                    ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |top|RGBMemory_top:FrameBuffer|RGBmemcoderdecoderv2:FBCODEC|addr_r[6]       ;
+; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |top|RGBMemory_top:FrameBuffer|RGBmemcoderdecoderv2:FBCODEC|dataselect_w[1] ;
+; 3:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; Yes        ; |top|FIFO_top:FIFO|flip_flop_fifo:HPOS_FIFO|cnt[0]                          ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|brush:Painting_Brush|cursor_xpos[9]                                    ;
+; 3:1                ; 10 bits   ; 20 LEs        ; 10 LEs               ; 10 LEs                 ; Yes        ; |top|RGBMemory_top:FrameBuffer|RGBmemcoderdecoderv2:FBCODEC|addr_w[1]       ;
+; 3:1                ; 11 bits   ; 22 LEs        ; 11 LEs               ; 11 LEs                 ; Yes        ; |top|button_debouncer:Debouncer|counter[3][0]                               ;
+; 3:1                ; 11 bits   ; 22 LEs        ; 11 LEs               ; 11 LEs                 ; Yes        ; |top|button_debouncer:Debouncer|counter[2][7]                               ;
+; 3:1                ; 11 bits   ; 22 LEs        ; 11 LEs               ; 11 LEs                 ; Yes        ; |top|button_debouncer:Debouncer|counter[0][3]                               ;
+; 3:1                ; 11 bits   ; 22 LEs        ; 11 LEs               ; 11 LEs                 ; Yes        ; |top|button_debouncer:Debouncer|counter[1][2]                               ;
+; 4:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; Yes        ; |top|FIFO_top:FIFO|flip_flop_fifo:HPOS_FIFO|wr_ptr[4]                       ;
+; 4:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |top|brush:Painting_Brush|cursor_ypos[0]                                    ;
+; 5:1                ; 18 bits   ; 54 LEs        ; 18 LEs               ; 36 LEs                 ; Yes        ; |top|RGBMemory_top:FrameBuffer|RGBmemcoderdecoderv2:FBCODEC|Rdatatomem[1]   ;
 ; 5:1                ; 10 bits   ; 30 LEs        ; 20 LEs               ; 10 LEs                 ; Yes        ; |top|brush:Painting_Brush|writecounter_y[9]                                 ;
-; 9:1                ; 3 bits    ; 18 LEs        ; 18 LEs               ; 0 LEs                  ; Yes        ; |top|brush:Painting_Brush|rgb[1]                                            ;
-; 7:1                ; 2 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |top|RGBMemory_top:FrameBuffer|RGBmemcoderdecoderv2:FBCODEC|Bdatabuf[5]     ;
+; 9:1                ; 3 bits    ; 18 LEs        ; 18 LEs               ; 0 LEs                  ; Yes        ; |top|brush:Painting_Brush|rgb[2]                                            ;
+; 7:1                ; 2 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |top|RGBMemory_top:FrameBuffer|RGBmemcoderdecoderv2:FBCODEC|Rdatabuf[5]     ;
 ; 7:1                ; 2 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |top|RGBMemory_top:FrameBuffer|RGBmemcoderdecoderv2:FBCODEC|Rdatabuf[4]     ;
-; 7:1                ; 2 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |top|RGBMemory_top:FrameBuffer|RGBmemcoderdecoderv2:FBCODEC|Bdatabuf[3]     ;
-; 7:1                ; 2 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |top|RGBMemory_top:FrameBuffer|RGBmemcoderdecoderv2:FBCODEC|Bdatabuf[2]     ;
-; 7:1                ; 2 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |top|RGBMemory_top:FrameBuffer|RGBmemcoderdecoderv2:FBCODEC|Bdatabuf[1]     ;
+; 7:1                ; 2 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |top|RGBMemory_top:FrameBuffer|RGBmemcoderdecoderv2:FBCODEC|Rdatabuf[3]     ;
+; 7:1                ; 2 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |top|RGBMemory_top:FrameBuffer|RGBmemcoderdecoderv2:FBCODEC|Rdatabuf[2]     ;
+; 7:1                ; 2 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |top|RGBMemory_top:FrameBuffer|RGBmemcoderdecoderv2:FBCODEC|Rdatabuf[1]     ;
 ; 7:1                ; 2 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |top|RGBMemory_top:FrameBuffer|RGBmemcoderdecoderv2:FBCODEC|Rdatabuf[0]     ;
-; 7:1                ; 10 bits   ; 40 LEs        ; 20 LEs               ; 20 LEs                 ; Yes        ; |top|brush:Painting_Brush|writecounter_x[1]                                 ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |top|brush:Painting_Brush|cursor_xpos[6]                                    ;
+; 7:1                ; 10 bits   ; 40 LEs        ; 20 LEs               ; 20 LEs                 ; Yes        ; |top|brush:Painting_Brush|writecounter_x[0]                                 ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |top|brush:Painting_Brush|cursor_xpos[8]                                    ;
 ; 4:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |top|brush:Painting_Brush|cursor_ypos[5]                                    ;
+; 3:1                ; 10 bits   ; 20 LEs        ; 20 LEs               ; 0 LEs                  ; No         ; |top|RGBMemory_top:FrameBuffer|single_port_ram:B_MEMORY|ramblock.raddr_a[3] ;
 ; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |top|brush:Painting_Brush|writestate                                        ;
-; 3:1                ; 10 bits   ; 20 LEs        ; 20 LEs               ; 0 LEs                  ; No         ; |top|vga:i_vga|d_vpos[6]                                                    ;
+; 3:1                ; 10 bits   ; 20 LEs        ; 20 LEs               ; 0 LEs                  ; No         ; |top|vga:i_vga|d_vpos[9]                                                    ;
 ; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |top|RGBMemory_top:FrameBuffer|RGBmemcoderdecoderv2:FBCODEC|w_state         ;
 ; 4:1                ; 5 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; No         ; |top|FIFO_top:FIFO|flip_flop_fifo:HPOS_FIFO|rd_ptr                          ;
 ; 4:1                ; 10 bits   ; 20 LEs        ; 20 LEs               ; 0 LEs                  ; No         ; |top|vpos_to_fb[8]                                                          ;
-; 4:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |top|RGBMemory_top:FrameBuffer|RGBmemcoderdecoderv2:FBCODEC|Add1            ;
-; 4:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |top|RGBMemory_top:FrameBuffer|RGBmemcoderdecoderv2:FBCODEC|Add1            ;
-; 5:1                ; 4 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; No         ; |top|RGBMemory_top:FrameBuffer|single_port_ram:B_MEMORY|ramblock.raddr_a[3] ;
+; 4:1                ; 7 bits    ; 14 LEs        ; 14 LEs               ; 0 LEs                  ; No         ; |top|hpos_to_fb[7]                                                          ;
 ; 8:1                ; 2 bits    ; 10 LEs        ; 6 LEs                ; 4 LEs                  ; No         ; |top|brush:Painting_Brush|writestate                                        ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------------+
 
 
 +--------------------------------------------------------------------------------------------------------------------+
-; Source assignments for FIFO_top:FIFO|flip_flop_fifo:VPOS_FIFO|altsyncram:data_rtl_0|altsyncram_acc1:auto_generated ;
+; Source assignments for FIFO_top:FIFO|flip_flop_fifo:VPOS_FIFO|altsyncram:data_rtl_0|altsyncram_ccc1:auto_generated ;
 +---------------------------------+--------------------+------+------------------------------------------------------+
 ; Assignment                      ; Value              ; From ; To                                                   ;
 +---------------------------------+--------------------+------+------------------------------------------------------+
@@ -679,7 +669,7 @@ Encoding Type:  One-Hot
 
 
 +--------------------------------------------------------------------------------------------------------------------+
-; Source assignments for FIFO_top:FIFO|flip_flop_fifo:HPOS_FIFO|altsyncram:data_rtl_0|altsyncram_acc1:auto_generated ;
+; Source assignments for FIFO_top:FIFO|flip_flop_fifo:HPOS_FIFO|altsyncram:data_rtl_0|altsyncram_o9c1:auto_generated ;
 +---------------------------------+--------------------+------+------------------------------------------------------+
 ; Assignment                      ; Value              ; From ; To                                                   ;
 +---------------------------------+--------------------+------+------------------------------------------------------+
@@ -1155,7 +1145,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; H_BACK         ; 216   ; Signed Integer                    ;
 ; HPOS_WIDTH     ; 10    ; Signed Integer                    ;
 ; VPOS_WIDTH     ; 10    ; Signed Integer                    ;
-; FIFODEPTH      ; 30    ; Signed Integer                    ;
+; FIFODEPTH      ; 31    ; Signed Integer                    ;
 +----------------+-------+-----------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -1166,7 +1156,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Parameter Name ; Value ; Type                                                       ;
 +----------------+-------+------------------------------------------------------------+
 ; width          ; 10    ; Signed Integer                                             ;
-; depth          ; 30    ; Signed Integer                                             ;
+; depth          ; 31    ; Signed Integer                                             ;
 +----------------+-------+------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -1177,7 +1167,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Parameter Name ; Value ; Type                                                       ;
 +----------------+-------+------------------------------------------------------------+
 ; width          ; 10    ; Signed Integer                                             ;
-; depth          ; 30    ; Signed Integer                                             ;
+; depth          ; 31    ; Signed Integer                                             ;
 +----------------+-------+------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -1188,7 +1178,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Parameter Name ; Value ; Type                                                      ;
 +----------------+-------+-----------------------------------------------------------+
 ; width          ; 3     ; Signed Integer                                            ;
-; depth          ; 30    ; Signed Integer                                            ;
+; depth          ; 31    ; Signed Integer                                            ;
 +----------------+-------+-----------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -1291,7 +1281,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; OPERATION_MODE                     ; DUAL_PORT            ; Untyped                                           ;
 ; WIDTH_A                            ; 10                   ; Untyped                                           ;
 ; WIDTHAD_A                          ; 5                    ; Untyped                                           ;
-; NUMWORDS_A                         ; 30                   ; Untyped                                           ;
+; NUMWORDS_A                         ; 31                   ; Untyped                                           ;
 ; OUTDATA_REG_A                      ; UNREGISTERED         ; Untyped                                           ;
 ; ADDRESS_ACLR_A                     ; NONE                 ; Untyped                                           ;
 ; OUTDATA_ACLR_A                     ; NONE                 ; Untyped                                           ;
@@ -1300,7 +1290,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; BYTEENA_ACLR_A                     ; NONE                 ; Untyped                                           ;
 ; WIDTH_B                            ; 10                   ; Untyped                                           ;
 ; WIDTHAD_B                          ; 5                    ; Untyped                                           ;
-; NUMWORDS_B                         ; 30                   ; Untyped                                           ;
+; NUMWORDS_B                         ; 31                   ; Untyped                                           ;
 ; INDATA_REG_B                       ; CLOCK1               ; Untyped                                           ;
 ; WRCONTROL_WRADDRESS_REG_B          ; CLOCK1               ; Untyped                                           ;
 ; RDCONTROL_REG_B                    ; CLOCK1               ; Untyped                                           ;
@@ -1333,7 +1323,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                ; Untyped                                           ;
 ; WIDTH_ECCSTATUS                    ; 3                    ; Untyped                                           ;
 ; DEVICE_FAMILY                      ; Cyclone IV E         ; Untyped                                           ;
-; CBXI_PARAMETER                     ; altsyncram_acc1      ; Untyped                                           ;
+; CBXI_PARAMETER                     ; altsyncram_ccc1      ; Untyped                                           ;
 +------------------------------------+----------------------+---------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -1533,18 +1523,18 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; IGNORE_CASCADE_BUFFERS             ; OFF                  ; IGNORE_CASCADE                                    ;
 ; WIDTH_BYTEENA                      ; 1                    ; Untyped                                           ;
 ; OPERATION_MODE                     ; DUAL_PORT            ; Untyped                                           ;
-; WIDTH_A                            ; 10                   ; Untyped                                           ;
+; WIDTH_A                            ; 7                    ; Untyped                                           ;
 ; WIDTHAD_A                          ; 5                    ; Untyped                                           ;
-; NUMWORDS_A                         ; 30                   ; Untyped                                           ;
+; NUMWORDS_A                         ; 31                   ; Untyped                                           ;
 ; OUTDATA_REG_A                      ; UNREGISTERED         ; Untyped                                           ;
 ; ADDRESS_ACLR_A                     ; NONE                 ; Untyped                                           ;
 ; OUTDATA_ACLR_A                     ; NONE                 ; Untyped                                           ;
 ; WRCONTROL_ACLR_A                   ; NONE                 ; Untyped                                           ;
 ; INDATA_ACLR_A                      ; NONE                 ; Untyped                                           ;
 ; BYTEENA_ACLR_A                     ; NONE                 ; Untyped                                           ;
-; WIDTH_B                            ; 10                   ; Untyped                                           ;
+; WIDTH_B                            ; 7                    ; Untyped                                           ;
 ; WIDTHAD_B                          ; 5                    ; Untyped                                           ;
-; NUMWORDS_B                         ; 30                   ; Untyped                                           ;
+; NUMWORDS_B                         ; 31                   ; Untyped                                           ;
 ; INDATA_REG_B                       ; CLOCK1               ; Untyped                                           ;
 ; WRCONTROL_WRADDRESS_REG_B          ; CLOCK1               ; Untyped                                           ;
 ; RDCONTROL_REG_B                    ; CLOCK1               ; Untyped                                           ;
@@ -1577,31 +1567,8 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                ; Untyped                                           ;
 ; WIDTH_ECCSTATUS                    ; 3                    ; Untyped                                           ;
 ; DEVICE_FAMILY                      ; Cyclone IV E         ; Untyped                                           ;
-; CBXI_PARAMETER                     ; altsyncram_acc1      ; Untyped                                           ;
+; CBXI_PARAMETER                     ; altsyncram_o9c1      ; Untyped                                           ;
 +------------------------------------+----------------------+---------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-------------------------------------------------------------------------------------------------------------------------+
-; Parameter Settings for Inferred Entity Instance: RGBMemory_top:FrameBuffer|RGBmemcoderdecoderv2:FBCODEC|lpm_divide:Div1 ;
-+------------------------+----------------+-------------------------------------------------------------------------------+
-; Parameter Name         ; Value          ; Type                                                                          ;
-+------------------------+----------------+-------------------------------------------------------------------------------+
-; LPM_WIDTHN             ; 10             ; Untyped                                                                       ;
-; LPM_WIDTHD             ; 3              ; Untyped                                                                       ;
-; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                                                                       ;
-; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                                                                       ;
-; LPM_PIPELINE           ; 0              ; Untyped                                                                       ;
-; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                                                                       ;
-; MAXIMIZE_SPEED         ; 5              ; Untyped                                                                       ;
-; CBXI_PARAMETER         ; lpm_divide_rim ; Untyped                                                                       ;
-; CARRY_CHAIN            ; MANUAL         ; Untyped                                                                       ;
-; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                                                                       ;
-; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                                                                    ;
-; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                                                                  ;
-; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                                                                  ;
-; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                                                                ;
-+------------------------+----------------+-------------------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -1677,10 +1644,10 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Entity Instance                           ; FIFO_top:FIFO|flip_flop_fifo:VPOS_FIFO|altsyncram:data_rtl_0                 ;
 ;     -- OPERATION_MODE                     ; DUAL_PORT                                                                    ;
 ;     -- WIDTH_A                            ; 10                                                                           ;
-;     -- NUMWORDS_A                         ; 30                                                                           ;
+;     -- NUMWORDS_A                         ; 31                                                                           ;
 ;     -- OUTDATA_REG_A                      ; UNREGISTERED                                                                 ;
 ;     -- WIDTH_B                            ; 10                                                                           ;
-;     -- NUMWORDS_B                         ; 30                                                                           ;
+;     -- NUMWORDS_B                         ; 31                                                                           ;
 ;     -- ADDRESS_REG_B                      ; CLOCK0                                                                       ;
 ;     -- OUTDATA_REG_B                      ; UNREGISTERED                                                                 ;
 ;     -- RAM_BLOCK_TYPE                     ; AUTO                                                                         ;
@@ -1720,11 +1687,11 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;     -- READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                                                                    ;
 ; Entity Instance                           ; FIFO_top:FIFO|flip_flop_fifo:HPOS_FIFO|altsyncram:data_rtl_0                 ;
 ;     -- OPERATION_MODE                     ; DUAL_PORT                                                                    ;
-;     -- WIDTH_A                            ; 10                                                                           ;
-;     -- NUMWORDS_A                         ; 30                                                                           ;
+;     -- WIDTH_A                            ; 7                                                                            ;
+;     -- NUMWORDS_A                         ; 31                                                                           ;
 ;     -- OUTDATA_REG_A                      ; UNREGISTERED                                                                 ;
-;     -- WIDTH_B                            ; 10                                                                           ;
-;     -- NUMWORDS_B                         ; 30                                                                           ;
+;     -- WIDTH_B                            ; 7                                                                            ;
+;     -- NUMWORDS_B                         ; 31                                                                           ;
 ;     -- ADDRESS_REG_B                      ; CLOCK0                                                                       ;
 ;     -- OUTDATA_REG_B                      ; UNREGISTERED                                                                 ;
 ;     -- RAM_BLOCK_TYPE                     ; AUTO                                                                         ;
@@ -1756,29 +1723,29 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; boundary_port         ; 28                          ;
-; cycloneiii_ff         ; 274                         ;
+; cycloneiii_ff         ; 289                         ;
 ;     CLR               ; 5                           ;
-;     ENA               ; 42                          ;
+;     ENA               ; 62                          ;
 ;     ENA CLR           ; 62                          ;
 ;     ENA SCLR          ; 14                          ;
 ;     ENA SCLR SLD      ; 22                          ;
 ;     SCLR              ; 51                          ;
-;     plain             ; 78                          ;
-; cycloneiii_lcell_comb ; 744                         ;
-;     arith             ; 261                         ;
-;         2 data inputs ; 133                         ;
-;         3 data inputs ; 128                         ;
-;     normal            ; 483                         ;
-;         0 data inputs ; 19                          ;
-;         1 data inputs ; 21                          ;
-;         2 data inputs ; 115                         ;
-;         3 data inputs ; 67                          ;
-;         4 data inputs ; 261                         ;
+;     plain             ; 73                          ;
+; cycloneiii_lcell_comb ; 676                         ;
+;     arith             ; 245                         ;
+;         2 data inputs ; 142                         ;
+;         3 data inputs ; 103                         ;
+;     normal            ; 431                         ;
+;         0 data inputs ; 12                          ;
+;         1 data inputs ; 22                          ;
+;         2 data inputs ; 78                          ;
+;         3 data inputs ; 66                          ;
+;         4 data inputs ; 253                         ;
 ; cycloneiii_pll        ; 1                           ;
-; cycloneiii_ram_block  ; 37                          ;
+; cycloneiii_ram_block  ; 32                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 25.60                       ;
-; Average LUT depth     ; 7.48                        ;
+; Max LUT depth         ; 17.70                       ;
+; Average LUT depth     ; 5.31                        ;
 +-----------------------+-----------------------------+
 
 
@@ -1796,41 +1763,41 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
-    Info: Version 20.1.1 Build 720 11/11/2020 Patches 1.02i SJ Lite Edition
-    Info: Processing started: Wed Aug 17 20:21:27 2022
+    Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+    Info: Processing started: Thu Aug 18 16:47:00 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off VGA-FRAMEBUFFER -c VGA-FRAMEBUFFER
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
-Info (12021): Found 1 design units, including 1 entities, in source file /users/user/downloads/(old)vga-framebuffer-main/vga-framebuffer-main/sourcefiles/fifo/fifo_top.v
-    Info (12023): Found entity 1: FIFO_top File: C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/SourceFiles/FIFO/FIFO_top.v Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file /users/user/downloads/(old)vga-framebuffer-main/vga-framebuffer-main/sourcefiles/mem/rgbmemory_top.v
-    Info (12023): Found entity 1: RGBMemory_top File: C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/SourceFiles/MEM/RGBMemory_top.v Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file /users/user/downloads/(old)vga-framebuffer-main/vga-framebuffer-main/sourcefiles/mem/rgbmemcodec2.v
-    Info (12023): Found entity 1: RGBmemcoderdecoderv2 File: C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/SourceFiles/MEM/RGBmemcodec2.v Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file /users/user/downloads/(old)vga-framebuffer-main/vga-framebuffer-main/sourcefiles/pll/pll.v
-    Info (12023): Found entity 1: pll File: C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/SourceFiles/PLL/pll.v Line: 40
-Info (12021): Found 1 design units, including 1 entities, in source file /users/user/downloads/(old)vga-framebuffer-main/vga-framebuffer-main/sourcefiles/rom/rom_top.v
-    Info (12023): Found entity 1: ROM_top File: C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/SourceFiles/ROM/ROM_top.v Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file /users/user/downloads/(old)vga-framebuffer-main/vga-framebuffer-main/sourcefiles/top/vga.v
-    Info (12023): Found entity 1: vga File: C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/SourceFiles/TOP/vga.v Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file /users/user/downloads/(old)vga-framebuffer-main/vga-framebuffer-main/sourcefiles/top/top.v
-    Info (12023): Found entity 1: top File: C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/SourceFiles/TOP/top.v Line: 4
-Info (12021): Found 1 design units, including 1 entities, in source file /users/user/downloads/(old)vga-framebuffer-main/vga-framebuffer-main/sourcefiles/top/memsyncreset.v
-    Info (12023): Found entity 1: memsyncreset File: C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/SourceFiles/TOP/memsyncreset.v Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file /users/user/downloads/(old)vga-framebuffer-main/vga-framebuffer-main/sourcefiles/fifo/fifo.v
-    Info (12023): Found entity 1: flip_flop_fifo File: C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/SourceFiles/FIFO/fifo.v Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file /users/user/downloads/(old)vga-framebuffer-main/vga-framebuffer-main/sourcefiles/mem/ram.v
-    Info (12023): Found entity 1: single_port_ram File: C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/SourceFiles/MEM/RAM.v Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file /users/user/downloads/(old)vga-framebuffer-main/vga-framebuffer-main/sourcefiles/brush/brush.v
-    Info (12023): Found entity 1: brush File: C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/SourceFiles/BRUSH/brush.v Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file /users/user/downloads/(old)vga-framebuffer-main/vga-framebuffer-main/sourcefiles/debouncer/button_debouncer.v
-    Info (12023): Found entity 1: button_debouncer File: C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/SourceFiles/DEBOUNCER/button_debouncer.v Line: 1
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file /users/callo/documents/github/vga-framebuffer/sourcefiles/fifo/fifo_top.v
+    Info (12023): Found entity 1: FIFO_top File: D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/FIFO/FIFO_top.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /users/callo/documents/github/vga-framebuffer/sourcefiles/mem/rgbmemory_top.v
+    Info (12023): Found entity 1: RGBMemory_top File: D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/MEM/RGBMemory_top.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /users/callo/documents/github/vga-framebuffer/sourcefiles/mem/rgbmemcodec2.v
+    Info (12023): Found entity 1: RGBmemcoderdecoderv2 File: D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/MEM/RGBmemcodec2.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /users/callo/documents/github/vga-framebuffer/sourcefiles/pll/pll.v
+    Info (12023): Found entity 1: pll File: D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/PLL/pll.v Line: 40
+Info (12021): Found 1 design units, including 1 entities, in source file /users/callo/documents/github/vga-framebuffer/sourcefiles/rom/rom_top.v
+    Info (12023): Found entity 1: ROM_top File: D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/ROM/ROM_top.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /users/callo/documents/github/vga-framebuffer/sourcefiles/top/vga.v
+    Info (12023): Found entity 1: vga File: D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/TOP/vga.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /users/callo/documents/github/vga-framebuffer/sourcefiles/top/top.v
+    Info (12023): Found entity 1: top File: D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/TOP/top.v Line: 4
+Info (12021): Found 1 design units, including 1 entities, in source file /users/callo/documents/github/vga-framebuffer/sourcefiles/top/memsyncreset.v
+    Info (12023): Found entity 1: memsyncreset File: D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/TOP/memsyncreset.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /users/callo/documents/github/vga-framebuffer/sourcefiles/fifo/fifo.v
+    Info (12023): Found entity 1: flip_flop_fifo File: D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/FIFO/fifo.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /users/callo/documents/github/vga-framebuffer/sourcefiles/mem/ram.v
+    Info (12023): Found entity 1: single_port_ram File: D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/MEM/RAM.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /users/callo/documents/github/vga-framebuffer/sourcefiles/brush/brush.v
+    Info (12023): Found entity 1: brush File: D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/BRUSH/brush.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /users/callo/documents/github/vga-framebuffer/sourcefiles/debouncer/button_debouncer.v
+    Info (12023): Found entity 1: button_debouncer File: D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/DEBOUNCER/button_debouncer.v Line: 1
 Info (12127): Elaborating entity "top" for the top level hierarchy
-Warning (10036): Verilog HDL or VHDL warning at top.v(50): object "ROMready" assigned a value but never read File: C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/SourceFiles/TOP/top.v Line: 50
-Info (12128): Elaborating entity "pll" for hierarchy "pll:pll" File: C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/SourceFiles/TOP/top.v Line: 65
-Info (12128): Elaborating entity "altpll" for hierarchy "pll:pll|altpll:altpll_component" File: C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/SourceFiles/PLL/pll.v Line: 100
-Info (12130): Elaborated megafunction instantiation "pll:pll|altpll:altpll_component" File: C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/SourceFiles/PLL/pll.v Line: 100
-Info (12133): Instantiated megafunction "pll:pll|altpll:altpll_component" with the following parameter: File: C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/SourceFiles/PLL/pll.v Line: 100
+Warning (10036): Verilog HDL or VHDL warning at top.v(50): object "ROMready" assigned a value but never read File: D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/TOP/top.v Line: 50
+Info (12128): Elaborating entity "pll" for hierarchy "pll:pll" File: D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/TOP/top.v Line: 65
+Info (12128): Elaborating entity "altpll" for hierarchy "pll:pll|altpll:altpll_component" File: D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/PLL/pll.v Line: 100
+Info (12130): Elaborated megafunction instantiation "pll:pll|altpll:altpll_component" File: D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/PLL/pll.v Line: 100
+Info (12133): Instantiated megafunction "pll:pll|altpll:altpll_component" with the following parameter: File: D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/PLL/pll.v Line: 100
     Info (12134): Parameter "bandwidth_type" = "AUTO"
     Info (12134): Parameter "clk0_divide_by" = "2"
     Info (12134): Parameter "clk0_duty_cycle" = "50"
@@ -1886,66 +1853,66 @@ Info (12133): Instantiated megafunction "pll:pll|altpll:altpll_component" with t
     Info (12134): Parameter "port_extclk3" = "PORT_UNUSED"
     Info (12134): Parameter "width_clock" = "5"
 Info (12021): Found 1 design units, including 1 entities, in source file db/pll_altpll.v
-    Info (12023): Found entity 1: pll_altpll File: C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/Project/db/pll_altpll.v Line: 30
-Info (12128): Elaborating entity "pll_altpll" for hierarchy "pll:pll|altpll:altpll_component|pll_altpll:auto_generated" File: c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altpll.tdf Line: 898
-Info (12128): Elaborating entity "vga" for hierarchy "vga:i_vga" File: C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/SourceFiles/TOP/top.v Line: 93
-Info (12128): Elaborating entity "button_debouncer" for hierarchy "button_debouncer:Debouncer" File: C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/SourceFiles/TOP/top.v Line: 103
-Warning (10230): Verilog HDL assignment warning at button_debouncer.v(33): truncated value with size 32 to match size of target (11) File: C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/SourceFiles/DEBOUNCER/button_debouncer.v Line: 33
-Warning (10230): Verilog HDL assignment warning at button_debouncer.v(36): truncated value with size 32 to match size of target (11) File: C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/SourceFiles/DEBOUNCER/button_debouncer.v Line: 36
-Warning (10230): Verilog HDL assignment warning at button_debouncer.v(39): truncated value with size 32 to match size of target (11) File: C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/SourceFiles/DEBOUNCER/button_debouncer.v Line: 39
-Warning (10230): Verilog HDL assignment warning at button_debouncer.v(42): truncated value with size 32 to match size of target (11) File: C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/SourceFiles/DEBOUNCER/button_debouncer.v Line: 42
-Info (12128): Elaborating entity "brush" for hierarchy "brush:Painting_Brush" File: C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/SourceFiles/TOP/top.v Line: 129
-Warning (10230): Verilog HDL assignment warning at brush.v(45): truncated value with size 32 to match size of target (17) File: C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/SourceFiles/BRUSH/brush.v Line: 45
-Warning (10230): Verilog HDL assignment warning at brush.v(51): truncated value with size 32 to match size of target (10) File: C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/SourceFiles/BRUSH/brush.v Line: 51
-Warning (10230): Verilog HDL assignment warning at brush.v(52): truncated value with size 32 to match size of target (10) File: C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/SourceFiles/BRUSH/brush.v Line: 52
-Warning (10230): Verilog HDL assignment warning at brush.v(55): truncated value with size 32 to match size of target (10) File: C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/SourceFiles/BRUSH/brush.v Line: 55
-Warning (10230): Verilog HDL assignment warning at brush.v(56): truncated value with size 32 to match size of target (10) File: C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/SourceFiles/BRUSH/brush.v Line: 56
-Warning (10230): Verilog HDL assignment warning at brush.v(58): truncated value with size 32 to match size of target (10) File: C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/SourceFiles/BRUSH/brush.v Line: 58
-Warning (10230): Verilog HDL assignment warning at brush.v(59): truncated value with size 32 to match size of target (10) File: C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/SourceFiles/BRUSH/brush.v Line: 59
-Warning (10230): Verilog HDL assignment warning at brush.v(67): truncated value with size 32 to match size of target (5) File: C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/SourceFiles/BRUSH/brush.v Line: 67
-Warning (10230): Verilog HDL assignment warning at brush.v(69): truncated value with size 32 to match size of target (5) File: C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/SourceFiles/BRUSH/brush.v Line: 69
-Warning (10230): Verilog HDL assignment warning at brush.v(70): truncated value with size 32 to match size of target (5) File: C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/SourceFiles/BRUSH/brush.v Line: 70
-Warning (10230): Verilog HDL assignment warning at brush.v(125): truncated value with size 32 to match size of target (10) File: C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/SourceFiles/BRUSH/brush.v Line: 125
-Warning (10230): Verilog HDL assignment warning at brush.v(130): truncated value with size 32 to match size of target (10) File: C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/SourceFiles/BRUSH/brush.v Line: 130
-Info (12128): Elaborating entity "FIFO_top" for hierarchy "FIFO_top:FIFO" File: C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/SourceFiles/TOP/top.v Line: 191
-Warning (10230): Verilog HDL assignment warning at FIFO_top.v(86): truncated value with size 32 to match size of target (3) File: C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/SourceFiles/FIFO/FIFO_top.v Line: 86
-Info (12128): Elaborating entity "flip_flop_fifo" for hierarchy "FIFO_top:FIFO|flip_flop_fifo:HPOS_FIFO" File: C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/SourceFiles/FIFO/FIFO_top.v Line: 48
-Warning (10230): Verilog HDL assignment warning at fifo.v(47): truncated value with size 32 to match size of target (10) File: C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/SourceFiles/FIFO/fifo.v Line: 47
-Warning (10230): Verilog HDL assignment warning at fifo.v(61): truncated value with size 32 to match size of target (1) File: C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/SourceFiles/FIFO/fifo.v Line: 61
-Warning (10230): Verilog HDL assignment warning at fifo.v(63): truncated value with size 32 to match size of target (1) File: C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/SourceFiles/FIFO/fifo.v Line: 63
-Info (12128): Elaborating entity "flip_flop_fifo" for hierarchy "FIFO_top:FIFO|flip_flop_fifo:RGB_FIFO" File: C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/SourceFiles/FIFO/FIFO_top.v Line: 82
-Warning (10230): Verilog HDL assignment warning at fifo.v(47): truncated value with size 32 to match size of target (3) File: C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/SourceFiles/FIFO/fifo.v Line: 47
-Warning (10230): Verilog HDL assignment warning at fifo.v(61): truncated value with size 32 to match size of target (1) File: C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/SourceFiles/FIFO/fifo.v Line: 61
-Warning (10230): Verilog HDL assignment warning at fifo.v(63): truncated value with size 32 to match size of target (1) File: C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/SourceFiles/FIFO/fifo.v Line: 63
-Info (12128): Elaborating entity "RGBMemory_top" for hierarchy "RGBMemory_top:FrameBuffer" File: C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/SourceFiles/TOP/top.v Line: 216
-Info (12128): Elaborating entity "RGBmemcoderdecoderv2" for hierarchy "RGBMemory_top:FrameBuffer|RGBmemcoderdecoderv2:FBCODEC" File: C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/SourceFiles/MEM/RGBMemory_top.v Line: 60
-Warning (10230): Verilog HDL assignment warning at RGBmemcodec2.v(42): truncated value with size 32 to match size of target (10) File: C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/SourceFiles/MEM/RGBmemcodec2.v Line: 42
-Warning (10230): Verilog HDL assignment warning at RGBmemcodec2.v(43): truncated value with size 32 to match size of target (10) File: C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/SourceFiles/MEM/RGBmemcodec2.v Line: 43
-Warning (10230): Verilog HDL assignment warning at RGBmemcodec2.v(63): truncated value with size 32 to match size of target (3) File: C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/SourceFiles/MEM/RGBmemcodec2.v Line: 63
-Warning (10230): Verilog HDL assignment warning at RGBmemcodec2.v(82): truncated value with size 32 to match size of target (3) File: C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/SourceFiles/MEM/RGBmemcodec2.v Line: 82
-Warning (10230): Verilog HDL assignment warning at RGBmemcodec2.v(138): truncated value with size 32 to match size of target (1) File: C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/SourceFiles/MEM/RGBmemcodec2.v Line: 138
-Warning (10230): Verilog HDL assignment warning at RGBmemcodec2.v(139): truncated value with size 32 to match size of target (1) File: C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/SourceFiles/MEM/RGBmemcodec2.v Line: 139
-Warning (10230): Verilog HDL assignment warning at RGBmemcodec2.v(140): truncated value with size 32 to match size of target (1) File: C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/SourceFiles/MEM/RGBmemcodec2.v Line: 140
-Info (12128): Elaborating entity "single_port_ram" for hierarchy "RGBMemory_top:FrameBuffer|single_port_ram:R_MEMORY" File: C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/SourceFiles/MEM/RGBMemory_top.v Line: 77
-Warning (10230): Verilog HDL assignment warning at RAM.v(29): truncated value with size 32 to match size of target (1) File: C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/SourceFiles/MEM/RAM.v Line: 29
-Info (12128): Elaborating entity "memsyncreset" for hierarchy "memsyncreset:memsyncreset" File: C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/SourceFiles/TOP/top.v Line: 229
-Warning (10230): Verilog HDL assignment warning at memsyncreset.v(27): truncated value with size 32 to match size of target (11) File: C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/SourceFiles/TOP/memsyncreset.v Line: 27
+    Info (12023): Found entity 1: pll_altpll File: D:/Users/callo/Documents/GitHub/VGA-Framebuffer/Project/db/pll_altpll.v Line: 30
+Info (12128): Elaborating entity "pll_altpll" for hierarchy "pll:pll|altpll:altpll_component|pll_altpll:auto_generated" File: d:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altpll.tdf Line: 898
+Info (12128): Elaborating entity "vga" for hierarchy "vga:i_vga" File: D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/TOP/top.v Line: 93
+Info (12128): Elaborating entity "button_debouncer" for hierarchy "button_debouncer:Debouncer" File: D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/TOP/top.v Line: 103
+Warning (10230): Verilog HDL assignment warning at button_debouncer.v(33): truncated value with size 32 to match size of target (11) File: D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/DEBOUNCER/button_debouncer.v Line: 33
+Warning (10230): Verilog HDL assignment warning at button_debouncer.v(36): truncated value with size 32 to match size of target (11) File: D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/DEBOUNCER/button_debouncer.v Line: 36
+Warning (10230): Verilog HDL assignment warning at button_debouncer.v(39): truncated value with size 32 to match size of target (11) File: D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/DEBOUNCER/button_debouncer.v Line: 39
+Warning (10230): Verilog HDL assignment warning at button_debouncer.v(42): truncated value with size 32 to match size of target (11) File: D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/DEBOUNCER/button_debouncer.v Line: 42
+Info (12128): Elaborating entity "brush" for hierarchy "brush:Painting_Brush" File: D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/TOP/top.v Line: 129
+Warning (10230): Verilog HDL assignment warning at brush.v(45): truncated value with size 32 to match size of target (17) File: D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/BRUSH/brush.v Line: 45
+Warning (10230): Verilog HDL assignment warning at brush.v(51): truncated value with size 32 to match size of target (10) File: D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/BRUSH/brush.v Line: 51
+Warning (10230): Verilog HDL assignment warning at brush.v(52): truncated value with size 32 to match size of target (10) File: D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/BRUSH/brush.v Line: 52
+Warning (10230): Verilog HDL assignment warning at brush.v(55): truncated value with size 32 to match size of target (10) File: D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/BRUSH/brush.v Line: 55
+Warning (10230): Verilog HDL assignment warning at brush.v(56): truncated value with size 32 to match size of target (10) File: D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/BRUSH/brush.v Line: 56
+Warning (10230): Verilog HDL assignment warning at brush.v(58): truncated value with size 32 to match size of target (10) File: D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/BRUSH/brush.v Line: 58
+Warning (10230): Verilog HDL assignment warning at brush.v(59): truncated value with size 32 to match size of target (10) File: D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/BRUSH/brush.v Line: 59
+Warning (10230): Verilog HDL assignment warning at brush.v(67): truncated value with size 32 to match size of target (5) File: D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/BRUSH/brush.v Line: 67
+Warning (10230): Verilog HDL assignment warning at brush.v(69): truncated value with size 32 to match size of target (5) File: D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/BRUSH/brush.v Line: 69
+Warning (10230): Verilog HDL assignment warning at brush.v(70): truncated value with size 32 to match size of target (5) File: D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/BRUSH/brush.v Line: 70
+Warning (10230): Verilog HDL assignment warning at brush.v(125): truncated value with size 32 to match size of target (10) File: D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/BRUSH/brush.v Line: 125
+Warning (10230): Verilog HDL assignment warning at brush.v(130): truncated value with size 32 to match size of target (10) File: D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/BRUSH/brush.v Line: 130
+Info (12128): Elaborating entity "FIFO_top" for hierarchy "FIFO_top:FIFO" File: D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/TOP/top.v Line: 191
+Warning (10230): Verilog HDL assignment warning at FIFO_top.v(86): truncated value with size 32 to match size of target (3) File: D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/FIFO/FIFO_top.v Line: 86
+Info (12128): Elaborating entity "flip_flop_fifo" for hierarchy "FIFO_top:FIFO|flip_flop_fifo:HPOS_FIFO" File: D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/FIFO/FIFO_top.v Line: 48
+Warning (10230): Verilog HDL assignment warning at fifo.v(47): truncated value with size 32 to match size of target (10) File: D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/FIFO/fifo.v Line: 47
+Warning (10230): Verilog HDL assignment warning at fifo.v(61): truncated value with size 32 to match size of target (1) File: D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/FIFO/fifo.v Line: 61
+Warning (10230): Verilog HDL assignment warning at fifo.v(63): truncated value with size 32 to match size of target (1) File: D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/FIFO/fifo.v Line: 63
+Info (12128): Elaborating entity "flip_flop_fifo" for hierarchy "FIFO_top:FIFO|flip_flop_fifo:RGB_FIFO" File: D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/FIFO/FIFO_top.v Line: 82
+Warning (10230): Verilog HDL assignment warning at fifo.v(47): truncated value with size 32 to match size of target (3) File: D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/FIFO/fifo.v Line: 47
+Warning (10230): Verilog HDL assignment warning at fifo.v(61): truncated value with size 32 to match size of target (1) File: D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/FIFO/fifo.v Line: 61
+Warning (10230): Verilog HDL assignment warning at fifo.v(63): truncated value with size 32 to match size of target (1) File: D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/FIFO/fifo.v Line: 63
+Info (12128): Elaborating entity "RGBMemory_top" for hierarchy "RGBMemory_top:FrameBuffer" File: D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/TOP/top.v Line: 216
+Info (12128): Elaborating entity "RGBmemcoderdecoderv2" for hierarchy "RGBMemory_top:FrameBuffer|RGBmemcoderdecoderv2:FBCODEC" File: D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/MEM/RGBMemory_top.v Line: 60
+Warning (10230): Verilog HDL assignment warning at RGBmemcodec2.v(63): truncated value with size 32 to match size of target (10) File: D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/MEM/RGBmemcodec2.v Line: 63
+Warning (10230): Verilog HDL assignment warning at RGBmemcodec2.v(65): truncated value with size 32 to match size of target (3) File: D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/MEM/RGBmemcodec2.v Line: 65
+Warning (10230): Verilog HDL assignment warning at RGBmemcodec2.v(70): truncated value with size 32 to match size of target (10) File: D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/MEM/RGBmemcodec2.v Line: 70
+Warning (10230): Verilog HDL assignment warning at RGBmemcodec2.v(85): truncated value with size 32 to match size of target (3) File: D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/MEM/RGBmemcodec2.v Line: 85
+Warning (10230): Verilog HDL assignment warning at RGBmemcodec2.v(146): truncated value with size 32 to match size of target (1) File: D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/MEM/RGBmemcodec2.v Line: 146
+Warning (10230): Verilog HDL assignment warning at RGBmemcodec2.v(147): truncated value with size 32 to match size of target (1) File: D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/MEM/RGBmemcodec2.v Line: 147
+Warning (10230): Verilog HDL assignment warning at RGBmemcodec2.v(148): truncated value with size 32 to match size of target (1) File: D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/MEM/RGBmemcodec2.v Line: 148
+Info (12128): Elaborating entity "single_port_ram" for hierarchy "RGBMemory_top:FrameBuffer|single_port_ram:R_MEMORY" File: D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/MEM/RGBMemory_top.v Line: 77
+Warning (10230): Verilog HDL assignment warning at RAM.v(29): truncated value with size 32 to match size of target (1) File: D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/MEM/RAM.v Line: 29
+Info (12128): Elaborating entity "memsyncreset" for hierarchy "memsyncreset:memsyncreset" File: D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/TOP/top.v Line: 229
+Warning (10230): Verilog HDL assignment warning at memsyncreset.v(27): truncated value with size 32 to match size of target (11) File: D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/TOP/memsyncreset.v Line: 27
 Warning (276020): Inferred RAM node "FIFO_top:FIFO|flip_flop_fifo:VPOS_FIFO|data_rtl_0" from synchronous design logic.  Pass-through logic has been added to match the read-during-write behavior of the original design.
 Warning (276027): Inferred dual-clock RAM node "RGBMemory_top:FrameBuffer|single_port_ram:B_MEMORY|ramblock_rtl_0" from synchronous design logic.  The read-during-write behavior of a dual-clock RAM is undefined and may not match the behavior of the original design.
 Warning (276027): Inferred dual-clock RAM node "RGBMemory_top:FrameBuffer|single_port_ram:G_MEMORY|ramblock_rtl_0" from synchronous design logic.  The read-during-write behavior of a dual-clock RAM is undefined and may not match the behavior of the original design.
 Warning (276027): Inferred dual-clock RAM node "RGBMemory_top:FrameBuffer|single_port_ram:R_MEMORY|ramblock_rtl_0" from synchronous design logic.  The read-during-write behavior of a dual-clock RAM is undefined and may not match the behavior of the original design.
 Warning (276020): Inferred RAM node "FIFO_top:FIFO|flip_flop_fifo:HPOS_FIFO|data_rtl_0" from synchronous design logic.  Pass-through logic has been added to match the read-during-write behavior of the original design.
 Info (276014): Found 1 instances of uninferred RAM logic
-    Info (276004): RAM logic "FIFO_top:FIFO|flip_flop_fifo:RGB_FIFO|data" is uninferred due to inappropriate RAM size File: C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/SourceFiles/FIFO/fifo.v Line: 25
+    Info (276004): RAM logic "FIFO_top:FIFO|flip_flop_fifo:RGB_FIFO|data" is uninferred due to inappropriate RAM size File: D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/FIFO/fifo.v Line: 25
 Info (19000): Inferred 5 megafunctions from design logic
     Info (276029): Inferred altsyncram megafunction from the following design logic: "FIFO_top:FIFO|flip_flop_fifo:VPOS_FIFO|data_rtl_0" 
         Info (286033): Parameter OPERATION_MODE set to DUAL_PORT
         Info (286033): Parameter WIDTH_A set to 10
         Info (286033): Parameter WIDTHAD_A set to 5
-        Info (286033): Parameter NUMWORDS_A set to 30
+        Info (286033): Parameter NUMWORDS_A set to 31
         Info (286033): Parameter WIDTH_B set to 10
         Info (286033): Parameter WIDTHAD_B set to 5
-        Info (286033): Parameter NUMWORDS_B set to 30
+        Info (286033): Parameter NUMWORDS_B set to 31
         Info (286033): Parameter ADDRESS_ACLR_A set to NONE
         Info (286033): Parameter OUTDATA_REG_B set to UNREGISTERED
         Info (286033): Parameter ADDRESS_ACLR_B set to NONE
@@ -2003,12 +1970,12 @@ Info (19000): Inferred 5 megafunctions from design logic
         Info (286033): Parameter RAM_BLOCK_TYPE set to M9K
     Info (276029): Inferred altsyncram megafunction from the following design logic: "FIFO_top:FIFO|flip_flop_fifo:HPOS_FIFO|data_rtl_0" 
         Info (286033): Parameter OPERATION_MODE set to DUAL_PORT
-        Info (286033): Parameter WIDTH_A set to 10
+        Info (286033): Parameter WIDTH_A set to 7
         Info (286033): Parameter WIDTHAD_A set to 5
-        Info (286033): Parameter NUMWORDS_A set to 30
-        Info (286033): Parameter WIDTH_B set to 10
+        Info (286033): Parameter NUMWORDS_A set to 31
+        Info (286033): Parameter WIDTH_B set to 7
         Info (286033): Parameter WIDTHAD_B set to 5
-        Info (286033): Parameter NUMWORDS_B set to 30
+        Info (286033): Parameter NUMWORDS_B set to 31
         Info (286033): Parameter ADDRESS_ACLR_A set to NONE
         Info (286033): Parameter OUTDATA_REG_B set to UNREGISTERED
         Info (286033): Parameter ADDRESS_ACLR_B set to NONE
@@ -2016,19 +1983,18 @@ Info (19000): Inferred 5 megafunctions from design logic
         Info (286033): Parameter ADDRESS_REG_B set to CLOCK0
         Info (286033): Parameter INDATA_ACLR_A set to NONE
         Info (286033): Parameter WRCONTROL_ACLR_A set to NONE
-Info (278001): Inferred 3 megafunctions from design logic
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "RGBMemory_top:FrameBuffer|RGBmemcoderdecoderv2:FBCODEC|Div1" File: C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/SourceFiles/MEM/RGBmemcodec2.v Line: 43
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "RGBMemory_top:FrameBuffer|RGBmemcoderdecoderv2:FBCODEC|Div0" File: C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/SourceFiles/MEM/RGBmemcodec2.v Line: 42
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "RGBMemory_top:FrameBuffer|RGBmemcoderdecoderv2:FBCODEC|Mod0" File: C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/SourceFiles/MEM/RGBmemcodec2.v Line: 82
+Info (278001): Inferred 2 megafunctions from design logic
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "RGBMemory_top:FrameBuffer|RGBmemcoderdecoderv2:FBCODEC|Div0" File: D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/MEM/RGBmemcodec2.v Line: 70
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "RGBMemory_top:FrameBuffer|RGBmemcoderdecoderv2:FBCODEC|Mod0" File: D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/MEM/RGBmemcodec2.v Line: 85
 Info (12130): Elaborated megafunction instantiation "FIFO_top:FIFO|flip_flop_fifo:VPOS_FIFO|altsyncram:data_rtl_0"
 Info (12133): Instantiated megafunction "FIFO_top:FIFO|flip_flop_fifo:VPOS_FIFO|altsyncram:data_rtl_0" with the following parameter:
     Info (12134): Parameter "OPERATION_MODE" = "DUAL_PORT"
     Info (12134): Parameter "WIDTH_A" = "10"
     Info (12134): Parameter "WIDTHAD_A" = "5"
-    Info (12134): Parameter "NUMWORDS_A" = "30"
+    Info (12134): Parameter "NUMWORDS_A" = "31"
     Info (12134): Parameter "WIDTH_B" = "10"
     Info (12134): Parameter "WIDTHAD_B" = "5"
-    Info (12134): Parameter "NUMWORDS_B" = "30"
+    Info (12134): Parameter "NUMWORDS_B" = "31"
     Info (12134): Parameter "ADDRESS_ACLR_A" = "NONE"
     Info (12134): Parameter "OUTDATA_REG_B" = "UNREGISTERED"
     Info (12134): Parameter "ADDRESS_ACLR_B" = "NONE"
@@ -2036,8 +2002,8 @@ Info (12133): Instantiated megafunction "FIFO_top:FIFO|flip_flop_fifo:VPOS_FIFO|
     Info (12134): Parameter "ADDRESS_REG_B" = "CLOCK0"
     Info (12134): Parameter "INDATA_ACLR_A" = "NONE"
     Info (12134): Parameter "WRCONTROL_ACLR_A" = "NONE"
-Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_acc1.tdf
-    Info (12023): Found entity 1: altsyncram_acc1 File: C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/Project/db/altsyncram_acc1.tdf Line: 28
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_ccc1.tdf
+    Info (12023): Found entity 1: altsyncram_ccc1 File: D:/Users/callo/Documents/GitHub/VGA-Framebuffer/Project/db/altsyncram_ccc1.tdf Line: 28
 Info (12130): Elaborated megafunction instantiation "RGBMemory_top:FrameBuffer|single_port_ram:B_MEMORY|altsyncram:ramblock_rtl_0"
 Info (12133): Instantiated megafunction "RGBMemory_top:FrameBuffer|single_port_ram:B_MEMORY|altsyncram:ramblock_rtl_0" with the following parameter:
     Info (12134): Parameter "OPERATION_MODE" = "DUAL_PORT"
@@ -2056,81 +2022,89 @@ Info (12133): Instantiated megafunction "RGBMemory_top:FrameBuffer|single_port_r
     Info (12134): Parameter "WRCONTROL_ACLR_A" = "NONE"
     Info (12134): Parameter "RAM_BLOCK_TYPE" = "M9K"
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_1of1.tdf
-    Info (12023): Found entity 1: altsyncram_1of1 File: C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/Project/db/altsyncram_1of1.tdf Line: 28
-Info (12130): Elaborated megafunction instantiation "RGBMemory_top:FrameBuffer|RGBmemcoderdecoderv2:FBCODEC|lpm_divide:Div1" File: C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/SourceFiles/MEM/RGBmemcodec2.v Line: 43
-Info (12133): Instantiated megafunction "RGBMemory_top:FrameBuffer|RGBmemcoderdecoderv2:FBCODEC|lpm_divide:Div1" with the following parameter: File: C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/SourceFiles/MEM/RGBmemcodec2.v Line: 43
-    Info (12134): Parameter "LPM_WIDTHN" = "10"
-    Info (12134): Parameter "LPM_WIDTHD" = "3"
-    Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
-    Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
-Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_rim.tdf
-    Info (12023): Found entity 1: lpm_divide_rim File: C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/Project/db/lpm_divide_rim.tdf Line: 25
-Info (12021): Found 1 design units, including 1 entities, in source file db/sign_div_unsign_jlh.tdf
-    Info (12023): Found entity 1: sign_div_unsign_jlh File: C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/Project/db/sign_div_unsign_jlh.tdf Line: 25
-Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_q6f.tdf
-    Info (12023): Found entity 1: alt_u_div_q6f File: C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/Project/db/alt_u_div_q6f.tdf Line: 27
-Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_7pc.tdf
-    Info (12023): Found entity 1: add_sub_7pc File: C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/Project/db/add_sub_7pc.tdf Line: 23
-Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_8pc.tdf
-    Info (12023): Found entity 1: add_sub_8pc File: C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/Project/db/add_sub_8pc.tdf Line: 23
-Info (12130): Elaborated megafunction instantiation "RGBMemory_top:FrameBuffer|RGBmemcoderdecoderv2:FBCODEC|lpm_divide:Div0" File: C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/SourceFiles/MEM/RGBmemcodec2.v Line: 42
-Info (12133): Instantiated megafunction "RGBMemory_top:FrameBuffer|RGBmemcoderdecoderv2:FBCODEC|lpm_divide:Div0" with the following parameter: File: C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/SourceFiles/MEM/RGBmemcodec2.v Line: 42
+    Info (12023): Found entity 1: altsyncram_1of1 File: D:/Users/callo/Documents/GitHub/VGA-Framebuffer/Project/db/altsyncram_1of1.tdf Line: 28
+Info (12130): Elaborated megafunction instantiation "FIFO_top:FIFO|flip_flop_fifo:HPOS_FIFO|altsyncram:data_rtl_0"
+Info (12133): Instantiated megafunction "FIFO_top:FIFO|flip_flop_fifo:HPOS_FIFO|altsyncram:data_rtl_0" with the following parameter:
+    Info (12134): Parameter "OPERATION_MODE" = "DUAL_PORT"
+    Info (12134): Parameter "WIDTH_A" = "7"
+    Info (12134): Parameter "WIDTHAD_A" = "5"
+    Info (12134): Parameter "NUMWORDS_A" = "31"
+    Info (12134): Parameter "WIDTH_B" = "7"
+    Info (12134): Parameter "WIDTHAD_B" = "5"
+    Info (12134): Parameter "NUMWORDS_B" = "31"
+    Info (12134): Parameter "ADDRESS_ACLR_A" = "NONE"
+    Info (12134): Parameter "OUTDATA_REG_B" = "UNREGISTERED"
+    Info (12134): Parameter "ADDRESS_ACLR_B" = "NONE"
+    Info (12134): Parameter "OUTDATA_ACLR_B" = "NONE"
+    Info (12134): Parameter "ADDRESS_REG_B" = "CLOCK0"
+    Info (12134): Parameter "INDATA_ACLR_A" = "NONE"
+    Info (12134): Parameter "WRCONTROL_ACLR_A" = "NONE"
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_o9c1.tdf
+    Info (12023): Found entity 1: altsyncram_o9c1 File: D:/Users/callo/Documents/GitHub/VGA-Framebuffer/Project/db/altsyncram_o9c1.tdf Line: 28
+Info (12130): Elaborated megafunction instantiation "RGBMemory_top:FrameBuffer|RGBmemcoderdecoderv2:FBCODEC|lpm_divide:Div0" File: D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/MEM/RGBmemcodec2.v Line: 70
+Info (12133): Instantiated megafunction "RGBMemory_top:FrameBuffer|RGBmemcoderdecoderv2:FBCODEC|lpm_divide:Div0" with the following parameter: File: D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/MEM/RGBmemcodec2.v Line: 70
     Info (12134): Parameter "LPM_WIDTHN" = "10"
     Info (12134): Parameter "LPM_WIDTHD" = "6"
     Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
     Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
 Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_uim.tdf
-    Info (12023): Found entity 1: lpm_divide_uim File: C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/Project/db/lpm_divide_uim.tdf Line: 25
+    Info (12023): Found entity 1: lpm_divide_uim File: D:/Users/callo/Documents/GitHub/VGA-Framebuffer/Project/db/lpm_divide_uim.tdf Line: 25
 Info (12021): Found 1 design units, including 1 entities, in source file db/sign_div_unsign_mlh.tdf
-    Info (12023): Found entity 1: sign_div_unsign_mlh File: C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/Project/db/sign_div_unsign_mlh.tdf Line: 25
+    Info (12023): Found entity 1: sign_div_unsign_mlh File: D:/Users/callo/Documents/GitHub/VGA-Framebuffer/Project/db/sign_div_unsign_mlh.tdf Line: 25
 Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_07f.tdf
-    Info (12023): Found entity 1: alt_u_div_07f File: C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/Project/db/alt_u_div_07f.tdf Line: 27
-Info (12130): Elaborated megafunction instantiation "RGBMemory_top:FrameBuffer|RGBmemcoderdecoderv2:FBCODEC|lpm_divide:Mod0" File: C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/SourceFiles/MEM/RGBmemcodec2.v Line: 82
-Info (12133): Instantiated megafunction "RGBMemory_top:FrameBuffer|RGBmemcoderdecoderv2:FBCODEC|lpm_divide:Mod0" with the following parameter: File: C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/SourceFiles/MEM/RGBmemcodec2.v Line: 82
+    Info (12023): Found entity 1: alt_u_div_07f File: D:/Users/callo/Documents/GitHub/VGA-Framebuffer/Project/db/alt_u_div_07f.tdf Line: 27
+Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_7pc.tdf
+    Info (12023): Found entity 1: add_sub_7pc File: D:/Users/callo/Documents/GitHub/VGA-Framebuffer/Project/db/add_sub_7pc.tdf Line: 23
+Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_8pc.tdf
+    Info (12023): Found entity 1: add_sub_8pc File: D:/Users/callo/Documents/GitHub/VGA-Framebuffer/Project/db/add_sub_8pc.tdf Line: 23
+Info (12130): Elaborated megafunction instantiation "RGBMemory_top:FrameBuffer|RGBmemcoderdecoderv2:FBCODEC|lpm_divide:Mod0" File: D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/MEM/RGBmemcodec2.v Line: 85
+Info (12133): Instantiated megafunction "RGBMemory_top:FrameBuffer|RGBmemcoderdecoderv2:FBCODEC|lpm_divide:Mod0" with the following parameter: File: D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/MEM/RGBmemcodec2.v Line: 85
     Info (12134): Parameter "LPM_WIDTHN" = "7"
     Info (12134): Parameter "LPM_WIDTHD" = "3"
     Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
     Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
 Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_k9m.tdf
-    Info (12023): Found entity 1: lpm_divide_k9m File: C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/Project/db/lpm_divide_k9m.tdf Line: 25
+    Info (12023): Found entity 1: lpm_divide_k9m File: D:/Users/callo/Documents/GitHub/VGA-Framebuffer/Project/db/lpm_divide_k9m.tdf Line: 25
 Info (12021): Found 1 design units, including 1 entities, in source file db/sign_div_unsign_9kh.tdf
-    Info (12023): Found entity 1: sign_div_unsign_9kh File: C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/Project/db/sign_div_unsign_9kh.tdf Line: 25
+    Info (12023): Found entity 1: sign_div_unsign_9kh File: D:/Users/callo/Documents/GitHub/VGA-Framebuffer/Project/db/sign_div_unsign_9kh.tdf Line: 25
 Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_64f.tdf
-    Info (12023): Found entity 1: alt_u_div_64f File: C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/Project/db/alt_u_div_64f.tdf Line: 27
+    Info (12023): Found entity 1: alt_u_div_64f File: D:/Users/callo/Documents/GitHub/VGA-Framebuffer/Project/db/alt_u_div_64f.tdf Line: 27
 Warning (14284): Synthesized away the following node(s):
     Warning (14285): Synthesized away the following RAM node(s):
-        Warning (14320): Synthesized away node "FIFO_top:FIFO|flip_flop_fifo:VPOS_FIFO|altsyncram:data_rtl_0|altsyncram_acc1:auto_generated|ram_block1a0" File: C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/Project/db/altsyncram_acc1.tdf Line: 38
+        Warning (14320): Synthesized away node "FIFO_top:FIFO|flip_flop_fifo:VPOS_FIFO|altsyncram:data_rtl_0|altsyncram_ccc1:auto_generated|ram_block1a0" File: D:/Users/callo/Documents/GitHub/VGA-Framebuffer/Project/db/altsyncram_ccc1.tdf Line: 38
+        Warning (14320): Synthesized away node "FIFO_top:FIFO|flip_flop_fifo:VPOS_FIFO|altsyncram:data_rtl_0|altsyncram_ccc1:auto_generated|ram_block1a1" File: D:/Users/callo/Documents/GitHub/VGA-Framebuffer/Project/db/altsyncram_ccc1.tdf Line: 66
+        Warning (14320): Synthesized away node "FIFO_top:FIFO|flip_flop_fifo:VPOS_FIFO|altsyncram:data_rtl_0|altsyncram_ccc1:auto_generated|ram_block1a2" File: D:/Users/callo/Documents/GitHub/VGA-Framebuffer/Project/db/altsyncram_ccc1.tdf Line: 94
 Warning (12241): 1 hierarchies have connectivity warnings - see the Connectivity Checks report folder
-Info (13000): Registers with preset signals will power-up high File: C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/SourceFiles/BRUSH/brush.v Line: 69
+Info (13000): Registers with preset signals will power-up high File: D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/BRUSH/brush.v Line: 69
 Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "abcdefgh[0]" is stuck at VCC File: C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/SourceFiles/TOP/top.v Line: 28
-    Warning (13410): Pin "abcdefgh[1]" is stuck at VCC File: C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/SourceFiles/TOP/top.v Line: 28
-    Warning (13410): Pin "abcdefgh[2]" is stuck at VCC File: C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/SourceFiles/TOP/top.v Line: 28
-    Warning (13410): Pin "abcdefgh[3]" is stuck at VCC File: C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/SourceFiles/TOP/top.v Line: 28
-    Warning (13410): Pin "abcdefgh[4]" is stuck at VCC File: C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/SourceFiles/TOP/top.v Line: 28
-    Warning (13410): Pin "abcdefgh[5]" is stuck at VCC File: C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/SourceFiles/TOP/top.v Line: 28
-    Warning (13410): Pin "abcdefgh[6]" is stuck at VCC File: C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/SourceFiles/TOP/top.v Line: 28
-    Warning (13410): Pin "abcdefgh[7]" is stuck at VCC File: C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/SourceFiles/TOP/top.v Line: 28
-    Warning (13410): Pin "digit[0]" is stuck at VCC File: C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/SourceFiles/TOP/top.v Line: 29
-    Warning (13410): Pin "digit[1]" is stuck at VCC File: C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/SourceFiles/TOP/top.v Line: 29
-    Warning (13410): Pin "digit[2]" is stuck at VCC File: C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/SourceFiles/TOP/top.v Line: 29
-    Warning (13410): Pin "digit[3]" is stuck at VCC File: C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/SourceFiles/TOP/top.v Line: 29
-    Warning (13410): Pin "buzzer" is stuck at VCC File: C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/SourceFiles/TOP/top.v Line: 31
+    Warning (13410): Pin "abcdefgh[0]" is stuck at VCC File: D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/TOP/top.v Line: 28
+    Warning (13410): Pin "abcdefgh[1]" is stuck at VCC File: D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/TOP/top.v Line: 28
+    Warning (13410): Pin "abcdefgh[2]" is stuck at VCC File: D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/TOP/top.v Line: 28
+    Warning (13410): Pin "abcdefgh[3]" is stuck at VCC File: D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/TOP/top.v Line: 28
+    Warning (13410): Pin "abcdefgh[4]" is stuck at VCC File: D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/TOP/top.v Line: 28
+    Warning (13410): Pin "abcdefgh[5]" is stuck at VCC File: D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/TOP/top.v Line: 28
+    Warning (13410): Pin "abcdefgh[6]" is stuck at VCC File: D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/TOP/top.v Line: 28
+    Warning (13410): Pin "abcdefgh[7]" is stuck at VCC File: D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/TOP/top.v Line: 28
+    Warning (13410): Pin "digit[0]" is stuck at VCC File: D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/TOP/top.v Line: 29
+    Warning (13410): Pin "digit[1]" is stuck at VCC File: D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/TOP/top.v Line: 29
+    Warning (13410): Pin "digit[2]" is stuck at VCC File: D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/TOP/top.v Line: 29
+    Warning (13410): Pin "digit[3]" is stuck at VCC File: D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/TOP/top.v Line: 29
+    Warning (13410): Pin "buzzer" is stuck at VCC File: D:/Users/callo/Documents/GitHub/VGA-Framebuffer/SourceFiles/TOP/top.v Line: 31
 Info (286030): Timing-Driven Synthesis is running
-Info (17049): 7 registers lost all their fanouts during netlist optimizations.
+Info (17049): 9 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 1 node(s), including 0 DDIO, 1 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 885 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 827 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 6 input pins
     Info (21059): Implemented 22 output pins
-    Info (21061): Implemented 819 logic cells
-    Info (21064): Implemented 37 RAM segments
+    Info (21061): Implemented 766 logic cells
+    Info (21064): Implemented 32 RAM segments
     Info (21065): Implemented 1 PLLs
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 57 warnings
-    Info: Peak virtual memory: 4827 megabytes
-    Info: Processing ended: Wed Aug 17 20:21:39 2022
-    Info: Elapsed time: 00:00:12
-    Info: Total CPU time (on all processors): 00:00:24
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 59 warnings
+    Info: Peak virtual memory: 4777 megabytes
+    Info: Processing ended: Thu Aug 18 16:47:10 2022
+    Info: Elapsed time: 00:00:10
+    Info: Total CPU time (on all processors): 00:00:20
 
 

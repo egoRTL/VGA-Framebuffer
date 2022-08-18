@@ -10,7 +10,7 @@ module FIFO_top
              H_BACK   =  216,
 				 HPOS_WIDTH = $clog2 (RESOLUTION_H+H_FRONT+H_SYNC+H_BACK),
 				 VPOS_WIDTH = $clog2 (RESOLUTION_V+V_BOTTOM+V_SYNC+V_TOP),
-				 FIFODEPTH=30
+				 FIFODEPTH=31
 )
 (
   input                clk,

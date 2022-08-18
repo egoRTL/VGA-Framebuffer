@@ -32,15 +32,15 @@ module RGBmemcoderdecoderv2
 localparam RES_MULT=RESOLUTION_H/MEMORY_H,
 			  REGS_IN_ROW=RES_MULT*DATA_WIDTH,
 				  DATASELECT_WIDTH= $clog2 (DATA_WIDTH);
-//wire [ADDR_WIDTH-1:0] addr_r, addr_w;
+reg [ADDR_WIDTH-1:0] addr_r, addr_w;
 reg [DATA_WIDTH-1:0] Rdatabuf;
 reg [DATA_WIDTH-1:0] Gdatabuf;
 reg [DATA_WIDTH-1:0] Bdatabuf;
 reg [DATASELECT_WIDTH-1:0] dataselect,dataselect_r,dataselect_w;
 reg [2:0] w_state;
 
-wire [ADDR_WIDTH-1:0] addr_r = ((hpos/RES_MULT)+MEMORY_H*(vpos/REGS_IN_ROW));
-wire [ADDR_WIDTH-1:0] addr_w = (hpos+MEMORY_H*(vpos/DATA_WIDTH));
+//wire [ADDR_WIDTH-1:0] addr_r = ((hpos/RES_MULT)+MEMORY_H*(vpos/REGS_IN_ROW));
+//wire [ADDR_WIDTH-1:0] addr_w = (hpos+MEMORY_H*(vpos/DATA_WIDTH));
 
 always@(posedge clk) begin
 if(reset) begin
@@ -54,17 +54,20 @@ dataselect_w<=0;
 Rdatatomem<=0;
 Gdatatomem<=0;
 Bdatatomem<=0;
-//addr_r<=0;
-//addr_w<=0;
+addr_r<=0;
+addr_w<=0;
 end else if (memenable&&display_on) begin
 we<=0;
 w_state<=0;
-//addr_r <= ((hpos/RES_MULT)+MEMORY_H*(vpos/REGS_IN_ROW));
+//NEVER CHANGE THIS. NEVER!
+addr_r <= ((hpos/RES_MULT)+MEMORY_H*(vpos/REGS_IN_ROW));
+//NEVER CHANGE THIS. NEVER!
 dataselect <= (vpos/RES_MULT)%DATA_WIDTH;
 dataselect_r <= dataselect;
 end else if (memenable&&~display_on&&~fifoempty) begin
-//addr_w <=(hpos+MEMORY_H*(vpos/DATA_WIDTH)); //NEVER CHANGE THIS. NEVER!
-//addr_w <=((hpos/RES_MULT)+MEMORY_H*(vpos/REGS_IN_ROW));
+//NEVER CHANGE THIS. NEVER!
+//addr_w <=(hpos+MEMORY_H*(vpos/DATA_WIDTH));
+addr_w <=((hpos/RES_MULT)+MEMORY_H*(vpos/REGS_IN_ROW));
 case (w_state)
 		0: begin
 		we<=0;
@@ -132,6 +135,11 @@ case (w_state)
 		//we<=0;
 		//end
 endcase
+end else begin 
+we<=0;
+Rdatatomem<=0;
+Gdatatomem<=0;
+Bdatatomem<=0;
 end
 end
 assign addr = (display_on) ? addr_r : addr_w;

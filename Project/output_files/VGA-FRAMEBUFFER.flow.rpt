@@ -1,6 +1,6 @@
 Flow report for VGA-FRAMEBUFFER
-Wed Aug 17 20:21:50 2022
-Quartus Prime Version 20.1.1 Build 720 11/11/2020 Patches 1.02i SJ Lite Edition
+Thu Aug 18 16:47:20 2022
+Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
 ---------------------
@@ -38,26 +38,26 @@ https://fpgasoftware.intel.com/eula.
 
 
 
-+------------------------------------------------------------------------------------------------+
-; Flow Summary                                                                                   ;
-+------------------------------------+-----------------------------------------------------------+
-; Flow Status                        ; Successful - Wed Aug 17 20:21:47 2022                     ;
-; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 Patches 1.02i SJ Lite Edition ;
-; Revision Name                      ; VGA-FRAMEBUFFER                                           ;
-; Top-level Entity Name              ; top                                                       ;
-; Family                             ; Cyclone IV E                                              ;
-; Device                             ; EP4CE10E22C8                                              ;
-; Timing Models                      ; Final                                                     ;
-; Total logic elements               ; 765 / 10,320 ( 7 % )                                      ;
-;     Total combinational functions  ; 743 / 10,320 ( 7 % )                                      ;
-;     Dedicated logic registers      ; 274 / 10,320 ( 3 % )                                      ;
-; Total registers                    ; 274                                                       ;
-; Total pins                         ; 28 / 92 ( 30 % )                                          ;
-; Total virtual pins                 ; 0                                                         ;
-; Total memory bits                  ; 14,970 / 423,936 ( 4 % )                                  ;
-; Embedded Multiplier 9-bit elements ; 0 / 46 ( 0 % )                                            ;
-; Total PLLs                         ; 1 / 2 ( 50 % )                                            ;
-+------------------------------------+-----------------------------------------------------------+
++----------------------------------------------------------------------------------+
+; Flow Summary                                                                     ;
++------------------------------------+---------------------------------------------+
+; Flow Status                        ; Successful - Thu Aug 18 16:47:18 2022       ;
+; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
+; Revision Name                      ; VGA-FRAMEBUFFER                             ;
+; Top-level Entity Name              ; top                                         ;
+; Family                             ; Cyclone IV E                                ;
+; Device                             ; EP4CE10E22C8                                ;
+; Timing Models                      ; Final                                       ;
+; Total logic elements               ; 697 / 10,320 ( 7 % )                        ;
+;     Total combinational functions  ; 675 / 10,320 ( 7 % )                        ;
+;     Dedicated logic registers      ; 289 / 10,320 ( 3 % )                        ;
+; Total registers                    ; 289                                         ;
+; Total pins                         ; 28 / 92 ( 30 % )                            ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 14,834 / 423,936 ( 3 % )                    ;
+; Embedded Multiplier 9-bit elements ; 0 / 46 ( 0 % )                              ;
+; Total PLLs                         ; 1 / 2 ( 50 % )                              ;
++------------------------------------+---------------------------------------------+
 
 
 +-----------------------------------------+
@@ -65,7 +65,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 08/17/2022 20:21:28 ;
+; Start date & time ; 08/18/2022 16:47:00 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; VGA-FRAMEBUFFER     ;
 +-------------------+---------------------+
@@ -76,7 +76,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------+----------------------------------------+-----------------+-------------+------------+
 ; Assignment Name                     ; Value                                  ; Default Value   ; Entity Name ; Section Id ;
 +-------------------------------------+----------------------------------------+-----------------+-------------+------------+
-; COMPILER_SIGNATURE_ID               ; 260406191414152.166075688815684        ; --              ; --          ; --         ;
+; COMPILER_SIGNATURE_ID               ; 1095875200532.166083042002100          ; --              ; --          ; --         ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --              ; --          ; --         ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --              ; --          ; --         ;
 ; MISC_FILE                           ; ../SourceFiles/PLL/pll.ppf             ; --              ; --          ; --         ;
@@ -101,11 +101,11 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:11     ; 1.0                     ; 4827 MB             ; 00:00:24                           ;
-; Fitter               ; 00:00:05     ; 1.1                     ; 5643 MB             ; 00:00:07                           ;
-; Assembler            ; 00:00:01     ; 1.0                     ; 4681 MB             ; 00:00:01                           ;
-; Timing Analyzer      ; 00:00:02     ; 1.2                     ; 4793 MB             ; 00:00:02                           ;
-; Total                ; 00:00:19     ; --                      ; --                  ; 00:00:34                           ;
+; Analysis & Synthesis ; 00:00:10     ; 1.0                     ; 4777 MB             ; 00:00:20                           ;
+; Fitter               ; 00:00:05     ; 1.1                     ; 5499 MB             ; 00:00:05                           ;
+; Assembler            ; 00:00:01     ; 1.0                     ; 4680 MB             ; 00:00:01                           ;
+; Timing Analyzer      ; 00:00:02     ; 1.2                     ; 4774 MB             ; 00:00:02                           ;
+; Total                ; 00:00:18     ; --                      ; --                  ; 00:00:28                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -114,10 +114,10 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+------------------+------------+------------+----------------+
 ; Module Name          ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
 +----------------------+------------------+------------+------------+----------------+
-; Analysis & Synthesis ; DESKTOP-BE8H3KE  ; Windows 10 ; 10.0       ; x86_64         ;
-; Fitter               ; DESKTOP-BE8H3KE  ; Windows 10 ; 10.0       ; x86_64         ;
-; Assembler            ; DESKTOP-BE8H3KE  ; Windows 10 ; 10.0       ; x86_64         ;
-; Timing Analyzer      ; DESKTOP-BE8H3KE  ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis ; DESKTOP-GJ4JLSH  ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter               ; DESKTOP-GJ4JLSH  ; Windows 10 ; 10.0       ; x86_64         ;
+; Assembler            ; DESKTOP-GJ4JLSH  ; Windows 10 ; 10.0       ; x86_64         ;
+; Timing Analyzer      ; DESKTOP-GJ4JLSH  ; Windows 10 ; 10.0       ; x86_64         ;
 +----------------------+------------------+------------+------------+----------------+
 
 

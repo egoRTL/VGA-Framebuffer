@@ -13,7 +13,7 @@ parameter RAMLENGTH  = 800,
 		  RESOLUTION_H = 640,
 		  RESOLUTION_V = 480,
 		  DEBOUNCE_TIMER = 4,
-		  BRUSH_SLOWNESS = 4,
+		  BRUSH_SLOWNESS = 16,
 		  X_WIRE_WIDTH = $clog2 (RESOLUTION_H+H_FRONT+H_SYNC+H_BACK),
 		  Y_WIRE_WIDTH = $clog2 (RESOLUTION_V+V_BOTTOM+V_SYNC+V_TOP);
 
@@ -180,9 +180,9 @@ reset_n = 0;
 #10;
 reset_n = 1;
 #13000;
-key_sw = 4'b0111;
+key_sw = 4'b0100;
 #10000;
-key_sw = '1;
+//key_sw = '1;
 end
 
 endmodule

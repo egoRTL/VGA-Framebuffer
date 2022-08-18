@@ -128,7 +128,7 @@ if(display_on&&~fifofull)
 			'd3: begin
 			fifopush<=1;
 			writecounter_y<=writecounter_y+1;
-			if(writecounter_y == cursor_ypos + brush_size) writestate<='d0;
+			if(writecounter_y == cursor_ypos + brush_size + 1) writestate<='d0;
 			else begin 
 				writecounter_x <= cursor_xpos - brush_size;
 				writestate<='d2;
