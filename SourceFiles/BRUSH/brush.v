@@ -7,6 +7,7 @@ module brush
 //			    COLOR = 3, //color of cursor_rgb
 				 HPOS_WIDTH=0, //coordinate wires width
 				 VPOS_WIDTH=0,
+				 BRUSH_COLOR=3'b101,
 				 BRUSH_BASE_SIZE=10,
 				 BRUSH_MAX_SIZE=30,
 				 INIT_XPOS = RESOLUTION_H/2,
@@ -19,13 +20,19 @@ module brush
 	input reset,
 	input [3:0] BTN, // [2:0]movedirection=[2:0]key_sw
 	input [3:0] BTN_POSEDGE,
-	input display_on,
+	input display_on,fifofull,
 	input [HPOS_WIDTH - 1:0]hpos,
 	input [VPOS_WIDTH - 1:0]vpos,
 	input [2:0]FB_RGB,
-	output[2:0] rgb
+	input memenable,
+	output reg[2:0] rgb,
+	output [2:0] writergb,
+	output reg fifopush,
+	output reg [HPOS_WIDTH - 1:0]writecounter_x,
+	output reg [VPOS_WIDTH - 1:0]writecounter_y
 );
 
+reg [2:0] writestate;
 reg [SIZE_WIDTH - 1:0] brush_size;
 reg [HPOS_WIDTH - 1:0] cursor_xpos;
 reg [VPOS_WIDTH - 1:0] cursor_ypos;
@@ -64,24 +71,72 @@ else brush_size<=brush_size+'d10;
 end
 end
 
-brush_sprite
-#(
-	.HPOS_WIDTH	(	HPOS_WIDTH	),
-	.VPOS_WIDTH	(	VPOS_WIDTH	),
-	.SIZE_WIDTH	(	SIZE_WIDTH	)
-)
-(
-	.clk			(	clk			),
-	.reset	 	(	reset			),
-	.display_on	(	display_on	),
-	.cursor_xpos(	cursor_xpos	),
-	.hpos			(	hpos			),
-	.cursor_ypos(	cursor_ypos	),
-	.vpos			(	vpos			),
-	.brush_size	(	brush_size	),
-	.FB_RGB		(	FB_RGB		),
-	.rgb			(	rgb			)
-);
+//brush_sprite
+//#(
+//	.HPOS_WIDTH	(	HPOS_WIDTH	),
+//	.VPOS_WIDTH	(	VPOS_WIDTH	),
+//	.SIZE_WIDTH	(	SIZE_WIDTH	)
+//)
+//(
+//	.clk			(	clk			),
+//	.reset	 	(	reset			),
+//	.display_on	(	display_on	),
+//	.cursor_xpos(	cursor_xpos	),
+//	.hpos			(	hpos			),
+//	.cursor_ypos(	cursor_ypos	),
+//	.vpos			(	vpos			),
+//	.brush_size	(	brush_size	),
+//	.FB_RGB		(	FB_RGB		),
+//	.rgb			(	rgb			)
+//);
 
+//brush sprite
+always @ (posedge clk or posedge reset)
+        if (reset)
+            rgb <= 3'b000;
+        else if (display_on)
+         if ((vpos >= cursor_ypos - brush_size)&&(vpos <= cursor_ypos + brush_size)&&(hpos >= cursor_xpos - brush_size)&&(hpos <= cursor_xpos + brush_size)) 
+				rgb <= BRUSH_COLOR;
+         else rgb <= FB_RGB;
+		  else  rgb <= 3'b000;
+		  
+//brush write
+always @(posedge clk)
+if(reset)begin
+	writecounter_x<=0;
+	writecounter_y<=0;
+	fifopush<=0;
+	writestate<=0;
+end else if(memenable) begin
+if(display_on&&~fifofull)
+	case(writestate)
+			0: begin 
+				writecounter_x<=cursor_xpos - brush_size;
+				writecounter_y<=cursor_ypos - brush_size;
+				fifopush<=0;
+				if(BTN[3]) writestate<=1;
+			end
+			1: begin
+				fifopush<=1;
+				writestate<='d2;
+			end
+			'd2: begin
+				fifopush<=1;
+				writecounter_x<=writecounter_x+1;
+				if(writecounter_x == cursor_xpos + brush_size) writestate<='d3;
+			end
+			'd3: begin
+			fifopush<=1;
+			writecounter_y<=writecounter_y+1;
+			if(writecounter_y == cursor_ypos + brush_size) writestate<='d0;
+			else begin 
+				writecounter_x <= cursor_xpos - brush_size;
+				writestate<='d2;
+				end
+			end
+	endcase
+else fifopush<=0;
+end
+assign writergb = BRUSH_COLOR;
 
 endmodule 

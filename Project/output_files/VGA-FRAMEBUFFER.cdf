@@ -4,7 +4,7 @@ JedecChain;
 	DefaultMfr(6E);
 
 	P ActionCode(Cfg)
-		Device PartName(EP4CE10E22) Path("C:/Users/User/Downloads/VGA-Framebuffer-main/Project/output_files/") File("VGA-FRAMEBUFFER.sof") MfrSpec(OpMask(1));
+		Device PartName(EP4CE10E22) Path("C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/Project/output_files/") File("VGA-FRAMEBUFFER.sof") MfrSpec(OpMask(1));
 
 ChainEnd;
 

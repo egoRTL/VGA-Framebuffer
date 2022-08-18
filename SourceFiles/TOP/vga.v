@@ -17,7 +17,14 @@ module vga
               V_DISPLAY=0,  // Vertical display height
               V_BOTTOM=0,  // Vertical bottom border
               V_SYNC=0,  // Vertical sync # lines
-              V_TOP=0  // Vertical top border
+              V_TOP=0,  // Vertical top border
+				  H_SYNC_START  = H_DISPLAY    + H_FRONT + N_MIXER_PIPE_STAGES,
+              H_SYNC_END    = H_SYNC_START + H_SYNC  - 1,
+              H_MAX         = H_SYNC_END   + H_BACK,
+
+              V_SYNC_START  = V_DISPLAY    + V_BOTTOM,
+              V_SYNC_END    = V_SYNC_START + V_SYNC  - 1,
+              V_MAX         = V_SYNC_END   + V_TOP
 )
 (
     input                         clk,
@@ -29,17 +36,6 @@ module vga
     output reg [HPOS_WIDTH - 1:0] hpos,
     output reg [VPOS_WIDTH - 1:0] vpos
 );
-
-    
-
-    localparam H_SYNC_START  = H_DISPLAY    + H_FRONT + N_MIXER_PIPE_STAGES,
-               H_SYNC_END    = H_SYNC_START + H_SYNC  - 1,
-               H_MAX         = H_SYNC_END   + H_BACK,
-
-               V_SYNC_START  = V_DISPLAY    + V_BOTTOM,
-               V_SYNC_END    = V_SYNC_START + V_SYNC  - 1,
-               V_MAX         = V_SYNC_END   + V_TOP;
-
     
     reg [HPOS_WIDTH - 1:0] d_hpos;
     reg [VPOS_WIDTH - 1:0] d_vpos;

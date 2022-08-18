@@ -1,245 +1,825 @@
+# Reading pref.tcl
+# OpenFile C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/FBTest2Git/TOP_Tb.mpf
+# Loading project TOP_Tb
+# Compile of Top_TestBench.sv was successful.
+vsim work.Top_FB_TestBench
+# vsim work.Top_FB_TestBench 
+# Start time: 15:30:57 on Aug 17,2022
+# Loading sv_std.std
+# Loading work.Top_FB_TestBench
+# Loading work.top
+# Loading work.vga
+# Loading work.brush
+# Loading work.ROM_top
+# Loading work.FIFO_top
+# Loading work.flip_flop_fifo
+# Loading work.RGBMemory_top
+# Loading work.RGBmemcoderdecoderv2
+# Loading work.single_port_ram
+# Loading work.memsyncreset
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'DUT'.  Expected 10, found 2.
+#    Time: 0 ns  Iteration: 0  Instance: /Top_FB_TestBench/DUT File: C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/SourceFiles/TOP/Top_TestBench.sv Line: 7
+# ** Warning: (vsim-3722) C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/SourceFiles/TOP/Top_TestBench.sv(7): [TFMPC] - Missing connection for port 'key_sw'.
+# ** Warning: (vsim-3722) C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/SourceFiles/TOP/Top_TestBench.sv(7): [TFMPC] - Missing connection for port 'led'.
+# ** Warning: (vsim-3722) C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/SourceFiles/TOP/Top_TestBench.sv(7): [TFMPC] - Missing connection for port 'abcdefgh'.
+# ** Warning: (vsim-3722) C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/SourceFiles/TOP/Top_TestBench.sv(7): [TFMPC] - Missing connection for port 'digit'.
+# ** Warning: (vsim-3722) C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/SourceFiles/TOP/Top_TestBench.sv(7): [TFMPC] - Missing connection for port 'buzzer'.
+# ** Warning: (vsim-3722) C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/SourceFiles/TOP/Top_TestBench.sv(7): [TFMPC] - Missing connection for port 'hsync'.
+# ** Warning: (vsim-3722) C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/SourceFiles/TOP/Top_TestBench.sv(7): [TFMPC] - Missing connection for port 'vsync'.
+# ** Warning: (vsim-3722) C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/SourceFiles/TOP/Top_TestBench.sv(7): [TFMPC] - Missing connection for port 'rgb'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (10) does not match connection size (11) for port 'resetcnt'. The port definition is at: C:/Users/User/Downloads/VGA-Framebuffer-main/SourceFiles/MEM/RGBMemory_top.v(20).
+#    Time: 0 ns  Iteration: 0  Instance: /Top_FB_TestBench/DUT/FrameBuffer File: C:/Users/User/Downloads/VGA-Framebuffer-main/SourceFiles/TOP/top.v Line: 186
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'DUT'.  Expected 10, found 2.
+#    Time: 0 ns  Iteration: 0  Instance: /Top_FB_TestBench/DUT File: C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/SourceFiles/TOP/Top_TestBench.sv Line: 7
+# ** Warning: (vsim-3722) C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/SourceFiles/TOP/Top_TestBench.sv(7): [TFMPC] - Missing connection for port 'key_sw'.
+# ** Warning: (vsim-3722) C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/SourceFiles/TOP/Top_TestBench.sv(7): [TFMPC] - Missing connection for port 'led'.
+# ** Warning: (vsim-3722) C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/SourceFiles/TOP/Top_TestBench.sv(7): [TFMPC] - Missing connection for port 'abcdefgh'.
+# ** Warning: (vsim-3722) C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/SourceFiles/TOP/Top_TestBench.sv(7): [TFMPC] - Missing connection for port 'digit'.
+# ** Warning: (vsim-3722) C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/SourceFiles/TOP/Top_TestBench.sv(7): [TFMPC] - Missing connection for port 'buzzer'.
+# ** Warning: (vsim-3722) C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/SourceFiles/TOP/Top_TestBench.sv(7): [TFMPC] - Missing connection for port 'hsync'.
+# ** Warning: (vsim-3722) C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/SourceFiles/TOP/Top_TestBench.sv(7): [TFMPC] - Missing connection for port 'vsync'.
+# ** Warning: (vsim-3722) C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/SourceFiles/TOP/Top_TestBench.sv(7): [TFMPC] - Missing connection for port 'rgb'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (10) does not match connection size (11) for port 'resetcnt'. The port definition is at: C:/Users/User/Downloads/VGA-Framebuffer-main/SourceFiles/MEM/RGBMemory_top.v(20).
+#    Time: 0 ns  Iteration: 0  Instance: /Top_FB_TestBench/DUT/FrameBuffer File: C:/Users/User/Downloads/VGA-Framebuffer-main/SourceFiles/TOP/top.v Line: 186
+quit -sim
+# End time: 15:31:43 on Aug 17,2022, Elapsed time: 0:00:46
+# Errors: 0, Warnings: 11
+# reading C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini
+# Loading project MEM-BRUSH
+# Compile of MEM-BRUSH_TestBench.sv failed with 1 errors.
+# Compile of brush.v was successful.
 # Compile of button_debouncer.v was successful.
-# Compile of TestBench_debouncer.v failed with 2 errors.
-# 2 compiles, 1 failed with 2 errors.
+# Compile of fifo.v failed with 2 errors.
+# Compile of FIFO_top.v was successful.
+# Compile of RAM.v was successful.
+# Compile of RGBmemcodec2.v was successful.
+# Compile of RGBMemory_top.v was successful.
+# Compile of memsyncreset.v was successful.
+# Compile of vga.v was successful.
+# 10 compiles, 2 failed with 3 errors.
+# Compile of fifo.v was successful.
+# Compile of MEM-BRUSH_TestBench.sv was successful.
+# Compile of MEM-BRUSH_TestBench.sv failed with 1 errors.
+# Compile of brush.v was successful.
 # Compile of button_debouncer.v was successful.
-# Compile of TestBench_debouncer.v failed with 1 errors.
-# 2 compiles, 1 failed with 1 error.
+# Compile of fifo.v was successful.
+# Compile of FIFO_top.v was successful.
+# Compile of RAM.v was successful.
+# Compile of RGBmemcodec2.v was successful.
+# Compile of RGBMemory_top.v was successful.
+# Compile of memsyncreset.v was successful.
+# Compile of vga.v was successful.
+# 10 compiles, 1 failed with 1 error.
+# Compile of MEM-BRUSH_TestBench.sv was successful.
+# Compile of brush.v was successful.
 # Compile of button_debouncer.v was successful.
-# Compile of TestBench_debouncer.v was successful with warnings.
-# 2 compiles, 0 failed with no errors.
-vsim work.button_debouncer work.TestBench_debouncer
-# vsim work.button_debouncer work.TestBench_debouncer 
-# Start time: 19:26:16 on Aug 06,2022
+# Compile of fifo.v was successful.
+# Compile of FIFO_top.v was successful.
+# Compile of RAM.v was successful.
+# Compile of RGBmemcodec2.v was successful.
+# Compile of RGBMemory_top.v was successful.
+# Compile of memsyncreset.v was successful.
+# Compile of vga.v was successful.
+# 10 compiles, 0 failed with no errors.
+vsim work.MEM_BRUSH_TestBench
+# vsim work.MEM_BRUSH_TestBench 
+# Start time: 15:58:42 on Aug 17,2022
+# Loading sv_std.std
+# Loading work.MEM_BRUSH_TestBench
+# Loading work.vga
 # Loading work.button_debouncer
-# Loading work.TestBench_debouncer
-# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'DUT'.  Expected 5, found 2.
-#    Time: 0 ns  Iteration: 0  Instance: /TestBench_debouncer/DUT File: C:/Users/User/Downloads/VGA-Framebuffer-main/SourceFiles/DEBOUNCER/TestBench_debouncer.v Line: 9
-# ** Warning: (vsim-3722) C:/Users/User/Downloads/VGA-Framebuffer-main/SourceFiles/DEBOUNCER/TestBench_debouncer.v(9): [TFMPC] - Missing connection for port 'BTN'.
-# ** Warning: (vsim-3722) C:/Users/User/Downloads/VGA-Framebuffer-main/SourceFiles/DEBOUNCER/TestBench_debouncer.v(9): [TFMPC] - Missing connection for port 'BTN_POSEDGE'.
-# ** Warning: (vsim-3722) C:/Users/User/Downloads/VGA-Framebuffer-main/SourceFiles/DEBOUNCER/TestBench_debouncer.v(9): [TFMPC] - Missing connection for port 'BTN_NEGEDGE'.
+# Loading work.brush
+# Loading work.FIFO_top
+# Loading work.flip_flop_fifo
+# Loading work.RGBMemory_top
+# Loading work.RGBmemcoderdecoderv2
+# Loading work.single_port_ram
+# Loading work.memsyncreset
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'Painting_Brush'.  Expected 15, found 14.
+#    Time: 0 ns  Iteration: 0  Instance: /MEM_BRUSH_TestBench/Painting_Brush File: C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/SourceFiles/MEM/MEM-BRUSH_TestBench.sv Line: 84
+# ** Warning: (vsim-3722) C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/SourceFiles/MEM/MEM-BRUSH_TestBench.sv(84): [TFMPC] - Missing connection for port 'fifofull'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (10) does not match connection size (11) for port 'resetcnt'. The port definition is at: C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/SourceFiles/MEM/RGBMemory_top.v(20).
+#    Time: 0 ns  Iteration: 0  Instance: /MEM_BRUSH_TestBench/FrameBuffer File: C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/SourceFiles/MEM/MEM-BRUSH_TestBench.sv Line: 133
 add wave -position insertpoint  \
-sim:/TestBench_debouncer/DUT/DEBOUNCE_TIMER \
-sim:/TestBench_debouncer/DUT/clk \
-sim:/TestBench_debouncer/DUT/RAW_BTN \
-sim:/TestBench_debouncer/DUT/BTN \
-sim:/TestBench_debouncer/DUT/BTN_POSEDGE \
-sim:/TestBench_debouncer/DUT/BTN_NEGEDGE \
-sim:/TestBench_debouncer/DUT/states_of_button_0 \
-sim:/TestBench_debouncer/DUT/states_of_button_1 \
-sim:/TestBench_debouncer/DUT/states_of_button_2 \
-sim:/TestBench_debouncer/DUT/states_of_button_3 \
-sim:/TestBench_debouncer/DUT/counter
-write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/User/Downloads/VGA-Framebuffer-main/FBTest2Git/DEBOUNCERwave.do
-run
-# ** Note: $stop    : C:/Users/User/Downloads/VGA-Framebuffer-main/SourceFiles/DEBOUNCER/TestBench_debouncer.v(26)
-#    Time: 60 ns  Iteration: 0  Instance: /TestBench_debouncer
-# Break in Module TestBench_debouncer at C:/Users/User/Downloads/VGA-Framebuffer-main/SourceFiles/DEBOUNCER/TestBench_debouncer.v line 26
-quit -sim
-# End time: 19:27:24 on Aug 06,2022, Elapsed time: 0:01:08
-# Errors: 0, Warnings: 15
-# Compile of TestBench_debouncer.v was successful with warnings.
-# Compile of button_debouncer.v was successful.
-# Compile of TestBench_debouncer.v was successful with warnings.
-# 2 compiles, 0 failed with no errors.
-vsim work.button_debouncer work.TestBench_debouncer
-# vsim work.button_debouncer work.TestBench_debouncer 
-# Start time: 19:27:41 on Aug 06,2022
-# Loading work.button_debouncer
-# Loading work.TestBench_debouncer
-# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'DUT'.  Expected 5, found 2.
-#    Time: 0 ns  Iteration: 0  Instance: /TestBench_debouncer/DUT File: C:/Users/User/Downloads/VGA-Framebuffer-main/SourceFiles/DEBOUNCER/TestBench_debouncer.v Line: 9
-# ** Warning: (vsim-3722) C:/Users/User/Downloads/VGA-Framebuffer-main/SourceFiles/DEBOUNCER/TestBench_debouncer.v(9): [TFMPC] - Missing connection for port 'BTN'.
-# ** Warning: (vsim-3722) C:/Users/User/Downloads/VGA-Framebuffer-main/SourceFiles/DEBOUNCER/TestBench_debouncer.v(9): [TFMPC] - Missing connection for port 'BTN_POSEDGE'.
-# ** Warning: (vsim-3722) C:/Users/User/Downloads/VGA-Framebuffer-main/SourceFiles/DEBOUNCER/TestBench_debouncer.v(9): [TFMPC] - Missing connection for port 'BTN_NEGEDGE'.
-run
-restart -f
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'DUT'.  Expected 5, found 2.
-#    Time: 0 ns  Iteration: 0  Instance: /TestBench_debouncer/DUT File: C:/Users/User/Downloads/VGA-Framebuffer-main/SourceFiles/DEBOUNCER/TestBench_debouncer.v Line: 9
-# ** Warning: (vsim-3722) C:/Users/User/Downloads/VGA-Framebuffer-main/SourceFiles/DEBOUNCER/TestBench_debouncer.v(9): [TFMPC] - Missing connection for port 'BTN'.
-# ** Warning: (vsim-3722) C:/Users/User/Downloads/VGA-Framebuffer-main/SourceFiles/DEBOUNCER/TestBench_debouncer.v(9): [TFMPC] - Missing connection for port 'BTN_POSEDGE'.
-# ** Warning: (vsim-3722) C:/Users/User/Downloads/VGA-Framebuffer-main/SourceFiles/DEBOUNCER/TestBench_debouncer.v(9): [TFMPC] - Missing connection for port 'BTN_NEGEDGE'.
-run
-run
-run
-run
-run
-run
-run
-run
-quit -sim
-# End time: 19:29:40 on Aug 06,2022, Elapsed time: 0:01:59
-# Errors: 0, Warnings: 6
-# Compile of button_debouncer.v was successful.
-# Compile of TestBench_debouncer.v was successful with warnings.
-# 2 compiles, 0 failed with no errors.
-vsim work.button_debouncer work.TestBench_debouncer
-# vsim work.button_debouncer work.TestBench_debouncer 
-# Start time: 19:30:07 on Aug 06,2022
-# Loading work.button_debouncer
-# Loading work.TestBench_debouncer
-# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'DUT'.  Expected 5, found 2.
-#    Time: 0 ns  Iteration: 0  Instance: /TestBench_debouncer/DUT File: C:/Users/User/Downloads/VGA-Framebuffer-main/SourceFiles/DEBOUNCER/TestBench_debouncer.v Line: 9
-# ** Warning: (vsim-3722) C:/Users/User/Downloads/VGA-Framebuffer-main/SourceFiles/DEBOUNCER/TestBench_debouncer.v(9): [TFMPC] - Missing connection for port 'BTN'.
-# ** Warning: (vsim-3722) C:/Users/User/Downloads/VGA-Framebuffer-main/SourceFiles/DEBOUNCER/TestBench_debouncer.v(9): [TFMPC] - Missing connection for port 'BTN_POSEDGE'.
-# ** Warning: (vsim-3722) C:/Users/User/Downloads/VGA-Framebuffer-main/SourceFiles/DEBOUNCER/TestBench_debouncer.v(9): [TFMPC] - Missing connection for port 'BTN_NEGEDGE'.
-run
-quit -sim
-# End time: 19:30:46 on Aug 06,2022, Elapsed time: 0:00:39
-# Errors: 0, Warnings: 6
-# Compile of button_debouncer.v was successful.
-# Compile of TestBench_debouncer.v was successful with warnings.
-# 2 compiles, 0 failed with no errors.
-vsim work.button_debouncer work.TestBench_debouncer
-# vsim work.button_debouncer work.TestBench_debouncer 
-# Start time: 19:39:35 on Aug 06,2022
-# Loading work.button_debouncer
-# Loading work.TestBench_debouncer
-# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'DUT'.  Expected 5, found 2.
-#    Time: 0 ns  Iteration: 0  Instance: /TestBench_debouncer/DUT File: C:/Users/User/Downloads/VGA-Framebuffer-main/SourceFiles/DEBOUNCER/TestBench_debouncer.v Line: 9
-# ** Warning: (vsim-3722) C:/Users/User/Downloads/VGA-Framebuffer-main/SourceFiles/DEBOUNCER/TestBench_debouncer.v(9): [TFMPC] - Missing connection for port 'BTN'.
-# ** Warning: (vsim-3722) C:/Users/User/Downloads/VGA-Framebuffer-main/SourceFiles/DEBOUNCER/TestBench_debouncer.v(9): [TFMPC] - Missing connection for port 'BTN_POSEDGE'.
-# ** Warning: (vsim-3722) C:/Users/User/Downloads/VGA-Framebuffer-main/SourceFiles/DEBOUNCER/TestBench_debouncer.v(9): [TFMPC] - Missing connection for port 'BTN_NEGEDGE'.
-add wave -position end  sim:/TestBench_debouncer/DUT/state_changed
-write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/User/Downloads/VGA-Framebuffer-main/FBTest2Git/DEBOUNCERwave.do
-run
-quit -sim
-# End time: 19:40:26 on Aug 06,2022, Elapsed time: 0:00:51
-# Errors: 0, Warnings: 6
-vsim work.button_debouncer work.TestBench_debouncer
-# vsim work.button_debouncer work.TestBench_debouncer 
-# Start time: 19:41:01 on Aug 06,2022
-# Loading work.button_debouncer
-# Loading work.TestBench_debouncer
-# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'DUT'.  Expected 5, found 2.
-#    Time: 0 ns  Iteration: 0  Instance: /TestBench_debouncer/DUT File: C:/Users/User/Downloads/VGA-Framebuffer-main/SourceFiles/DEBOUNCER/TestBench_debouncer.v Line: 9
-# ** Warning: (vsim-3722) C:/Users/User/Downloads/VGA-Framebuffer-main/SourceFiles/DEBOUNCER/TestBench_debouncer.v(9): [TFMPC] - Missing connection for port 'BTN'.
-# ** Warning: (vsim-3722) C:/Users/User/Downloads/VGA-Framebuffer-main/SourceFiles/DEBOUNCER/TestBench_debouncer.v(9): [TFMPC] - Missing connection for port 'BTN_POSEDGE'.
-# ** Warning: (vsim-3722) C:/Users/User/Downloads/VGA-Framebuffer-main/SourceFiles/DEBOUNCER/TestBench_debouncer.v(9): [TFMPC] - Missing connection for port 'BTN_NEGEDGE'.
-run
-# Compile of button_debouncer.v was successful.
-# Compile of TestBench_debouncer.v was successful with warnings.
-# 2 compiles, 0 failed with no errors.
-restart -f
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# Loading work.button_debouncer
-# Loading work.TestBench_debouncer
-# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'DUT'.  Expected 5, found 2.
-#    Time: 0 ns  Iteration: 0  Instance: /TestBench_debouncer/DUT File: C:/Users/User/Downloads/VGA-Framebuffer-main/SourceFiles/DEBOUNCER/TestBench_debouncer.v Line: 9
-# ** Warning: (vsim-3722) C:/Users/User/Downloads/VGA-Framebuffer-main/SourceFiles/DEBOUNCER/TestBench_debouncer.v(9): [TFMPC] - Missing connection for port 'BTN'.
-# ** Warning: (vsim-3722) C:/Users/User/Downloads/VGA-Framebuffer-main/SourceFiles/DEBOUNCER/TestBench_debouncer.v(9): [TFMPC] - Missing connection for port 'BTN_POSEDGE'.
-# ** Warning: (vsim-3722) C:/Users/User/Downloads/VGA-Framebuffer-main/SourceFiles/DEBOUNCER/TestBench_debouncer.v(9): [TFMPC] - Missing connection for port 'BTN_NEGEDGE'.
-run
-run
-# Compile of button_debouncer.v failed with 1 errors.
-# Compile of TestBench_debouncer.v was successful with warnings.
-# 2 compiles, 1 failed with 1 error.
-# Compile of button_debouncer.v was successful.
-# Compile of TestBench_debouncer.v was successful with warnings.
-# 2 compiles, 0 failed with no errors.
-restart -f
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# Loading work.button_debouncer
-# Loading work.TestBench_debouncer
-# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'DUT'.  Expected 6, found 3.
-#    Time: 0 ns  Iteration: 0  Instance: /TestBench_debouncer/DUT File: C:/Users/User/Downloads/VGA-Framebuffer-main/SourceFiles/DEBOUNCER/TestBench_debouncer.v Line: 9
-# ** Warning: (vsim-3722) C:/Users/User/Downloads/VGA-Framebuffer-main/SourceFiles/DEBOUNCER/TestBench_debouncer.v(9): [TFMPC] - Missing connection for port 'BTN'.
-# ** Warning: (vsim-3722) C:/Users/User/Downloads/VGA-Framebuffer-main/SourceFiles/DEBOUNCER/TestBench_debouncer.v(9): [TFMPC] - Missing connection for port 'BTN_POSEDGE'.
-# ** Warning: (vsim-3722) C:/Users/User/Downloads/VGA-Framebuffer-main/SourceFiles/DEBOUNCER/TestBench_debouncer.v(9): [TFMPC] - Missing connection for port 'BTN_NEGEDGE'.
-run
-quit -sim
-# End time: 19:46:48 on Aug 06,2022, Elapsed time: 0:05:47
-# Errors: 0, Warnings: 5
-# Compile of button_debouncer.v was successful.
-# Compile of TestBench_debouncer.v was successful with warnings.
-# 2 compiles, 0 failed with no errors.
-vsim work.button_debouncer work.TestBench_debouncer
-# vsim work.button_debouncer work.TestBench_debouncer 
-# Start time: 19:47:56 on Aug 06,2022
-# Loading work.button_debouncer
-# Loading work.TestBench_debouncer
-# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'DUT'.  Expected 6, found 3.
-#    Time: 0 ns  Iteration: 0  Instance: /TestBench_debouncer/DUT File: C:/Users/User/Downloads/VGA-Framebuffer-main/SourceFiles/DEBOUNCER/TestBench_debouncer.v Line: 9
-# ** Warning: (vsim-3722) C:/Users/User/Downloads/VGA-Framebuffer-main/SourceFiles/DEBOUNCER/TestBench_debouncer.v(9): [TFMPC] - Missing connection for port 'BTN'.
-# ** Warning: (vsim-3722) C:/Users/User/Downloads/VGA-Framebuffer-main/SourceFiles/DEBOUNCER/TestBench_debouncer.v(9): [TFMPC] - Missing connection for port 'BTN_POSEDGE'.
-# ** Warning: (vsim-3722) C:/Users/User/Downloads/VGA-Framebuffer-main/SourceFiles/DEBOUNCER/TestBench_debouncer.v(9): [TFMPC] - Missing connection for port 'BTN_NEGEDGE'.
-run
-quit -sim
-# End time: 19:48:48 on Aug 06,2022, Elapsed time: 0:00:52
-# Errors: 0, Warnings: 6
-# Compile of button_debouncer.v was successful.
-# Compile of TestBench_debouncer.v was successful with warnings.
-# 2 compiles, 0 failed with no errors.
-vsim work.button_debouncer work.TestBench_debouncer
-# vsim work.button_debouncer work.TestBench_debouncer 
-# Start time: 19:48:53 on Aug 06,2022
-# Loading work.button_debouncer
-# Loading work.TestBench_debouncer
-# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'DUT'.  Expected 6, found 3.
-#    Time: 0 ns  Iteration: 0  Instance: /TestBench_debouncer/DUT File: C:/Users/User/Downloads/VGA-Framebuffer-main/SourceFiles/DEBOUNCER/TestBench_debouncer.v Line: 9
-# ** Warning: (vsim-3722) C:/Users/User/Downloads/VGA-Framebuffer-main/SourceFiles/DEBOUNCER/TestBench_debouncer.v(9): [TFMPC] - Missing connection for port 'BTN'.
-# ** Warning: (vsim-3722) C:/Users/User/Downloads/VGA-Framebuffer-main/SourceFiles/DEBOUNCER/TestBench_debouncer.v(9): [TFMPC] - Missing connection for port 'BTN_POSEDGE'.
-# ** Warning: (vsim-3722) C:/Users/User/Downloads/VGA-Framebuffer-main/SourceFiles/DEBOUNCER/TestBench_debouncer.v(9): [TFMPC] - Missing connection for port 'BTN_NEGEDGE'.
-run
-run
-run
-quit -sim
-# End time: 19:50:26 on Aug 06,2022, Elapsed time: 0:01:33
-# Errors: 0, Warnings: 6
-# Compile of button_debouncer.v was successful.
-# Compile of TestBench_debouncer.v was successful with warnings.
-# 2 compiles, 0 failed with no errors.
-vsim work.button_debouncer work.TestBench_debouncer
-# vsim work.button_debouncer work.TestBench_debouncer 
-# Start time: 19:51:15 on Aug 06,2022
-# Loading work.button_debouncer
-# Loading work.TestBench_debouncer
-# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'DUT'.  Expected 6, found 3.
-#    Time: 0 ns  Iteration: 0  Instance: /TestBench_debouncer/DUT File: C:/Users/User/Downloads/VGA-Framebuffer-main/SourceFiles/DEBOUNCER/TestBench_debouncer.v Line: 9
-# ** Warning: (vsim-3722) C:/Users/User/Downloads/VGA-Framebuffer-main/SourceFiles/DEBOUNCER/TestBench_debouncer.v(9): [TFMPC] - Missing connection for port 'BTN'.
-# ** Warning: (vsim-3722) C:/Users/User/Downloads/VGA-Framebuffer-main/SourceFiles/DEBOUNCER/TestBench_debouncer.v(9): [TFMPC] - Missing connection for port 'BTN_POSEDGE'.
-# ** Warning: (vsim-3722) C:/Users/User/Downloads/VGA-Framebuffer-main/SourceFiles/DEBOUNCER/TestBench_debouncer.v(9): [TFMPC] - Missing connection for port 'BTN_NEGEDGE'.
-run
-run
-run
-force -freeze sim:/TestBench_debouncer/DUT/BTN 0001 0
-run
-restart -f
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'DUT'.  Expected 6, found 3.
-#    Time: 0 ns  Iteration: 0  Instance: /TestBench_debouncer/DUT File: C:/Users/User/Downloads/VGA-Framebuffer-main/SourceFiles/DEBOUNCER/TestBench_debouncer.v Line: 9
-# ** Warning: (vsim-3722) C:/Users/User/Downloads/VGA-Framebuffer-main/SourceFiles/DEBOUNCER/TestBench_debouncer.v(9): [TFMPC] - Missing connection for port 'BTN'.
-# ** Warning: (vsim-3722) C:/Users/User/Downloads/VGA-Framebuffer-main/SourceFiles/DEBOUNCER/TestBench_debouncer.v(9): [TFMPC] - Missing connection for port 'BTN_POSEDGE'.
-# ** Warning: (vsim-3722) C:/Users/User/Downloads/VGA-Framebuffer-main/SourceFiles/DEBOUNCER/TestBench_debouncer.v(9): [TFMPC] - Missing connection for port 'BTN_NEGEDGE'.
-run
-run
-force -freeze sim:/TestBench_debouncer/DUT/RAW_BTN 0001 0
+sim:/MEM_BRUSH_TestBench/i_vga/N_MIXER_PIPE_STAGES \
+sim:/MEM_BRUSH_TestBench/i_vga/HPOS_WIDTH \
+sim:/MEM_BRUSH_TestBench/i_vga/VPOS_WIDTH \
+sim:/MEM_BRUSH_TestBench/i_vga/H_DISPLAY \
+sim:/MEM_BRUSH_TestBench/i_vga/H_FRONT \
+sim:/MEM_BRUSH_TestBench/i_vga/H_SYNC \
+sim:/MEM_BRUSH_TestBench/i_vga/H_BACK \
+sim:/MEM_BRUSH_TestBench/i_vga/V_DISPLAY \
+sim:/MEM_BRUSH_TestBench/i_vga/V_BOTTOM \
+sim:/MEM_BRUSH_TestBench/i_vga/V_SYNC \
+sim:/MEM_BRUSH_TestBench/i_vga/V_TOP \
+sim:/MEM_BRUSH_TestBench/i_vga/H_SYNC_START \
+sim:/MEM_BRUSH_TestBench/i_vga/H_SYNC_END \
+sim:/MEM_BRUSH_TestBench/i_vga/H_MAX \
+sim:/MEM_BRUSH_TestBench/i_vga/V_SYNC_START \
+sim:/MEM_BRUSH_TestBench/i_vga/V_SYNC_END \
+sim:/MEM_BRUSH_TestBench/i_vga/V_MAX \
+sim:/MEM_BRUSH_TestBench/i_vga/clk \
+sim:/MEM_BRUSH_TestBench/i_vga/reset \
+sim:/MEM_BRUSH_TestBench/i_vga/enable \
+sim:/MEM_BRUSH_TestBench/i_vga/hsync \
+sim:/MEM_BRUSH_TestBench/i_vga/vsync \
+sim:/MEM_BRUSH_TestBench/i_vga/display_on \
+sim:/MEM_BRUSH_TestBench/i_vga/hpos \
+sim:/MEM_BRUSH_TestBench/i_vga/vpos \
+sim:/MEM_BRUSH_TestBench/i_vga/d_hpos \
+sim:/MEM_BRUSH_TestBench/i_vga/d_vpos
+add wave -position insertpoint  \
+sim:/MEM_BRUSH_TestBench/Debouncer/DEBOUNCE_TIMER \
+sim:/MEM_BRUSH_TestBench/Debouncer/clk \
+sim:/MEM_BRUSH_TestBench/Debouncer/reset \
+sim:/MEM_BRUSH_TestBench/Debouncer/RAW_BTN \
+sim:/MEM_BRUSH_TestBench/Debouncer/BTN \
+sim:/MEM_BRUSH_TestBench/Debouncer/BTN_POSEDGE \
+sim:/MEM_BRUSH_TestBench/Debouncer/BTN_NEGEDGE \
+sim:/MEM_BRUSH_TestBench/Debouncer/states_of_button_0 \
+sim:/MEM_BRUSH_TestBench/Debouncer/states_of_button_1 \
+sim:/MEM_BRUSH_TestBench/Debouncer/states_of_button_2 \
+sim:/MEM_BRUSH_TestBench/Debouncer/states_of_button_3 \
+sim:/MEM_BRUSH_TestBench/Debouncer/counter \
+sim:/MEM_BRUSH_TestBench/Debouncer/state_changed
+add wave -position insertpoint  \
+sim:/MEM_BRUSH_TestBench/Painting_Brush/SLOWNESS \
+sim:/MEM_BRUSH_TestBench/Painting_Brush/RESOLUTION_H \
+sim:/MEM_BRUSH_TestBench/Painting_Brush/RESOLUTION_V \
+sim:/MEM_BRUSH_TestBench/Painting_Brush/HPOS_WIDTH \
+sim:/MEM_BRUSH_TestBench/Painting_Brush/VPOS_WIDTH \
+sim:/MEM_BRUSH_TestBench/Painting_Brush/BRUSH_COLOR \
+sim:/MEM_BRUSH_TestBench/Painting_Brush/BRUSH_BASE_SIZE \
+sim:/MEM_BRUSH_TestBench/Painting_Brush/BRUSH_MAX_SIZE \
+sim:/MEM_BRUSH_TestBench/Painting_Brush/INIT_XPOS \
+sim:/MEM_BRUSH_TestBench/Painting_Brush/INIT_YPOS \
+sim:/MEM_BRUSH_TestBench/Painting_Brush/SIZE_WIDTH \
+sim:/MEM_BRUSH_TestBench/Painting_Brush/clk \
+sim:/MEM_BRUSH_TestBench/Painting_Brush/reset \
+sim:/MEM_BRUSH_TestBench/Painting_Brush/BTN \
+sim:/MEM_BRUSH_TestBench/Painting_Brush/BTN_POSEDGE \
+sim:/MEM_BRUSH_TestBench/Painting_Brush/display_on \
+sim:/MEM_BRUSH_TestBench/Painting_Brush/fifofull \
+sim:/MEM_BRUSH_TestBench/Painting_Brush/hpos \
+sim:/MEM_BRUSH_TestBench/Painting_Brush/vpos \
+sim:/MEM_BRUSH_TestBench/Painting_Brush/FB_RGB \
+sim:/MEM_BRUSH_TestBench/Painting_Brush/memenable \
+sim:/MEM_BRUSH_TestBench/Painting_Brush/rgb \
+sim:/MEM_BRUSH_TestBench/Painting_Brush/writergb \
+sim:/MEM_BRUSH_TestBench/Painting_Brush/fifopush \
+sim:/MEM_BRUSH_TestBench/Painting_Brush/writecounter_x \
+sim:/MEM_BRUSH_TestBench/Painting_Brush/writecounter_y \
+sim:/MEM_BRUSH_TestBench/Painting_Brush/writestate \
+sim:/MEM_BRUSH_TestBench/Painting_Brush/brush_size \
+sim:/MEM_BRUSH_TestBench/Painting_Brush/cursor_xpos \
+sim:/MEM_BRUSH_TestBench/Painting_Brush/cursor_ypos \
+sim:/MEM_BRUSH_TestBench/Painting_Brush/counterclk
+add wave -position insertpoint sim:/MEM_BRUSH_TestBench/FIFO/*
+add wave -position insertpoint  \
+sim:/MEM_BRUSH_TestBench/FIFO/RESOLUTION_H \
+sim:/MEM_BRUSH_TestBench/FIFO/RESOLUTION_V \
+sim:/MEM_BRUSH_TestBench/FIFO/V_BOTTOM \
+sim:/MEM_BRUSH_TestBench/FIFO/V_SYNC \
+sim:/MEM_BRUSH_TestBench/FIFO/V_TOP \
+sim:/MEM_BRUSH_TestBench/FIFO/H_FRONT \
+sim:/MEM_BRUSH_TestBench/FIFO/H_SYNC \
+sim:/MEM_BRUSH_TestBench/FIFO/H_BACK \
+sim:/MEM_BRUSH_TestBench/FIFO/HPOS_WIDTH \
+sim:/MEM_BRUSH_TestBench/FIFO/VPOS_WIDTH \
+sim:/MEM_BRUSH_TestBench/FIFO/FIFODEPTH
+add wave -position insertpoint  \
+sim:/MEM_BRUSH_TestBench/FIFO/RESOLUTION_H \
+sim:/MEM_BRUSH_TestBench/FIFO/RESOLUTION_V \
+sim:/MEM_BRUSH_TestBench/FIFO/V_BOTTOM \
+sim:/MEM_BRUSH_TestBench/FIFO/V_SYNC \
+sim:/MEM_BRUSH_TestBench/FIFO/V_TOP \
+sim:/MEM_BRUSH_TestBench/FIFO/H_FRONT \
+sim:/MEM_BRUSH_TestBench/FIFO/H_SYNC \
+sim:/MEM_BRUSH_TestBench/FIFO/H_BACK \
+sim:/MEM_BRUSH_TestBench/FIFO/HPOS_WIDTH \
+sim:/MEM_BRUSH_TestBench/FIFO/VPOS_WIDTH \
+sim:/MEM_BRUSH_TestBench/FIFO/FIFODEPTH \
+sim:/MEM_BRUSH_TestBench/FIFO/clk \
+sim:/MEM_BRUSH_TestBench/FIFO/rst \
+sim:/MEM_BRUSH_TestBench/FIFO/push \
+sim:/MEM_BRUSH_TestBench/FIFO/toppop \
+sim:/MEM_BRUSH_TestBench/FIFO/hpos_write \
+sim:/MEM_BRUSH_TestBench/FIFO/vpos_write \
+sim:/MEM_BRUSH_TestBench/FIFO/RGB_write \
+sim:/MEM_BRUSH_TestBench/FIFO/hpos_read \
+sim:/MEM_BRUSH_TestBench/FIFO/vpos_read \
+sim:/MEM_BRUSH_TestBench/FIFO/RGB_read \
+sim:/MEM_BRUSH_TestBench/FIFO/empty \
+sim:/MEM_BRUSH_TestBench/FIFO/full \
+sim:/MEM_BRUSH_TestBench/FIFO/counter \
+sim:/MEM_BRUSH_TestBench/FIFO/pop \
+sim:/MEM_BRUSH_TestBench/FIFO/hposempty \
+sim:/MEM_BRUSH_TestBench/FIFO/vposempty \
+sim:/MEM_BRUSH_TestBench/FIFO/RGBempty \
+sim:/MEM_BRUSH_TestBench/FIFO/hposfull \
+sim:/MEM_BRUSH_TestBench/FIFO/vposfull \
+sim:/MEM_BRUSH_TestBench/FIFO/RGBfull
+add wave -position insertpoint  \
+sim:/MEM_BRUSH_TestBench/FrameBuffer/RAMLENGTH \
+sim:/MEM_BRUSH_TestBench/FrameBuffer/DATA_WIDTH \
+sim:/MEM_BRUSH_TestBench/FrameBuffer/V_BOTTOM \
+sim:/MEM_BRUSH_TestBench/FrameBuffer/V_SYNC \
+sim:/MEM_BRUSH_TestBench/FrameBuffer/V_TOP \
+sim:/MEM_BRUSH_TestBench/FrameBuffer/H_FRONT \
+sim:/MEM_BRUSH_TestBench/FrameBuffer/H_SYNC \
+sim:/MEM_BRUSH_TestBench/FrameBuffer/H_BACK \
+sim:/MEM_BRUSH_TestBench/FrameBuffer/RESOLUTION_H \
+sim:/MEM_BRUSH_TestBench/FrameBuffer/RESOLUTION_V \
+sim:/MEM_BRUSH_TestBench/FrameBuffer/X_WIRE_WIDTH \
+sim:/MEM_BRUSH_TestBench/FrameBuffer/Y_WIRE_WIDTH \
+sim:/MEM_BRUSH_TestBench/FrameBuffer/ADDR_WIDTH \
+sim:/MEM_BRUSH_TestBench/FrameBuffer/display_on \
+sim:/MEM_BRUSH_TestBench/FrameBuffer/clk \
+sim:/MEM_BRUSH_TestBench/FrameBuffer/memreset \
+sim:/MEM_BRUSH_TestBench/FrameBuffer/reset_n \
+sim:/MEM_BRUSH_TestBench/FrameBuffer/resetcnt \
+sim:/MEM_BRUSH_TestBench/FrameBuffer/RGBin \
+sim:/MEM_BRUSH_TestBench/FrameBuffer/hpos \
+sim:/MEM_BRUSH_TestBench/FrameBuffer/vpos \
+sim:/MEM_BRUSH_TestBench/FrameBuffer/fifoempty \
+sim:/MEM_BRUSH_TestBench/FrameBuffer/RGB \
+sim:/MEM_BRUSH_TestBench/FrameBuffer/writeR_data \
+sim:/MEM_BRUSH_TestBench/FrameBuffer/writeG_data \
+sim:/MEM_BRUSH_TestBench/FrameBuffer/writeB_data \
+sim:/MEM_BRUSH_TestBench/FrameBuffer/R_data \
+sim:/MEM_BRUSH_TestBench/FrameBuffer/G_data \
+sim:/MEM_BRUSH_TestBench/FrameBuffer/B_data \
+sim:/MEM_BRUSH_TestBench/FrameBuffer/addrbuf_wire \
+sim:/MEM_BRUSH_TestBench/FrameBuffer/we
+add wave -position insertpoint  \
+sim:/MEM_BRUSH_TestBench/memsyncreset/ADDR_WIDTH \
+sim:/MEM_BRUSH_TestBench/memsyncreset/RAMLENGTH \
+sim:/MEM_BRUSH_TestBench/memsyncreset/clk \
+sim:/MEM_BRUSH_TestBench/memsyncreset/memreset \
+sim:/MEM_BRUSH_TestBench/memsyncreset/resetcnt \
+sim:/MEM_BRUSH_TestBench/memsyncreset/memenable \
+sim:/MEM_BRUSH_TestBench/memsyncreset/stp \
+sim:/MEM_BRUSH_TestBench/memsyncreset/counter
+add wave -position 0  sim:/MEM_BRUSH_TestBench/clk
+add wave -position 1  sim:/MEM_BRUSH_TestBench/reset_n
+add wave -position 2  sim:/MEM_BRUSH_TestBench/rgb
+add wave -position 3  sim:/MEM_BRUSH_TestBench/key_sw
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/FBTest2Git/MEM-BRUSHwave.do
 run
 quit -sim
-# End time: 19:55:13 on Aug 06,2022, Elapsed time: 0:03:58
-# Errors: 0, Warnings: 5
-# Compile of button_debouncer.v failed with 2 errors.
-# Compile of TestBench_debouncer.v was successful with warnings.
-# 2 compiles, 1 failed with 2 errors.
-# Compile of button_debouncer.v was successful.
-vsim work.button_debouncer work.TestBench_debouncer
-# vsim work.button_debouncer work.TestBench_debouncer 
-# Start time: 19:55:44 on Aug 06,2022
+# End time: 16:05:04 on Aug 17,2022, Elapsed time: 0:06:22
+# Errors: 0, Warnings: 21
+# Compile of MEM-BRUSH_TestBench.sv was successful.
+vsim work.MEM_BRUSH_TestBench
+# vsim work.MEM_BRUSH_TestBench 
+# Start time: 16:05:42 on Aug 17,2022
+# Loading sv_std.std
+# Loading work.MEM_BRUSH_TestBench
+# Loading work.vga
 # Loading work.button_debouncer
-# Loading work.TestBench_debouncer
-# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'DUT'.  Expected 6, found 3.
-#    Time: 0 ns  Iteration: 0  Instance: /TestBench_debouncer/DUT File: C:/Users/User/Downloads/VGA-Framebuffer-main/SourceFiles/DEBOUNCER/TestBench_debouncer.v Line: 9
-# ** Warning: (vsim-3722) C:/Users/User/Downloads/VGA-Framebuffer-main/SourceFiles/DEBOUNCER/TestBench_debouncer.v(9): [TFMPC] - Missing connection for port 'BTN'.
-# ** Warning: (vsim-3722) C:/Users/User/Downloads/VGA-Framebuffer-main/SourceFiles/DEBOUNCER/TestBench_debouncer.v(9): [TFMPC] - Missing connection for port 'BTN_POSEDGE'.
-# ** Warning: (vsim-3722) C:/Users/User/Downloads/VGA-Framebuffer-main/SourceFiles/DEBOUNCER/TestBench_debouncer.v(9): [TFMPC] - Missing connection for port 'BTN_NEGEDGE'.
-run
-run
-force -freeze sim:/TestBench_debouncer/DUT/RAW_BTN 0101 0
-run
-run
-force -freeze sim:/TestBench_debouncer/DUT/RAW_BTN 0000 0
-run
+# Loading work.brush
+# Loading work.FIFO_top
+# Loading work.flip_flop_fifo
+# Loading work.RGBMemory_top
+# Loading work.RGBmemcoderdecoderv2
+# Loading work.single_port_ram
+# Loading work.memsyncreset
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'Painting_Brush'.  Expected 15, found 14.
+#    Time: 0 ns  Iteration: 0  Instance: /MEM_BRUSH_TestBench/Painting_Brush File: C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/SourceFiles/MEM/MEM-BRUSH_TestBench.sv Line: 83
+# ** Warning: (vsim-3015) [PCDPC] - Port size (3) does not match connection size (1) for port 'rgb'. The port definition is at: C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/SourceFiles/BRUSH/brush.v(28).
+#    Time: 0 ns  Iteration: 0  Instance: /MEM_BRUSH_TestBench/Painting_Brush File: C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/SourceFiles/MEM/MEM-BRUSH_TestBench.sv Line: 83
+# ** Warning: (vsim-3722) C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/SourceFiles/MEM/MEM-BRUSH_TestBench.sv(83): [TFMPC] - Missing connection for port 'fifofull'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (10) does not match connection size (11) for port 'resetcnt'. The port definition is at: C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/SourceFiles/MEM/RGBMemory_top.v(20).
+#    Time: 0 ns  Iteration: 0  Instance: /MEM_BRUSH_TestBench/FrameBuffer File: C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/SourceFiles/MEM/MEM-BRUSH_TestBench.sv Line: 132
 run
 quit -sim
-# End time: 19:56:56 on Aug 06,2022, Elapsed time: 0:01:12
+# End time: 16:06:31 on Aug 17,2022, Elapsed time: 0:00:49
 # Errors: 0, Warnings: 7
+# Compile of MEM-BRUSH_TestBench.sv was successful.
+# Compile of brush.v was successful.
+# Compile of button_debouncer.v was successful.
+# Compile of fifo.v was successful.
+# Compile of FIFO_top.v was successful.
+# Compile of RAM.v was successful.
+# Compile of RGBmemcodec2.v was successful.
+# Compile of RGBMemory_top.v was successful.
+# Compile of memsyncreset.v was successful.
+# Compile of vga.v was successful.
+# 10 compiles, 0 failed with no errors.
+vsim work.MEM_BRUSH_TestBench
+# vsim work.MEM_BRUSH_TestBench 
+# Start time: 16:07:13 on Aug 17,2022
+# Loading sv_std.std
+# Loading work.MEM_BRUSH_TestBench
+# Loading work.vga
+# Loading work.button_debouncer
+# Loading work.brush
+# Loading work.FIFO_top
+# Loading work.flip_flop_fifo
+# Loading work.RGBMemory_top
+# Loading work.RGBmemcoderdecoderv2
+# Loading work.single_port_ram
+# Loading work.memsyncreset
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'Painting_Brush'.  Expected 15, found 14.
+#    Time: 0 ns  Iteration: 0  Instance: /MEM_BRUSH_TestBench/Painting_Brush File: C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/SourceFiles/MEM/MEM-BRUSH_TestBench.sv Line: 83
+# ** Warning: (vsim-3015) [PCDPC] - Port size (3) does not match connection size (1) for port 'rgb'. The port definition is at: C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/SourceFiles/BRUSH/brush.v(28).
+#    Time: 0 ns  Iteration: 0  Instance: /MEM_BRUSH_TestBench/Painting_Brush File: C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/SourceFiles/MEM/MEM-BRUSH_TestBench.sv Line: 83
+# ** Warning: (vsim-3722) C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/SourceFiles/MEM/MEM-BRUSH_TestBench.sv(83): [TFMPC] - Missing connection for port 'fifofull'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (10) does not match connection size (11) for port 'resetcnt'. The port definition is at: C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/SourceFiles/MEM/RGBMemory_top.v(20).
+#    Time: 0 ns  Iteration: 0  Instance: /MEM_BRUSH_TestBench/FrameBuffer File: C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/SourceFiles/MEM/MEM-BRUSH_TestBench.sv Line: 132
+run
+quit -sim
+# End time: 16:10:51 on Aug 17,2022, Elapsed time: 0:03:38
+# Errors: 0, Warnings: 6
+# Compile of MEM-BRUSH_TestBench.sv was successful.
+# Compile of brush.v was successful.
+# Compile of button_debouncer.v was successful.
+# Compile of fifo.v was successful.
+# Compile of FIFO_top.v was successful.
+# Compile of RAM.v was successful.
+# Compile of RGBmemcodec2.v was successful.
+# Compile of RGBMemory_top.v was successful.
+# Compile of memsyncreset.v was successful.
+# Compile of vga.v was successful.
+# 10 compiles, 0 failed with no errors.
+vsim work.MEM_BRUSH_TestBench
+# vsim work.MEM_BRUSH_TestBench 
+# Start time: 16:11:31 on Aug 17,2022
+# Loading sv_std.std
+# Loading work.MEM_BRUSH_TestBench
+# Loading work.vga
+# Loading work.button_debouncer
+# Loading work.brush
+# Loading work.FIFO_top
+# Loading work.flip_flop_fifo
+# Loading work.RGBMemory_top
+# Loading work.RGBmemcoderdecoderv2
+# Loading work.single_port_ram
+# Loading work.memsyncreset
+# ** Warning: (vsim-3015) [PCDPC] - Port size (3) does not match connection size (1) for port 'rgb'. The port definition is at: C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/SourceFiles/BRUSH/brush.v(28).
+#    Time: 0 ns  Iteration: 0  Instance: /MEM_BRUSH_TestBench/Painting_Brush File: C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/SourceFiles/MEM/MEM-BRUSH_TestBench.sv Line: 83
+# ** Warning: (vsim-3015) [PCDPC] - Port size (10) does not match connection size (11) for port 'resetcnt'. The port definition is at: C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/SourceFiles/MEM/RGBMemory_top.v(20).
+#    Time: 0 ns  Iteration: 0  Instance: /MEM_BRUSH_TestBench/FrameBuffer File: C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/SourceFiles/MEM/MEM-BRUSH_TestBench.sv Line: 133
+run
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (3) does not match connection size (1) for port 'rgb'. The port definition is at: C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/SourceFiles/BRUSH/brush.v(28).
+#    Time: 0 ns  Iteration: 0  Instance: /MEM_BRUSH_TestBench/Painting_Brush File: C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/SourceFiles/MEM/MEM-BRUSH_TestBench.sv Line: 83
+# ** Warning: (vsim-3015) [PCDPC] - Port size (10) does not match connection size (11) for port 'resetcnt'. The port definition is at: C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/SourceFiles/MEM/RGBMemory_top.v(20).
+#    Time: 0 ns  Iteration: 0  Instance: /MEM_BRUSH_TestBench/FrameBuffer File: C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/SourceFiles/MEM/MEM-BRUSH_TestBench.sv Line: 133
+run
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/FBTest2Git/MEM-BRUSHwave.do
+run
+run
+run
+run
+run
+run
+run
+run
+run
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/FBTest2Git/MEM-BRUSHwave.do
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (3) does not match connection size (1) for port 'rgb'. The port definition is at: C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/SourceFiles/BRUSH/brush.v(28).
+#    Time: 0 ns  Iteration: 0  Instance: /MEM_BRUSH_TestBench/Painting_Brush File: C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/SourceFiles/MEM/MEM-BRUSH_TestBench.sv Line: 83
+# ** Warning: (vsim-3015) [PCDPC] - Port size (10) does not match connection size (11) for port 'resetcnt'. The port definition is at: C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/SourceFiles/MEM/RGBMemory_top.v(20).
+#    Time: 0 ns  Iteration: 0  Instance: /MEM_BRUSH_TestBench/FrameBuffer File: C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/SourceFiles/MEM/MEM-BRUSH_TestBench.sv Line: 133
+run
+run
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/FBTest2Git/MEM-BRUSHwave.do
+quit -sim
+# End time: 16:15:22 on Aug 17,2022, Elapsed time: 0:03:51
+# Errors: 0, Warnings: 3
+# Compile of MEM-BRUSH_TestBench.sv failed with 1 errors.
+# Compile of brush.v was successful.
+# Compile of button_debouncer.v was successful.
+# Compile of fifo.v was successful.
+# Compile of FIFO_top.v was successful.
+# Compile of RAM.v was successful.
+# Compile of RGBmemcodec2.v was successful.
+# Compile of RGBMemory_top.v was successful.
+# Compile of memsyncreset.v was successful.
+# Compile of vga.v was successful.
+# 10 compiles, 1 failed with 1 error.
+# Compile of MEM-BRUSH_TestBench.sv was successful.
+# Compile of MEM-BRUSH_TestBench.sv was successful.
+# Compile of brush.v was successful.
+# Compile of button_debouncer.v was successful.
+# Compile of fifo.v was successful.
+# Compile of FIFO_top.v was successful.
+# Compile of RAM.v was successful.
+# Compile of RGBmemcodec2.v was successful.
+# Compile of RGBMemory_top.v was successful.
+# Compile of memsyncreset.v was successful.
+# Compile of vga.v was successful.
+# 10 compiles, 0 failed with no errors.
+vsim work.MEM_BRUSH_TestBench
+# vsim work.MEM_BRUSH_TestBench 
+# Start time: 16:17:47 on Aug 17,2022
+# Loading sv_std.std
+# Loading work.MEM_BRUSH_TestBench
+# Loading work.vga
+# Loading work.button_debouncer
+# Loading work.brush
+# Loading work.FIFO_top
+# Loading work.flip_flop_fifo
+# Loading work.RGBMemory_top
+# Loading work.RGBmemcoderdecoderv2
+# Loading work.single_port_ram
+# Loading work.memsyncreset
+# ** Warning: (vsim-3015) [PCDPC] - Port size (3) does not match connection size (1) for port 'rgb'. The port definition is at: C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/SourceFiles/BRUSH/brush.v(28).
+#    Time: 0 ns  Iteration: 0  Instance: /MEM_BRUSH_TestBench/Painting_Brush File: C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/SourceFiles/MEM/MEM-BRUSH_TestBench.sv Line: 90
+# ** Warning: (vsim-3015) [PCDPC] - Port size (10) does not match connection size (11) for port 'resetcnt'. The port definition is at: C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/SourceFiles/MEM/RGBMemory_top.v(20).
+#    Time: 0 ns  Iteration: 0  Instance: /MEM_BRUSH_TestBench/FrameBuffer File: C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/SourceFiles/MEM/MEM-BRUSH_TestBench.sv Line: 140
+run
+force -freeze sim:/MEM_BRUSH_TestBench/key_sw 0111 0
+run
+run
+add wave -position 83  sim:/MEM_BRUSH_TestBench/FIFO/HPOS_FIFO/width
+add wave -position 83  sim:/MEM_BRUSH_TestBench/FIFO/HPOS_FIFO/depth
+add wave -position 83  sim:/MEM_BRUSH_TestBench/FIFO/HPOS_FIFO/pointer_width
+add wave -position 83  sim:/MEM_BRUSH_TestBench/FIFO/HPOS_FIFO/counter_width
+add wave -position 83  sim:/MEM_BRUSH_TestBench/FIFO/HPOS_FIFO/max_ptr
+add wave -position 83  sim:/MEM_BRUSH_TestBench/FIFO/HPOS_FIFO/clk
+add wave -position 83  sim:/MEM_BRUSH_TestBench/FIFO/HPOS_FIFO/rst
+add wave -position 83  sim:/MEM_BRUSH_TestBench/FIFO/HPOS_FIFO/push
+add wave -position 83  sim:/MEM_BRUSH_TestBench/FIFO/HPOS_FIFO/pop
+add wave -position 83  sim:/MEM_BRUSH_TestBench/FIFO/HPOS_FIFO/write_data
+add wave -position 83  sim:/MEM_BRUSH_TestBench/FIFO/HPOS_FIFO/read_data
+add wave -position 83  sim:/MEM_BRUSH_TestBench/FIFO/HPOS_FIFO/empty
+add wave -position 83  sim:/MEM_BRUSH_TestBench/FIFO/HPOS_FIFO/full
+add wave -position 83  sim:/MEM_BRUSH_TestBench/FIFO/HPOS_FIFO/wr_ptr
+add wave -position 83  sim:/MEM_BRUSH_TestBench/FIFO/HPOS_FIFO/rd_ptr
+add wave -position 83  sim:/MEM_BRUSH_TestBench/FIFO/HPOS_FIFO/cnt
+add wave -position 83  sim:/MEM_BRUSH_TestBench/FIFO/HPOS_FIFO/data
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (3) does not match connection size (1) for port 'rgb'. The port definition is at: C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/SourceFiles/BRUSH/brush.v(28).
+#    Time: 0 ns  Iteration: 0  Instance: /MEM_BRUSH_TestBench/Painting_Brush File: C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/SourceFiles/MEM/MEM-BRUSH_TestBench.sv Line: 90
+# ** Warning: (vsim-3015) [PCDPC] - Port size (10) does not match connection size (11) for port 'resetcnt'. The port definition is at: C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/SourceFiles/MEM/RGBMemory_top.v(20).
+#    Time: 0 ns  Iteration: 0  Instance: /MEM_BRUSH_TestBench/FrameBuffer File: C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/SourceFiles/MEM/MEM-BRUSH_TestBench.sv Line: 140
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/FBTest2Git/MEM-BRUSHwave.do
+run
+force -freeze sim:/MEM_BRUSH_TestBench/key_sw 0111 0
+run
+quit -sim
+# End time: 18:41:01 on Aug 17,2022, Elapsed time: 2:23:14
+# Errors: 0, Warnings: 3
+# Compile of MEM-BRUSH_TestBench.sv was successful.
+# Compile of brush.v was successful.
+# Compile of button_debouncer.v was successful.
+# Compile of fifo.v was successful.
+# Compile of FIFO_top.v was successful.
+# Compile of RAM.v was successful.
+# Compile of RGBmemcodec2.v was successful.
+# Compile of RGBMemory_top.v was successful.
+# Compile of memsyncreset.v was successful.
+# Compile of vga.v was successful.
+# 10 compiles, 0 failed with no errors.
+vsim work.MEM_BRUSH_TestBench
+# vsim work.MEM_BRUSH_TestBench 
+# Start time: 18:41:17 on Aug 17,2022
+# Loading sv_std.std
+# Loading work.MEM_BRUSH_TestBench
+# Loading work.vga
+# Loading work.button_debouncer
+# Loading work.brush
+# Loading work.FIFO_top
+# Loading work.flip_flop_fifo
+# Loading work.RGBMemory_top
+# Loading work.RGBmemcoderdecoderv2
+# Loading work.single_port_ram
+# Loading work.memsyncreset
+# ** Warning: (vsim-3015) [PCDPC] - Port size (3) does not match connection size (1) for port 'rgb'. The port definition is at: C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/SourceFiles/BRUSH/brush.v(28).
+#    Time: 0 ns  Iteration: 0  Instance: /MEM_BRUSH_TestBench/Painting_Brush File: C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/SourceFiles/MEM/MEM-BRUSH_TestBench.sv Line: 90
+# ** Warning: (vsim-3015) [PCDPC] - Port size (10) does not match connection size (11) for port 'resetcnt'. The port definition is at: C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/SourceFiles/MEM/RGBMemory_top.v(20).
+#    Time: 0 ns  Iteration: 0  Instance: /MEM_BRUSH_TestBench/FrameBuffer File: C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/SourceFiles/MEM/MEM-BRUSH_TestBench.sv Line: 140
+run
+force -freeze sim:/MEM_BRUSH_TestBench/key_sw 0111 0
+run
+quit -sim
+# End time: 18:42:32 on Aug 17,2022, Elapsed time: 0:01:15
+# Errors: 0, Warnings: 4
+# Compile of MEM-BRUSH_TestBench.sv was successful.
+# Compile of brush.v was successful.
+# Compile of button_debouncer.v was successful.
+# Compile of fifo.v was successful.
+# Compile of FIFO_top.v was successful.
+# Compile of RAM.v was successful.
+# Compile of RGBmemcodec2.v was successful.
+# Compile of RGBMemory_top.v was successful.
+# Compile of memsyncreset.v was successful.
+# Compile of vga.v was successful.
+# 10 compiles, 0 failed with no errors.
+vsim work.MEM_BRUSH_TestBench
+# vsim work.MEM_BRUSH_TestBench 
+# Start time: 18:42:38 on Aug 17,2022
+# Loading sv_std.std
+# Loading work.MEM_BRUSH_TestBench
+# Loading work.vga
+# Loading work.button_debouncer
+# Loading work.brush
+# Loading work.FIFO_top
+# Loading work.flip_flop_fifo
+# Loading work.RGBMemory_top
+# Loading work.RGBmemcoderdecoderv2
+# Loading work.single_port_ram
+# Loading work.memsyncreset
+# ** Warning: (vsim-3015) [PCDPC] - Port size (3) does not match connection size (1) for port 'rgb'. The port definition is at: C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/SourceFiles/BRUSH/brush.v(28).
+#    Time: 0 ns  Iteration: 0  Instance: /MEM_BRUSH_TestBench/Painting_Brush File: C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/SourceFiles/MEM/MEM-BRUSH_TestBench.sv Line: 90
+# ** Warning: (vsim-3015) [PCDPC] - Port size (10) does not match connection size (11) for port 'resetcnt'. The port definition is at: C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/SourceFiles/MEM/RGBMemory_top.v(20).
+#    Time: 0 ns  Iteration: 0  Instance: /MEM_BRUSH_TestBench/FrameBuffer File: C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/SourceFiles/MEM/MEM-BRUSH_TestBench.sv Line: 140
+run
+force -freeze sim:/MEM_BRUSH_TestBench/key_sw 0111 0
+run
+quit -sim
+# End time: 18:50:42 on Aug 17,2022, Elapsed time: 0:08:04
+# Errors: 0, Warnings: 4
+# Compile of MEM-BRUSH_TestBench.sv was successful.
+# Compile of brush.v was successful.
+# Compile of button_debouncer.v was successful.
+# Compile of fifo.v was successful.
+# Compile of FIFO_top.v was successful.
+# Compile of RAM.v was successful.
+# Compile of RGBmemcodec2.v was successful.
+# Compile of RGBMemory_top.v was successful.
+# Compile of memsyncreset.v was successful.
+# Compile of vga.v was successful.
+# 10 compiles, 0 failed with no errors.
+vsim work.MEM_BRUSH_TestBench
+# vsim work.MEM_BRUSH_TestBench 
+# Start time: 18:50:51 on Aug 17,2022
+# Loading sv_std.std
+# Loading work.MEM_BRUSH_TestBench
+# Loading work.vga
+# Loading work.button_debouncer
+# Loading work.brush
+# Loading work.FIFO_top
+# Loading work.flip_flop_fifo
+# Loading work.RGBMemory_top
+# Loading work.RGBmemcoderdecoderv2
+# Loading work.single_port_ram
+# Loading work.memsyncreset
+# ** Warning: (vsim-3015) [PCDPC] - Port size (3) does not match connection size (1) for port 'rgb'. The port definition is at: C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/SourceFiles/BRUSH/brush.v(28).
+#    Time: 0 ns  Iteration: 0  Instance: /MEM_BRUSH_TestBench/Painting_Brush File: C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/SourceFiles/MEM/MEM-BRUSH_TestBench.sv Line: 90
+# ** Warning: (vsim-3015) [PCDPC] - Port size (10) does not match connection size (11) for port 'resetcnt'. The port definition is at: C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/SourceFiles/MEM/RGBMemory_top.v(20).
+#    Time: 0 ns  Iteration: 0  Instance: /MEM_BRUSH_TestBench/FrameBuffer File: C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/SourceFiles/MEM/MEM-BRUSH_TestBench.sv Line: 140
+run
+force -freeze sim:/MEM_BRUSH_TestBench/key_sw 0111 0
+run
+quit -sim
+# End time: 18:52:01 on Aug 17,2022, Elapsed time: 0:01:10
+# Errors: 0, Warnings: 4
+# Compile of brush.v was successful.
+vsim work.MEM_BRUSH_TestBench
+# vsim work.MEM_BRUSH_TestBench 
+# Start time: 18:53:40 on Aug 17,2022
+# Loading sv_std.std
+# Loading work.MEM_BRUSH_TestBench
+# Loading work.vga
+# Loading work.button_debouncer
+# Loading work.brush
+# Loading work.FIFO_top
+# Loading work.flip_flop_fifo
+# Loading work.RGBMemory_top
+# Loading work.RGBmemcoderdecoderv2
+# Loading work.single_port_ram
+# Loading work.memsyncreset
+# ** Warning: (vsim-3015) [PCDPC] - Port size (3) does not match connection size (1) for port 'rgb'. The port definition is at: C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/SourceFiles/BRUSH/brush.v(28).
+#    Time: 0 ns  Iteration: 0  Instance: /MEM_BRUSH_TestBench/Painting_Brush File: C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/SourceFiles/MEM/MEM-BRUSH_TestBench.sv Line: 90
+# ** Warning: (vsim-3015) [PCDPC] - Port size (10) does not match connection size (11) for port 'resetcnt'. The port definition is at: C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/SourceFiles/MEM/RGBMemory_top.v(20).
+#    Time: 0 ns  Iteration: 0  Instance: /MEM_BRUSH_TestBench/FrameBuffer File: C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/SourceFiles/MEM/MEM-BRUSH_TestBench.sv Line: 140
+run
+force -freeze sim:/MEM_BRUSH_TestBench/key_sw 0111 0
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+quit -sim
+# End time: 18:55:13 on Aug 17,2022, Elapsed time: 0:01:33
+# Errors: 0, Warnings: 4
+vsim work.MEM_BRUSH_TestBench
+# vsim work.MEM_BRUSH_TestBench 
+# Start time: 18:58:33 on Aug 17,2022
+# Loading sv_std.std
+# Loading work.MEM_BRUSH_TestBench
+# Loading work.vga
+# Loading work.button_debouncer
+# Loading work.brush
+# Loading work.FIFO_top
+# Loading work.flip_flop_fifo
+# Loading work.RGBMemory_top
+# Loading work.RGBmemcoderdecoderv2
+# Loading work.single_port_ram
+# Loading work.memsyncreset
+# ** Warning: (vsim-3015) [PCDPC] - Port size (3) does not match connection size (1) for port 'rgb'. The port definition is at: C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/SourceFiles/BRUSH/brush.v(28).
+#    Time: 0 ns  Iteration: 0  Instance: /MEM_BRUSH_TestBench/Painting_Brush File: C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/SourceFiles/MEM/MEM-BRUSH_TestBench.sv Line: 90
+# ** Warning: (vsim-3015) [PCDPC] - Port size (10) does not match connection size (11) for port 'resetcnt'. The port definition is at: C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/SourceFiles/MEM/RGBMemory_top.v(20).
+#    Time: 0 ns  Iteration: 0  Instance: /MEM_BRUSH_TestBench/FrameBuffer File: C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/SourceFiles/MEM/MEM-BRUSH_TestBench.sv Line: 140
+run
+force -freeze sim:/MEM_BRUSH_TestBench/key_sw 0111 0
+restart
+run
+force -freeze sim:/MEM_BRUSH_TestBench/key_sw 1111 0
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+quit -sim
+# End time: 19:07:00 on Aug 17,2022, Elapsed time: 0:08:27
+# Errors: 0, Warnings: 3
+vsim work.MEM_BRUSH_TestBench
+# vsim work.MEM_BRUSH_TestBench 
+# Start time: 19:07:22 on Aug 17,2022
+# Loading sv_std.std
+# Loading work.MEM_BRUSH_TestBench
+# Loading work.vga
+# Loading work.button_debouncer
+# Loading work.brush
+# Loading work.FIFO_top
+# Loading work.flip_flop_fifo
+# Loading work.RGBMemory_top
+# Loading work.RGBmemcoderdecoderv2
+# Loading work.single_port_ram
+# Loading work.memsyncreset
+# ** Warning: (vsim-3015) [PCDPC] - Port size (3) does not match connection size (1) for port 'rgb'. The port definition is at: C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/SourceFiles/BRUSH/brush.v(28).
+#    Time: 0 ns  Iteration: 0  Instance: /MEM_BRUSH_TestBench/Painting_Brush File: C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/SourceFiles/MEM/MEM-BRUSH_TestBench.sv Line: 90
+# ** Warning: (vsim-3015) [PCDPC] - Port size (10) does not match connection size (11) for port 'resetcnt'. The port definition is at: C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/SourceFiles/MEM/RGBMemory_top.v(20).
+#    Time: 0 ns  Iteration: 0  Instance: /MEM_BRUSH_TestBench/FrameBuffer File: C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/SourceFiles/MEM/MEM-BRUSH_TestBench.sv Line: 140
+add wave -position 2  sim:/MEM_BRUSH_TestBench/rgb
+run
+quit -sim
+# End time: 19:08:38 on Aug 17,2022, Elapsed time: 0:01:16
+# Errors: 0, Warnings: 3
+# Compile of MEM-BRUSH_TestBench.sv was successful.
+vsim work.MEM_BRUSH_TestBench
+# vsim work.MEM_BRUSH_TestBench 
+# Start time: 19:08:43 on Aug 17,2022
+# Loading sv_std.std
+# Loading work.MEM_BRUSH_TestBench
+# Loading work.vga
+# Loading work.button_debouncer
+# Loading work.brush
+# Loading work.FIFO_top
+# Loading work.flip_flop_fifo
+# Loading work.RGBMemory_top
+# Loading work.RGBmemcoderdecoderv2
+# Loading work.single_port_ram
+# Loading work.memsyncreset
+# ** Warning: (vsim-3015) [PCDPC] - Port size (3) does not match connection size (4) for port 'rgb'. The port definition is at: C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/SourceFiles/BRUSH/brush.v(28).
+#    Time: 0 ns  Iteration: 0  Instance: /MEM_BRUSH_TestBench/Painting_Brush File: C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/SourceFiles/MEM/MEM-BRUSH_TestBench.sv Line: 91
+# ** Warning: (vsim-3015) [PCDPC] - Port size (10) does not match connection size (11) for port 'resetcnt'. The port definition is at: C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/SourceFiles/MEM/RGBMemory_top.v(20).
+#    Time: 0 ns  Iteration: 0  Instance: /MEM_BRUSH_TestBench/FrameBuffer File: C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/SourceFiles/MEM/MEM-BRUSH_TestBench.sv Line: 141
+run
+quit -sim
+# End time: 19:09:00 on Aug 17,2022, Elapsed time: 0:00:17
+# Errors: 0, Warnings: 4
+# Compile of MEM-BRUSH_TestBench.sv was successful.
+vsim work.MEM_BRUSH_TestBench
+# vsim work.MEM_BRUSH_TestBench 
+# Start time: 19:09:24 on Aug 17,2022
+# Loading sv_std.std
+# Loading work.MEM_BRUSH_TestBench
+# Loading work.vga
+# Loading work.button_debouncer
+# Loading work.brush
+# Loading work.FIFO_top
+# Loading work.flip_flop_fifo
+# Loading work.RGBMemory_top
+# Loading work.RGBmemcoderdecoderv2
+# Loading work.single_port_ram
+# Loading work.memsyncreset
+# ** Warning: (vsim-3015) [PCDPC] - Port size (10) does not match connection size (11) for port 'resetcnt'. The port definition is at: C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/SourceFiles/MEM/RGBMemory_top.v(20).
+#    Time: 0 ns  Iteration: 0  Instance: /MEM_BRUSH_TestBench/FrameBuffer File: C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/SourceFiles/MEM/MEM-BRUSH_TestBench.sv Line: 141
+run
+run
+quit -sim
+# End time: 19:10:26 on Aug 17,2022, Elapsed time: 0:01:02
+# Errors: 0, Warnings: 3
+vsim work.MEM_BRUSH_TestBench
+# vsim work.MEM_BRUSH_TestBench 
+# Start time: 19:10:38 on Aug 17,2022
+# Loading sv_std.std
+# Loading work.MEM_BRUSH_TestBench
+# Loading work.vga
+# Loading work.button_debouncer
+# Loading work.brush
+# Loading work.FIFO_top
+# Loading work.flip_flop_fifo
+# Loading work.RGBMemory_top
+# Loading work.RGBmemcoderdecoderv2
+# Loading work.single_port_ram
+# Loading work.memsyncreset
+# ** Warning: (vsim-3015) [PCDPC] - Port size (10) does not match connection size (11) for port 'resetcnt'. The port definition is at: C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/SourceFiles/MEM/RGBMemory_top.v(20).
+#    Time: 0 ns  Iteration: 0  Instance: /MEM_BRUSH_TestBench/FrameBuffer File: C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/SourceFiles/MEM/MEM-BRUSH_TestBench.sv Line: 141
+run
+force -freeze sim:/MEM_BRUSH_TestBench/key_sw 0111 0
+run
+force -freeze sim:/MEM_BRUSH_TestBench/key_sw 1111 0
+run
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (10) does not match connection size (11) for port 'resetcnt'. The port definition is at: C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/SourceFiles/MEM/RGBMemory_top.v(20).
+#    Time: 0 ns  Iteration: 0  Instance: /MEM_BRUSH_TestBench/FrameBuffer File: C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/SourceFiles/MEM/MEM-BRUSH_TestBench.sv Line: 141
+run
+force -freeze sim:/MEM_BRUSH_TestBench/key_sw 0111 0
+run
+force -freeze sim:/MEM_BRUSH_TestBench/key_sw 1111 0
+run
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (10) does not match connection size (11) for port 'resetcnt'. The port definition is at: C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/SourceFiles/MEM/RGBMemory_top.v(20).
+#    Time: 0 ns  Iteration: 0  Instance: /MEM_BRUSH_TestBench/FrameBuffer File: C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/SourceFiles/MEM/MEM-BRUSH_TestBench.sv Line: 141
+run
+force -freeze sim:/MEM_BRUSH_TestBench/key_sw 0111 0
+run
+force -freeze sim:/MEM_BRUSH_TestBench/key_sw 1111 0
+run
+add wave -position 67  sim:/MEM_BRUSH_TestBench/FrameBuffer/G_MEMORY/ramblock
+add wave -position 68  sim:/MEM_BRUSH_TestBench/FrameBuffer/G_MEMORY/addr_x
+add wave -position 69  sim:/MEM_BRUSH_TestBench/FrameBuffer/G_MEMORY/data_x
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (10) does not match connection size (11) for port 'resetcnt'. The port definition is at: C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/SourceFiles/MEM/RGBMemory_top.v(20).
+#    Time: 0 ns  Iteration: 0  Instance: /MEM_BRUSH_TestBench/FrameBuffer File: C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/SourceFiles/MEM/MEM-BRUSH_TestBench.sv Line: 141
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/FBTest2Git/MEM-BRUSHwave.do
+quit -sim
+# End time: 19:34:09 on Aug 17,2022, Elapsed time: 0:23:31
+# Errors: 0, Warnings: 2
+# Compile of MEM-BRUSH_TestBench.sv was successful.
+vsim work.MEM_BRUSH_TestBench
+# vsim work.MEM_BRUSH_TestBench 
+# Start time: 19:37:29 on Aug 17,2022
+# Loading sv_std.std
+# Loading work.MEM_BRUSH_TestBench
+# Loading work.vga
+# Loading work.button_debouncer
+# Loading work.brush
+# Loading work.FIFO_top
+# Loading work.flip_flop_fifo
+# Loading work.RGBMemory_top
+# Loading work.RGBmemcoderdecoderv2
+# Loading work.single_port_ram
+# Loading work.memsyncreset
+# ** Warning: (vsim-3015) [PCDPC] - Port size (10) does not match connection size (11) for port 'resetcnt'. The port definition is at: C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/SourceFiles/MEM/RGBMemory_top.v(20).
+#    Time: 0 ns  Iteration: 0  Instance: /MEM_BRUSH_TestBench/FrameBuffer File: C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/SourceFiles/MEM/MEM-BRUSH_TestBench.sv Line: 141
+run
+run
+run
+add wave -position 67  sim:/MEM_BRUSH_TestBench/FrameBuffer/FBCODEC/w_state
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (10) does not match connection size (11) for port 'resetcnt'. The port definition is at: C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/SourceFiles/MEM/RGBMemory_top.v(20).
+#    Time: 0 ns  Iteration: 0  Instance: /MEM_BRUSH_TestBench/FrameBuffer File: C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/SourceFiles/MEM/MEM-BRUSH_TestBench.sv Line: 141
+run
+quit -sim
+# End time: 20:19:46 on Aug 17,2022, Elapsed time: 0:42:17
+# Errors: 0, Warnings: 2
+# Compile of RGBmemcodec2.v was successful.
+vsim work.MEM_BRUSH_TestBench
+# vsim work.MEM_BRUSH_TestBench 
+# Start time: 20:19:52 on Aug 17,2022
+# Loading sv_std.std
+# Loading work.MEM_BRUSH_TestBench
+# Loading work.vga
+# Loading work.button_debouncer
+# Loading work.brush
+# Loading work.FIFO_top
+# Loading work.flip_flop_fifo
+# Loading work.RGBMemory_top
+# Loading work.RGBmemcoderdecoderv2
+# Loading work.single_port_ram
+# Loading work.memsyncreset
+# ** Warning: (vsim-3015) [PCDPC] - Port size (10) does not match connection size (11) for port 'resetcnt'. The port definition is at: C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/SourceFiles/MEM/RGBMemory_top.v(20).
+#    Time: 0 ns  Iteration: 0  Instance: /MEM_BRUSH_TestBench/FrameBuffer File: C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/SourceFiles/MEM/MEM-BRUSH_TestBench.sv Line: 141
+run
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/User/Downloads/(OLD)VGA-Framebuffer-main/VGA-Framebuffer-main/FBTest2Git/MEM-BRUSHwave.do
+# End time: 20:25:59 on Aug 17,2022, Elapsed time: 0:06:07
+# Errors: 0, Warnings: 3

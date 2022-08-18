@@ -25,7 +25,7 @@ module single_port_ram
     wire                  we_x;
 
     assign addr_x = (memenable) ? addr : resetcnt;
-    assign data_x = (memenable) ? data : '0;
+    assign data_x = (memenable) ? data : '1;
     assign we_x   = (memenable) ? we   : 1;
 	 
 	always @ (posedge clk)begin

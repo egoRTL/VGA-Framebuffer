@@ -20,12 +20,12 @@ module brush_sprite
              ROW_4         = 32'hcccccccc,
              ROW_5         = 32'h000cc000,
              ROW_6         = 32'h000cc000,
-             ROW_7         = 32'h000cc000
+             ROW_7         = 32'h000cc000,
 				 
 	HPOS_WIDTH=0, //coordinate wires width
 	VPOS_WIDTH=0,
 	SIZE_WIDTH=0,
-	BRUSH_COLOR=3'b101
+	
 )
 (
 	input clk,reset,display_on,
@@ -64,14 +64,6 @@ reg [SPRITE_MAX_SIZE * 3 - 1:0] row;
         3'd7: ergb = row [ 3: 0];
         endcase
 
-//brush sprite
-always @ (posedge clk or posedge reset)
-        if (reset)
-            rgb <= 3'b000;
-        else if (display_on)
-         if ((vpos >= cursor_ypos - brush_size)&&(vpos <= cursor_ypos + brush_size)&&(hpos >= cursor_xpos - brush_size)&&(hpos <= cursor_xpos + brush_size)) 
-				rgb <= ergb;
-         else rgb <= FB_RGB;
-		  else  rgb <= 3'b000;
+
 
 endmodule

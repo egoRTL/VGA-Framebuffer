@@ -12,3 +12,10 @@ w_state.001 0 0 1 1 0
 w_state.010 0 1 0 1 0 
 w_state.011 1 0 0 1 0 
 w_state.100 0 0 0 1 1 
+
+State Machine - |top|brush:Painting_Brush|writestate
+Name writestate.011 writestate.010 writestate.001 writestate.000 
+writestate.000 0 0 0 0 
+writestate.001 0 0 1 1 
+writestate.010 0 1 0 1 
+writestate.011 1 0 0 1 

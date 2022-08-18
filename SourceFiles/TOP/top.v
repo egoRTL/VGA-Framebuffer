@@ -46,15 +46,16 @@ module top
 
     //------------------------------------------------------------------------
 	 wire [3:0] BTN,BTN_POSEDGE,BTN_NEGEDGE;
-	 wire enable,pllclk,fifoempty,fifofull,display_on,fifopush,fifopop,ROMready;
+	 wire enable,pllclk,fifoempty,fifofull,display_on,fifopush,fifopop;
+	 reg ROMready=0;
 	 // webuf - write enable for framebuffer and decoder;
 	 //rinwire - r component of rgb pixel, which supposed to be written to memory
 	
-	 wire [2:0] RGBfifo,ROM_RGB,FB_RGB;
+	 wire [2:0] RGBfifo,FB_RGB,brush_RGB;//ROM_RGB;
 	
-	 wire [X_WIRE_WIDTH - 1:0] hpos,hpos_to_fb,hposfifo,ROM_hpos;
+	 wire [X_WIRE_WIDTH - 1:0] hpos,hpos_to_fb,hposfifo,brush_hpos;//ROM_hpos;
 
-	 wire [Y_WIRE_WIDTH - 1:0] vpos,vpos_to_fb,vposfifo,ROM_vpos;
+	 wire [Y_WIRE_WIDTH - 1:0] vpos,vpos_to_fb,vposfifo,brush_vpos;//ROM_vpos;
 
 	 wire [DATA_WIDTH-1:0] datainbuf_R,datainbuf_G,datainbuf_B,dataoutbuf_R, dataoutbuf_G, dataoutbuf_B;
 
@@ -110,15 +111,21 @@ module top
 	 )
 	 Painting_Brush
 	 (
-			.clk		  ( pllclk		),
-			.reset	  ( ~reset_n 	),
-			.BTN		  ( BTN			), // [2:0]movedirection=[2:0]key_sw
-			.BTN_POSEDGE(BTN_POSEDGE),
-			.display_on(display_on	),
-			.hpos		  ( hpos			),
-			.vpos		  ( vpos			),
-			.FB_RGB	  ( FB_RGB		),
-			.rgb		  ( rgb			)
+			.clk		  		( pllclk		),
+			.reset	  		( ~reset_n 	),
+			.BTN		  		( BTN			), // [2:0]movedirection=[2:0]key_sw
+			.BTN_POSEDGE	(BTN_POSEDGE),
+			.display_on		(display_on	),
+			.hpos		  		( hpos		),
+			.vpos		  		( vpos		),
+			.FB_RGB	  		( FB_RGB		),
+			.memenable		( enable ),
+			.rgb		  		( rgb			),
+			.writergb		( brush_RGB ),
+			.fifopush  		( fifopush	),
+			.fifofull		( fifofull	),
+			.writecounter_x( brush_hpos),
+			.writecounter_y( brush_vpos)
 	 );
 //	vgasprites
 //	#(.CURSOR_SIZE(CURSOR_SIZE),
@@ -143,24 +150,24 @@ module top
 //	);
 
 	 
-	 ROM_top
-	 #(.X_WIRE_WIDTH(X_WIRE_WIDTH),
-		.Y_WIRE_WIDTH(Y_WIRE_WIDTH),
-		.RAMLENGTH(RAMLENGTH),
-		.RAM_DATAWIDTH(DATA_WIDTH)
-		)
-		ROM
-		(
-		.clk			(pllclk),
-		.rst			(~reset_n),
-		.ROMready	(ROMready),
-		.display_on (display_on),
-		.fifofull	(fifofull),
-		.enable		(enable),
-		.hpos			(ROM_hpos),
-		.vpos			(ROM_vpos),
-		.RGB			(ROM_RGB)
-		);
+//	 ROM_top
+//	 #(.X_WIRE_WIDTH(X_WIRE_WIDTH),
+//		.Y_WIRE_WIDTH(Y_WIRE_WIDTH),
+//		.RAMLENGTH(RAMLENGTH),
+//		.RAM_DATAWIDTH(DATA_WIDTH)
+//		)
+//		ROM
+//		(
+//		.clk			(pllclk),
+//		.rst			(~reset_n),
+//		.ROMready	(ROMready),
+//		.display_on (display_on),
+//		.fifofull	(fifofull),
+//		.enable		(enable),
+//		.hpos			(ROM_hpos),
+//		.vpos			(ROM_vpos),
+//		.RGB			(ROM_RGB)
+//		);
 	 
 	 
 	 FIFO_top
@@ -169,18 +176,18 @@ module top
 		)
 	 FIFO
 	 (
-			.clk			(pllclk),
-			.rst			(~reset_n),
-			.push			(fifopush),
-			.toppop		(fifopop),
-			.hpos_write	(ROM_hpos),
-			.vpos_write	(ROM_vpos),
-			.RGB_write	(ROM_RGB),
-			.hpos_read	(hposfifo),
-			.vpos_read	(vposfifo),
-			.RGB_read   (RGBfifo),
-			.full			(fifofull),
-			.empty		(fifoempty)
+			.clk			(pllclk	  ),
+			.rst			(~reset_n  ),
+			.push			(fifopush  ),
+			.toppop		(fifopop	  ),
+			.hpos_write	(brush_hpos),
+			.vpos_write	(brush_vpos),
+			.RGB_write	(brush_RGB ),
+			.hpos_read	(hposfifo  ),
+			.vpos_read	(vposfifo  ),
+			.RGB_read   (RGBfifo	  ),
+			.full			(fifofull  ),
+			.empty		(fifoempty )
 	);
 	 
 	 
@@ -224,6 +231,6 @@ module top
 	 assign hpos_to_fb = (display_on) ? hpos : hposfifo;
 	 assign vpos_to_fb = (display_on) ? vpos : vposfifo;
 	 assign fifopop = ~display_on&&~fifoempty;
-	 assign fifopush = display_on&&~fifofull&&ROMready;
+	 //assign fifopush = display_on&&~fifofull&&ROMready;
 	
 endmodule
