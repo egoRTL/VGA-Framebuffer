@@ -1,5 +1,5 @@
 # VGA-Framebuffer
-FB project for ChipExpo(and my Diploma Project)
+FB project
 ## Features
 - Fixed memory codec's glitch, which is supposed to be responsible for white tracks in a monitor.
 - Enhanced memory size up to full-scale RGB.
